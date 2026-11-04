@@ -1,3 +1,4 @@
 sandbox
 data/igtotkodsh/raw/
 data/igtotkodsh/*.db
+__pycache__/
