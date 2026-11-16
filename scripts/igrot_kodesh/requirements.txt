@@ -1,3 +1,4 @@
 requests
 brotli  # the server answers with Brotli compression
 pyluach  # hebrew -> gregorian dates (parse.py)
+rapidfuzz  # verify.py: text similarity

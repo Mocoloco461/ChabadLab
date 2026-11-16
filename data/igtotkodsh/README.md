@@ -43,7 +43,7 @@
 | `postscript` | טקסט שבא אחרי החתימה (הוספות, כתובת וכו') |
 | `source_note` | הערת המקור של העורכים (`נדפסה ב...`, `מהעתקה`) |
 | `notes` | רשימת הערות השוליים: `[{"term": "ברכות נח", "text": "..."}]` |
-| `full_text` | כל המכתב ברצף (תאריך, כתובת, גוף, חתימה) – לחיפוש / תצוגה |
+| `full_text` | כל המכתב ברצף, בסדר שבו הוא מופיע באתר (תאריך, כתובת, גוף, חתימה, וגם שורות עורך בסוגריים כמו `[תרגום חפשי]`). מתאים לחיפוש ולתצוגה |
 | `html` | ה-HTML המקורי מהאתר (שומר הדגשות ומבנה) |
 | `prev_id` / `next_id` | המכתב הקודם / הבא |
 | `url` | קישור למכתב באתר המקור |
@@ -82,3 +82,13 @@ python3 scripts/igrot_kodesh/scrape.py      # הורדה (אפשר להמשיך 
 python3 scripts/igrot_kodesh/parse.py       # raw -> jsonl.gz + csv + volumes.json
 python3 scripts/igrot_kodesh/build_db.py    # jsonl.gz -> SQLite + FTS5
 ```
+
+## אימות מול המקור
+
+`verify.py` מוריד מחדש כל מכתב מהאתר ומשווה אותו לנתונים שבריפו. הוא מחשב אחוז התאמה של הטקסט לפי סדר (Levenshtein), התאמת מילים בלי תלות בסדר, והתאמה של ה-HTML. הוא גם בודק שלא חסרים מכתבים.
+```bash
+python3 scripts/igrot_kodesh/verify.py --threshold 90   # -> data/igtotkodsh/verify/
+```
+הפלט: `verify_all.csv` עם ציון לכל מכתב, `below_threshold.csv` עם המכתבים שמתחת לסף, `missing.csv`, ו-`summary.json`.
+
+בבדיקה האחרונה (14.11.2026) כל 11,062 המכתבים יצאו **100%** בכל המדדים, ולא חסר אף מכתב.

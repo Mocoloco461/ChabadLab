@@ -1,0 +1,21 @@
+{
+ "letters_checked": 11062,
+ "fetch_errors": 0,
+ "threshold": 90.0,
+ "below_threshold": 0,
+ "avg_text_pct": 100.0,
+ "avg_word_pct": 100.0,
+ "word_below_threshold": 0,
+ "avg_html_pct": 100.0,
+ "html_identical": 11062,
+ "text_pct_distribution": {
+  "100": 11062,
+  "99-100": 0,
+  "95-99": 0,
+  "90-95": 0,
+  "<90": 0
+ },
+ "repo_body_empty": [],
+ "missing_from_repo": 0,
+ "errors": []
+}

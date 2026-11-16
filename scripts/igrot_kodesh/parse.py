@@ -275,6 +275,8 @@ def parse_letter(node, vol_index, vol_heading, vol_id):
     num_heb = None
     date_lines, city_lines, address_lines, body, post, sigs, notes = [], [], [], [], [], [], []
     editorial = []
+    seq = []  # (role, text) in document order, for full_text
+    note_blocks = []  # plain text of in-letter note blocks (fallback, see below)
     seen_sig = False
     for role, inner in letter_blocks(text_html):
         txt = html_to_text(inner)
@@ -283,6 +285,10 @@ def parse_letter(node, vol_index, vol_heading, vol_id):
             continue
         if not txt or role == "skip":
             continue
+        if role == "address":
+            seq.append((role, "\n".join(x for x in txt.split("\n") if x.strip())))
+        elif role in ("date", "date_editorial", "city", "sig", "text"):
+            seq.append((role, txt))
         if role == "date":
             date_lines.append(txt)
         elif role == "date_editorial":
@@ -297,6 +303,7 @@ def parse_letter(node, vol_index, vol_heading, vol_id):
         elif role == "note":
             term, note_txt = parse_note(inner, r"<b>")
             notes.append({"term": term, "text": note_txt})
+            note_blocks.append(txt)
         else:
             (post if seen_sig else body).append(txt)
 
@@ -307,6 +314,14 @@ def parse_letter(node, vol_index, vol_heading, vol_id):
         term, note_txt = parse_note(inner, r"<span[^>]*haorodiburmaschil")
         notes.append({"term": term, "text": note_txt})
 
+    # a few pages hold no letter text at all, only editorial blocks describing
+    # the letter (e.g. an answer written on the margins of a question): use
+    # those blocks as the body instead of leaving the letter empty
+    if not seq and note_blocks:
+        body = note_blocks
+        seq = [("text", t) for t in note_blocks]
+        notes = notes[len(note_blocks):]
+
     date_raw = " | ".join(date_lines) or None
     # undated letters often carry an editorial date like "[לפני ת"ש]" in the first line
     date_editorial = " | ".join(editorial) or None
@@ -316,8 +331,16 @@ def parse_letter(node, vol_index, vol_heading, vol_id):
     # source note: first note without a bold term (e.g. "נדפסה ב... / מהעתקה")
     source_note = next((n["text"] for n in notes if not n["term"]), None)
 
-    full_text = "\n\n".join(
-        [*date_lines, *city_lines, "\n".join(address_lines)] + body + sigs + post)
+    # full_text keeps the order of the original page (letters to several
+    # addressees, translations, quotes before the city line ...); consecutive
+    # address lines form one paragraph
+    paras = []
+    for i, (role, txt) in enumerate(seq):
+        if role == "address" and i and seq[i - 1][0] == "address":
+            paras[-1] += "\n" + txt
+        else:
+            paras.append(txt)
+    full_text = "\n\n".join(paras)
     full_text = re.sub(r"\n{3,}", "\n\n", full_text).strip()
 
     rec = {
