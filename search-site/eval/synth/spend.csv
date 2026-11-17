@@ -31,3 +31,4 @@ time,task,model,jobs,calls,errors,tokens_in,tokens_out,cost_usd,key_usage_before
 2026-11-17T15:54:18,eval-d2q-rerank-cohere5fast,cohere/rerank-5-fast,,,,,,0.1627,6.3858,6.5484,rc=0
 2026-11-17T15:55:00,judge,anthropic/claude-haiku-5.5,209,209,0,333190,5972,0.0363,6.5484,6.5535,False
 2026-11-17T15:55:12,judge,anthropic/claude-haiku-5.5,102,102,0,114308,2046,0.0125,6.5487,6.5876,False
+2026-11-17T16:12:05,eval-holdout3-7configs,3 cohere-fast runs,,,,,,0.1025,6.5977,6.7002,rc=0
