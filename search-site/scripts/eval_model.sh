@@ -26,7 +26,11 @@ SRV=$!
 trap 'kill $SRV 2>/dev/null' EXIT
 for i in $(seq 1 120); do
   curl -s -o /dev/null "http://127.0.0.1:$PORT/api/search?q=test&mode=semantic" && break; sleep 1
+  kill -0 $SRV 2>/dev/null || break
 done
+if ! curl -s -o /dev/null "http://127.0.0.1:$PORT/api/meta"; then
+  echo "server did not start:"; tail -20 "$ROOT/search-site/data/eval_server_$PORT.log"; exit 1
+fi
 cd "$ROOT"
 H=search-site/eval/history.csv
 "$PY" search-site/eval/run_eval.py --server "http://127.0.0.1:$PORT" --label "$LABEL" > /dev/null

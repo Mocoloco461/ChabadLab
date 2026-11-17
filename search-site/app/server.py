@@ -37,6 +37,7 @@ def warm_up():
         idx = search.semantic_index()
         if idx is not None:
             idx.encode("חינוך")
+        search.reranker()
     threading.Thread(target=_load, daemon=True).start()
 
 

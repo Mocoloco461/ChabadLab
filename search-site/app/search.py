@@ -336,6 +336,7 @@ class SemanticIndex:
                 if sum(1 for _ in fh) != len(self.chunk_letter):
                     raise ValueError(f"chunks of {f} differ from {self.folder}")
         self._models = None
+        self._letter_chunks = None
         self._lock = threading.Lock()
 
     @property
@@ -347,9 +348,10 @@ class SemanticIndex:
                 dev = os.environ.get("IGROT_DEVICE") or ("cuda" if torch.cuda.is_available() else "cpu")
                 ms = []
                 for info in self.infos:
-                    m = SentenceTransformer(info["model"], device=dev)
-                    if dev.startswith("cuda"):
-                        m.half()  # same precision as build_embeddings.py; Qwen3-4B fp32 would not fit 12GB
+                    # fp16 on GPU, loaded directly in fp16 (same precision as build_embeddings.py;
+                    # Qwen3-4B in fp32 is 16GB and does not fit a 12GB card even transiently)
+                    kw = {"model_kwargs": {"torch_dtype": torch.float16}} if dev.startswith("cuda") else {}
+                    m = SentenceTransformer(info["model"], device=dev, **kw)
                     m.max_seq_length = info.get("max_seq", 512)
                     ms.append(m)
                 self._models = ms
@@ -360,9 +362,25 @@ class SemanticIndex:
                  for m, info in zip(self.models, self.infos)]
         return np.concatenate(parts).astype(np.float32)
 
-    def search(self, q, allowed_ids=None, n=300):
+    def letter_chunks(self, lid):
+        if self._letter_chunks is None:
+            d = {}
+            for i, l in enumerate(self.chunk_letter.tolist()):
+                d.setdefault(l, []).append(i)
+            self._letter_chunks = d
+        return self._letter_chunks.get(lid, [])
+
+    def best_chunks(self, qv, lid, top=1):
+        """chunk indices of one letter, most similar to the query vector first"""
+        idx = self.letter_chunks(lid)
+        if not idx:
+            return []
+        sc = self.emb[idx] @ qv
+        return [idx[i] for i in np.argsort(-sc)[:top]]
+
+    def search(self, q, allowed_ids=None, n=300, qv=None):
         """-> list of (letter_id, score, best_chunk_index) sorted by score."""
-        scores = self.emb @ self.encode(q)
+        scores = self.emb @ (self.encode(q) if qv is None else qv)
         if allowed_ids is not None:
             mask = np.isin(self.chunk_letter, np.fromiter(allowed_ids, dtype=self.chunk_letter.dtype))
             scores = np.where(mask, scores, -1.0)
@@ -384,7 +402,17 @@ class SemanticIndex:
 _sem = {"index": None, "error": None}
 
 
+_sem_lock = threading.Lock()
+
+
 def semantic_index():
+    if _sem["index"] is not None or _sem["error"] is not None:
+        return _sem["index"]
+    with _sem_lock:  # the startup warm-up thread and the first request must not both load it
+        return _load_semantic_index()
+
+
+def _load_semantic_index():
     if _sem["index"] is None and _sem["error"] is None:
         folder = os.environ.get("IGROT_EMB")
         if not folder:
@@ -423,11 +451,13 @@ def allowed_letter_ids(filters):
 SEM_LEX_W, SEM_K = 0.75, 10
 
 
-def semantic_search(q, filters, offset=0, limit=20, n=300):
+def semantic_ranked(q, filters, n=300):
+    """-> (ranked [(lid, score)], best_chunk {lid: chunk}, qv) or None if no index."""
     idx = semantic_index()
     if idx is None:
-        return {"total": 0, "results": [], "error": semantic_status()}
-    hits = idx.search(q, allowed_letter_ids(filters), n=n)
+        return None
+    qv = idx.encode(q)
+    hits = idx.search(q, allowed_letter_ids(filters), n=n, qv=qv)
     best_chunk = {lid: ci for lid, _, ci in hits}
     score = {}
     for r, (lid, _, _) in enumerate(hits):
@@ -436,13 +466,25 @@ def semantic_search(q, filters, offset=0, limit=20, n=300):
         for r, lid in enumerate(coverage_ids(q, filters, True, n)):
             if lid in score:  # tie-break only: never adds letters the model did not retrieve
                 score[lid] += SEM_LEX_W / (SEM_K + r + 1)
-    ranked = sorted(score.items(), key=lambda x: -x[1])
+    return sorted(score.items(), key=lambda x: -x[1]), best_chunk, qv
+
+
+def semantic_search(q, filters, offset=0, limit=20, n=300, rerank=None):
+    out = semantic_ranked(q, filters, n)
+    if out is None:
+        return {"total": 0, "results": [], "error": semantic_status()}
+    ranked, best_chunk, qv = out
+    idx = semantic_index()
+    reranked = False
+    if rerank is not False and reranker() is not None:
+        ranked, reranked = rerank_ranked(q, ranked, idx, qv), True
     page = ranked[offset: offset + limit]
     rows = fetch_rows([lid for lid, _ in page])
     terms = [t for t in highlight_terms(q) if t not in QUERY_STOP]
     res = [row_to_result(rows[lid], make_snippet(idx.chunk_text[best_chunk[lid]], terms=terms), s * 100)
            for lid, s in page if lid in rows]
-    return {"total": len(hits), "results": res, "model": idx.info["model"], "capped": len(hits) >= n}
+    return {"total": len(ranked), "results": res, "model": idx.info["model"], "capped": len(ranked) >= n,
+            "reranked": reranked}
 
 
 def coverage_ids(q, filters, prefixes=True, n=300):
@@ -476,23 +518,38 @@ def coverage_ids(q, filters, prefixes=True, n=300):
 HYBRID_K, HYBRID_W_TEXT, HYBRID_W_SEM = 10, 1.0, 1.5
 
 
-def hybrid_search(q, filters, offset=0, limit=20, n=300, prefixes=True,
-                  k=HYBRID_K, w_text=HYBRID_W_TEXT, w_sem=HYBRID_W_SEM):
-    idx = semantic_index()
+def exact_syntax(q):
     items = [it for it in parse_query(q) if not it["neg"]]
+    return any(it["kind"] == "phrase" or it.get("star") for it in items) or "-" in q
+
+
+def hybrid_ranked(q, filters, n=300, prefixes=True, k=HYBRID_K, w_text=HYBRID_W_TEXT, w_sem=HYBRID_W_SEM):
+    """-> (ranked [(lid, score)], best_chunk {lid: chunk}, text ids, qv or None)"""
+    idx = semantic_index()
     # exact-syntax queries (phrases, *, -) keep strict text ranking; natural language uses coverage
-    if any(it["kind"] == "phrase" or it.get("star") for it in items) or "-" in q:
+    if exact_syntax(q):
         t_ids = text_ranked_ids(q, filters, n, prefixes, "all")
     else:
         t_ids = coverage_ids(q, filters, prefixes, n)
-    s_hits = idx.search(q, allowed_letter_ids(filters), n=n) if idx else []
+    qv = idx.encode(q) if idx else None
+    s_hits = idx.search(q, allowed_letter_ids(filters), n=n, qv=qv) if idx else []
     score, best_chunk = {}, {}
     for rank, lid in enumerate(t_ids):
         score[lid] = score.get(lid, 0) + w_text / (k + rank + 1)
     for rank, (lid, s, ci) in enumerate(s_hits):
         score[lid] = score.get(lid, 0) + w_sem / (k + rank + 1)
         best_chunk[lid] = ci
-    ranked = sorted(score.items(), key=lambda x: -x[1])
+    return sorted(score.items(), key=lambda x: -x[1]), best_chunk, t_ids, qv
+
+
+def hybrid_search(q, filters, offset=0, limit=20, n=300, prefixes=True,
+                  k=HYBRID_K, w_text=HYBRID_W_TEXT, w_sem=HYBRID_W_SEM, rerank=None):
+    idx = semantic_index()
+    ranked, best_chunk, t_ids, qv = hybrid_ranked(q, filters, n, prefixes, k, w_text, w_sem)
+    reranked = False
+    # exact-syntax queries are about the words, not the meaning: no reranking
+    if rerank is not False and idx is not None and not exact_syntax(q) and reranker() is not None:
+        ranked, reranked = rerank_ranked(q, ranked, idx, qv), True
     page = ranked[offset: offset + limit]
     rows = fetch_rows([lid for lid, _ in page], with_text=True)
     terms = [t for t in highlight_terms(q) if t not in QUERY_STOP]
@@ -508,7 +565,83 @@ def hybrid_search(q, filters, offset=0, limit=20, n=300, prefixes=True,
         res.append(row_to_result(rows[lid], snip, s * 100,
                                  {"in_text": lid in in_text, "in_semantic": lid in best_chunk}))
     return {"total": len(ranked), "results": res, "model": idx.info["model"] if idx else None,
-            "warning": None if idx else semantic_status()}
+            "warning": None if idx else semantic_status(), "reranked": reranked}
+
+
+# ------------------------------------------------------------------ reranker (cross-encoder)
+# IGROT_RERANK=<model> | auto (default: BAAI/bge-reranker-v2-m3 when a GPU is present, else off) | off.
+# On CPU it costs seconds per query, so "auto" leaves it off there.
+# The top RERANK_N letters of semantic / hybrid ranking are re-scored by the cross-encoder on
+# (query, best passage of the letter) and merged with the first-stage rank by weighted RRF.
+RERANK_N = int(os.environ.get("IGROT_RERANK_N", "50"))
+RERANK_K = 10
+RERANK_W_FIRST, RERANK_W_CE = 1.0, 1.0
+RERANK_CHUNKS = 1   # passages per letter given to the cross-encoder
+DEFAULT_RERANKER = "BAAI/bge-reranker-v2-m3"
+_rr = {"model": None, "name": None, "error": None}
+_rr_lock = threading.Lock()
+
+
+def reranker():
+    name = os.environ.get("IGROT_RERANK", "auto")
+    if not name or name.lower() in ("0", "off", "none", "false"):
+        return None
+    if name == "auto":
+        if _rr["name"] is None:
+            try:
+                import torch
+                cuda = torch.cuda.is_available() and not os.environ.get("IGROT_DEVICE", "").startswith("cpu")
+            except Exception:  # noqa: BLE001
+                cuda = False
+            _rr["auto"] = DEFAULT_RERANKER if cuda else None
+        name = _rr.get("auto")
+        if not name:
+            return None
+    with _rr_lock:
+        if _rr["name"] != name:
+            try:
+                import torch
+                from sentence_transformers import CrossEncoder
+                dev = os.environ.get("IGROT_DEVICE") or ("cuda" if torch.cuda.is_available() else "cpu")
+                kw = {"model_kwargs": {"torch_dtype": torch.float16}} if dev.startswith("cuda") else {}
+                m = CrossEncoder(name, device=dev, max_length=512, **kw)
+                _rr.update(model=m, name=name, error=None)
+            except Exception as e:  # noqa: BLE001
+                _rr.update(model=None, name=name, error=str(e))
+    return _rr["model"]
+
+
+def rerank_passages(idx, qv, lid, n_chunks=RERANK_CHUNKS):
+    return "\n".join(idx.chunk_text[i] for i in idx.best_chunks(qv, lid, n_chunks))
+
+
+def rerank_scores(q, lids, idx, qv, n_chunks=RERANK_CHUNKS):
+    m = reranker()
+    pairs = [(q, rerank_passages(idx, qv, lid, n_chunks)) for lid in lids]
+    return [float(x) for x in m.predict(pairs, batch_size=32, show_progress_bar=False)]
+
+
+def rerank_merge(ranked, ce, n=None, k=RERANK_K, w_first=RERANK_W_FIRST, w_ce=RERANK_W_CE):
+    """ranked: first-stage [(lid, score)]; ce: cross-encoder scores for ranked[:len(ce)].
+    Top n re-ordered by w_first/(k+first_rank) + w_ce/(k+ce_rank); the rest keep their order below."""
+    n = len(ce) if n is None else min(n, len(ce))
+    head = ranked[:n]
+    ce = ce[:n]
+    ce_rank = {lid: r for r, lid in enumerate(
+        lid for _, lid in sorted(zip(ce, (lid for lid, _ in head)), key=lambda x: -x[0]))}
+    new = {lid: w_first / (k + r + 1) + w_ce / (k + ce_rank[lid] + 1) for r, (lid, _) in enumerate(head)}
+    top = sorted(new.items(), key=lambda x: -x[1])
+    floor = min(v for _, v in top) if top else 0
+    # keep the tail strictly below the head, preserving first-stage order
+    tail = [(lid, floor * 0.5 * (1 - i / (len(ranked) + 1))) for i, (lid, _) in enumerate(ranked[n:])]
+    return top + tail
+
+
+def rerank_ranked(q, ranked, idx, qv):
+    lids = [lid for lid, _ in ranked[:RERANK_N]]
+    if not lids:
+        return ranked
+    return rerank_merge(ranked, rerank_scores(q, lids, idx, qv))
 
 
 # ------------------------------------------------------------------ letter + meta
