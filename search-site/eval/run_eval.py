@@ -14,7 +14,8 @@ A case passes when any expected id is in the top k results (default k=10).
 
 Extra metrics (always printed, also stored in history.csv "metrics"):
     mrr        mean 1/rank of the expected letter (rank within the top 20, else 0)
-    any_rel@10 expected letter OR a letter judged relevant (eval/qrels/*.jsonl) is in the top 10
+    any_rel@10 expected letter OR a letter judged relevant (grade>=1, eval/qrels/*.jsonl) is in the top 10
+    any_rel2@10 the same with grade 2 only (fully relevant)
     ndcg@10    graded: expected letter = 2, judged letters = their grade (0/1/2)
     unjudged   share of top-10 letters that are neither expected nor judged (judging coverage)
 qrels line: {"case": "<case id without @mode>", "letter_id": 123, "rel": 0|1|2, "judge": "..."}
@@ -53,6 +54,7 @@ def metric_summary(rs):
     n = len(rs)
     return {"mrr": round(sum(r["metrics"]["rr"] for r in rs) / n, 3),
             "any_rel10_pct": round(100 * sum(r["metrics"]["any_rel10"] for r in rs) / n, 1),
+            "any_rel2_10_pct": round(100 * sum(r["metrics"]["any_rel2_10"] for r in rs) / n, 1),
             "ndcg10": round(sum(r["metrics"]["ndcg10"] for r in rs) / n, 3),
             "unjudged10": round(sum(r["metrics"]["unjudged10"] for r in rs) / n, 2)}
 
@@ -118,10 +120,11 @@ def main():
             grades[x] = 2
         top10 = ids[:10]
         any_rel = any(grades.get(x, 0) >= 1 for x in top10)
+        any_rel2 = any(grades.get(x, 0) >= 2 for x in top10)
         dcg = sum((2 ** grades.get(x, 0) - 1) / math.log2(i + 2) for i, x in enumerate(top10))
         ideal = sorted(grades.values(), reverse=True)[:10]
         idcg = sum((2 ** g - 1) / math.log2(i + 2) for i, g in enumerate(ideal))
-        m = {"rr": 1 / rank if rank else 0.0, "any_rel10": any_rel, "ndcg10": dcg / idcg if idcg else 0.0,
+        m = {"rr": 1 / rank if rank else 0.0, "any_rel10": any_rel, "any_rel2_10": any_rel2, "ndcg10": dcg / idcg if idcg else 0.0,
              "unjudged10": sum(1 for x in top10 if x not in grades and x not in qrels.get(base, {})) / max(len(top10), 1)}
         results.append({**c, "pass": ok, "rank": rank, "total": d.get("total"), "top": ids[:max(k, 20)],
                         "error": err, "metrics": m})

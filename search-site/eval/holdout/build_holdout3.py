@@ -11,7 +11,10 @@ Pipeline (see WORKLOG 2026-11-17 "holdout3"):
      filter: a meaning-type query that copies 4+ consecutive words of its letter is dropped.
 
     python search-site/eval/holdout/build_holdout3.py
+    # dev (tuning) set for the new query types, same pipeline, other letters:
+    python search-site/eval/holdout/build_holdout3.py --src search-site/eval/cases_src --prefix dev         --out search-site/eval/cases/dev_newtypes.jsonl
 """
+import argparse
 import json
 import re
 import sqlite3
@@ -55,14 +58,20 @@ def copied_run(query, text, n=4):
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--src", default=str(SRC))
+    ap.add_argument("--out", default=str(HERE / "holdout3.jsonl"))
+    ap.add_argument("--prefix", default="h3")
+    args = ap.parse_args()
+    src = Path(args.src)
     con = sqlite3.connect(DB)
     text_of = dict(con.execute("SELECT id, full_text FROM letters"))
     letter_no = dict(con.execute("SELECT id, letter_number FROM letters"))
     out, stats, seen = [], Counter(), set()
-    for w in sorted(SRC.glob("writer_*.jsonl")):
+    for w in sorted(src.glob("writer_*.jsonl")):
         batch = w.stem.split("_")[1]
         writes = [json.loads(l) for l in open(w, encoding="utf-8") if l.strip()]
-        chk_path = SRC / f"check_{batch}.jsonl"
+        chk_path = src / f"check_{batch}.jsonl"
         checks = [json.loads(l) for l in open(chk_path, encoding="utf-8") if l.strip()] if chk_path.exists() else []
         by_q = {(c["letter_id"], c["query"]): c for c in checks}
         for i, q in enumerate(writes):
@@ -76,7 +85,7 @@ def main():
             if typ in MEANING and copied_run(query, text_of.get(q["letter_id"], "")) >= 4:
                 stats["dropped:copied4"] += 1
                 continue
-            base = f"h3{batch}-{letter_no[q['letter_id']]}-{typ}"
+            base = f"{args.prefix}{batch}-{letter_no[q['letter_id']]}-{typ}"
             cid, n = base, 2
             while cid in seen:
                 cid, n = f"{base}{n}", n + 1
@@ -89,7 +98,7 @@ def main():
             if q.get("weak"):
                 case["weak"] = True
             out.append(case)
-    with open(HERE / "holdout3.jsonl", "w", encoding="utf-8", newline="\n") as fh:
+    with open(args.out, "w", encoding="utf-8", newline="\n") as fh:
         for c in out:
             fh.write(json.dumps(c, ensure_ascii=False) + "\n")
     runs = sum(len(c["modes"]) for c in out)

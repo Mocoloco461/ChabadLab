@@ -1,0 +1,60 @@
+{"letter_id": 1200770179, "type": "english", "query": "Rebbe asks a man to find faster, surer ways to obtain an invitation letter from Africa, stressing urgency and the merit of the Akeidah", "verdict": "fix", "fixed_query": "Rebbe urges looking for surer and faster ways to obtain a requested letter from Africa, stressing urgency and the merit of the Akeidah (Abraham's alacrity)", "reason": "מכתב דרישה ולא הזמנה - תיקון ניסוח"}
+{"letter_id": 1200770179, "type": "typo", "query": "זכות האקדה זריזות אברהם", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200810088, "type": "english", "query": "Does time consist of one point or many points? Rebbe refers to Tzafnat Paneach, Yoma and Kritut regarding dividing the time of Shabbat", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200810088, "type": "typo", "query": "זמן נקודה צפנת פנח", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200710345, "type": "name", "query": "הרב ורהפטיג", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200710345, "type": "typo", "query": "גיור כהלכה הרבנוט הראשית", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200840223, "type": "topic", "query": "מעשר כספים", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200840223, "type": "typo", "query": "צדקה מעסר חומש", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200700356, "type": "english", "query": "Telegram to orphaned bar mitzvah boys in Israel whose fathers fell in wars, blessing them to keep Torah and tefillin", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200700356, "type": "topic", "query": "בר מצוה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200960392, "type": "typo", "query": "תפיילין ויקר פורים", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200960392, "type": "english", "query": "Letter after Purim explaining the four themes of the Purim miracle, light, joy, gladness and honor, and their practical meaning today", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200950388, "type": "topic", "query": "יט כסלו", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200950388, "type": "english", "query": "Message for a gathering urging inspiration of youth in the Holy Land to live by Torah light and cooperate for the country", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200960372, "type": "name", "query": "תומכי תמימים ליידיס אקזילערי באנקעט", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200960372, "type": "english", "query": "Yiddish greeting to a ladies auxiliary dinner supporting the Lubavitch yeshivas, marking 150 years since the Alter Rebbe passed away", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200840266, "type": "typo", "query": "חרופים וקללות מפלגה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200840266, "type": "topic", "query": "חירופים וגידופים", "verdict": "fix", "fixed_query": "חירופים וקללות", "reason": "גידופים לא במכתב"}
+{"letter_id": 1200880059, "type": "typo", "query": "חגרה שבר כאבים", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200880059, "type": "topic", "query": "שבר חגורה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200830033, "type": "english", "query": "Rebbe questions a man's habit of not letting his wife eat or speak as discipline, and cites preserving physical health", "verdict": "fix", "fixed_query": "Rebbe says he does not understand a man's conduct of abstaining from eating and speaking, and stresses the duty to guard physical health, citing Jacob choosing offerings", "reason": "פרט מומצא על האשה והעונש"}
+{"letter_id": 1200830033, "type": "typo", "query": "בהמות טמאוח יעקב מנחה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200870283, "type": "name", "query": "אייזנבך ירושלים חינוך", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200870283, "type": "topic", "query": "חינוך", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200780091, "type": "typo", "query": "הכנסט בנו לחדר", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200780091, "type": "english", "query": "Blessing for a father whose young son begins cheder, with the Midrash about fruit trees in the fourth and fifth year", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200940289, "type": "english", "query": "Rebbe advises on publishing chassidic discourses in modern Hebrew for youth and on whether the writer's parents should take a long vacation from work", "verdict": "fix", "fixed_query": "Rebbe advises on publishing chassidic discourses in Hebrew in a style youth can understand, and on whether the writer's parents should take a long vacation from their work", "reason": "לא עברית מודרנית אלא לשון הקדש"}
+{"letter_id": 1200940289, "type": "topic", "query": "לימוד חסידות", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200820223, "type": "name", "query": "האדמו״ר משאץ מושקוביץ חיפה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200820223, "type": "topic", "query": "פנימיות התורה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200840031, "type": "topic", "query": "חינוך בנות", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200840031, "type": "typo", "query": "חיוב נשים בלימוד הלחות", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200930251, "type": "name", "query": "שמטוב לונדון", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200930251, "type": "topic", "query": "שנת המאתיים", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200890201, "type": "english", "query": "Man distressed over how he acted during a fire on Shabbat; Rebbe tells him to ask a rabbi and serve with joy", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200890201, "type": "typo", "query": "שרפה בשבת הוראת רב", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200870186, "type": "name", "query": "סרברנסקי מלבורן", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200870186, "type": "topic", "query": "בית ספר לנערות", "verdict": "fix", "fixed_query": "בי\"ס לנערות", "reason": "יותר משתי מילים"}
+{"letter_id": 1200760102, "type": "topic", "query": "משומד", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200760102, "type": "typo", "query": "מומר להעכיס תיאבון", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200980108, "type": "english", "query": "Yiddish letter to a women's convention connecting the shmita year with Shabbat as testimony that God is master of the world", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200980108, "type": "topic", "query": "שמיטה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200960232, "type": "typo", "query": "ניילון פלאסטק גומי", "verdict": "fix", "fixed_query": "ניילאן פלאסטק גומי", "fixed_correct": "ניילאן פלאסטיק גומי", "reason": "האיות במכתב ניילאן"}
+{"letter_id": 1200960232, "type": "topic", "query": "מקוה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200710543, "type": "topic", "query": "שתי הלחם", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200710543, "type": "english", "query": "Halachic discussion on whether a replacement offering may be brought the next day after an accident or impurity, citing Rambam, Rashba and Mishneh LaMelech", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200960113, "type": "typo", "query": "ריקנת נוער חיים", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200960113, "type": "topic", "query": "ריקנות", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200800043, "type": "name", "query": "שייעוויטש נשיאות בית כנסת", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200800043, "type": "topic", "query": "בית כנסת חסידי", "verdict": "fix", "fixed_query": "בית כנסת", "reason": "יותר משתי מילים"}
+{"letter_id": 1200770197, "type": "typo", "query": "רשימת זכרנות הפסיק", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200770197, "type": "english", "query": "Blessing for recovery of an ill man, mentioning the letter was read at the Ohel and a pamphlet was enclosed", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200870292, "type": "english", "query": "Yiddish reply about a diesel locomotive and train cars accident, explaining the lesson in divine service from the Baal Shem Tov", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200870292, "type": "name", "query": "מדנציק כפר חב״ד", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200910174, "type": "topic", "query": "קייטנא", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200910174, "type": "name", "query": "גן ישראל מחנה קיץ", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200980189, "type": "topic", "query": "הפצת היהדות", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200980189, "type": "english", "query": "Blessings for women's Chai Elul gathering in Jerusalem, with encouragement to spread Judaism with chassidic light before the new year", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200970103, "type": "name", "query": "גרשון סגל כפר חב״ד", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200970103, "type": "topic", "query": "השפעה בסביבה", "verdict": "keep", "reason": "תקין"}

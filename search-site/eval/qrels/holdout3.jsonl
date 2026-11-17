@@ -1,0 +1,1473 @@
+{"case": "h3A-1136-paraphrase", "letter_id": 1200780372, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הנהלת כפר חב\"ד, שליח, אך לא העניין"}
+{"case": "h3A-1136-paraphrase", "letter_id": 1200790243, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "העתקת הכפר, לא ביקור מנהלים"}
+{"case": "h3A-1136-paraphrase", "letter_id": 1200800037, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אישור קבלת מכתבים, לא קשור"}
+{"case": "h3A-1136-paraphrase", "letter_id": 1200800241, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חוסר משמעת בכפר"}
+{"case": "h3A-1136-paraphrase", "letter_id": 1200800243, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הג'וינט בצרפת והתיישבות, חלקי"}
+{"case": "h3A-1136-paraphrase", "letter_id": 1200810074, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שאלת ההעתקה לכפר חדש"}
+{"case": "h3A-1136-paraphrase", "letter_id": 1200840127, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הפגשות וביקורים, אך לא הענין"}
+{"case": "h3A-1136-paraphrase", "letter_id": 1200840359, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ביקור מנהל תנועת המושבים, חלקי"}
+{"case": "h3A-1136-paraphrase", "letter_id": 1200850119, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "רשימת מתיישבים שלב שני"}
+{"case": "h3A-1136-paraphrase", "letter_id": 1200910229, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שיווק מאורגן והלוואות"}
+{"case": "h3A-1136-question", "letter_id": 1200690151, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ענין בית רבקה, לא קשור"}
+{"case": "h3A-1136-question", "letter_id": 1200710291, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חוק מיהו יהודי"}
+{"case": "h3A-1136-question", "letter_id": 1200720188, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכת חג"}
+{"case": "h3A-1136-question", "letter_id": 1200800037, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אישור קבלת מכתבים"}
+{"case": "h3A-1136-question", "letter_id": 1200820026, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פעולות צעירי אגודת חב\"ד, כללי"}
+{"case": "h3A-1136-question", "letter_id": 1200840127, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פגישות עם מבקרים, לא ההוראה"}
+{"case": "h3A-1136-question", "letter_id": 1200850071, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ביקור צעירי אגודת חב\"ד במחנה"}
+{"case": "h3A-1136-question", "letter_id": 1200850254, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיעה לצרפת לישיבה"}
+{"case": "h3A-1136-question", "letter_id": 1200860329, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חבילות מצרפת"}
+{"case": "h3A-1136-question", "letter_id": 1200950164, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "הוראה שהרב חסקינד יבקר במוסדות"}
+{"case": "h3A-1136-question", "letter_id": 1200950372, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פולין וספריית כתבי יד"}
+{"case": "h3A-1818-paraphrase", "letter_id": 1200800092, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בטחון בבריאותו, לא הענין"}
+{"case": "h3A-1818-paraphrase", "letter_id": 1200800255, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ניתוח אחרי הקיץ, אך לא האשה"}
+{"case": "h3A-1818-paraphrase", "letter_id": 1200820286, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חבירו, הזכרת שם האם"}
+{"case": "h3A-1818-paraphrase", "letter_id": 1200830085, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בריאות הבת, קורטיזון"}
+{"case": "h3A-1818-paraphrase", "letter_id": 1200860180, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות הזוגה, חוות דעת רופא"}
+{"case": "h3A-1818-paraphrase", "letter_id": 1200870183, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שני רופאים מומחים, אך לא האשה"}
+{"case": "h3A-1818-paraphrase", "letter_id": 1200890288, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "התייעצות שני רופאים באלול"}
+{"case": "h3A-1818-paraphrase", "letter_id": 1200950134, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ניתוח לאשה, חוות דעת רופאים"}
+{"case": "h3A-1818-paraphrase", "letter_id": 1200950266, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הסתדרות הרבנים, עצבות"}
+{"case": "h3A-1818-question", "letter_id": 1200700128, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ניתוח הבן, הפוך"}
+{"case": "h3A-1818-question", "letter_id": 1200780026, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכה לזרע, עצת רופאים"}
+{"case": "h3A-1818-question", "letter_id": 1200800106, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בהלה לרופאים, בטחון, חלקי"}
+{"case": "h3A-1818-question", "letter_id": 1200810230, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ניתוח קטרקט"}
+{"case": "h3A-1818-question", "letter_id": 1200820286, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חוות דעת רופא, חבירו"}
+{"case": "h3A-1818-question", "letter_id": 1200830247, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בן בצבא, התנהגות, אך לא האשה"}
+{"case": "h3A-1818-question", "letter_id": 1200880416, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פקידת בנים ורופא"}
+{"case": "h3A-1818-question", "letter_id": 1200950134, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ניתוח נשי ועצת רופאים"}
+{"case": "h3A-1818-question", "letter_id": 1200950228, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בן בכור בצבא, אך לא הרופאים"}
+{"case": "h3A-1818-question", "letter_id": 1200970021, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בת בנים, רופא מומחה"}
+{"case": "h3A-1818-question", "letter_id": 1200970268, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "רב צבאי, לא קשור"}
+{"case": "h3A-2695-paraphrase", "letter_id": 1200710012, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הוצאות חתונה, אך לא הדפסה"}
+{"case": "h3A-2695-paraphrase", "letter_id": 1200720273, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חינוך קטנים"}
+{"case": "h3A-2695-paraphrase", "letter_id": 1200800100, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הוצאות שידוכין, לא הענין"}
+{"case": "h3A-2695-paraphrase", "letter_id": 1200810313, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכת מזל טוב"}
+{"case": "h3A-2695-paraphrase", "letter_id": 1200820105, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הוצאות נסיעה לחתונה"}
+{"case": "h3A-2695-paraphrase", "letter_id": 1200820222, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הוצאות נסיעה לחתונה, אידיש"}
+{"case": "h3A-2695-paraphrase", "letter_id": 1200920210, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "צמצום הוצאות חתונה"}
+{"case": "h3A-2695-paraphrase", "letter_id": 1200930365, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אולם חתונה, בזבוז"}
+{"case": "h3A-2695-paraphrase", "letter_id": 1200940014, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "העתקת דירה"}
+{"case": "h3A-2695-paraphrase", "letter_id": 1200970144, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "רבנים קונסרבטיבים"}
+{"case": "h3A-2695-question", "letter_id": 1200690147, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בר מצוה של אדמו\"ר"}
+{"case": "h3A-2695-question", "letter_id": 1200790277, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הדפסת התניא, בלי חתונה"}
+{"case": "h3A-2695-question", "letter_id": 1200800100, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הוצאות חתונה בלבד"}
+{"case": "h3A-2695-question", "letter_id": 1200810250, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הדפסת תניא, בלי חתונה"}
+{"case": "h3A-2695-question", "letter_id": 1200820105, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הוצאות נסיעה"}
+{"case": "h3A-2695-question", "letter_id": 1200820222, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיעה לחתונה"}
+{"case": "h3A-2695-question", "letter_id": 1200850393, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בריאות ומדות"}
+{"case": "h3A-2695-question", "letter_id": 1200910102, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מאמר לכה דודי בחתונה"}
+{"case": "h3A-2695-question", "letter_id": 1200920210, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הוצאות חתונה"}
+{"case": "h3A-2695-question", "letter_id": 1200950041, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "סדר לפני החתונה"}
+{"case": "h3A-2695-question", "letter_id": 1200970144, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "רבנים קונסרבטיבים"}
+{"case": "h3A-3316-paraphrase", "letter_id": 1200780158, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "סדר נסיעות, אך לא שמחה"}
+{"case": "h3A-3316-paraphrase", "letter_id": 1200800244, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הכנסת אורחים, אידיש"}
+{"case": "h3A-3316-paraphrase", "letter_id": 1200810128, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נסיעה להצלחה, חלקי"}
+{"case": "h3A-3316-paraphrase", "letter_id": 1200820256, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "שליח, עיכובים, שמחה פורצת גדר"}
+{"case": "h3A-3316-paraphrase", "letter_id": 1200830338, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שמחה בכלל, ללא שליחות"}
+{"case": "h3A-3316-paraphrase", "letter_id": 1200840104, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מצב העיר, אידיש"}
+{"case": "h3A-3316-paraphrase", "letter_id": 1200850329, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עבודה קשה, פנים שוחקות"}
+{"case": "h3A-3316-paraphrase", "letter_id": 1200910187, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שליחות לחו\"ל, אך לא הענין"}
+{"case": "h3A-3316-paraphrase", "letter_id": 1200910310, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שליחות ושמחה, בריאות"}
+{"case": "h3A-3316-paraphrase", "letter_id": 1200930162, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שאלות ישיבת טעלז"}
+{"case": "h3A-3316-question", "letter_id": 1200700229, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "גם זו לטובה, ללא שליח"}
+{"case": "h3A-3316-question", "letter_id": 1200770362, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שליחות הנהגת מחנה"}
+{"case": "h3A-3316-question", "letter_id": 1200800244, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מה' מצעדי גבר, אידיש"}
+{"case": "h3A-3316-question", "letter_id": 1200810105, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אישור מכתבים ותלמידים"}
+{"case": "h3A-3316-question", "letter_id": 1200840066, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שליח טוב, שמירת שבת"}
+{"case": "h3A-3316-question", "letter_id": 1200860228, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עיכוב מכתבים, בריאות"}
+{"case": "h3A-3316-question", "letter_id": 1200860405, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שידוך וספק"}
+{"case": "h3A-3316-question", "letter_id": 1200880305, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עצבות ותחבולות היצר"}
+{"case": "h3A-3316-question", "letter_id": 1200900027, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עסקנות ויחיד"}
+{"case": "h3A-3316-question", "letter_id": 1200910186, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עצבות ויאוש"}
+{"case": "h3A-3316-question", "letter_id": 1200960085, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "גם זו לטובה, כל דעביד רחמנא"}
+{"case": "h3A-3503-paraphrase", "letter_id": 1200710399, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "סגן שר, ברכת רפואה"}
+{"case": "h3A-3503-paraphrase", "letter_id": 1200720243, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מפלגה דתית והבטחות, חלקי"}
+{"case": "h3A-3503-paraphrase", "letter_id": 1200780284, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מפלגה מוותרת על רווחים לטובת הדת"}
+{"case": "h3A-3503-paraphrase", "letter_id": 1200850222, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "רווחי מפלגה על חשבון חזית דתית"}
+{"case": "h3A-3503-paraphrase", "letter_id": 1200860427, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "י\"ט כסלו בכפר חב\"ד"}
+{"case": "h3A-3503-paraphrase", "letter_id": 1200880270, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הצעה לשיחה עם אגוד דתיים"}
+{"case": "h3A-3503-paraphrase", "letter_id": 1200940071, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רווחים מפלגתיים על חשבון הרבנות"}
+{"case": "h3A-3503-paraphrase", "letter_id": 1200970117, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "התנגדות לתכנית חינוך דתי"}
+{"case": "h3A-3503-paraphrase", "letter_id": 1200980003, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פיצול מפלגות דתיות, חלקי"}
+{"case": "h3A-3503-question", "letter_id": 1200700075, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חזית דתית טכנית, אך לא שכנוע"}
+{"case": "h3A-3503-question", "letter_id": 1200780161, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בחירות ואחדות חרדית, חלקי"}
+{"case": "h3A-3503-question", "letter_id": 1200780281, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "קריאה לחזית מאוחדת, ויתור מפלגות"}
+{"case": "h3A-3503-question", "letter_id": 1200850300, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "צער על פירוק החזית"}
+{"case": "h3A-3503-question", "letter_id": 1200870040, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מכתב לשזר, כפר חב\"ד"}
+{"case": "h3A-3503-question", "letter_id": 1200870288, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הרבנות הראשית, מברקים"}
+{"case": "h3A-3503-question", "letter_id": 1200920425, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חזית דתית מאוחדת, שיחה על זוין"}
+{"case": "h3A-3503-question", "letter_id": 1200970344, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "הקמת חזית דתית טכנית לבחירות"}
+{"case": "h3A-3503-question", "letter_id": 1200970349, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "חזית דתית טכנית, דעה מוחלטת"}
+{"case": "h3A-3503-question", "letter_id": 1200980003, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "עמדה אחרי פיצול המפלגות"}
+{"case": "h3A-413-paraphrase", "letter_id": 1200710446, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ימי הגאולה י\"ב-י\"ג תמוז"}
+{"case": "h3A-413-paraphrase", "letter_id": 1200720004, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ראש השנה ושמיטה"}
+{"case": "h3A-413-paraphrase", "letter_id": 1200720126, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכת בר מצוה"}
+{"case": "h3A-413-paraphrase", "letter_id": 1200780262, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ישיבה בבוסטון, אידיש"}
+{"case": "h3A-413-paraphrase", "letter_id": 1200830211, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תמיכת ישיבות, אידיש"}
+{"case": "h3A-413-paraphrase", "letter_id": 1200840135, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מנהגי יארצייט וציורים"}
+{"case": "h3A-413-paraphrase", "letter_id": 1200880039, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכות ספק, סיפור"}
+{"case": "h3A-413-paraphrase", "letter_id": 1200880322, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ספר אהל בנימין, תשובה"}
+{"case": "h3A-413-paraphrase", "letter_id": 1200940256, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מילה ביום כיפור, קדיש"}
+{"case": "h3A-413-question", "letter_id": 1200750015, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מדות טבעיות רחמנות, בלי ביישנות"}
+{"case": "h3A-413-question", "letter_id": 1200760161, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חינוך ושלוחים"}
+{"case": "h3A-413-question", "letter_id": 1200780039, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בושה בטהרת המשפחה"}
+{"case": "h3A-413-question", "letter_id": 1200800127, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שאלות בתורה אור"}
+{"case": "h3A-413-question", "letter_id": 1200800267, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "טהרת המשפחה וביישנות"}
+{"case": "h3A-413-question", "letter_id": 1200850027, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רחמנים וגומלי חסדים בתניא"}
+{"case": "h3A-413-question", "letter_id": 1200910085, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מדות טבעיות, ספירה"}
+{"case": "h3A-413-question", "letter_id": 1200930270, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "למה לא מנה ביישנות, ישראל עזין"}
+{"case": "h3A-413-question", "letter_id": 1200940046, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "שאלה על ביישנים בסוף פרק א'"}
+{"case": "h3A-413-question", "letter_id": 1200940081, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חנוכה וי\"ט כסלו"}
+{"case": "h3A-4325-paraphrase", "letter_id": 1200690004, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ניחומים על בן שנפטר"}
+{"case": "h3A-4325-paraphrase", "letter_id": 1200780220, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "דברי התעוררות, מונטריאול"}
+{"case": "h3A-4325-paraphrase", "letter_id": 1200810156, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מקומך אל תנח"}
+{"case": "h3A-4325-paraphrase", "letter_id": 1200820048, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכת י\"ט כסלו"}
+{"case": "h3A-4325-paraphrase", "letter_id": 1200850255, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "התעוררות מימי הגאולה, חלקי"}
+{"case": "h3A-4325-paraphrase", "letter_id": 1200890018, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תל אביב, התעוררות, אך לא עלבון"}
+{"case": "h3A-4325-paraphrase", "letter_id": 1200890410, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "דברי התעוררות בעשי\"ת"}
+{"case": "h3A-4325-paraphrase", "letter_id": 1200890448, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "התעוררות והתקשרות, חלקי"}
+{"case": "h3A-4325-paraphrase", "letter_id": 1200920392, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בריאות הבת, נשמה בגוף"}
+{"case": "h3A-4325-paraphrase", "letter_id": 1200940182, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "התעוררות במונטריאול, אידיש"}
+{"case": "h3E-2719-english", "letter_id": 1200710090, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "צדקה לבית רבקה"}
+{"case": "h3E-2719-english", "letter_id": 1200710348, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שיעורי טהרה והשפעה, בלי מקוה"}
+{"case": "h3E-2719-english", "letter_id": 1200820190, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שייטל, לא מקוה"}
+{"case": "h3E-2719-english", "letter_id": 1200820203, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ארגון נשי חב\"ד כללי"}
+{"case": "h3E-2719-english", "letter_id": 1200820365, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מקוה בארץ ישראל, מגבית"}
+{"case": "h3E-2719-english", "letter_id": 1200880079, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פרוטות צדקה וטהרה, לא מקוה"}
+{"case": "h3E-2719-english", "letter_id": 1200880416, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ילדים ורופא"}
+{"case": "h3E-2719-english", "letter_id": 1200890265, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עזרת נשים בבית כנסת"}
+{"case": "h3E-2719-english", "letter_id": 1200890436, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "טהרה והשפעה על אחרים"}
+{"case": "h3E-2719-english", "letter_id": 1200910095, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בטחון בעסק"}
+{"case": "h3E-2719-english", "letter_id": 1200910357, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ויכוחים על יהדות"}
+{"case": "h3E-2719-topic", "letter_id": 1200790100, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "שמירת טהרת המשפחה"}
+{"case": "h3E-2719-topic", "letter_id": 1200800010, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "בנין מקוה וטהרת המשפחה"}
+{"case": "h3E-2719-topic", "letter_id": 1200810319, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "טהרת המשפחה וילדים"}
+{"case": "h3E-2719-topic", "letter_id": 1200830323, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "שלום בית וטהרת המשפחה"}
+{"case": "h3E-2719-topic", "letter_id": 1200840108, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "טהרה בין כמה הוראות"}
+{"case": "h3E-2719-topic", "letter_id": 1200870291, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מחלקת טהרת המשפחה, מקוה"}
+{"case": "h3E-2719-topic", "letter_id": 1200880368, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "טהרה בין כמה בדיקות"}
+{"case": "h3E-2719-topic", "letter_id": 1200890095, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "פעולה לשמירת טהרת המשפחה"}
+{"case": "h3E-2719-topic", "letter_id": 1200900265, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קשר לטהרה בילדים, חלקי"}
+{"case": "h3E-2719-topic", "letter_id": 1200950192, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עידוד פעולה בטהרת המשפחה"}
+{"case": "h3E-2750-topic", "letter_id": 1200700376, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מדבר על ברכה, חלקי"}
+{"case": "h3E-2750-topic", "letter_id": 1200760091, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "בטחון ועשיית כלי"}
+{"case": "h3E-2750-topic", "letter_id": 1200780070, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "שלום כלי מחזיק ברכה"}
+{"case": "h3E-2750-topic", "letter_id": 1200790046, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "תורה כלי לקבלת ברכה"}
+{"case": "h3E-2750-topic", "letter_id": 1200790157, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "התועדות וחלוקת הש\"ס"}
+{"case": "h3E-2750-topic", "letter_id": 1200790189, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "סיום משנה"}
+{"case": "h3E-2750-topic", "letter_id": 1200860141, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "כלי לקבלת ברכה"}
+{"case": "h3E-2750-topic", "letter_id": 1200890222, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תומכי תמימים"}
+{"case": "h3E-2750-topic", "letter_id": 1200960302, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בטחון ומצב רוח"}
+{"case": "h3E-3022-english", "letter_id": 1200810240, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מקום והשתדלות לפרנסה"}
+{"case": "h3E-3022-english", "letter_id": 1200810336, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיון בסחורה"}
+{"case": "h3E-3022-english", "letter_id": 1200890336, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הרחבה למרות חובות, דירה"}
+{"case": "h3E-3022-english", "letter_id": 1200910072, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הרחבת חנות, שותף"}
+{"case": "h3E-3022-english", "letter_id": 1200910104, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חנות חדשה, פרנסה"}
+{"case": "h3E-3022-english", "letter_id": 1200910254, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חובות ודירה, מרחיבין דעתו"}
+{"case": "h3E-3022-english", "letter_id": 1200910302, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מכירת בית"}
+{"case": "h3E-3022-english", "letter_id": 1200920422, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קניית בתים לליובאוויטש"}
+{"case": "h3E-3022-english", "letter_id": 1200960274, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פרנסה וסביבה"}
+{"case": "h3E-3022-topic", "letter_id": 1200830011, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שליחות ושקדים"}
+{"case": "h3E-3022-topic", "letter_id": 1200850080, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בית כנסת"}
+{"case": "h3E-3022-topic", "letter_id": 1200850207, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "צדקה להרחבת הפרנסה"}
+{"case": "h3E-3022-topic", "letter_id": 1200860287, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "כפיות טובה"}
+{"case": "h3E-3022-topic", "letter_id": 1200870199, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הרחבת הפרנסה בסוף"}
+{"case": "h3E-3022-topic", "letter_id": 1200880472, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מצב פרנסה והשתדלות"}
+{"case": "h3E-3022-topic", "letter_id": 1200880495, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "הרחבת הפרנסה במפורש"}
+{"case": "h3E-3022-topic", "letter_id": 1200880531, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "קשיי פרנסה וצדקה"}
+{"case": "h3E-3022-topic", "letter_id": 1200890091, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "פרנסה וצדקה"}
+{"case": "h3E-3022-topic", "letter_id": 1200920375, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מוסד חינוך"}
+{"case": "h3E-3022-topic", "letter_id": 1200960274, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פרנסה, לא הרחבה"}
+{"case": "h3E-3585-topic", "letter_id": 1200800172, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מזכיר י\"ב י\"ג תמוז"}
+{"case": "h3E-3585-topic", "letter_id": 1200800185, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "חג י\"ב וי\"ג תמוז"}
+{"case": "h3E-3585-topic", "letter_id": 1200800206, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "התועדות י\"ב י\"ג תמוז"}
+{"case": "h3E-3585-topic", "letter_id": 1200830191, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "יום י\"ב תמוז"}
+{"case": "h3E-3585-topic", "letter_id": 1200850271, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ימי גאולה י\"ב י\"ג תמוז"}
+{"case": "h3E-3585-topic", "letter_id": 1200870272, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ענין אחר"}
+{"case": "h3E-3585-topic", "letter_id": 1200910244, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "י\"ב תמוז גאולה"}
+{"case": "h3E-3585-topic", "letter_id": 1200910246, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "י\"ב תמוז יום גאולה"}
+{"case": "h3E-3585-topic", "letter_id": 1200920423, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בר מצוה"}
+{"case": "h3E-3585-topic", "letter_id": 1200950167, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "חג הגאולה י\"ב י\"ג תמוז"}
+{"case": "h3E-3585-topic", "letter_id": 1200970167, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חודש הגאולה, לא י\"ב"}
+{"case": "h3E-4353-topic", "letter_id": 1200710151, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אחריות והשפעה בסביבה"}
+{"case": "h3E-4353-topic", "letter_id": 1200780300, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "השפעה על בנים"}
+{"case": "h3E-4353-topic", "letter_id": 1200810053, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מרכז לחינוך"}
+{"case": "h3E-4353-topic", "letter_id": 1200810120, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מוסד חינוך"}
+{"case": "h3E-4353-topic", "letter_id": 1200830067, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ענינים שונים"}
+{"case": "h3E-4353-topic", "letter_id": 1200890006, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "איך להשפיע על אברך"}
+{"case": "h3E-4353-topic", "letter_id": 1200900286, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עצמו, לא משפיע"}
+{"case": "h3E-4353-topic", "letter_id": 1200910136, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אפשרויות השפעה כמנהיג"}
+{"case": "h3E-4353-topic", "letter_id": 1200920213, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בן גוריון, רישום"}
+{"case": "h3E-4353-topic", "letter_id": 1200920499, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "תפקיד המשפיע בישיבה"}
+{"case": "h3E-4353-topic", "letter_id": 1200960033, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "דרך השפעה"}
+{"case": "h3E-4353-topic", "letter_id": 1200970233, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "יחס למצוות"}
+{"case": "h3E-4590-topic", "letter_id": 1200780054, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "הפצת המעינות חוצה"}
+{"case": "h3E-4590-topic", "letter_id": 1200850069, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "הפצת המעיינות בפרט"}
+{"case": "h3E-4590-topic", "letter_id": 1200860154, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "התועדויות ופעולה בחוצות"}
+{"case": "h3E-4590-topic", "letter_id": 1200870110, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אין לחכות בהפצת המעיינות"}
+{"case": "h3E-4590-topic", "letter_id": 1200870189, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "משתתפים בהפצת המעינות"}
+{"case": "h3E-4590-topic", "letter_id": 1200880180, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הסברת חסידות, חלקי"}
+{"case": "h3E-4590-topic", "letter_id": 1200890304, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מזכיר הפצת המעיינות"}
+{"case": "h3E-4590-topic", "letter_id": 1200900340, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עבודת הפצת המעינות"}
+{"case": "h3E-4590-topic", "letter_id": 1200910300, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "הפצת המעינות במחנם"}
+{"case": "h3E-4590-topic", "letter_id": 1200930091, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "הפצת מעיינות ברדיו"}
+{"case": "h3E-4590-topic", "letter_id": 1200930364, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "פעולות להפצת המעינות"}
+{"case": "h3E-5198-english", "letter_id": 1200710526, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ארגון לימוד לנשים"}
+{"case": "h3E-5198-english", "letter_id": 1200800214, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תכנית ארגון נשי חב\"ד"}
+{"case": "h3E-5198-english", "letter_id": 1200820107, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ארגון נשים והפצה"}
+{"case": "h3E-5198-english", "letter_id": 1200830302, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קביעות לימוד לנשים"}
+{"case": "h3E-5198-english", "letter_id": 1200860143, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בית כנסת בליובאוויטש"}
+{"case": "h3E-5198-english", "letter_id": 1200870118, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "יזמה בפעולות נשי חב\"ד"}
+{"case": "h3E-5198-english", "letter_id": 1200880306, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "המשכת משתתפים בשיעור"}
+{"case": "h3E-5198-english", "letter_id": 1200900284, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "הגדלת משתתפות באסיפות הלימוד"}
+{"case": "h3E-5198-english", "letter_id": 1200920308, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בדידות בסמינר"}
+{"case": "h3E-5198-english", "letter_id": 1200920319, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פעולות נשי חב\"ד חלשו"}
+{"case": "h3E-5198-english", "letter_id": 1200970290, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קושי בלימוד שיחות"}
+{"case": "h3E-5371-english", "letter_id": 1200770315, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שחיטת עופות וגסות"}
+{"case": "h3E-5371-english", "letter_id": 1200810311, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עופות והשתלמות בגסות"}
+{"case": "h3E-5371-english", "letter_id": 1200850016, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הוראה או ישיבה"}
+{"case": "h3E-5371-english", "letter_id": 1200860355, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הסתדרות באמריקה"}
+{"case": "h3E-5371-english", "letter_id": 1200890053, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שחיטת עופות בירושלים"}
+{"case": "h3E-5371-english", "letter_id": 1200890055, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "לדעת אומנות שחיטה בשלימות"}
+{"case": "h3E-5371-english", "letter_id": 1200900078, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חקלאות בכפר"}
+{"case": "h3E-5371-english", "letter_id": 1200940178, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "סדרי לימוד"}
+{"case": "h3E-5371-english", "letter_id": 1200950353, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "לימוד שו\"ב וחקלאות"}
+{"case": "h3E-5544-english", "letter_id": 1200700346, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תפילין ורפואה, עברית"}
+{"case": "h3E-5544-english", "letter_id": 1200770295, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אידיש, בריאות אשתו"}
+{"case": "h3E-5544-english", "letter_id": 1200790035, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אידיש, בטחון ובריאות"}
+{"case": "h3E-5544-english", "letter_id": 1200800145, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אידיש, בטחון ורופא"}
+{"case": "h3E-5544-english", "letter_id": 1200820265, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תפילין ומזוזות, זוג"}
+{"case": "h3E-5544-english", "letter_id": 1200820286, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות ותפילין"}
+{"case": "h3E-5544-english", "letter_id": 1200860027, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופא ותפילין, זוג"}
+{"case": "h3E-5544-english", "letter_id": 1200860180, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עצבים ורופא"}
+{"case": "h3E-5544-english", "letter_id": 1200860333, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הבהלה על בריאות"}
+{"case": "h3E-5544-english", "letter_id": 1200910343, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות, בטחון ותפילין"}
+{"case": "h3E-5732-topic", "letter_id": 1200690008, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ראיון עתונאי"}
+{"case": "h3E-5732-topic", "letter_id": 1200700158, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "סמיכה לרבנות"}
+{"case": "h3E-5732-topic", "letter_id": 1200750024, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תנועת תשובה כללית"}
+{"case": "h3E-5732-topic", "letter_id": 1200780004, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ענין עשרת ימי תשובה"}
+{"case": "h3E-5732-topic", "letter_id": 1200840007, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נכתב בעשי\"ת, ענין אחר"}
+{"case": "h3E-5732-topic", "letter_id": 1200870406, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חדש אלול"}
+{"case": "h3E-5732-topic", "letter_id": 1200910356, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אלול ועשי\"ת חשבון"}
+{"case": "h3E-5732-topic", "letter_id": 1200930415, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "תשובה בעשי\"ת"}
+{"case": "h3E-5732-topic", "letter_id": 1200960315, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מזכיר עשרת ימי תשובה"}
+{"case": "h3E-5732-topic", "letter_id": 1200960463, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ימים נוראים ועשי\"ת"}
+{"case": "h3E-6335-english", "letter_id": 1200700287, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיונות, לא מורה"}
+{"case": "h3E-6335-english", "letter_id": 1200840218, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מלמד, אך על לימודו"}
+{"case": "h3E-6335-english", "letter_id": 1200860200, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בריאות ועבודת חינוך"}
+{"case": "h3E-6335-english", "letter_id": 1200870193, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "השפעה כללית, לא מורה"}
+{"case": "h3E-6335-english", "letter_id": 1200910136, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מורה פרופסור, השפעה על נוער"}
+{"case": "h3E-6335-english", "letter_id": 1200910142, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מלמד תורה, לא חול"}
+{"case": "h3E-6335-english", "letter_id": 1200910227, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מורה למוסיקה, להפיץ יהדות"}
+{"case": "h3E-6335-english", "letter_id": 1200960321, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "השפעה על נוער, כללי"}
+{"case": "h3E-6335-english", "letter_id": 1200970233, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "יחס למצוות בלימוד"}
+{"case": "h3E-6335-topic", "letter_id": 1200700065, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עליית נוער, לא קירוב"}
+{"case": "h3E-6335-topic", "letter_id": 1200800113, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "דרך לקרב נוער באה\"ק"}
+{"case": "h3E-6335-topic", "letter_id": 1200830312, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עבודה בקירוב נוער"}
+{"case": "h3E-6335-topic", "letter_id": 1200890407, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "זהירות ביחסים עם נוער"}
+{"case": "h3E-6335-topic", "letter_id": 1200900361, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שיחות לנוער, רכישת נוער"}
+{"case": "h3E-6335-topic", "letter_id": 1200910218, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ארגון נוער בבית כנסת"}
+{"case": "h3E-6335-topic", "letter_id": 1200910224, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חינוך עליית הנוער"}
+{"case": "h3E-6335-topic", "letter_id": 1200920060, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "חינוך וקירוב הנוער"}
+{"case": "h3E-6335-topic", "letter_id": 1200920131, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "טיול נוער, שיחות"}
+{"case": "h3E-6335-topic", "letter_id": 1200950387, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "כנוס נוער בכפר חב\"ד"}
+{"case": "h3E-6473-topic", "letter_id": 1200870287, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "נסיעה באניות ישראליות בשבת"}
+{"case": "h3E-6473-topic", "letter_id": 1200870288, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "שאלת האניות, מברקים"}
+{"case": "h3E-6473-topic", "letter_id": 1200870312, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "הפעלה אוטומטית של אניה"}
+{"case": "h3E-6473-topic", "letter_id": 1200870328, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "שאלת האניות"}
+{"case": "h3E-6473-topic", "letter_id": 1200870366, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "הנהלת האניות"}
+{"case": "h3E-6473-topic", "letter_id": 1200870428, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מברקים, פרט צדדי"}
+{"case": "h3E-6473-topic", "letter_id": 1200870465, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אופן הפעלת האניות"}
+{"case": "h3E-6473-topic", "letter_id": 1200880052, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אניות ישראליות בשבת"}
+{"case": "h3E-6473-topic", "letter_id": 1200900351, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מלאכות באניות"}
+{"case": "h3E-6492-topic", "letter_id": 1200690163, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חודש אלול כללי"}
+{"case": "h3E-6492-topic", "letter_id": 1200690173, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חודש אלול כללי"}
+{"case": "h3E-6492-topic", "letter_id": 1200690174, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תאריך בלבד"}
+{"case": "h3E-6492-topic", "letter_id": 1200770335, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ביאור יום חי אלול"}
+{"case": "h3E-6492-topic", "letter_id": 1200770345, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תאריך בלבד"}
+{"case": "h3E-6492-topic", "letter_id": 1200870433, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חודש אלול כללי"}
+{"case": "h3E-6492-topic", "letter_id": 1200870445, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חודש אלול כללי"}
+{"case": "h3E-6492-topic", "letter_id": 1200890421, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ח\"י אלול הולדת הבעש\"ט"}
+{"case": "h3E-6492-topic", "letter_id": 1200920494, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חודש אלול כללי"}
+{"case": "h3E-6492-topic", "letter_id": 1200920497, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חודש אלול כללי"}
+{"case": "h3E-7937-english", "letter_id": 1200810044, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רשיון כניסה למרוקו"}
+{"case": "h3E-7937-english", "letter_id": 1200810196, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיעה לאה\"ק"}
+{"case": "h3E-7937-english", "letter_id": 1200810363, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אניה בשבת לאה\"ק"}
+{"case": "h3E-7937-english", "letter_id": 1200840047, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מרוקו, אך לא נסיעה"}
+{"case": "h3E-7937-english", "letter_id": 1200850254, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיעה לצרפת"}
+{"case": "h3E-7937-english", "letter_id": 1200850341, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיעה לאפריקה"}
+{"case": "h3E-7937-english", "letter_id": 1200890343, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עלייה לאה\"ק"}
+{"case": "h3E-7937-english", "letter_id": 1200910168, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ביקור במדינה"}
+{"case": "h3E-7937-english", "letter_id": 1200920082, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיעה למילאן דרך פאריז"}
+{"case": "h3E-7937-english", "letter_id": 1200920461, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיעה לכאן"}
+{"case": "h3E-7940-english", "letter_id": 1200720064, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ברכה לדינר, בלי משבר"}
+{"case": "h3E-7940-english", "letter_id": 1200780432, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "גרעון ישיבה, הגדלת הכנסה"}
+{"case": "h3E-7940-english", "letter_id": 1200790127, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ברכה לחגיגת ישיבות תו\"ת"}
+{"case": "h3E-7940-english", "letter_id": 1200810069, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פנייה לתמיכה במרכז הישיבות"}
+{"case": "h3E-7940-english", "letter_id": 1200870442, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מצב כספי ישיבות, קריאה לעזרה"}
+{"case": "h3E-7940-english", "letter_id": 1200880531, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "צדקה פרטית"}
+{"case": "h3E-7940-english", "letter_id": 1200890215, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "דינר ישיבה במלבורן"}
+{"case": "h3E-7940-english", "letter_id": 1200920341, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ברכה לדינר ישיבת נוארק"}
+{"case": "h3E-7940-english", "letter_id": 1200960388, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ברכה לדינר ישיבת בראנקס"}
+{"case": "h3E-7940-english", "letter_id": 1200970248, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הכנות לדינר מרכז הישיבות"}
+{"case": "h3E-801-english", "letter_id": 1200710131, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אידיש, רופא וצדקה"}
+{"case": "h3E-801-english", "letter_id": 1200770341, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פחד מבית חולים"}
+{"case": "h3E-801-english", "letter_id": 1200780249, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תהלים וצדקה, עברית"}
+{"case": "h3E-801-english", "letter_id": 1200790141, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופא ושיעורי תורה"}
+{"case": "h3E-801-english", "letter_id": 1200800092, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופא, בטחון, בלי תהלים"}
+{"case": "h3E-801-english", "letter_id": 1200820143, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופא ותוספת תורה"}
+{"case": "h3E-801-english", "letter_id": 1200840036, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופא ותוספת תורה"}
+{"case": "h3E-801-english", "letter_id": 1200850385, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אידיש, רופא, בלי תהלים"}
+{"case": "h3E-801-english", "letter_id": 1200880119, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופא ורוחניות"}
+{"case": "h3E-801-english", "letter_id": 1200910310, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיעה לחוף הים"}
+{"case": "h3E-801-topic", "letter_id": 1200690099, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "רפואה עיונית, בלי תהלים"}
+{"case": "h3E-801-topic", "letter_id": 1200760013, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אמירת תהלים לרפואה"}
+{"case": "h3E-801-topic", "letter_id": 1200780094, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מורה בת\"ת"}
+{"case": "h3E-801-topic", "letter_id": 1200780249, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "תהלים לרפואה"}
+{"case": "h3E-801-topic", "letter_id": 1200790190, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בטחון, בלי תהלים"}
+{"case": "h3E-801-topic", "letter_id": 1200800092, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופא ובטחון"}
+{"case": "h3E-801-topic", "letter_id": 1200800101, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופא ובטחון"}
+{"case": "h3E-801-topic", "letter_id": 1200820286, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופא, בדיקת תפילין"}
+{"case": "h3E-801-topic", "letter_id": 1200880119, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופא, בלי תהלים"}
+{"case": "h3E-801-topic", "letter_id": 1200890069, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הוראת רופא בלבד"}
+{"case": "h3E-801-topic", "letter_id": 1200890164, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "חולה, תהלים ותניא"}
+{"case": "h3E-8122-english", "letter_id": 1200810361, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור"}
+{"case": "h3E-8122-english", "letter_id": 1200820117, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שידוך, לימוד"}
+{"case": "h3E-8122-english", "letter_id": 1200820221, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שידוך ובטחון"}
+{"case": "h3E-8122-english", "letter_id": 1200820307, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אכזבה, כשרונות"}
+{"case": "h3E-8122-english", "letter_id": 1200830169, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בחינת רבנות"}
+{"case": "h3E-8122-english", "letter_id": 1200850016, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שידוך ומקצוע"}
+{"case": "h3E-8122-english", "letter_id": 1200870185, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קביעות עתים"}
+{"case": "h3E-8122-english", "letter_id": 1200880277, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שידוך ולימוד"}
+{"case": "h3E-8122-english", "letter_id": 1200900344, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שאלות ברוחניות"}
+{"case": "h3E-8122-english", "letter_id": 1200940167, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חינוך הבן"}
+{"case": "h3E-8122-english", "letter_id": 1200960017, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הצעת שידוך"}
+{"case": "h3E-815-topic", "letter_id": 1200780067, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ערב י\"ט כסלו"}
+{"case": "h3E-815-topic", "letter_id": 1200810124, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "חגיגת י\"ט כסלו"}
+{"case": "h3E-815-topic", "letter_id": 1200860147, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פעולות י\"ט כסלו"}
+{"case": "h3E-815-topic", "letter_id": 1200860152, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ימי כסלו וי\"ט"}
+{"case": "h3E-815-topic", "letter_id": 1200860188, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "סדרי יום י\"ט כסלו"}
+{"case": "h3E-815-topic", "letter_id": 1200880206, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קשר חסידים"}
+{"case": "h3E-815-topic", "letter_id": 1200900145, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הזכרת י\"ט כסלו"}
+{"case": "h3E-815-topic", "letter_id": 1200900231, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "התועדות חג הגאולה"}
+{"case": "h3E-815-topic", "letter_id": 1200920078, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הזכרת י\"ט כסלו"}
+{"case": "h3E-815-topic", "letter_id": 1200920099, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "התועדות י\"ט כסלו"}
+{"case": "h3E-815-topic", "letter_id": 1200940070, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הזכרת יום הגאולה"}
+{"case": "h3E-83-english", "letter_id": 1200700065, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עליית נוער"}
+{"case": "h3E-83-english", "letter_id": 1200780194, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תלמידים מדרום אמריקה"}
+{"case": "h3E-83-english", "letter_id": 1200800013, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בא ללמוד לר\"ה"}
+{"case": "h3E-83-english", "letter_id": 1200800212, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חינוך במקסיקו"}
+{"case": "h3E-83-english", "letter_id": 1200810173, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיעה ללוד"}
+{"case": "h3E-83-english", "letter_id": 1200810291, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ניצול הקיץ בישיבה"}
+{"case": "h3E-83-english", "letter_id": 1200850254, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיעה לצרפת"}
+{"case": "h3E-83-english", "letter_id": 1200870255, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מחנה קיץ, השפעה"}
+{"case": "h3E-83-english", "letter_id": 1200880332, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קשר עם בני קעמפ"}
+{"case": "h3E-83-english", "letter_id": 1200960224, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "השפעה על תלמידים בקיץ"}
+{"case": "h3E-851-english", "letter_id": 1200770133, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "תחילת וסיום קדיש"}
+{"case": "h3E-851-english", "letter_id": 1200770281, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קדיש ופרנסה"}
+{"case": "h3E-851-english", "letter_id": 1200780153, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "סיום משניות בקדיש"}
+{"case": "h3E-851-english", "letter_id": 1200810366, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שליח ציבור אבל"}
+{"case": "h3E-851-english", "letter_id": 1200830322, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור"}
+{"case": "h3E-851-english", "letter_id": 1200860204, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קדיש אחר זקנה"}
+{"case": "h3E-851-english", "letter_id": 1200880202, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "קדיש, תועלת לנפטר"}
+{"case": "h3E-851-english", "letter_id": 1200930044, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קדיש ותועלתו לנפטר"}
+{"case": "h3E-851-english", "letter_id": 1200950036, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בקשת קדיש"}
+{"case": "h3E-851-english", "letter_id": 1200950125, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קדיש אחרי מאה ועשרים"}
+{"case": "h3E-851-topic", "letter_id": 1200770133, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אמירת קדיש"}
+{"case": "h3E-851-topic", "letter_id": 1200770281, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "קדיש יתום"}
+{"case": "h3E-851-topic", "letter_id": 1200840297, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "קדישים בבית כנסת"}
+{"case": "h3E-851-topic", "letter_id": 1200860204, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "קדיש אחר זקנה"}
+{"case": "h3E-851-topic", "letter_id": 1200870399, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "זמן סיום קדיש"}
+{"case": "h3E-851-topic", "letter_id": 1200880202, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "קדיש וט\"ז קדישים"}
+{"case": "h3E-851-topic", "letter_id": 1200880408, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קדיש דרבנן בצדדי"}
+{"case": "h3E-851-topic", "letter_id": 1200930044, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "קדיש לתינוק"}
+{"case": "h3E-851-topic", "letter_id": 1200940256, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קדיש לפני מוסף"}
+{"case": "h3E-8763-english", "letter_id": 1200690075, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מלוה מלכה, לא ט\"ו בשבט"}
+{"case": "h3E-8763-english", "letter_id": 1200850252, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עידוד בהשתדלות, לא קשור"}
+{"case": "h3E-8763-english", "letter_id": 1200880308, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "משל זריעה, נושא אחר"}
+{"case": "h3E-8763-english", "letter_id": 1200910013, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "סביבה רוחנית, לא ט\"ו בשבט"}
+{"case": "h3E-8763-english", "letter_id": 1200940150, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נושא אחר"}
+{"case": "h3E-8763-english", "letter_id": 1200950048, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תאריך בלבד, עסקי חינוך"}
+{"case": "h3E-8763-english", "letter_id": 1200970053, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ענייני יער ועד"}
+{"case": "h3E-8763-english", "letter_id": 1200970083, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ט\"ו בשבט, אדם עץ, אך עברית לגבר"}
+{"case": "h3E-8763-english", "letter_id": 1200970084, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הנהלת צעירים, לא קשור"}
+{"case": "h3E-8763-english", "letter_id": 1200970116, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פירות כמצוות, אך לא ט\"ו בשבט"}
+{"case": "h3E-8763-english", "letter_id": 1200970264, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ערב ט\"ו בשבט, ילד כעץ, עברית"}
+{"case": "h3E-8763-topic", "letter_id": 1200700069, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "י' שבט והתחזקות"}
+{"case": "h3E-8763-topic", "letter_id": 1200700073, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תאריך בלבד, תוכן אחר"}
+{"case": "h3E-8763-topic", "letter_id": 1200700117, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נושא אחר"}
+{"case": "h3E-8763-topic", "letter_id": 1200700251, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הילולא, תאריך בלבד"}
+{"case": "h3E-8763-topic", "letter_id": 1200710338, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ענייני רפואה"}
+{"case": "h3E-8763-topic", "letter_id": 1200720114, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מצב בארץ הקודש"}
+{"case": "h3E-8763-topic", "letter_id": 1200800289, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נושא אחר"}
+{"case": "h3E-8763-topic", "letter_id": 1200820278, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בריאות, לא קשור"}
+{"case": "h3E-8763-topic", "letter_id": 1200830061, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נושא אחר"}
+{"case": "h3E-8763-topic", "letter_id": 1200840350, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שידוכים"}
+{"case": "h3E-8763-topic", "letter_id": 1200840387, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "י' שבט, לא ט\"ו בשבט"}
+{"case": "h3E-8763-topic", "letter_id": 1200890353, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בית כנסת ונוסח"}
+{"case": "h3E-8763-topic", "letter_id": 1200900232, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תענית, לא קשור"}
+{"case": "h3E-8763-topic", "letter_id": 1200940124, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תאריך ט\"ו בשבט, תוכן י' שבט"}
+{"case": "h3E-8763-topic", "letter_id": 1200950117, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תאריך בלבד, תוכן שנת הסתלקות"}
+{"case": "h3E-8763-topic", "letter_id": 1200970083, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ט\"ו בשבט, האדם עץ השדה"}
+{"case": "h3E-884-topic", "letter_id": 1200710060, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מזכיר י' שבט, עיקר מלוה מלכה"}
+{"case": "h3E-884-topic", "letter_id": 1200710083, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הוראות רופא"}
+{"case": "h3E-884-topic", "letter_id": 1200720114, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מצב בארץ"}
+{"case": "h3E-884-topic", "letter_id": 1200720115, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נושא אחר"}
+{"case": "h3E-884-topic", "letter_id": 1200790193, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מכתב ליום ההילולא י' שבט"}
+{"case": "h3E-884-topic", "letter_id": 1200790200, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פ\"נ והתועדות י' שבט, חלקי"}
+{"case": "h3E-884-topic", "letter_id": 1200810146, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קביעות בלימוד"}
+{"case": "h3E-884-topic", "letter_id": 1200840292, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "רק פ\"נ על הציון"}
+{"case": "h3E-884-topic", "letter_id": 1200880365, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חלום, חינוך ילדים"}
+{"case": "h3E-884-topic", "letter_id": 1200930155, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מזכיר יום ההילולא בקצרה"}
+{"case": "h3E-884-topic", "letter_id": 1200930163, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הפצת המעינות"}
+{"case": "h3E-884-topic", "letter_id": 1200950188, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תאריך בלבד"}
+{"case": "h3E-884-topic", "letter_id": 1200960124, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מזכיר מו\"ח בלבד"}
+{"case": "h3E-8959-topic", "letter_id": 1200720004, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ר\"ה בשבת ושמיטה"}
+{"case": "h3E-8959-topic", "letter_id": 1200720138, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "שנה מעוברת וחדש העיבור"}
+{"case": "h3E-8959-topic", "letter_id": 1200810202, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "יום הולדת, נושא אחר"}
+{"case": "h3E-8959-topic", "letter_id": 1200820226, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "טעות דפוס, רק אזכור"}
+{"case": "h3E-8959-topic", "letter_id": 1200820256, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שליחות ושמחה, תאריך אדר"}
+{"case": "h3E-8959-topic", "letter_id": 1200820274, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ביקור ושליחות"}
+{"case": "h3E-8959-topic", "letter_id": 1200880502, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "גשם ורוחני"}
+{"case": "h3E-8959-topic", "letter_id": 1200920019, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עבודה במקום"}
+{"case": "h3E-8959-topic", "letter_id": 1200930161, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "כתיבת תש\"כ בכ\"ף"}
+{"case": "h3E-8959-topic", "letter_id": 1200960066, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "החלטות התועדות"}
+{"case": "h3E-8959-topic", "letter_id": 1200960147, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אזכור שנה מעוברת, אדר ראשון"}
+{"case": "h3E-8959-topic", "letter_id": 1200980255, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אדר ראשון, עיבור השנה והוראתו"}
+{"case": "h3A-4325-question", "letter_id": 1200690045, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-4325-question", "letter_id": 1200710139, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-4325-question", "letter_id": 1200820265, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-4325-question", "letter_id": 1200850015, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עוסק ישירות בנושא"}
+{"case": "h3A-4325-question", "letter_id": 1200850019, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-4325-question", "letter_id": 1200850369, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-4325-question", "letter_id": 1200860306, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-4325-question", "letter_id": 1200880114, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-4325-question", "letter_id": 1200890428, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-4325-question", "letter_id": 1200910335, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-4325-question", "letter_id": 1200950149, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-4325-question", "letter_id": 1200950240, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-paraphrase", "letter_id": 1200700375, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-474-paraphrase", "letter_id": 1200750107, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-paraphrase", "letter_id": 1200760097, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-paraphrase", "letter_id": 1200770287, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-paraphrase", "letter_id": 1200790277, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-474-paraphrase", "letter_id": 1200820098, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-paraphrase", "letter_id": 1200820170, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-paraphrase", "letter_id": 1200820326, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-paraphrase", "letter_id": 1200830014, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-paraphrase", "letter_id": 1200850029, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-474-paraphrase", "letter_id": 1200920378, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-question", "letter_id": 1200710440, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-question", "letter_id": 1200760097, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-question", "letter_id": 1200770300, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-question", "letter_id": 1200820098, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-question", "letter_id": 1200820283, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-question", "letter_id": 1200850409, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-question", "letter_id": 1200900091, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-question", "letter_id": 1200910096, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-question", "letter_id": 1200930054, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-question", "letter_id": 1200940202, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-474-question", "letter_id": 1200960136, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-5232-paraphrase", "letter_id": 1200770158, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-5232-paraphrase", "letter_id": 1200780101, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-5232-paraphrase", "letter_id": 1200780258, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-5232-paraphrase", "letter_id": 1200800260, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-5232-paraphrase", "letter_id": 1200840230, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-5232-paraphrase", "letter_id": 1200880210, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-5232-paraphrase", "letter_id": 1200910142, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-5232-paraphrase", "letter_id": 1200920136, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-5232-paraphrase", "letter_id": 1200950040, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-5232-paraphrase", "letter_id": 1200980107, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-5232-paraphrase", "letter_id": 1200980269, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עוסק ישירות בנושא"}
+{"case": "h3A-5232-question", "letter_id": 1200800090, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-5232-question", "letter_id": 1200800260, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-5232-question", "letter_id": 1200810044, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-5232-question", "letter_id": 1200810163, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-5232-question", "letter_id": 1200830208, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-5232-question", "letter_id": 1200850405, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עוסק ישירות בנושא"}
+{"case": "h3A-5232-question", "letter_id": 1200870089, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-5232-question", "letter_id": 1200890136, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-5232-question", "letter_id": 1200950208, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-5232-question", "letter_id": 1200960106, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-6067-paraphrase", "letter_id": 1200810249, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6067-paraphrase", "letter_id": 1200820127, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6067-paraphrase", "letter_id": 1200830198, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6067-paraphrase", "letter_id": 1200860148, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6067-paraphrase", "letter_id": 1200860341, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6067-paraphrase", "letter_id": 1200880262, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עוסק ישירות בנושא"}
+{"case": "h3A-6067-paraphrase", "letter_id": 1200880529, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6067-paraphrase", "letter_id": 1200890383, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6067-paraphrase", "letter_id": 1200910309, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6067-paraphrase", "letter_id": 1200920143, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6067-question", "letter_id": 1200800037, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6067-question", "letter_id": 1200800174, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-6067-question", "letter_id": 1200820127, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6067-question", "letter_id": 1200820201, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6067-question", "letter_id": 1200830067, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6067-question", "letter_id": 1200840167, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-6067-question", "letter_id": 1200850254, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עוסק ישירות בנושא"}
+{"case": "h3A-6067-question", "letter_id": 1200920481, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6067-question", "letter_id": 1200950238, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6588-paraphrase", "letter_id": 1200830138, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-6588-paraphrase", "letter_id": 1200850164, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עוסק ישירות בנושא"}
+{"case": "h3A-6588-paraphrase", "letter_id": 1200880354, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6588-paraphrase", "letter_id": 1200880529, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6588-paraphrase", "letter_id": 1200900365, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-6588-paraphrase", "letter_id": 1200910063, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-6588-paraphrase", "letter_id": 1200910132, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6588-paraphrase", "letter_id": 1200920087, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עוסק ישירות בנושא"}
+{"case": "h3A-6588-paraphrase", "letter_id": 1200920508, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-6588-paraphrase", "letter_id": 1200950312, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-6588-question", "letter_id": 1200780332, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6588-question", "letter_id": 1200830263, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6588-question", "letter_id": 1200840400, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6588-question", "letter_id": 1200850140, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6588-question", "letter_id": 1200850342, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-6588-question", "letter_id": 1200860059, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-6588-question", "letter_id": 1200870444, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-6588-question", "letter_id": 1200890331, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עוסק ישירות בנושא"}
+{"case": "h3A-6588-question", "letter_id": 1200920096, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-7187-paraphrase", "letter_id": 1200760054, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עוסק ישירות בנושא"}
+{"case": "h3A-7187-paraphrase", "letter_id": 1200760149, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-7187-paraphrase", "letter_id": 1200810345, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7187-paraphrase", "letter_id": 1200820149, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7187-paraphrase", "letter_id": 1200850097, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7187-paraphrase", "letter_id": 1200860143, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7187-paraphrase", "letter_id": 1200880030, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7187-paraphrase", "letter_id": 1200880305, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7187-paraphrase", "letter_id": 1200980074, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7187-question", "letter_id": 1200750058, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7187-question", "letter_id": 1200800296, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7187-question", "letter_id": 1200880125, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7187-question", "letter_id": 1200900298, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7187-question", "letter_id": 1200920051, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7187-question", "letter_id": 1200920333, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7187-question", "letter_id": 1200940220, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7187-question", "letter_id": 1200940236, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7187-question", "letter_id": 1200980195, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7861-paraphrase", "letter_id": 1200700106, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עוסק ישירות בנושא"}
+{"case": "h3A-7861-paraphrase", "letter_id": 1200710544, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-7861-paraphrase", "letter_id": 1200810156, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7861-paraphrase", "letter_id": 1200810263, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7861-paraphrase", "letter_id": 1200810361, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7861-paraphrase", "letter_id": 1200830182, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-7861-paraphrase", "letter_id": 1200830308, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7861-paraphrase", "letter_id": 1200850164, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7861-paraphrase", "letter_id": 1200870455, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7861-paraphrase", "letter_id": 1200960106, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7861-paraphrase", "letter_id": 1200970154, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7861-question", "letter_id": 1200700374, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-7861-question", "letter_id": 1200800168, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7861-question", "letter_id": 1200810196, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עוסק ישירות בנושא"}
+{"case": "h3A-7861-question", "letter_id": 1200820378, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7861-question", "letter_id": 1200830163, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-7861-question", "letter_id": 1200850184, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-7861-question", "letter_id": 1200850211, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-7861-question", "letter_id": 1200860286, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-7861-question", "letter_id": 1200890343, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוגע חלקית בנושא"}
+{"case": "h3A-7861-question", "letter_id": 1200960182, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור לשאילתה"}
+{"case": "h3A-8687-paraphrase", "letter_id": 1200700058, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "טקסט לא קריא"}
+{"case": "h3A-8687-paraphrase", "letter_id": 1200830085, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מחלת בת, לא עיכוב הריון"}
+{"case": "h3A-8687-paraphrase", "letter_id": 1200860027, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופא מומחה, בלי טהרה"}
+{"case": "h3A-8687-paraphrase", "letter_id": 1200920033, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופא מומחה, בלי טהרה/צדקה"}
+{"case": "h3A-8687-paraphrase", "letter_id": 1200920447, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "רופא מומחה וטהרת המשפחה"}
+{"case": "h3A-8687-paraphrase", "letter_id": 1200940214, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "טיפול בבת במוסד"}
+{"case": "h3A-8687-paraphrase", "letter_id": 1200970021, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "רופא מומחה וטהרה, בן בנים"}
+{"case": "h3A-8687-paraphrase", "letter_id": 1200970273, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מניעת הריון"}
+{"case": "h3A-8687-paraphrase", "letter_id": 1200980139, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מזכיר, רופאים ורב לטהרה"}
+{"case": "h3A-8687-paraphrase", "letter_id": 1200980177, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בירור טהרה אצל רב, בלי רופא"}
+{"case": "h3A-8687-question", "letter_id": 1200790203, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופא וצדקה, בלי טהרה"}
+{"case": "h3A-8687-question", "letter_id": 1200880416, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "רופא מומחה וטהרת המשפחה"}
+{"case": "h3A-8687-question", "letter_id": 1200880509, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופא מול ספירת ימי טהרה"}
+{"case": "h3A-8687-question", "letter_id": 1200910150, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חלישות הדעת כללי"}
+{"case": "h3A-8687-question", "letter_id": 1200920447, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "רופא וטהרה בעיכוב לידה"}
+{"case": "h3A-8687-question", "letter_id": 1200930046, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "טיפול פנים ושידוכים"}
+{"case": "h3A-8687-question", "letter_id": 1200940214, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "טיפול בבת במוסד"}
+{"case": "h3A-8687-question", "letter_id": 1200950298, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בריאות הבן הקטן"}
+{"case": "h3A-8687-question", "letter_id": 1200970021, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "רופא מומחה וטהרה, בן בנים"}
+{"case": "h3A-8687-question", "letter_id": 1200970273, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מניעת הריון"}
+{"case": "h3A-8687-question", "letter_id": 1200980177, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עיכוב ילדים, בירור טהרה אצל רב"}
+{"case": "h3A-9502-paraphrase", "letter_id": 1200700148, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מבצע תפילין כללי"}
+{"case": "h3A-9502-paraphrase", "letter_id": 1200700149, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכה לחייל"}
+{"case": "h3A-9502-paraphrase", "letter_id": 1200700163, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מכתב לחייל"}
+{"case": "h3A-9502-paraphrase", "letter_id": 1200700356, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מברק לברי מצוה יתומי מלחמה"}
+{"case": "h3A-9502-paraphrase", "letter_id": 1200710186, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מברק יתומי מלחמה, תפילין, האב"}
+{"case": "h3A-9502-paraphrase", "letter_id": 1200710465, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מברק לבר מצוה יתומי מלחמה"}
+{"case": "h3A-9502-paraphrase", "letter_id": 1200750153, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הזמנה לבר מצוה כללי"}
+{"case": "h3A-9502-paraphrase", "letter_id": 1200790278, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תפילין בצבא, לא יתומים"}
+{"case": "h3A-9502-paraphrase", "letter_id": 1200830247, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תפילין לבן בצבא"}
+{"case": "h3A-9502-question", "letter_id": 1200700144, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הלכת תפילין לאנשי מלחמה"}
+{"case": "h3A-9502-question", "letter_id": 1200700148, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מבצע תפילין כללי"}
+{"case": "h3A-9502-question", "letter_id": 1200700149, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכה לחייל"}
+{"case": "h3A-9502-question", "letter_id": 1200700356, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מברק ליתומי מלחמה בבר מצוה"}
+{"case": "h3A-9502-question", "letter_id": 1200710186, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מברק יתומים וסגולת תפילין"}
+{"case": "h3A-9502-question", "letter_id": 1200710465, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מברק יתומי מלחמה"}
+{"case": "h3A-9502-question", "letter_id": 1200720268, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מברק יתומים וסגולת תפילין"}
+{"case": "h3A-9502-question", "letter_id": 1200790278, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תפילין בצבא, לא יתומים"}
+{"case": "h3A-9502-question", "letter_id": 1200830247, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תפילין לבן בצבא"}
+{"case": "h3B-10132-paraphrase", "letter_id": 1200700004, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מחלת בן"}
+{"case": "h3B-10132-paraphrase", "letter_id": 1200760096, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קרן הדפסה כתבי רבותינו"}
+{"case": "h3B-10132-paraphrase", "letter_id": 1200790141, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ראייה חלשה"}
+{"case": "h3B-10132-paraphrase", "letter_id": 1200800092, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מצב בריאות"}
+{"case": "h3B-10132-paraphrase", "letter_id": 1200820109, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מצב בריאות"}
+{"case": "h3B-10132-paraphrase", "letter_id": 1200840382, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "רופא בין משרה למחקר"}
+{"case": "h3B-10132-paraphrase", "letter_id": 1200850145, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הפצת חומר בבית הבראה"}
+{"case": "h3B-10132-paraphrase", "letter_id": 1200910310, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיעה לחוף הים"}
+{"case": "h3B-10132-paraphrase", "letter_id": 1200960257, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מימון הוצאת ספרים, מוסדות"}
+{"case": "h3B-10132-paraphrase", "letter_id": 1200980053, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ד\"ר, דת ומדע, לא מימון"}
+{"case": "h3B-10132-question", "letter_id": 1200690063, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הילולא אדמו\"ר הזקן"}
+{"case": "h3B-10132-question", "letter_id": 1200710443, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הדפסה מחדש ספרים ברוסית"}
+{"case": "h3B-10132-question", "letter_id": 1200760096, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קרן להדפסת כתבי רבותינו"}
+{"case": "h3B-10132-question", "letter_id": 1200760112, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "גיוס כספים להדפסה כללי"}
+{"case": "h3B-10132-question", "letter_id": 1200760225, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הדפסה באירופה, הובלה"}
+{"case": "h3B-10132-question", "letter_id": 1200800015, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פעולות צעירי חב\"ד"}
+{"case": "h3B-10132-question", "letter_id": 1200850075, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הדפסת ספר, השגת מנדבים"}
+{"case": "h3B-10132-question", "letter_id": 1200950060, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תקציב בתי ספר"}
+{"case": "h3B-10132-question", "letter_id": 1200950293, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הפצה ומודעות"}
+{"case": "h3B-10132-question", "letter_id": 1200960257, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "סיוע בהוצאת ספרים לדפוס"}
+{"case": "h3B-10547-question", "letter_id": 1200700065, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עליית נוער מאמריקה"}
+{"case": "h3B-10547-question", "letter_id": 1200700212, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "דירה לעולים, בלי סמינר"}
+{"case": "h3B-10547-question", "letter_id": 1200700292, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "סמינר בית רבקה, מגורים"}
+{"case": "h3B-10547-question", "letter_id": 1200710544, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכה להסתדרות כללי"}
+{"case": "h3B-10547-question", "letter_id": 1200720357, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מקום מגורים בא\"י"}
+{"case": "h3B-10547-question", "letter_id": 1200780148, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הגירה לדרום אמריקה"}
+{"case": "h3B-10547-question", "letter_id": 1200820233, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מעבר ישיבה, לא מגורים"}
+{"case": "h3B-10547-question", "letter_id": 1200850382, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בחירת מקום דירה כפר חב\"ד"}
+{"case": "h3B-10547-question", "letter_id": 1200900114, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קשיים בלימוד, מעבר מדינה"}
+{"case": "h3B-1846-paraphrase", "letter_id": 1200690110, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שלום בית ומזוזות"}
+{"case": "h3B-1846-paraphrase", "letter_id": 1200700346, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בדיקת תפילין ומזוזות, ניתוח"}
+{"case": "h3B-1846-paraphrase", "letter_id": 1200800201, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שמירת שבת ופרנסה"}
+{"case": "h3B-1846-paraphrase", "letter_id": 1200820286, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בדיקת תפילין ומזוזות לחולה"}
+{"case": "h3B-1846-paraphrase", "letter_id": 1200820287, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכה לזרע, קירוב רחוקים"}
+{"case": "h3B-1846-paraphrase", "letter_id": 1200830085, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מחלת בת"}
+{"case": "h3B-1846-paraphrase", "letter_id": 1200880098, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "צדקת האשה, ניתוח רגליים"}
+{"case": "h3B-1846-paraphrase", "letter_id": 1200910343, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "תפילין, מזוזות וצדקת האשה"}
+{"case": "h3B-1846-paraphrase", "letter_id": 1200960251, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תפילין, מזוזות וצדקה"}
+{"case": "h3B-1846-question", "letter_id": 1200720104, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ממזרים, לא חולה"}
+{"case": "h3B-1846-question", "letter_id": 1200720211, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "משל על חולה, ענין אחר"}
+{"case": "h3B-1846-question", "letter_id": 1200780387, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חולה, בקשת מחילה בבית חולים"}
+{"case": "h3B-1846-question", "letter_id": 1200790132, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אם בבית חולים, בטחון ותהלים"}
+{"case": "h3B-1846-question", "letter_id": 1200800131, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לשון הרע ובריאות"}
+{"case": "h3B-1846-question", "letter_id": 1200820143, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "חולה בבית רפואה, בטחון ומצוות"}
+{"case": "h3B-1846-question", "letter_id": 1200820278, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "חולה בבית חולים, אמונה"}
+{"case": "h3B-1846-question", "letter_id": 1200820286, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חבר חולה, תפילין ומזוזות"}
+{"case": "h3B-1846-question", "letter_id": 1200840036, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות, חיזוק רוחני"}
+{"case": "h3B-1887-paraphrase", "letter_id": 1200750133, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חזרת משניות בעל פה"}
+{"case": "h3B-1887-paraphrase", "letter_id": 1200770217, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לימוד תורה, קונטרס"}
+{"case": "h3B-1887-paraphrase", "letter_id": 1200810052, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "רמ\"ח אברים שס\"ה גידים ובריאות"}
+{"case": "h3B-1887-paraphrase", "letter_id": 1200840322, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שמירת בריאות הגוף"}
+{"case": "h3B-1887-paraphrase", "letter_id": 1200860373, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "רמ\"ח אברים שס\"ה גידים ובריאות"}
+{"case": "h3B-1887-paraphrase", "letter_id": 1200880218, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שמירת הגוף, חלק מהנושא"}
+{"case": "h3B-1887-paraphrase", "letter_id": 1200890141, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכה לרופא"}
+{"case": "h3B-1887-paraphrase", "letter_id": 1200910248, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רמ\"ח אברים מצוות, נקטע"}
+{"case": "h3B-1887-paraphrase", "letter_id": 1200920028, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "רמ\"ח אברים, בריאות גוף ונשמה"}
+{"case": "h3B-1887-question", "letter_id": 1200720274, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "בריאות גוף ונשמה קשורים"}
+{"case": "h3B-1887-question", "letter_id": 1200810351, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שמירת בריאות כחלק מהתורה"}
+{"case": "h3B-1887-question", "letter_id": 1200820078, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיעה לישיבה"}
+{"case": "h3B-1887-question", "letter_id": 1200830023, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות הגוף ומצוות"}
+{"case": "h3B-1887-question", "letter_id": 1200850218, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תלמיד ישיבה לשעבר"}
+{"case": "h3B-1887-question", "letter_id": 1200860139, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות גשמית ורוחנית"}
+{"case": "h3B-1887-question", "letter_id": 1200860373, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "בריאות תלויה בקיום מצוות"}
+{"case": "h3B-1887-question", "letter_id": 1200880419, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "יחס רופא לחולה"}
+{"case": "h3B-1887-question", "letter_id": 1200920274, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "גשמיות ורוחניות יחד, בריאות"}
+{"case": "h3B-3416-paraphrase", "letter_id": 1200690036, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "המעשה העיקר, בלי נייר מכתבים"}
+{"case": "h3B-3416-paraphrase", "letter_id": 1200690065, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חוסר תיאום בחב\"ד"}
+{"case": "h3B-3416-paraphrase", "letter_id": 1200790270, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עסקנות חב\"ד שיקאגו"}
+{"case": "h3B-3416-paraphrase", "letter_id": 1200820245, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "דרישה לפעולות ממשיות"}
+{"case": "h3B-3416-paraphrase", "letter_id": 1200840304, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "דרישה לפעול בכרם חב\"ד"}
+{"case": "h3B-3416-paraphrase", "letter_id": 1200910268, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מדיבור לשינוי בפועל, כפר חב\"ד"}
+{"case": "h3B-3416-paraphrase", "letter_id": 1200930054, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לימוד תורה אור"}
+{"case": "h3B-3416-paraphrase", "letter_id": 1200950233, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פעילות צעירי חב\"ד כללי"}
+{"case": "h3B-3416-paraphrase", "letter_id": 1200970282, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הרחבת פעילות חב\"ד בא\"י"}
+{"case": "h3B-3416-paraphrase", "letter_id": 1200980272, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הצעות לקידום חב\"ד"}
+{"case": "h3B-360-paraphrase", "letter_id": 1200760033, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תחיית המתים"}
+{"case": "h3B-360-paraphrase", "letter_id": 1200770298, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הערות במאמר חסידות"}
+{"case": "h3B-360-paraphrase", "letter_id": 1200810131, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תורת ההתפתחות, ששת ימים"}
+{"case": "h3B-360-paraphrase", "letter_id": 1200840158, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "טבע המים בשער היחוד"}
+{"case": "h3B-360-paraphrase", "letter_id": 1200870144, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ענייני סינאגוג קאונסיל"}
+{"case": "h3B-360-paraphrase", "letter_id": 1200880251, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הלכות הוצאה וצדקה"}
+{"case": "h3B-360-paraphrase", "letter_id": 1200880393, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "העולם מים במים, בריאה"}
+{"case": "h3B-360-paraphrase", "letter_id": 1200910313, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פרד\"ס ועולמות"}
+{"case": "h3B-360-paraphrase", "letter_id": 1200920205, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קריעת ים סוף בבעש\"ט"}
+{"case": "h3B-360-paraphrase", "letter_id": 1200920376, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שאלת צעירים כללית"}
+{"case": "h3B-3759-paraphrase", "letter_id": 1200770337, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חינוך כשר כללי"}
+{"case": "h3B-3759-paraphrase", "letter_id": 1200830306, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מקום לימוד, ללא כיפה"}
+{"case": "h3B-3759-paraphrase", "letter_id": 1200840289, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "משחק על חשבון לימוד"}
+{"case": "h3B-3759-paraphrase", "letter_id": 1200920270, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בן דתי מדי, משחק חברים"}
+{"case": "h3B-3759-paraphrase", "letter_id": 1200920279, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בן עצמאי מדי"}
+{"case": "h3B-3759-paraphrase", "letter_id": 1200940167, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בעיות בן בכור"}
+{"case": "h3B-3759-paraphrase", "letter_id": 1200940186, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הנהגה עם בן אברך"}
+{"case": "h3B-3759-paraphrase", "letter_id": 1200950278, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שאלת זקן, לא כיפה"}
+{"case": "h3B-3759-paraphrase", "letter_id": 1200960435, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מקום לימוד הבן והורים"}
+{"case": "h3B-3759-paraphrase", "letter_id": 1200980338, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בן ושידוכים"}
+{"case": "h3B-3759-question", "letter_id": 1200720247, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חינוך כשר כללי"}
+{"case": "h3B-3759-question", "letter_id": 1200790159, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בן עם נטיית גנבה"}
+{"case": "h3B-3759-question", "letter_id": 1200820058, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בתי ספר ברשת"}
+{"case": "h3B-3759-question", "letter_id": 1200840289, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "משחק מול לימוד"}
+{"case": "h3B-3759-question", "letter_id": 1200840292, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "יסוד בתי ספר"}
+{"case": "h3B-3759-question", "letter_id": 1200850295, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חינוך באה\"ק"}
+{"case": "h3B-3759-question", "letter_id": 1200880447, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מנהל בית ספר"}
+{"case": "h3B-3759-question", "letter_id": 1200920270, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אינו משתתף במשחק חברים"}
+{"case": "h3B-3759-question", "letter_id": 1200920520, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לימודי גימנסטיקה מול קודש"}
+{"case": "h3B-3759-question", "letter_id": 1200950443, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לימודים כלליים, בית ספר"}
+{"case": "h3B-3759-question", "letter_id": 1200960218, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בוגרי בית ספר לכפר"}
+{"case": "h3B-4162-paraphrase", "letter_id": 1200700289, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ויכוח בנצרות"}
+{"case": "h3B-4162-paraphrase", "letter_id": 1200870040, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מכתב מצורף, ענין אחר"}
+{"case": "h3B-4162-paraphrase", "letter_id": 1200870188, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הרס הרפורמים, כינוס רבנים"}
+{"case": "h3B-4162-paraphrase", "letter_id": 1200870349, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אנציקלופדיה תלמודית"}
+{"case": "h3B-4162-paraphrase", "letter_id": 1200880270, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הצעה לדבר עם גוף"}
+{"case": "h3B-4162-paraphrase", "letter_id": 1200900018, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "התחברות עם רבנים מסוגים שונים"}
+{"case": "h3B-4162-paraphrase", "letter_id": 1200920263, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אורתודוקסים בארגון מעורב"}
+{"case": "h3B-4162-paraphrase", "letter_id": 1200940145, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ארגון שהרבנות אסרה"}
+{"case": "h3B-4162-paraphrase", "letter_id": 1200970144, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רבנים קונסרבטיבים, אין פשרה"}
+{"case": "h3B-4162-question", "letter_id": 1200700028, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שלילת אסיפת רבנים באירופה"}
+{"case": "h3B-4162-question", "letter_id": 1200840359, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ענייני אגודת חב\"ד"}
+{"case": "h3B-4162-question", "letter_id": 1200870036, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "איסור השתתפות עם רפורמים"}
+{"case": "h3B-4162-question", "letter_id": 1200870040, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מכתב מצורף"}
+{"case": "h3B-4162-question", "letter_id": 1200870188, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קונסרבטיבים ורפורמים, כינוס"}
+{"case": "h3B-4162-question", "letter_id": 1200870349, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אנציקלופדיה תלמודית"}
+{"case": "h3B-4162-question", "letter_id": 1200900018, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "חיבור עם רבנים מסוגים שונים"}
+{"case": "h3B-4162-question", "letter_id": 1200940145, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ארגון מסוים, לא ענין"}
+{"case": "h3B-4162-question", "letter_id": 1200960362, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אגודות רבנים חרדים"}
+{"case": "h3B-4162-question", "letter_id": 1200970144, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "רבנים קונסרבטיבים, ללא פשרה"}
+{"case": "h3B-4203-paraphrase", "letter_id": 1200690110, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שלום בית, מנהג נשים"}
+{"case": "h3B-4203-paraphrase", "letter_id": 1200770339, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "סכסוכי זוג"}
+{"case": "h3B-4203-paraphrase", "letter_id": 1200810382, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חתן ונדר"}
+{"case": "h3B-4203-paraphrase", "letter_id": 1200830107, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "גישה לחיי נישואין"}
+{"case": "h3B-4203-paraphrase", "letter_id": 1200840051, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "החלטות עבודה"}
+{"case": "h3B-4203-paraphrase", "letter_id": 1200880084, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "השפעה על אשה בחסידות"}
+{"case": "h3B-4203-paraphrase", "letter_id": 1200920119, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שלום בית, לא להקפיד"}
+{"case": "h3B-4203-paraphrase", "letter_id": 1200930241, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שידוך וחינוך"}
+{"case": "h3B-4203-paraphrase", "letter_id": 1200940167, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בעיות בן בכור"}
+{"case": "h3B-4203-question", "letter_id": 1200690110, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שלום בית, מנהג נשים"}
+{"case": "h3B-4203-question", "letter_id": 1200840051, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "החלטות עבודה"}
+{"case": "h3B-4203-question", "letter_id": 1200900185, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שידוך ושינוי"}
+{"case": "h3B-4203-question", "letter_id": 1200910357, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ויכוחים ביהדות"}
+{"case": "h3B-4203-question", "letter_id": 1200920050, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מנהג משפחת אשתו, לא למנוע"}
+{"case": "h3B-4203-question", "letter_id": 1200920520, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חינוך בן, רופאה"}
+{"case": "h3B-4203-question", "letter_id": 1200930061, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שידוך, חרטה"}
+{"case": "h3B-4203-question", "letter_id": 1200930241, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שידוך וחינוך"}
+{"case": "h3B-4203-question", "letter_id": 1200940080, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "התעלות בקדש"}
+{"case": "h3B-4203-question", "letter_id": 1200980013, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מקום לימוד בן"}
+{"case": "h3B-520-paraphrase", "letter_id": 1200690063, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הסתלקות אדמו\"ר הזקן"}
+{"case": "h3B-520-paraphrase", "letter_id": 1200770148, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קונטרס י\"ט כסלו"}
+{"case": "h3B-520-paraphrase", "letter_id": 1200770336, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קונטרס ח\"י אלול, ללא ההבדל"}
+{"case": "h3B-520-paraphrase", "letter_id": 1200780421, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ח\"י אלול, הבעש\"ט והזקן"}
+{"case": "h3B-520-paraphrase", "letter_id": 1200780428, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ח\"י אלול, עבודת אלול"}
+{"case": "h3B-520-paraphrase", "letter_id": 1200780429, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קונטרס ח\"י אלול, תורה"}
+{"case": "h3B-520-paraphrase", "letter_id": 1200890422, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "כפר חב\"ד"}
+{"case": "h3B-520-paraphrase", "letter_id": 1200940309, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חשבון הנפש באלול"}
+{"case": "h3B-520-paraphrase", "letter_id": 1200950273, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ח\"י אלול, הבעש\"ט והזקן"}
+{"case": "h3B-5589-paraphrase", "letter_id": 1200800023, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "יחסים בקהילה"}
+{"case": "h3B-5589-paraphrase", "letter_id": 1200800201, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שמירת שבת"}
+{"case": "h3B-5589-paraphrase", "letter_id": 1200810141, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "משמעת בישיבה"}
+{"case": "h3B-5589-paraphrase", "letter_id": 1200810249, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "לשפר ישיבה, לא לעזוב"}
+{"case": "h3B-5589-paraphrase", "letter_id": 1200880139, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ילדים בישיבה, פרנסה"}
+{"case": "h3B-5589-paraphrase", "letter_id": 1200880264, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פרנסה והסתדרות"}
+{"case": "h3B-5589-paraphrase", "letter_id": 1200890254, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "משמעת ישיבה"}
+{"case": "h3B-5589-paraphrase", "letter_id": 1200930011, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מעבר לסביבה דתית"}
+{"case": "h3B-5589-paraphrase", "letter_id": 1200930268, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פרנסה ומגורים"}
+{"case": "h3B-5589-paraphrase", "letter_id": 1200940188, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "טענות ועסקנות"}
+{"case": "h3B-5589-paraphrase", "letter_id": 1200950304, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קייטנא ועזרה"}
+{"case": "h3B-5589-paraphrase", "letter_id": 1200960274, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עזיבת פרנסה"}
+{"case": "h3B-5799-paraphrase", "letter_id": 1200750123, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הנחה במחיר ספרים"}
+{"case": "h3B-5799-paraphrase", "letter_id": 1200760012, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "משלוח ספרים כללי"}
+{"case": "h3B-5799-paraphrase", "letter_id": 1200760052, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ספרים רק תמורת תשלום"}
+{"case": "h3B-5799-paraphrase", "letter_id": 1200760057, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חוב להדפסה, ספרים"}
+{"case": "h3B-5799-paraphrase", "letter_id": 1200810250, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קניית ס\"ת, תניא"}
+{"case": "h3B-5799-paraphrase", "letter_id": 1200840063, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קונקורדנציה תלמודית"}
+{"case": "h3B-5799-paraphrase", "letter_id": 1200870394, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חוסר ספרים"}
+{"case": "h3B-5799-paraphrase", "letter_id": 1200950030, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מחיר ספרים והכנסה להדפסה"}
+{"case": "h3B-5799-paraphrase", "letter_id": 1200950039, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אינו קונה ספרים"}
+{"case": "h3B-5799-question", "letter_id": 1200760046, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הדפסה, אזהרה"}
+{"case": "h3B-5799-question", "letter_id": 1200760164, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הדפסת ספרים"}
+{"case": "h3B-5799-question", "letter_id": 1200760221, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קופה מוגבלת לספרים"}
+{"case": "h3B-5799-question", "letter_id": 1200770056, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אפיל למל\"ח"}
+{"case": "h3B-5799-question", "letter_id": 1200780421, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ועד צעירים ח\"י אלול"}
+{"case": "h3B-5799-question", "letter_id": 1200790163, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אין קופה לעזר"}
+{"case": "h3B-5799-question", "letter_id": 1200900251, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קניית שטחים"}
+{"case": "h3B-5799-question", "letter_id": 1200950029, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הכנסה ממכירת ספרים"}
+{"case": "h3B-5799-question", "letter_id": 1200950273, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ועד צעירים ח\"י אלול"}
+{"case": "h3B-6052-paraphrase", "letter_id": 1200710515, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ישיבה שנה-שנתיים לנוער"}
+{"case": "h3B-6052-paraphrase", "letter_id": 1200820127, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיעה ללמוד בישיבה"}
+{"case": "h3B-6052-paraphrase", "letter_id": 1200830263, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לימוד עם אחיו"}
+{"case": "h3B-6052-paraphrase", "letter_id": 1200850016, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הוראה או ישיבה"}
+{"case": "h3B-6052-paraphrase", "letter_id": 1200860148, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "שנה לימוד תורה לפני החלטה"}
+{"case": "h3B-6052-paraphrase", "letter_id": 1200890031, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מנהל מוסד"}
+{"case": "h3B-6052-paraphrase", "letter_id": 1200910056, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הוספה בלימוד לאברך"}
+{"case": "h3B-6052-paraphrase", "letter_id": 1200930109, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הצלת ספרי זהר"}
+{"case": "h3B-6052-paraphrase", "letter_id": 1200930410, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שנה בישיבה, פרנסה"}
+{"case": "h3B-6052-paraphrase", "letter_id": 1200940203, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בחור בקבוץ דתי"}
+{"case": "h3B-6052-question", "letter_id": 1200700380, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "להמשיך בצה\"ל"}
+{"case": "h3B-6052-question", "letter_id": 1200710161, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מקצוע אחרי צבא"}
+{"case": "h3B-6052-question", "letter_id": 1200820334, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הגדת פסח"}
+{"case": "h3B-6052-question", "letter_id": 1200840382, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "רופא או מחקר"}
+{"case": "h3B-6052-question", "letter_id": 1200850016, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הוראה או ישיבה"}
+{"case": "h3B-6052-question", "letter_id": 1200860148, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "שנה לימוד לפני החלטה"}
+{"case": "h3B-6052-question", "letter_id": 1200900234, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "שנה ללימודי קדש, הסתדרות"}
+{"case": "h3B-6052-question", "letter_id": 1200910309, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "יפרט לשלושה ידידים"}
+{"case": "h3B-6052-question", "letter_id": 1200930014, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מהנדס, מדינה"}
+{"case": "h3B-6052-question", "letter_id": 1200930410, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שנה בישיבה, פרנסה"}
+{"case": "h3B-7807-paraphrase", "letter_id": 1200700038, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "טקסט לא קריא"}
+{"case": "h3B-7807-paraphrase", "letter_id": 1200750018, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ויזה לאביו, צרפתית"}
+{"case": "h3B-7807-paraphrase", "letter_id": 1200760051, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "רשיון לאמו ברוסיה"}
+{"case": "h3B-7807-paraphrase", "letter_id": 1200760113, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ויזה קלוווגאנט, מכתב לעוואוט"}
+{"case": "h3B-7807-paraphrase", "letter_id": 1200770015, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ויזה קליוגאנט, לזרז לאוואט"}
+{"case": "h3B-7807-paraphrase", "letter_id": 1200780305, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ויזה קנדה כללי"}
+{"case": "h3B-7807-paraphrase", "letter_id": 1200790307, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ויזה אחרת"}
+{"case": "h3B-7807-paraphrase", "letter_id": 1200800254, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ויזה אמריקנית אחרת"}
+{"case": "h3B-7807-paraphrase", "letter_id": 1200840047, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ניירות נסיעה"}
+{"case": "h3B-7807-paraphrase", "letter_id": 1200950070, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "זירוז ויזה לקליוגאנט"}
+{"case": "h3B-7807-paraphrase", "letter_id": 1200950300, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ויזה לצרפת"}
+{"case": "h3B-921-paraphrase", "letter_id": 1200690128, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עסקנות ציבורית, לא קשור"}
+{"case": "h3B-921-paraphrase", "letter_id": 1200770313, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "צדקה כללית, מרכז לענייני חינוך"}
+{"case": "h3B-921-paraphrase", "letter_id": 1200770319, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פושקע רבי מאיר בעל הנס, אישי"}
+{"case": "h3B-921-paraphrase", "letter_id": 1200770349, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בטחון, לא קשור"}
+{"case": "h3B-921-paraphrase", "letter_id": 1200780012, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכה לפרנסה"}
+{"case": "h3B-921-paraphrase", "letter_id": 1200780350, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "כולל חב\"ד, קופת גמ\"ח בלבד"}
+{"case": "h3B-921-paraphrase", "letter_id": 1200790160, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "צדקת רבי מאיר, בלי כולל"}
+{"case": "h3B-921-paraphrase", "letter_id": 1200790179, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "העברה להכולל חב\"ד, בלי קופסה"}
+{"case": "h3B-921-paraphrase", "letter_id": 1200800065, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "צדקת רבי מאיר לפני הדלקת נרות"}
+{"case": "h3B-921-paraphrase", "letter_id": 1200870331, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שחרור מתפקיד בכפר חב\"ד"}
+{"case": "h3B-921-paraphrase", "letter_id": 1200900024, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קניית אילנות, עזרה כספית"}
+{"case": "h3B-921-paraphrase", "letter_id": 1200920296, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עסקנות חב\"ד בא\"ק כללי"}
+{"case": "h3B-921-paraphrase", "letter_id": 1200930344, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "סמינר בכפר חב\"ד"}
+{"case": "h3C-10127-paraphrase", "letter_id": 1200710021, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אנציקלופדיה תלמודית, בלי ערכים בחסידות"}
+{"case": "h3C-10127-paraphrase", "letter_id": 1200710055, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ספר הערכים חב\"ד, בלי השוואה"}
+{"case": "h3C-10127-paraphrase", "letter_id": 1200800038, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אנציקלופדיה תלמודית, תועלתה"}
+{"case": "h3C-10127-paraphrase", "letter_id": 1200800039, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הפצת האנציקלופדיה, ענייני ספרים"}
+{"case": "h3C-10127-paraphrase", "letter_id": 1200800242, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הערות על נייר הכרכים"}
+{"case": "h3C-10127-paraphrase", "letter_id": 1200840173, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עריכת ערכים באנציקלופדיה, ארגוני"}
+{"case": "h3C-10127-paraphrase", "letter_id": 1200870361, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אנציקלופדיה והרחבת דא\"ח"}
+{"case": "h3C-10127-paraphrase", "letter_id": 1200920425, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בחירות, לא קשור"}
+{"case": "h3C-10127-paraphrase", "letter_id": 1200930170, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אנציקלופדיה, מימון, לא ערכי חסידות"}
+{"case": "h3C-10127-paraphrase", "letter_id": 1200980291, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכת רפואה"}
+{"case": "h3C-10127-question", "letter_id": 1200690147, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "התוועדות בר מצוה"}
+{"case": "h3C-10127-question", "letter_id": 1200710021, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אנציקלופדיה תלמודית"}
+{"case": "h3C-10127-question", "letter_id": 1200710055, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הופעת ספר הערכים, תודה"}
+{"case": "h3C-10127-question", "letter_id": 1200710056, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ספר הערכים, ללא מטרה מפורשת"}
+{"case": "h3C-10127-question", "letter_id": 1200810329, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שם חסידות"}
+{"case": "h3C-10127-question", "letter_id": 1200880087, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שתיקת צעירי אגודה"}
+{"case": "h3C-10127-question", "letter_id": 1200880526, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הפצת תניא"}
+{"case": "h3C-10127-question", "letter_id": 1200890103, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תולדות נשיאי חסידות"}
+{"case": "h3C-10127-question", "letter_id": 1200960021, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "באר החסידות, לא ספר הערכים"}
+{"case": "h3C-1283-paraphrase", "letter_id": 1200780054, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הפצת המעיינות, בלי דיווח לימוד"}
+{"case": "h3C-1283-paraphrase", "letter_id": 1200860113, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "חדש כסלו, דרישת סדר לימוד נגלה וחסידות"}
+{"case": "h3C-1283-paraphrase", "letter_id": 1200870208, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הפצת ספרי חב\"ד, בלי לימוד"}
+{"case": "h3C-1283-paraphrase", "letter_id": 1200870224, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שתיקה והפצת מעיינות"}
+{"case": "h3C-1283-paraphrase", "letter_id": 1200890162, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חסר דיווח הפצת מעיינות"}
+{"case": "h3C-1283-paraphrase", "letter_id": 1200900226, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "חדש הגאולה, דיווח פעולות, נגלה וחסידות"}
+{"case": "h3C-1283-paraphrase", "letter_id": 1200920086, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "לימוד נגלה וחסידות, שאלות אחרות"}
+{"case": "h3C-1283-paraphrase", "letter_id": 1200920426, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "דורש דיווח הפצת מעיינות"}
+{"case": "h3C-1283-paraphrase", "letter_id": 1200920450, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חדש הגאולה, הפצה, בלי לימוד"}
+{"case": "h3C-1283-paraphrase", "letter_id": 1200940247, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פלא שאינו מזכיר הפצת מעיינות"}
+{"case": "h3C-1283-paraphrase", "letter_id": 1200970183, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ימי הגאולה, לימוד נגלה וחסידות"}
+{"case": "h3C-1283-paraphrase", "letter_id": 1200980319, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכה לתלמידי ישיבה"}
+{"case": "h3C-1283-question", "letter_id": 1200790147, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אינו יודע לימודו, מבקש הודעה"}
+{"case": "h3C-1283-question", "letter_id": 1200820201, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ביזבוז זמן ללימודי חול"}
+{"case": "h3C-1283-question", "letter_id": 1200840218, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הוספה בלימוד, חינוך"}
+{"case": "h3C-1283-question", "letter_id": 1200850246, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "רגש נחיתות בלימוד"}
+{"case": "h3C-1283-question", "letter_id": 1200850345, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חסרים פרטי קביעות עתים חסידות"}
+{"case": "h3C-1283-question", "letter_id": 1200880310, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שחרור משיעורים"}
+{"case": "h3C-1283-question", "letter_id": 1200880329, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "השפעה על הזולת כללי"}
+{"case": "h3C-1283-question", "letter_id": 1200890056, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אי שביעות רצון מהשפעה"}
+{"case": "h3C-1283-question", "letter_id": 1200900286, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "טענת לא יכול"}
+{"case": "h3C-1283-question", "letter_id": 1200920243, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "חסר קביעות עתים והשפעה, רק בכתיבה"}
+{"case": "h3C-1283-question", "letter_id": 1200960146, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שאלות מצבה וישיבה"}
+{"case": "h3C-1324-paraphrase", "letter_id": 1200790104, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "החלטות בהתוועדות י\"ט כסלו, בלי קשר רחוקים"}
+{"case": "h3C-1324-paraphrase", "letter_id": 1200820150, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "התוועדות י\"ט כסלו תלמידי ישיבות"}
+{"case": "h3C-1324-paraphrase", "letter_id": 1200840124, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הכנה לי\"ט כסלו, הפצה"}
+{"case": "h3C-1324-paraphrase", "letter_id": 1200860188, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "קישור עם משתתפי התוועדות י\"ט כסלו"}
+{"case": "h3C-1324-paraphrase", "letter_id": 1200860207, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "המשך קישור עם משתתפי ההתוועדות"}
+{"case": "h3C-1324-paraphrase", "letter_id": 1200880222, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עצות להיסח הדעת"}
+{"case": "h3C-1324-paraphrase", "letter_id": 1200880239, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הזמנת חוגים רחוקים להתוועדות"}
+{"case": "h3C-1324-paraphrase", "letter_id": 1200900208, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "לעמוד בקישור עם משתתפי ההתוועדות"}
+{"case": "h3C-1324-paraphrase", "letter_id": 1200910029, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חגיגת י\"ט כסלו, השתתפות"}
+{"case": "h3C-1324-paraphrase", "letter_id": 1200920078, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ועדה לחינוך"}
+{"case": "h3C-1324-paraphrase", "letter_id": 1200940093, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "התוועדות י\"ט כסלו וחלוקת ש\"ס"}
+{"case": "h3C-1324-question", "letter_id": 1200840078, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עסקנות חב\"ד באה\"ק"}
+{"case": "h3C-1324-question", "letter_id": 1200860092, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הזכרה על הציון"}
+{"case": "h3C-1324-question", "letter_id": 1200880538, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הר סיני ושמירת תורה, כללי"}
+{"case": "h3C-1324-question", "letter_id": 1200890074, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ביקורת על עסקני אנ\"ש"}
+{"case": "h3C-1324-question", "letter_id": 1200900281, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הדרכת צעיר בגיל כ\"ב"}
+{"case": "h3C-1324-question", "letter_id": 1200900326, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מנהגי חב\"ד אישי"}
+{"case": "h3C-1324-question", "letter_id": 1200910185, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "התעניינות בחב\"ד כללי"}
+{"case": "h3C-1324-question", "letter_id": 1200930375, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חינוך ומורים"}
+{"case": "h3C-1324-question", "letter_id": 1200940188, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תלונות אישיות"}
+{"case": "h3C-1324-question", "letter_id": 1200960355, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "כפר חב\"ד שני"}
+{"case": "h3C-1597-paraphrase", "letter_id": 1200800037, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אישור קבלת מכתבים"}
+{"case": "h3C-1597-paraphrase", "letter_id": 1200800076, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מעט תלמידים, עידוד, בלי אוסטרליה"}
+{"case": "h3C-1597-paraphrase", "letter_id": 1200810354, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מונטריאול, ישיבה קטנה"}
+{"case": "h3C-1597-paraphrase", "letter_id": 1200830108, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הגדלת ישיבה, ללא מינוי ראש ישיבה"}
+{"case": "h3C-1597-paraphrase", "letter_id": 1200830154, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הקשיים בסידור ישיבה"}
+{"case": "h3C-1597-paraphrase", "letter_id": 1200840106, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מספר תלמידים מועט, הגדלה"}
+{"case": "h3C-1597-paraphrase", "letter_id": 1200860085, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ריבוי תלמידים, אין אישור מינוי"}
+{"case": "h3C-1597-paraphrase", "letter_id": 1200870403, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הרחבת ישיבה במלבורן"}
+{"case": "h3C-1597-paraphrase", "letter_id": 1200900037, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אחראי במוסד, צורה חב\"דית"}
+{"case": "h3C-1597-paraphrase", "letter_id": 1200900064, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מוסדות אוסטרליה, הגדלת תלמידים"}
+{"case": "h3C-1597-question", "letter_id": 1200780185, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "העתקה לאוסטרליה"}
+{"case": "h3C-1597-question", "letter_id": 1200790059, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "העתקת ישיבה, חנוכת בית"}
+{"case": "h3C-1597-question", "letter_id": 1200810231, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ביקורת הנהלת ישיבת מלבורן"}
+{"case": "h3C-1597-question", "letter_id": 1200820066, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עזרה להתפתחות הישיבה"}
+{"case": "h3C-1597-question", "letter_id": 1200830108, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הגדלת ישיבה, ללא מינוי"}
+{"case": "h3C-1597-question", "letter_id": 1200830154, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קושי בסידור ישיבה"}
+{"case": "h3C-1597-question", "letter_id": 1200830342, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מצב הישיבה, הפצה"}
+{"case": "h3C-1597-question", "letter_id": 1200870403, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הרחבת ישיבה, לא מינוי"}
+{"case": "h3C-1597-question", "letter_id": 1200890205, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ראש ישיבה באה\"ק, לא אוסטרליה"}
+{"case": "h3C-1725-paraphrase", "letter_id": 1200710348, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ואהבת לרעך, לא רק הישג עצמי"}
+{"case": "h3C-1725-paraphrase", "letter_id": 1200710399, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכת רפואה וחיבור עדות"}
+{"case": "h3C-1725-paraphrase", "letter_id": 1200750141, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הפצת דא\"ח בדפוס"}
+{"case": "h3C-1725-paraphrase", "letter_id": 1200780236, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אהבת ישראל ושידוך"}
+{"case": "h3C-1725-paraphrase", "letter_id": 1200800045, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הגבלת צדקה"}
+{"case": "h3C-1725-paraphrase", "letter_id": 1200860037, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מחשבות והיצר הרע"}
+{"case": "h3C-1725-paraphrase", "letter_id": 1200870458, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "התלהבות והתייעצות"}
+{"case": "h3C-1725-paraphrase", "letter_id": 1200880308, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עמל שלא הועיל, זריעה"}
+{"case": "h3C-1725-paraphrase", "letter_id": 1200900079, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "היסח הדעת, שבירות"}
+{"case": "h3C-1725-paraphrase", "letter_id": 1200910207, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ואהבת לרעך, עין טובה בשל אחרים"}
+{"case": "h3C-2517-paraphrase", "letter_id": 1200700132, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חילוקי דעות כפר חב\"ד, הרחבה"}
+{"case": "h3C-2517-paraphrase", "letter_id": 1200840106, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מספר תלמידים מועט"}
+{"case": "h3C-2517-paraphrase", "letter_id": 1200860270, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הרשת וגזירה מעבר לים"}
+{"case": "h3C-2517-paraphrase", "letter_id": 1200870014, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הרבות תלמידים, בלי מחלוקות"}
+{"case": "h3C-2517-paraphrase", "letter_id": 1200870048, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הרחבת מוסדות כפר חב\"ד"}
+{"case": "h3C-2517-paraphrase", "letter_id": 1200870049, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מגביות לבנין ישיבה"}
+{"case": "h3C-2517-paraphrase", "letter_id": 1200870306, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חילוקי דיעות על תלמידים"}
+{"case": "h3C-2517-paraphrase", "letter_id": 1200910088, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בית ספר במחנה"}
+{"case": "h3C-2517-paraphrase", "letter_id": 1200930197, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שושן פורים, הרחבת רשת, בלי מחלוקת"}
+{"case": "h3C-2517-paraphrase", "letter_id": 1200940153, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "רמת מוסדות חב\"ד"}
+{"case": "h3C-2517-paraphrase", "letter_id": 1200950364, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פורים, מורה, הוספת מוסדות רשת"}
+{"case": "h3C-2517-question", "letter_id": 1200800111, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "האשמות אחרי אסון"}
+{"case": "h3C-2517-question", "letter_id": 1200820364, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "יחס מורים לרשת, טענות"}
+{"case": "h3C-2517-question", "letter_id": 1200830197, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "סכסוכים עם הנהלת ישיבה, תלמיד"}
+{"case": "h3C-2517-question", "letter_id": 1200840221, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "התפתחות בית הספר"}
+{"case": "h3C-2517-question", "letter_id": 1200860400, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בי\"ס חקלאי, רמה"}
+{"case": "h3C-2517-question", "letter_id": 1200870004, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "משמעת מנהלים ומורים"}
+{"case": "h3C-2517-question", "letter_id": 1200870306, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הנהגת תלמידים, הנהלה"}
+{"case": "h3C-2517-question", "letter_id": 1200870412, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "סכסוכים ויחס לא מתאים במוסד"}
+{"case": "h3C-2517-question", "letter_id": 1200880281, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אין לעזוב המערכה"}
+{"case": "h3C-2517-question", "letter_id": 1200890011, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ענין משפחתי, רב"}
+{"case": "h3C-2517-question", "letter_id": 1200890102, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ניגונים ומחלוקת בדינער"}
+{"case": "h3C-2517-question", "letter_id": 1200910194, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תלמידים מסיימים"}
+{"case": "h3C-2517-question", "letter_id": 1200980051, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "סמינר למורים"}
+{"case": "h3C-3150-paraphrase", "letter_id": 1200790064, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חינוך נוער בפילדלפיא, לא קשור"}
+{"case": "h3C-3150-paraphrase", "letter_id": 1200820107, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ארגון נשי חב\"ד, לא קשור"}
+{"case": "h3C-3150-paraphrase", "letter_id": 1200820376, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תערובת ילדים וילדות, אך בישיבה"}
+{"case": "h3C-3150-paraphrase", "letter_id": 1200860257, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "הרצאה לציבור, נגד תערובת בנים ובנות"}
+{"case": "h3C-3150-paraphrase", "letter_id": 1200870086, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מועדון דתי לנוער, ללא תערובת"}
+{"case": "h3C-3150-paraphrase", "letter_id": 1200880471, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בתי ספר הרשת, מינוי מורים"}
+{"case": "h3C-3150-paraphrase", "letter_id": 1200880484, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "תערובת בנים ובנות בשם דתי"}
+{"case": "h3C-3150-paraphrase", "letter_id": 1200910290, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מסיבות שבת נפרדות לבנים ובנות"}
+{"case": "h3C-3150-paraphrase", "letter_id": 1200950378, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוער דתי בארץ, תערובות בתפילה"}
+{"case": "h3C-3150-paraphrase", "letter_id": 1200970117, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "התנגדות לתכנית חינוך דתי, כללי"}
+{"case": "h3C-3150-question", "letter_id": 1200780038, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "הרצאות, קלוב נוער, מניעת רקודי תערובות"}
+{"case": "h3C-3150-question", "letter_id": 1200840265, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מסיבות שבת בבתי ספר"}
+{"case": "h3C-3150-question", "letter_id": 1200860365, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שיתוף עם רבנים רפורמים"}
+{"case": "h3C-3150-question", "letter_id": 1200870040, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "כפר חב\"ד, לא קשור"}
+{"case": "h3C-3150-question", "letter_id": 1200880484, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שיעורים מעורבים בשם דתי"}
+{"case": "h3C-3150-question", "letter_id": 1200910243, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בת מצוה בערב שבת"}
+{"case": "h3C-3150-question", "letter_id": 1200920060, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נוער בבתי כנסת חב\"ד, כללי"}
+{"case": "h3C-3150-question", "letter_id": 1200920319, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מסיבות שבת ומועדון בנות"}
+{"case": "h3C-3150-question", "letter_id": 1200940145, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ארגוני תנועה ובחינות"}
+{"case": "h3C-3150-question", "letter_id": 1200950378, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ארגון נוער דתי, תערובות בתפילה"}
+{"case": "h3C-3150-question", "letter_id": 1200970102, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שיעורי תורה בבית כנסת, זירוז"}
+{"case": "h3C-3703-paraphrase", "letter_id": 1200770355, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הנשיא כולל כל הכוחות, תלוי בהם"}
+{"case": "h3C-3703-paraphrase", "letter_id": 1200780056, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "י\"ט כסלו, פנייה לאדמו\"ר"}
+{"case": "h3C-3703-paraphrase", "letter_id": 1200820034, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תלמידים בשליחות, לא תוכחה"}
+{"case": "h3C-3703-paraphrase", "letter_id": 1200820150, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "התוועדויות ותו\"ת לוד"}
+{"case": "h3C-3703-paraphrase", "letter_id": 1200830073, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עידוד בהתוועדות"}
+{"case": "h3C-3703-paraphrase", "letter_id": 1200860280, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "התקשרות תלמידים לישיבה"}
+{"case": "h3C-3703-paraphrase", "letter_id": 1200870461, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מסרבים להסיק מסקנות בפועל"}
+{"case": "h3C-3703-paraphrase", "letter_id": 1200920050, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מנהג טבילה, ישיבת ערב"}
+{"case": "h3C-3703-paraphrase", "letter_id": 1200920487, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תוכחה על מי שצריכים לעמוד בראש"}
+{"case": "h3C-3703-paraphrase", "letter_id": 1200960163, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תוכחה על אי ניצול כוחותיו"}
+{"case": "h3C-3703-question", "letter_id": 1200870272, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ענייני אדם פרטי, לא ביקורת"}
+{"case": "h3C-3703-question", "letter_id": 1200880247, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אין פעולות אנ\"ש בהפצת המעינות"}
+{"case": "h3C-3703-question", "letter_id": 1200880289, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מצער אי ניצול ימי סגולה באה\"ק"}
+{"case": "h3C-3703-question", "letter_id": 1200880508, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שבח על פעולותיו"}
+{"case": "h3C-3703-question", "letter_id": 1200890304, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תודה ועידוד, אין ביקורת"}
+{"case": "h3C-3703-question", "letter_id": 1200910300, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תמיהה על הפצת המעינות, מחנם"}
+{"case": "h3C-3703-question", "letter_id": 1200920426, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "תמיהה על העדר השתדלות בהפצת המעינות"}
+{"case": "h3C-3703-question", "letter_id": 1200930091, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עידוד הפצה ברדיו, אין ביקורת"}
+{"case": "h3C-3703-question", "letter_id": 1200940151, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מצער שאין נעשה מאומה בהפצת המעינות"}
+{"case": "h3C-3703-question", "letter_id": 1200940259, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עידוד ללא ביקורת"}
+{"case": "h3C-3703-question", "letter_id": 1200960108, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אין ידיעות על פעולותיהם בהפצה"}
+{"case": "h3C-4844-paraphrase", "letter_id": 1200710316, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תעמולה ללא ויכוחים, מעשה בפועל"}
+{"case": "h3C-4844-paraphrase", "letter_id": 1200800177, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מדע ודת במאמרים, לא ארגון"}
+{"case": "h3C-4844-paraphrase", "letter_id": 1200810275, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "התקשרות לחסידות, לא קשור"}
+{"case": "h3C-4844-paraphrase", "letter_id": 1200860064, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תעמולה ותשובה לטענת המדע"}
+{"case": "h3C-4844-paraphrase", "letter_id": 1200890108, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ראיות המדע חלושות מול התורה"}
+{"case": "h3C-4844-paraphrase", "letter_id": 1200890130, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תעמולה בענין ילדים"}
+{"case": "h3C-4844-paraphrase", "letter_id": 1200970117, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חינוך דתי, לא קשור"}
+{"case": "h3C-4844-paraphrase", "letter_id": 1200970349, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חזית דתית לבחירות"}
+{"case": "h3C-4844-paraphrase", "letter_id": 1200980053, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פרסום בנושא דת ומדע"}
+{"case": "h3C-4844-question", "letter_id": 1200800177, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מה נחוץ בנושא מדע ודת"}
+{"case": "h3C-4844-question", "letter_id": 1200810275, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור"}
+{"case": "h3C-4844-question", "letter_id": 1200840382, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "רופא או חקירות מדעיות"}
+{"case": "h3C-4844-question", "letter_id": 1200860064, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מענה לטענת המדע על גיל העולם"}
+{"case": "h3C-4844-question", "letter_id": 1200870144, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "סינאגאג קאונסיל"}
+{"case": "h3C-4844-question", "letter_id": 1200890054, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שלילת פשרות באפולוגטיקה מול מדע"}
+{"case": "h3C-4844-question", "letter_id": 1200890125, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "היזק החומר האפולוגטי"}
+{"case": "h3C-4844-question", "letter_id": 1200920470, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קושיות כלליות, לא קשור"}
+{"case": "h3C-4844-question", "letter_id": 1200970349, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חזית דתית לבחירות"}
+{"case": "h3C-4892-question", "letter_id": 1200760077, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פדיון הבן"}
+{"case": "h3C-4892-question", "letter_id": 1200770132, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שאלות נוסח התקיעות"}
+{"case": "h3C-4892-question", "letter_id": 1200770233, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פדיון על ילד בהיכל"}
+{"case": "h3C-4892-question", "letter_id": 1200770283, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הערה לשיחה, הלכה"}
+{"case": "h3C-4892-question", "letter_id": 1200780451, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "סיפור מו\"ח על אביו לפני מאמר"}
+{"case": "h3C-4892-question", "letter_id": 1200790301, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חינוך בן, לא קשור"}
+{"case": "h3C-4892-question", "letter_id": 1200800088, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פדיון נפש לחולה"}
+{"case": "h3C-4892-question", "letter_id": 1200800285, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פדיון נפש לחולה"}
+{"case": "h3C-4892-question", "letter_id": 1200810358, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נחמה לאלמן"}
+{"case": "h3C-4892-question", "letter_id": 1200850015, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עשה לך רב"}
+{"case": "h3C-4892-question", "letter_id": 1200870204, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הורים מונעים לימוד חסידות"}
+{"case": "h3C-4892-question", "letter_id": 1200920480, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ירושת אבות"}
+{"case": "h3C-4892-question", "letter_id": 1200970080, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "יום הילולא, התקשרות"}
+{"case": "h3C-5487-paraphrase", "letter_id": 1200780094, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מורה בת\"ת, לא בריאות"}
+{"case": "h3C-5487-paraphrase", "letter_id": 1200800092, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות, הוראות רופאים, מחשבה בתורה"}
+{"case": "h3C-5487-paraphrase", "letter_id": 1200800101, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בטחון, שמירת הוראות רופאים"}
+{"case": "h3C-5487-paraphrase", "letter_id": 1200820139, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות והוראות רופאים, סדר לימוד"}
+{"case": "h3C-5487-paraphrase", "letter_id": 1200830198, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ויכוח עם הנהלת הישיבה"}
+{"case": "h3C-5487-paraphrase", "letter_id": 1200870103, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "שמע לרופאים וקבע לימוד גירסא"}
+{"case": "h3C-5487-paraphrase", "letter_id": 1200880262, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קביעות עתים, אין כאב"}
+{"case": "h3C-5487-paraphrase", "letter_id": 1200900305, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "המשך טפול והוספה בלימוד תורה"}
+{"case": "h3C-5487-paraphrase", "letter_id": 1200900365, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "רופא ושיעור יומי בחסידות"}
+{"case": "h3C-5487-question", "letter_id": 1200800092, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות, רופאים, מחשבה בתורה"}
+{"case": "h3C-5487-question", "letter_id": 1200800101, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בטחון והוראות רופאים"}
+{"case": "h3C-5487-question", "letter_id": 1200820139, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות מול סדר לימוד"}
+{"case": "h3C-5487-question", "letter_id": 1200830051, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות הגוף ואופן הלימוד"}
+{"case": "h3C-5487-question", "letter_id": 1200870103, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "טפול רופאים והמשך לימוד"}
+{"case": "h3C-5487-question", "letter_id": 1200870245, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "טענת אי יכולת ללמוד, ללא כאב"}
+{"case": "h3C-5487-question", "letter_id": 1200890288, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופאים ולימוד תורה, קשר חלקי"}
+{"case": "h3C-5487-question", "letter_id": 1200900365, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופא ושיעור יומי, פרטים שונים"}
+{"case": "h3C-5487-question", "letter_id": 1200980147, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לימוד רפואה, שו\"ע"}
+{"case": "h3C-7330-paraphrase", "letter_id": 1200820192, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "זכרה בציון, חסידות, צדקה, תפילין"}
+{"case": "h3C-7330-paraphrase", "letter_id": 1200830017, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בדיקת מזוזות ותפילין וצדקה, לאחר לידה"}
+{"case": "h3C-7330-paraphrase", "letter_id": 1200860027, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בדיקת תפילין ומזוזות, פרטים שונים"}
+{"case": "h3C-7330-paraphrase", "letter_id": 1200870398, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מזוזות תפילין צדקה, בלי בן"}
+{"case": "h3C-7330-paraphrase", "letter_id": 1200880416, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ברכה לילדים, רופא ותורה ומצוות"}
+{"case": "h3C-7330-paraphrase", "letter_id": 1200890107, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ציון, תפילין מזוזות, צדקה לפני נרות"}
+{"case": "h3C-7330-paraphrase", "letter_id": 1200920438, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ניתוח צנורות, לא קשור"}
+{"case": "h3C-7330-paraphrase", "letter_id": 1200960243, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הזכרה על הציון וטהרת המשפחה"}
+{"case": "h3C-7330-paraphrase", "letter_id": 1200970300, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חינוך בת, לא קשור"}
+{"case": "h3C-7330-question", "letter_id": 1200710254, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לידת בת, ברכה"}
+{"case": "h3C-7330-question", "letter_id": 1200780026, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "במה יזכה נער, הכנסת אורחים"}
+{"case": "h3C-7330-question", "letter_id": 1200790136, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לידת בת, ברכה"}
+{"case": "h3C-7330-question", "letter_id": 1200800234, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לידת בת, ברכה"}
+{"case": "h3C-7330-question", "letter_id": 1200810055, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "סגולה לבן זכר, ללא אירוח"}
+{"case": "h3C-7330-question", "letter_id": 1200820192, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "סגולה לבנים, ללא אירוח"}
+{"case": "h3C-7330-question", "letter_id": 1200820362, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בן זכר והכנסת אורחים, בלי מסורת"}
+{"case": "h3C-7330-question", "letter_id": 1200860225, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לידת בת, ברכה"}
+{"case": "h3C-7330-question", "letter_id": 1200980211, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לידת בת ושיעור תניא"}
+{"case": "h3C-7713-paraphrase", "letter_id": 1200710433, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חלוקת דעות רופאים, רופא שלישי"}
+{"case": "h3C-7713-paraphrase", "letter_id": 1200780343, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ניתוח פרוסטטה, לא קשור"}
+{"case": "h3C-7713-paraphrase", "letter_id": 1200820179, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "סדר לימוד, לא קשור"}
+{"case": "h3C-7713-paraphrase", "letter_id": 1200820286, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בריאות חבר, לא קשור"}
+{"case": "h3C-7713-paraphrase", "letter_id": 1200830085, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות בת, דעת רופאים"}
+{"case": "h3C-7713-paraphrase", "letter_id": 1200910286, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "דעת מומחים לניתוח, חולה אחר"}
+{"case": "h3C-7713-paraphrase", "letter_id": 1200940214, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בת במוסד, לא ניתוח"}
+{"case": "h3C-7713-paraphrase", "letter_id": 1200940240, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "דעת רופאים על ניתוח לבן"}
+{"case": "h3C-7713-paraphrase", "letter_id": 1200950134, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ברור כוונת רופא ודעות נוספות"}
+{"case": "h3C-7713-question", "letter_id": 1200700372, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור"}
+{"case": "h3C-7713-question", "letter_id": 1200710260, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור"}
+{"case": "h3C-7713-question", "letter_id": 1200780343, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ניתוח פרוסטטה"}
+{"case": "h3C-7713-question", "letter_id": 1200820179, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור"}
+{"case": "h3C-7713-question", "letter_id": 1200820367, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא קשור"}
+{"case": "h3C-7713-question", "letter_id": 1200830209, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הלכת תקיעת שופר"}
+{"case": "h3C-7713-question", "letter_id": 1200850217, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אסיפת רופאים דתיים"}
+{"case": "h3C-7713-question", "letter_id": 1200880416, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פריון, לא ניתוח"}
+{"case": "h3C-7713-question", "letter_id": 1200910286, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לא ניתוח ביד"}
+{"case": "h3C-7713-question", "letter_id": 1200940214, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בת במוסד, לא ניתוח"}
+{"case": "h3C-7713-question", "letter_id": 1200970251, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ניתוח פרוסטטה"}
+{"case": "h3C-8811-paraphrase", "letter_id": 1200820313, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בית כנסת נוסח אר\"י, ללא הרחבה"}
+{"case": "h3C-8811-paraphrase", "letter_id": 1200870056, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ל\"ג בעומר, לא הרחבת מבנה"}
+{"case": "h3C-8811-paraphrase", "letter_id": 1200870080, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נוסח אר\"י, איחוד בתי כנסת"}
+{"case": "h3C-8811-paraphrase", "letter_id": 1200880359, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מחלוקת תחנון"}
+{"case": "h3C-8811-paraphrase", "letter_id": 1200920202, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מעבר אישי לנוסח אר\"י"}
+{"case": "h3C-8811-paraphrase", "letter_id": 1200920375, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ענייני הנהלה כלליים"}
+{"case": "h3C-8811-paraphrase", "letter_id": 1200920397, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "סוטה בספירה, זכרון בציון, לא בית כנסת"}
+{"case": "h3C-8811-paraphrase", "letter_id": 1200920514, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "זכרון בציון ושינוי נוסח אישי"}
+{"case": "h3C-8811-paraphrase", "letter_id": 1200960062, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "זכרון בציון ונוסח אישי"}
+{"case": "h3C-8811-paraphrase", "letter_id": 1200970338, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הרחבת בית כנסת בכפר חב\"ד, באיכות"}
+{"case": "h3C-8811-question", "letter_id": 1200700132, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הרחבת בתי כנסת, אך כפר חב\"ד"}
+{"case": "h3C-8811-question", "letter_id": 1200800054, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עגמת נפש חברי בית כנסת"}
+{"case": "h3C-8811-question", "letter_id": 1200800171, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בניין ישיבה בלוד"}
+{"case": "h3C-8811-question", "letter_id": 1200840091, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פעולות בלונדון, לא בניין"}
+{"case": "h3C-8811-question", "letter_id": 1200850203, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מגרש לבית כנסת בשיקגו"}
+{"case": "h3C-8811-question", "letter_id": 1200850318, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מחיצה בבית כנסת"}
+{"case": "h3C-8811-question", "letter_id": 1200900292, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בתי כנסת במעברה"}
+{"case": "h3C-8811-question", "letter_id": 1200920301, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בניית בית כנסת, לא אנגליה"}
+{"case": "h3C-8811-question", "letter_id": 1200940008, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכה כללית לבית כנסת"}
+{"case": "h3C-8811-question", "letter_id": 1200970093, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ייסוד בית כנסת, לא תוספת"}
+{"case": "h3C-8811-question", "letter_id": 1200970338, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הוספה והרחבה, לא אנגליה"}
+{"case": "h3C-9400-paraphrase", "letter_id": 1200690176, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכה לבית כנסת בבני ברק"}
+{"case": "h3C-9400-paraphrase", "letter_id": 1200710215, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אבן פינה בנחלת הר חב\"ד"}
+{"case": "h3C-9400-paraphrase", "letter_id": 1200710268, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "יום הולדת, תפילה בצמח צדק בעיר העתיקה"}
+{"case": "h3C-9400-paraphrase", "letter_id": 1200710319, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "יום הולדת פרטי רגיל"}
+{"case": "h3C-9400-paraphrase", "letter_id": 1200720242, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בית כנסת בעיר העתיקה, לא יום הולדת"}
+{"case": "h3C-9400-paraphrase", "letter_id": 1200800021, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הוראות יום הולדת פרטי"}
+{"case": "h3C-9400-paraphrase", "letter_id": 1200890289, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכה לבית כנסת בשיקגו"}
+{"case": "h3C-9400-paraphrase", "letter_id": 1200900353, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בית כנסת במאנשסטר"}
+{"case": "h3C-9400-paraphrase", "letter_id": 1200910352, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מיקרופון בשבת"}
+{"case": "h3C-9400-paraphrase", "letter_id": 1200960105, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "יום הולדת פרטי רגיל"}
+{"case": "h3C-9400-paraphrase", "letter_id": 1200980183, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "יום הולדת פרטי רגיל"}
+{"case": "h3C-9400-question", "letter_id": 1200700023, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ברכת יום הולדת, בית כנסת צמח צדק ירושלים"}
+{"case": "h3C-9400-question", "letter_id": 1200700204, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ברכת יום הולדת לאותו נמען"}
+{"case": "h3C-9400-question", "letter_id": 1200710268, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "יום הולדת, תפילה בעיר העתיקה"}
+{"case": "h3C-9400-question", "letter_id": 1200810185, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "יום הולדת אדם פרטי"}
+{"case": "h3C-9400-question", "letter_id": 1200840070, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בקשת ברכה לבריאות"}
+{"case": "h3C-9400-question", "letter_id": 1200860220, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בקשת ברכה פרטית"}
+{"case": "h3C-9400-question", "letter_id": 1200890289, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בית כנסת בשיקגו"}
+{"case": "h3C-9400-question", "letter_id": 1200930304, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "יום הולדת רב בכפר חב\"ד"}
+{"case": "h3C-9400-question", "letter_id": 1200960119, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עניין אחר, חלב ישראל"}
+{"case": "h3D-1016-crosslang", "letter_id": 1200780234, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "עסק ושיעורי תורה, שיחת ל\"ג בעומר"}
+{"case": "h3D-1016-crosslang", "letter_id": 1200780243, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בעל עסק וקביעות עתים"}
+{"case": "h3D-1016-crosslang", "letter_id": 1200780254, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ת\"ת ומספר תלמידים"}
+{"case": "h3D-1016-crosslang", "letter_id": 1200790041, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הפצת חסידות כללי"}
+{"case": "h3D-1016-crosslang", "letter_id": 1200810235, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "גירעון מוסד, לא חנות"}
+{"case": "h3D-1016-crosslang", "letter_id": 1200830072, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ל\"ג בעומר, מלמד"}
+{"case": "h3D-1016-crosslang", "letter_id": 1200880262, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קביעות לימוד, לא עסק"}
+{"case": "h3D-1016-crosslang", "letter_id": 1200910104, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חייט בלי הצלחה, צדקה ולימוד"}
+{"case": "h3D-1016-crosslang", "letter_id": 1200920040, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עזיבת רבנות"}
+{"case": "h3D-1016-crosslang", "letter_id": 1200920151, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ישיבה ואברך"}
+{"case": "h3D-1016-crosslang", "letter_id": 1200950110, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הפצת חסידות כללי"}
+{"case": "h3D-1016-english", "letter_id": 1200780234, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "עסק ושיעורי תורה, ל\"ג בעומר"}
+{"case": "h3D-1016-english", "letter_id": 1200780243, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בעל עסק וקביעות עתים"}
+{"case": "h3D-1016-english", "letter_id": 1200810041, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חיכוכים בעסק"}
+{"case": "h3D-1016-english", "letter_id": 1200820025, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אברך בבוסטון, משל פרנסה"}
+{"case": "h3D-1016-english", "letter_id": 1200840059, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בית מסחר וחובות, הרחבה"}
+{"case": "h3D-1016-english", "letter_id": 1200850203, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מגרש לבית כנסת"}
+{"case": "h3D-1016-english", "letter_id": 1200850207, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מצב העסק, עצה צדקה"}
+{"case": "h3D-1016-english", "letter_id": 1200880262, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קביעות לימוד כללית"}
+{"case": "h3D-1016-english", "letter_id": 1200910104, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חייט בלי הצלחה, צדקה ולימוד"}
+{"case": "h3D-1016-english", "letter_id": 1200910181, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אין הצלחה במסחר, הוספה בתורה"}
+{"case": "h3D-1016-english", "letter_id": 1200920040, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עזיבת רבנות"}
+{"case": "h3D-1124-crosslang", "letter_id": 1200780343, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בעיה רפואית, לא שנאת חינם"}
+{"case": "h3D-1124-crosslang", "letter_id": 1200780399, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אהבת חינם תיקון שנאת חינם"}
+{"case": "h3D-1124-crosslang", "letter_id": 1200780410, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לשון הרע, מחלוקת"}
+{"case": "h3D-1124-crosslang", "letter_id": 1200790107, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אהבת חנם תיקון הגלות"}
+{"case": "h3D-1124-crosslang", "letter_id": 1200860332, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אהבת חנם גם למי שאינו בתומ\"צ"}
+{"case": "h3D-1124-crosslang", "letter_id": 1200920450, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בין המצרים, בלי אהבת חינם"}
+{"case": "h3D-1124-crosslang", "letter_id": 1200930338, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בין המצרים, תיקון סיבות החורבן"}
+{"case": "h3D-1124-crosslang", "letter_id": 1200940267, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בין המצרים ביידיש, חלקי"}
+{"case": "h3D-1124-crosslang", "letter_id": 1200970192, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אהבת ישראל עצמית, בלי בין המצרים"}
+{"case": "h3D-1124-crosslang", "letter_id": 1200970194, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "בין המצרים, שנאת חינם ותיקון"}
+{"case": "h3D-1124-english", "letter_id": 1200770132, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שאלות נוסח תפילה"}
+{"case": "h3D-1124-english", "letter_id": 1200780343, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בעיה רפואית"}
+{"case": "h3D-1124-english", "letter_id": 1200780399, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אהבת חנם תיקון שנאת חנם"}
+{"case": "h3D-1124-english", "letter_id": 1200780410, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לשון הרע, מחלוקת"}
+{"case": "h3D-1124-english", "letter_id": 1200790107, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אהבת חנם תיקון הגלות"}
+{"case": "h3D-1124-english", "letter_id": 1200790309, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אהבת ישראל תיקון שנאת חנם"}
+{"case": "h3D-1124-english", "letter_id": 1200860332, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אהבת חנם גם לשאינו שומר"}
+{"case": "h3D-1124-english", "letter_id": 1200950376, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אלימות בכפר חב\"ד"}
+{"case": "h3D-1124-english", "letter_id": 1200970194, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "בין המצרים, שנאת חינם ותיקון"}
+{"case": "h3D-1243-crosslang", "letter_id": 1200690127, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "סיום בית ספר, לא יובל"}
+{"case": "h3D-1243-crosslang", "letter_id": 1200700198, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "החלטות תלמידות"}
+{"case": "h3D-1243-crosslang", "letter_id": 1200710090, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תרומת תלמידות"}
+{"case": "h3D-1243-crosslang", "letter_id": 1200720162, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מסיבה שנתית בית רבקה"}
+{"case": "h3D-1243-crosslang", "letter_id": 1200840390, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חגיגה שנתית בית רבקה"}
+{"case": "h3D-1243-crosslang", "letter_id": 1200920125, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ברכה לחגיגת בית רבקה"}
+{"case": "h3D-1243-crosslang", "letter_id": 1200950096, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "שנה תשיעית, קריאה לתמוך במוסדות"}
+{"case": "h3D-1243-crosslang", "letter_id": 1200950217, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בית רבקה אחת עשרה שנים, תמיכה"}
+{"case": "h3D-1243-crosslang", "letter_id": 1200970146, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חנוכת בית בצרפת"}
+{"case": "h3D-1243-english", "letter_id": 1200700118, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "סיום תלמידות"}
+{"case": "h3D-1243-english", "letter_id": 1200710090, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תרומת תלמידות"}
+{"case": "h3D-1243-english", "letter_id": 1200750057, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תודה על תרומה לבית רבקה"}
+{"case": "h3D-1243-english", "letter_id": 1200760036, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מימון בית ספר בית רבקה"}
+{"case": "h3D-1243-english", "letter_id": 1200780033, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "עידוד פעילות לטובת בית רבקה"}
+{"case": "h3D-1243-english", "letter_id": 1200810057, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קריאה לתמוך בבית רבקה"}
+{"case": "h3D-1243-english", "letter_id": 1200840390, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חגיגה שנתית בית רבקה"}
+{"case": "h3D-1243-english", "letter_id": 1200950096, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "שנה תשיעית, קריאה לתמוך"}
+{"case": "h3D-1243-english", "letter_id": 1200950217, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בית רבקה אחת עשרה שנים, תמיכה"}
+{"case": "h3D-1243-english", "letter_id": 1200960326, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אוקזילרי בית רבקה מונטריאול"}
+{"case": "h3D-1526-crosslang", "letter_id": 1200800025, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שייטל ושיעור לימוד"}
+{"case": "h3D-1526-crosslang", "letter_id": 1200800281, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שיעור לצעירים, שפה"}
+{"case": "h3D-1526-crosslang", "letter_id": 1200840218, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מלמד ולימודו האישי"}
+{"case": "h3D-1526-crosslang", "letter_id": 1200860265, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "יראת שמים כללית בחינוך"}
+{"case": "h3D-1526-crosslang", "letter_id": 1200870426, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תלמיד ישיבה, עצת יצר"}
+{"case": "h3D-1526-crosslang", "letter_id": 1200880580, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תפילין לבר מצווה"}
+{"case": "h3D-1526-crosslang", "letter_id": 1200920081, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מורה חדש, תפילתו שלו"}
+{"case": "h3D-1526-crosslang", "letter_id": 1200920260, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שאלות הוראה בלימוד"}
+{"case": "h3D-1526-crosslang", "letter_id": 1200950142, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תפילה במתינות ולימוד"}
+{"case": "h3D-1526-crosslang", "letter_id": 1200970231, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מורה למורים, כללי"}
+{"case": "h3D-1526-english", "letter_id": 1200800281, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שיעור לצעירים, שפה"}
+{"case": "h3D-1526-english", "letter_id": 1200810063, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הצלת ילדים ממסיתים"}
+{"case": "h3D-1526-english", "letter_id": 1200810346, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עבודה במוסדות כללי"}
+{"case": "h3D-1526-english", "letter_id": 1200880580, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תפילין לבר מצווה"}
+{"case": "h3D-1526-english", "letter_id": 1200910228, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פעולות צעירי אגודת חב\"ד"}
+{"case": "h3D-1526-english", "letter_id": 1200920081, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מורה חדש, תפילתו שלו"}
+{"case": "h3D-1526-english", "letter_id": 1200920260, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שאלות הוראה בלימוד"}
+{"case": "h3D-1526-english", "letter_id": 1200930316, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בנים שאינם שומרי תורה"}
+{"case": "h3D-1526-english", "letter_id": 1200950142, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תפילה במתינות ולימוד"}
+{"case": "h3D-1526-english", "letter_id": 1200970231, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מורה למורים, כללי"}
+{"case": "h3D-1660-crosslang", "letter_id": 1200770050, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "איסור אכילה לפני תפילה, הלכתי"}
+{"case": "h3D-1660-crosslang", "letter_id": 1200770101, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תפוח בראש השנה"}
+{"case": "h3D-1660-crosslang", "letter_id": 1200810320, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אכילה לפני תפילה לבריאות"}
+{"case": "h3D-1660-crosslang", "letter_id": 1200840322, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "סדר יום ושמירת הגוף"}
+{"case": "h3D-1660-crosslang", "letter_id": 1200850190, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אריכות בתפילה וקדושה"}
+{"case": "h3D-1660-crosslang", "letter_id": 1200880024, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "פתגם צ\"צ אכילה כדי להתפלל"}
+{"case": "h3D-1660-crosslang", "letter_id": 1200910332, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ספקות באמונה, סיפור צ\"צ"}
+{"case": "h3D-1660-crosslang", "letter_id": 1200920121, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פעולה עם הזולת"}
+{"case": "h3D-1660-crosslang", "letter_id": 1200930040, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אכילה רפואית לפני תפילה"}
+{"case": "h3D-1660-english", "letter_id": 1200780135, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בריאות כללית ללא אכילה לפני תפילה"}
+{"case": "h3D-1660-english", "letter_id": 1200790137, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "טעימת מזונות לפני התפילה בריאות"}
+{"case": "h3D-1660-english", "letter_id": 1200790176, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הוראות רופא כללי"}
+{"case": "h3D-1660-english", "letter_id": 1200810320, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "אכילה לפני תפילה לצורך בריאות"}
+{"case": "h3D-1660-english", "letter_id": 1200820242, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מחשבות לא טובות"}
+{"case": "h3D-1660-english", "letter_id": 1200820299, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מצב בריאות ושיעורים"}
+{"case": "h3D-1660-english", "letter_id": 1200840322, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שמירת בריאות כללית"}
+{"case": "h3D-1660-english", "letter_id": 1200880024, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "צמח צדק אכילה כדי להתפלל"}
+{"case": "h3D-1660-english", "letter_id": 1200910171, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חלישות וסדר אכילה כללי"}
+{"case": "h3D-1660-english", "letter_id": 1200930040, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אכילה לפני תפילה לפי הוראת רופא"}
+{"case": "h3D-1876-crosslang", "letter_id": 1200700216, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נשי חב\"ד תפקיד עקרת הבית"}
+{"case": "h3D-1876-crosslang", "letter_id": 1200710335, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ייסוד ארגון נשי חב\"ד"}
+{"case": "h3D-1876-crosslang", "letter_id": 1200710469, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "כנס אלול כללי"}
+{"case": "h3D-1876-crosslang", "letter_id": 1200800214, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תכנית עבודה לנשי חב\"ד"}
+{"case": "h3D-1876-crosslang", "letter_id": 1200810049, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ארגון נשי חב\"ד במחנה"}
+{"case": "h3D-1876-crosslang", "letter_id": 1200820107, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הקמת ארגון נשי חב\"ד"}
+{"case": "h3D-1876-crosslang", "letter_id": 1200850103, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שיעורים לתלמידים"}
+{"case": "h3D-1876-crosslang", "letter_id": 1200860474, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לימודי חול ותלמידים"}
+{"case": "h3D-1876-crosslang", "letter_id": 1200880025, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "עידוד התארגנות בנות חב\"ד"}
+{"case": "h3D-1876-crosslang", "letter_id": 1200950308, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לימוד בנות כפר חב\"ד"}
+{"case": "h3D-1876-english", "letter_id": 1200700216, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נשי חב\"ד תפקיד עקרת הבית"}
+{"case": "h3D-1876-english", "letter_id": 1200800214, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תכנית עבודה לנשי חב\"ד"}
+{"case": "h3D-1876-english", "letter_id": 1200820107, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הקמת ארגון נשי חב\"ד"}
+{"case": "h3D-1876-english", "letter_id": 1200820212, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "לימודי דינים ומנהגים באגודת נשים"}
+{"case": "h3D-1876-english", "letter_id": 1200870118, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "עידוד יזמה בפעולות נשי חב\"ד"}
+{"case": "h3D-1876-english", "letter_id": 1200870404, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עניין כספי ונשי חב\"ד בקצרה"}
+{"case": "h3D-1876-english", "letter_id": 1200880019, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פעולה בארגון נשי ובנות"}
+{"case": "h3D-1876-english", "letter_id": 1200880025, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "עידוד התארגנות בנות חב\"ד"}
+{"case": "h3D-1876-english", "letter_id": 1200930280, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "שיעור חברות בהלכות טהרת המשפחה"}
+{"case": "h3D-1876-english", "letter_id": 1200950308, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לימוד בנות כפר חב\"ד"}
+{"case": "h3D-2433-crosslang", "letter_id": 1200790074, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ההורים בוחרים השם"}
+{"case": "h3D-2433-crosslang", "letter_id": 1200790111, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מי קורא שם אב או אם"}
+{"case": "h3D-2433-crosslang", "letter_id": 1200800004, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שאלת שם נוסף, לאריכות ימים"}
+{"case": "h3D-2433-crosslang", "letter_id": 1200830134, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עצה לקריאת שם, ההורים"}
+{"case": "h3D-2433-crosslang", "letter_id": 1200860205, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ההורים מתדברים על השם"}
+{"case": "h3D-2433-crosslang", "letter_id": 1200860375, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ההורים דוקא יחליטו"}
+{"case": "h3D-2433-crosslang", "letter_id": 1200870247, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תוספת שם במי שברך"}
+{"case": "h3D-2433-crosslang", "letter_id": 1200900279, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עניין תקוני זהר"}
+{"case": "h3D-2433-crosslang", "letter_id": 1200900334, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הוספת שם במי שברך"}
+{"case": "h3D-2433-crosslang", "letter_id": 1200920293, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בניין בית כנסת"}
+{"case": "h3D-2433-english", "letter_id": 1200760070, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עניינים אחרים"}
+{"case": "h3D-2433-english", "letter_id": 1200790074, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ההורים בוחרים השם"}
+{"case": "h3D-2433-english", "letter_id": 1200790111, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מי קורא שם אב או אם"}
+{"case": "h3D-2433-english", "letter_id": 1200800004, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שאלת שם נוסף"}
+{"case": "h3D-2433-english", "letter_id": 1200810305, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ההורים מקבלים דעת ישרה לשם"}
+{"case": "h3D-2433-english", "letter_id": 1200830134, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "עצה לקריאת שם, ההורים"}
+{"case": "h3D-2433-english", "letter_id": 1200860375, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "ההורים דוקא יחליטו"}
+{"case": "h3D-2433-english", "letter_id": 1200900279, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עניין תקוני זהר"}
+{"case": "h3D-2433-english", "letter_id": 1200920293, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בניין בית כנסת"}
+{"case": "h3D-2701-crosslang", "letter_id": 1200790293, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכה לחולים כללי"}
+{"case": "h3D-2701-crosslang", "letter_id": 1200800058, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לימוד בישיבה"}
+{"case": "h3D-2701-crosslang", "letter_id": 1200810034, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "סדר לימוד ויום הולדת"}
+{"case": "h3D-2701-crosslang", "letter_id": 1200810352, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "יום הולדת ותפילין דר\"ת"}
+{"case": "h3D-2701-crosslang", "letter_id": 1200820195, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תפילין וביטול חכמה ובינה"}
+{"case": "h3D-2701-crosslang", "letter_id": 1200880432, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תפיסה בלימוד"}
+{"case": "h3D-2701-crosslang", "letter_id": 1200880580, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תפילין והתבוננות תניא מ\"א"}
+{"case": "h3D-2701-crosslang", "letter_id": 1200910133, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בריאות וקבלת התורה"}
+{"case": "h3D-2701-crosslang", "letter_id": 1200930151, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תפילין לאחר שנים שלא הניח"}
+{"case": "h3D-2701-crosslang", "letter_id": 1200950450, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "התחיל תפילין, שעבוד לב ומוח"}
+{"case": "h3D-2701-crosslang", "letter_id": 1200970064, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "השפעת ידידים על בן"}
+{"case": "h3D-2701-english", "letter_id": 1200780260, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מכתב אידיש כללי"}
+{"case": "h3D-2701-english", "letter_id": 1200780263, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "להזהיר מר להניח תפילין"}
+{"case": "h3D-2701-english", "letter_id": 1200790080, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בחורים חופשיים"}
+{"case": "h3D-2701-english", "letter_id": 1200820195, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תפילין בר מצוה"}
+{"case": "h3D-2701-english", "letter_id": 1200830247, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בן בצבא להניח תפילין"}
+{"case": "h3D-2701-english", "letter_id": 1200850347, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בר מצוה תפילין"}
+{"case": "h3D-2701-english", "letter_id": 1200880580, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תפילין לפני בר מצוה"}
+{"case": "h3D-2701-english", "letter_id": 1200890387, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ביקור במושבות"}
+{"case": "h3D-2701-english", "letter_id": 1200910072, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פרנסה ותפילין בצד"}
+{"case": "h3D-2701-english", "letter_id": 1200930151, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אדם שלא הניח תפילין"}
+{"case": "h3D-2701-english", "letter_id": 1200960138, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שידוך"}
+{"case": "h3D-4911-crosslang", "letter_id": 1200690003, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חינוך בנות עולות חדרה"}
+{"case": "h3D-4911-crosslang", "letter_id": 1200700198, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תלמידות סמינר החלטות"}
+{"case": "h3D-4911-crosslang", "letter_id": 1200750072, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חשיבות בית רבקה לא סובל דיחוי"}
+{"case": "h3D-4911-crosslang", "letter_id": 1200760036, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מימון בית רבקה דורצסטר"}
+{"case": "h3D-4911-crosslang", "letter_id": 1200830290, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בי\"ס תיכון כפר חב\"ד"}
+{"case": "h3D-4911-crosslang", "letter_id": 1200870059, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קריאת עזרה לבית רבקה"}
+{"case": "h3D-4911-crosslang", "letter_id": 1200870363, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מלבורן בית ספר לבנות מוכרח"}
+{"case": "h3D-4911-crosslang", "letter_id": 1200960326, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אקזילרי בית רבקה מונטריאול"}
+{"case": "h3D-4911-crosslang", "letter_id": 1200970146, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חנוכת בית רבקה צרפת"}
+{"case": "h3D-4911-english", "letter_id": 1200700198, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תלמידות סמינר החלטות"}
+{"case": "h3D-4911-english", "letter_id": 1200710169, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הגבלה וקבלת התורה"}
+{"case": "h3D-4911-english", "letter_id": 1200750072, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חשיבות בית רבקה לא סובל דיחוי"}
+{"case": "h3D-4911-english", "letter_id": 1200760168, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חשיבות חינוך הבנות"}
+{"case": "h3D-4911-english", "letter_id": 1200830214, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בי\"ס תיכון לבנות"}
+{"case": "h3D-4911-english", "letter_id": 1200830290, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בי\"ס תיכון כפר חב\"ד"}
+{"case": "h3D-4911-english", "letter_id": 1200870059, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קריאת עזרה לבית רבקה"}
+{"case": "h3D-4911-english", "letter_id": 1200870363, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "מלבורן בית ספר לבנות מוכרח"}
+{"case": "h3D-4911-english", "letter_id": 1200950308, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לימוד בנות כפר חב\"ד"}
+{"case": "h3D-4911-english", "letter_id": 1200960326, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אקזילרי בית רבקה מונטריאול"}
+{"case": "h3D-4914-english", "letter_id": 1200710019, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "יום הולדת הרש\"ב כללי"}
+{"case": "h3D-4914-english", "letter_id": 1200720028, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שבתיות ראש השנה"}
+{"case": "h3D-4914-english", "letter_id": 1200790039, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הצלחת ישיבות תומכי תמימים"}
+{"case": "h3D-4914-english", "letter_id": 1200790127, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חגיגה שנתית ישיבות, תאריך אחר"}
+{"case": "h3D-4914-english", "letter_id": 1200790229, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פעילי המחנה התורתי"}
+{"case": "h3D-4914-english", "letter_id": 1200810053, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מרכז לעניני חינוך"}
+{"case": "h3D-4914-english", "letter_id": 1200840384, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קמפיין ישיבת מונטריאול"}
+{"case": "h3D-4914-english", "letter_id": 1200860081, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פייערונג שנתית מרכז הישיבות, תאריך אחר"}
+{"case": "h3D-4914-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ספרים לבר מצוה"}
+{"case": "h3D-5138-crosslang", "letter_id": 1200690127, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נעשה ונשמע ונשים, בית רבקה"}
+{"case": "h3D-5138-crosslang", "letter_id": 1200700369, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "כנס נשי חב\"ד מנחם אב"}
+{"case": "h3D-5138-crosslang", "letter_id": 1200710331, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תפקיד נשים, תלמידות סמינר"}
+{"case": "h3D-5138-crosslang", "letter_id": 1200790039, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הצלחת ישיבות כללי"}
+{"case": "h3D-5138-crosslang", "letter_id": 1200810069, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שנת י\"ג מרכז ישיבות"}
+{"case": "h3D-5138-crosslang", "letter_id": 1200860255, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "באנקעט אקזילרי לישיבות, פרשת וארא"}
+{"case": "h3D-5138-crosslang", "letter_id": 1200920245, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מסיבה שנתית ישיבת מונטריאול"}
+{"case": "h3D-5138-crosslang", "letter_id": 1200970091, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "באנקעט אקזילרי, משפטים ומתן תורה"}
+{"case": "h3D-5138-crosslang", "letter_id": 1200970267, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חגיגת ישיבות, פרשת משפטים"}
+{"case": "h3D-5138-crosslang", "letter_id": 1200970270, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "גמ\"ח ופרשת משפטים"}
+{"case": "h3D-5138-crosslang", "letter_id": 1200980267, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "באנקעט אקזילרי לישיבות, הקהל"}
+{"case": "h3D-5138-english", "letter_id": 1200690127, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נעשה ונשמע ונשים"}
+{"case": "h3D-5138-english", "letter_id": 1200710017, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תרגום החלטות לאידיש"}
+{"case": "h3D-5138-english", "letter_id": 1200710331, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שליחות נשים שירת דבורה"}
+{"case": "h3D-5138-english", "letter_id": 1200810211, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכת פסח לנשי חב\"ד"}
+{"case": "h3D-5138-english", "letter_id": 1200820103, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "נשף נשי חב\"ד תפקיד האשה"}
+{"case": "h3D-5138-english", "letter_id": 1200850004, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכת פסח ופגישת אמהות"}
+{"case": "h3D-5138-english", "letter_id": 1200860255, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "באנקעט אקזילרי לישיבות, וארא"}
+{"case": "h3D-5138-english", "letter_id": 1200860345, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "אגודת נשים, תפקיד האשה"}
+{"case": "h3D-5138-english", "letter_id": 1200860395, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מענה כללי"}
+{"case": "h3D-5138-english", "letter_id": 1200910144, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קאנווענשאן נשי חב\"ד שבועות"}
+{"case": "h3D-5138-english", "letter_id": 1200970322, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לאנטשאן נשי חב\"ד שלח"}
+{"case": "h3D-5481-crosslang", "letter_id": 1200720188, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכת חג פסח"}
+{"case": "h3D-5481-crosslang", "letter_id": 1200780242, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חולה, גדל בתומכי תמימים"}
+{"case": "h3D-5481-crosslang", "letter_id": 1200800092, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מצב רוח ובריאות"}
+{"case": "h3D-5481-crosslang", "letter_id": 1200820109, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נמיכת רוח בבריאות"}
+{"case": "h3D-5481-crosslang", "letter_id": 1200830267, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תלמיד ישיבה מצב נמוך"}
+{"case": "h3D-5481-crosslang", "letter_id": 1200830350, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ספר על רדיפות"}
+{"case": "h3D-5481-crosslang", "letter_id": 1200870103, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "דכאון ובריאות"}
+{"case": "h3D-5481-crosslang", "letter_id": 1200870115, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בנין ישיבת לוד"}
+{"case": "h3D-5481-crosslang", "letter_id": 1200890176, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "רופא ובטחון"}
+{"case": "h3D-5481-crosslang", "letter_id": 1200900305, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "טיפול רפואי"}
+{"case": "h3D-5481-crosslang", "letter_id": 1200910118, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רופא, שמחה וחוזק רוח"}
+{"case": "h3D-5481-crosslang", "letter_id": 1200910310, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עצת רופא חוף הים"}
+{"case": "h3D-5481-english", "letter_id": 1200780037, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "חולה, תהלים וצדקה, לא רופא"}
+{"case": "h3D-5481-english", "letter_id": 1200800092, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות ובטחון, לא רופא"}
+{"case": "h3D-5481-english", "letter_id": 1200800161, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "כאב רגל, אמונה וצדקה"}
+{"case": "h3D-5481-english", "letter_id": 1200820109, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות ונמיכות רוח"}
+{"case": "h3D-5481-english", "letter_id": 1200840056, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בית הבראה, תעמולה"}
+{"case": "h3D-5481-english", "letter_id": 1200840111, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות ורפואה כללי"}
+{"case": "h3D-5481-english", "letter_id": 1200850269, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות והשפעה על אחרים"}
+{"case": "h3D-5481-english", "letter_id": 1200870103, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות ושמחה בעבודת ה'"}
+{"case": "h3D-5481-english", "letter_id": 1200880119, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "תמים לשעבר, בריאות רוחנית וגשמית"}
+{"case": "h3D-5481-english", "letter_id": 1200910310, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "עצת רופא ושמחה"}
+{"case": "h3D-5481-english", "letter_id": 1200970279, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נכד אברך, עניין אחר"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200700128, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תפילין ומזוזות, אין ילדים נוספים"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200700346, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תפילין ומזוזות, ניתוח האשה"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200720095, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הריון, טהרה, תפילין ומזוזות"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200720123, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ברכה, בדיקת תפילין ומזוזות"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200820265, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "צדקה ובדיקת תפילין ומזוזות"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200830231, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בנים שנאבדו, טהרה ותפילין"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200840108, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "טהרה, מזוזות, תפילין, צדקה"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200860441, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "טהרה, תפילין, צדקה, שכול"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200880368, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ללא בנים זכרים, טהרה"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200960243, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "טהרה למי שלא נתברך"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200980168, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בטחון ובדיקת תפילין ומזוזות"}
+{"case": "h3D-6228-english", "letter_id": 1200700128, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בן, תפילין ומזוזות"}
+{"case": "h3D-6228-english", "letter_id": 1200700346, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "תפילין ומזוזות, ניתוח"}
+{"case": "h3D-6228-english", "letter_id": 1200720095, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הריון, טהרה ותפילין"}
+{"case": "h3D-6228-english", "letter_id": 1200810319, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ללא ילדים, טהרת המשפחה"}
+{"case": "h3D-6228-english", "letter_id": 1200820022, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ללא ילדים, טהרת המשפחה"}
+{"case": "h3D-6228-english", "letter_id": 1200840108, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שישה ילדים, טהרה ומזוזות"}
+{"case": "h3D-6228-english", "letter_id": 1200850260, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הסבר בדיקת מזוזות"}
+{"case": "h3D-6228-english", "letter_id": 1200860027, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בעיה בזוגתו, תפילין ומזוזות"}
+{"case": "h3D-6228-english", "letter_id": 1200880368, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "ללא בנים, טהרה"}
+{"case": "h3D-6228-english", "letter_id": 1200890436, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בת המירה דתה"}
+{"case": "h3D-6228-english", "letter_id": 1200920447, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "רצון בילדים, טהרה, תפילין ומזוזות"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200690197, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "הצעת שותפות וסעיף מגבלות"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200780234, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שותפות בעסק, שותף חולל שבת"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200790225, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מכתב אישי, לא עסקי"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200840059, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הרחבת עסק והעברת חנות"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200850207, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הרחבת פרנסה וצדקה"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200910072, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שותף מתאים להרחבת עסק"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200910337, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שותפות בעסק, מייעץ נגד"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200950098, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חוב שותף, עגמת נפש"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200960274, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פרנסה כללית, לא שותפות"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200980347, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שותפות בעסק לא מוכר"}
+{"case": "h3D-7670-english", "letter_id": 1200720088, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שותפות לא עסקית"}
+{"case": "h3D-7670-english", "letter_id": 1200720378, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עסק חותנו, לימודים"}
+{"case": "h3D-7670-english", "letter_id": 1200770214, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עסק קטן, לא שותף"}
+{"case": "h3D-7670-english", "letter_id": 1200780234, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שותפות בעסק עם שותף"}
+{"case": "h3D-7670-english", "letter_id": 1200790217, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קניית עסק, לא שותף"}
+{"case": "h3D-7670-english", "letter_id": 1200790225, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מכתב אישי"}
+{"case": "h3D-7670-english", "letter_id": 1200810336, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיון במסחר, כללי"}
+{"case": "h3D-7670-english", "letter_id": 1200850301, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "הרחבה ושותפות, תנאים בכתב"}
+{"case": "h3D-7670-english", "letter_id": 1200900059, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הקב\"ה כשותף, צדקה"}
+{"case": "h3D-7670-english", "letter_id": 1200910072, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שותף להרחבת העסק"}
+{"case": "h3D-7670-english", "letter_id": 1200910337, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שאלת שותפות במסחר"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200810097, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות בת והתוועדויות"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200820266, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאותה, אמונה"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200820278, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "בריאות בבית חולים"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200830152, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בריאות כללי"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200860333, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בריאות זוגתו"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200880390, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "זריקות חיסון"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200880536, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "לונדון, בריאות"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200890099, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הטבת בריאות בתו"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200920273, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בית ליובאוויטש לונדון, חוזה"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200920422, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "לונדון, מסר ליובאוויטש, אין בריאות"}
+{"case": "h3D-8043-english", "letter_id": 1200690054, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פערין, ברכת רפואה"}
+{"case": "h3D-8043-english", "letter_id": 1200790211, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אגודת נשים"}
+{"case": "h3D-8043-english", "letter_id": 1200800232, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בת מלונדון, חינוך"}
+{"case": "h3D-8043-english", "letter_id": 1200810097, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "רפואת בתו והתוועדות"}
+{"case": "h3D-8043-english", "letter_id": 1200880536, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "לונדון, בריאות"}
+{"case": "h3D-8043-english", "letter_id": 1200900023, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שמירת יהדות, אידיש"}
+{"case": "h3D-8043-english", "letter_id": 1200900284, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אסיפות נשים לונדון"}
+{"case": "h3D-8043-english", "letter_id": 1200920333, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "התוועדות אחרון של פסח"}
+{"case": "h3D-8043-english", "letter_id": 1200920422, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פערין, קניית בתים"}
+{"case": "h3D-8043-english", "letter_id": 1200920435, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "בית ליובאוויטש לונדון"}
+{"case": "h3D-8043-english", "letter_id": 1200950210, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "פערין, בריאות זוגתו"}
+{"case": "h3E-10375-english", "letter_id": 1200760080, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הדפסה בשנגהאי, כללי"}
+{"case": "h3E-10375-english", "letter_id": 1200760096, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קרן הדפסה"}
+{"case": "h3E-10375-english", "letter_id": 1200760199, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קונטרס, כללי"}
+{"case": "h3E-10375-english", "letter_id": 1200790005, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מנהג סוכות"}
+{"case": "h3E-10375-english", "letter_id": 1200790277, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הדפסת תניא"}
+{"case": "h3E-10375-english", "letter_id": 1200800312, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הסכמה לספר דרוש"}
+{"case": "h3E-10375-english", "letter_id": 1200810134, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הנהגות ועיתונות"}
+{"case": "h3E-10375-english", "letter_id": 1200860308, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חינוך, י' שבט"}
+{"case": "h3E-10375-english", "letter_id": 1200860367, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "פרסום כתבי יד של האב"}
+{"case": "h3E-10375-english", "letter_id": 1200910068, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חוברת ישיבת ערב"}
+{"case": "h3E-10375-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ספרים לבר מצוה"}
+{"case": "h3E-10375-english", "letter_id": 1200950443, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "פרסום ישיבה"}
+{"case": "h3E-10375-topic", "letter_id": 1200760096, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "קרן להדפסת כתבי רבותינו"}
+{"case": "h3E-10375-topic", "letter_id": 1200760114, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הדפסת ספרים, הוראות"}
+{"case": "h3E-10375-topic", "letter_id": 1200770098, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קונטרסים ומנהגים"}
+{"case": "h3E-10375-topic", "letter_id": 1200790250, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הדפסת תניא וסידור"}
+{"case": "h3E-10375-topic", "letter_id": 1200790277, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הדפסת התניא"}
+{"case": "h3E-10375-topic", "letter_id": 1200810334, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "חוברת חידושי תורה תלמידים"}
+{"case": "h3E-10375-topic", "letter_id": 1200820341, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "הוצאת ספרי אבותיו"}
+{"case": "h3E-10375-topic", "letter_id": 1200930219, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הדפסת ספרי קודש"}
+{"case": "h3E-10375-topic", "letter_id": 1200950063, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "הדפסת ספרים, הוראות"}
+{"case": "h3E-10375-topic", "letter_id": 1200970256, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "הדפסת חידושי הגאון"}
+{"case": "h3E-10375-topic", "letter_id": 1200980111, "rel": 2, "judge": "sonnet x12 (no context)", "reason": "סידור חידושי האב לדפוס"}
+{"case": "h3E-1423-english", "letter_id": 1200770055, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "צ'ק גדול, גמילות חסד"}
+{"case": "h3E-1423-english", "letter_id": 1200770327, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קבלה על צ'ק"}
+{"case": "h3E-1423-english", "letter_id": 1200780314, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "שקל מקופת הרבי, סיפור"}
+{"case": "h3E-1423-english", "letter_id": 1200790134, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תנאי עם הקב\"ה"}
+{"case": "h3E-1423-english", "letter_id": 1200810161, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "גמ\"ח, דוח"}
+{"case": "h3E-1423-english", "letter_id": 1200850194, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "צ'ק ליתומים"}
+{"case": "h3E-1423-english", "letter_id": 1200880531, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "צ'ק מאחת הקופות"}
+{"case": "h3E-1423-english", "letter_id": 1200940102, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חלוקת כסף צדקה"}
+{"case": "h3E-1423-english", "letter_id": 1200940104, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חלוקה או קרן"}
+{"case": "h3E-1423-english", "letter_id": 1200960079, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "תרומה אלף דולר"}
+{"case": "h3E-1423-english", "letter_id": 1200960409, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "כינוס נשי חב\"ד"}
+{"case": "h3E-1423-english", "letter_id": 1200980036, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "צ'ק לצדקה בחנוכה"}
+{"case": "h3E-1844-english", "letter_id": 1200690008, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ראיון עיתונאי"}
+{"case": "h3E-1844-english", "letter_id": 1200750055, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "שאלה בתניא"}
+{"case": "h3E-1844-english", "letter_id": 1200750167, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הערות בתניא"}
+{"case": "h3E-1844-english", "letter_id": 1200770341, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "חשש מבית חולים"}
+{"case": "h3E-1844-english", "letter_id": 1200810316, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "אברי נשים בברכה"}
+{"case": "h3E-1844-english", "letter_id": 1200840039, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הנהגת הבית"}
+{"case": "h3E-1844-english", "letter_id": 1200890207, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "הילוך דם, לב ישראל"}
+{"case": "h3E-1844-english", "letter_id": 1200890376, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "מיחוש לב, דודה"}
+{"case": "h3E-1844-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ספרי בר מצוה"}
+{"case": "h3E-1844-english", "letter_id": 1200980094, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ברכת פסח"}
+{"case": "h3E-2034-english", "letter_id": 1200790252, "rel": 1, "judge": "sonnet x12 (no context)", "reason": "מקוואות בארץ, חומרים"}
+{"case": "h3E-2034-english", "letter_id": 1200810156, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיעה לארץ"}
+{"case": "h3E-2034-english", "letter_id": 1200820236, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "גמ\"ח בארץ הקודש"}
+{"case": "h3E-2034-english", "letter_id": 1200880560, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "נסיעה לרבי"}
+{"case": "h3E-2034-english", "letter_id": 1200890343, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "עלייה לארץ"}
+{"case": "h3E-2034-english", "letter_id": 1200920422, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "קניית בתים לונדון"}
+{"case": "h3E-2034-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ספרי בר מצוה"}
+{"case": "h3E-2034-english", "letter_id": 1200950042, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "רשיון להדפסת ספרים"}
+{"case": "h3E-2034-english", "letter_id": 1200950085, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "משלוח ספרים"}
+{"case": "h3E-2034-english", "letter_id": 1200950147, "rel": 0, "judge": "sonnet x12 (no context)", "reason": "ספר תורה לארץ ישראל"}
