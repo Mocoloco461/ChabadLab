@@ -4,6 +4,7 @@
 #
 #   search-site/scripts/eval_model.sh <emb-slug> "<label>"
 #   e.g. search-site/scripts/eval_model.sh BAAI__bge-m3 "bge-m3 GPU"
+#        search-site/scripts/eval_model.sh BAAI__bge-m3,intfloat__multilingual-e5-large "ensemble"
 #
 # Env: PY (python, default .venv), PORT (default 8766).
 set -u
@@ -15,7 +16,11 @@ if [ -z "${PY:-}" ]; then
 fi
 export PYTHONUTF8=1
 cd "$ROOT/search-site/app"
-IGROT_EMB="$ROOT/search-site/data/emb/$SLUG" "$PY" -m uvicorn server:app --host 127.0.0.1 --port "$PORT" \
+# several slugs (comma-separated) = ensemble of models on the same chunks
+EMBROOT="$ROOT/search-site/data/emb"
+command -v cygpath >/dev/null && EMBROOT=$(cygpath -m "$EMBROOT")  # Git Bash on Windows: native paths
+EMB=$(echo "$SLUG" | tr ',' '\n' | sed "s#^#$EMBROOT/#" | paste -sd, -)
+IGROT_EMB="$EMB" "$PY" -m uvicorn server:app --host 127.0.0.1 --port "$PORT" \
   --log-level warning > "$ROOT/search-site/data/eval_server_$PORT.log" 2>&1 &
 SRV=$!
 trap 'kill $SRV 2>/dev/null' EXIT

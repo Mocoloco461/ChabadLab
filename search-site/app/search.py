@@ -310,37 +310,55 @@ def facets(fts, fsql, fparams):
 
 # ------------------------------------------------------------------ semantic search
 class SemanticIndex:
-    def __init__(self, folder):
-        folder = Path(folder)
-        self.folder = folder
-        self.info = json.loads((folder / "embeddings.json").read_text(encoding="utf-8"))
-        self.emb = np.load(folder / "embeddings.npy").astype(np.float32)
+    """One embedding folder, or several (comma-separated) built on the same chunks.
+    With several models the passage score is the sum of their cosine similarities
+    (implemented as concatenated, per-model-normalized vectors)."""
+
+    def __init__(self, folders):
+        if isinstance(folders, (str, Path)):
+            folders = [f for f in str(folders).split(",") if f.strip()]
+        folders = [Path(str(f).strip()) for f in folders]
+        self.folder = folders[0]
+        self.infos = [json.loads((f / "embeddings.json").read_text(encoding="utf-8")) for f in folders]
+        self.info = dict(self.infos[0])
+        self.info["model"] = " + ".join(i["model"] for i in self.infos)
+        self.emb = np.hstack([np.load(f / "embeddings.npy").astype(np.float32) for f in folders])
         self.chunk_letter = []
         self.chunk_text = []
-        with open(folder / "chunks.jsonl", encoding="utf-8") as fh:
+        with open(self.folder / "chunks.jsonl", encoding="utf-8") as fh:
             for line in fh:
                 c = json.loads(line)
                 self.chunk_letter.append(c["letter_id"])
                 self.chunk_text.append(c["text"])
         self.chunk_letter = np.array(self.chunk_letter)
-        self._model = None
+        for f in folders[1:]:  # ensembles only make sense on identical chunking
+            with open(f / "chunks.jsonl", encoding="utf-8") as fh:
+                if sum(1 for _ in fh) != len(self.chunk_letter):
+                    raise ValueError(f"chunks of {f} differ from {self.folder}")
+        self._models = None
         self._lock = threading.Lock()
 
     @property
-    def model(self):
+    def models(self):
         with self._lock:
-            if self._model is None:
+            if self._models is None:
                 import torch
                 from sentence_transformers import SentenceTransformer
                 dev = os.environ.get("IGROT_DEVICE") or ("cuda" if torch.cuda.is_available() else "cpu")
-                m = SentenceTransformer(self.info["model"], device=dev)
-                m.max_seq_length = self.info.get("max_seq", 512)
-                self._model = m
-        return self._model
+                ms = []
+                for info in self.infos:
+                    m = SentenceTransformer(info["model"], device=dev)
+                    if dev.startswith("cuda"):
+                        m.half()  # same precision as build_embeddings.py; Qwen3-4B fp32 would not fit 12GB
+                    m.max_seq_length = info.get("max_seq", 512)
+                    ms.append(m)
+                self._models = ms
+        return self._models
 
     def encode(self, q):
-        qv = self.model.encode([self.info.get("query_prefix", "") + q], normalize_embeddings=True)
-        return qv[0].astype(np.float32)
+        parts = [m.encode([info.get("query_prefix", "") + q], normalize_embeddings=True)[0]
+                 for m, info in zip(self.models, self.infos)]
+        return np.concatenate(parts).astype(np.float32)
 
     def search(self, q, allowed_ids=None, n=300):
         """-> list of (letter_id, score, best_chunk_index) sorted by score."""
@@ -370,10 +388,14 @@ def semantic_index():
     if _sem["index"] is None and _sem["error"] is None:
         folder = os.environ.get("IGROT_EMB")
         if not folder:
-            # prefer the strongest finished model
-            for slug in ("BAAI__bge-m3", "intfloat__multilingual-e5-base", "intfloat__multilingual-e5-small"):
-                if (DATA / "emb" / slug / "embeddings.npy").exists():
-                    folder = DATA / "emb" / slug
+            # prefer the strongest finished option (see WORKLOG for the eval numbers)
+            for slugs in (("Qwen__Qwen3-Embedding-4B", "intfloat__multilingual-e5-large"),
+                          ("BAAI__bge-m3", "intfloat__multilingual-e5-large"),
+                          ("Qwen__Qwen3-Embedding-4B",),
+                          ("BAAI__bge-m3",), ("intfloat__multilingual-e5-large",),
+                          ("intfloat__multilingual-e5-base",), ("intfloat__multilingual-e5-small",)):
+                if all((DATA / "emb" / s / "embeddings.npy").exists() for s in slugs):
+                    folder = [DATA / "emb" / s for s in slugs]
                     break
         if not folder:
             return None  # still building: try again on the next request
@@ -397,8 +419,8 @@ def allowed_letter_ids(filters):
 
 
 # semantic mode = meaning first; lexical coverage only as a light tie-break
-# (RRF weight 0.5 vs 1.0, k=10; +10 points on the eval set, see WORKLOG)
-SEM_LEX_W, SEM_K = 0.5, 10
+# (RRF weight 0.75 vs 1.0, k=10; retuned for bge-m3 / e5-large on the main eval set, see WORKLOG)
+SEM_LEX_W, SEM_K = 0.75, 10
 
 
 def semantic_search(q, filters, offset=0, limit=20, n=300):
@@ -449,8 +471,9 @@ def coverage_ids(q, filters, prefixes=True, n=300):
     return sorted(cover, key=lambda lid: (-cover[lid], order.get(lid, 10 ** 6)))[:n]
 
 
-# RRF parameters tuned on the eval set (eval/tune_hybrid.py): k=10, text weight 1.5
-HYBRID_K, HYBRID_W_TEXT, HYBRID_W_SEM = 10, 1.5, 1.0
+# RRF parameters tuned on the main eval set (eval/tune_hybrid.py): k=10, text 1.0 vs meaning 1.5
+# (e5-small needed text 1.5 vs 1.0; stronger models need less lexical help)
+HYBRID_K, HYBRID_W_TEXT, HYBRID_W_SEM = 10, 1.0, 1.5
 
 
 def hybrid_search(q, filters, offset=0, limit=20, n=300, prefixes=True,

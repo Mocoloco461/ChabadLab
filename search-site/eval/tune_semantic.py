@@ -76,6 +76,11 @@ for p in (0.3, 0.7):
 for lw in (0.25, 0.5):
     variants[f"lex tie-break {lw}"] = {"lex_w": lw}
     variants[f"lex {lw} + max+0.2*2nd"] = {"lex_w": lw, "agg": "a=0.2"}
+for lw in (0.5, 0.75, 1.0):
+    for kk in (5, 20):
+        variants[f"lex tie-break {lw} k={kk}"] = {"lex_w": lw, "k": kk}
+for lw in (0.75, 1.0):
+    variants[f"lex tie-break {lw}"] = {"lex_w": lw}
 rows = []
 for name, kw in variants.items():
     by = defaultdict(lambda: [0, 0])

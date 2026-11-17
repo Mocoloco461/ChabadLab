@@ -29,7 +29,35 @@ python3 search-site/build_index.py                  # -> search-site/data/search
 cd search-site/app && /root/venv-igrot/bin/uvicorn server:app --host 0.0.0.0 --port 8765
 ```
 התיקייה `search-site/data/` לא נכנסת ל-git, ובונים אותה מחדש עם הפקודות שלמעלה.
-השרת טוען אוטומטית את האינדקס הסמנטי החזק ביותר שהבנייה שלו הסתיימה: קודם bge-m3, אחר כך e5-base, ואחר כך e5-small. אפשר לבחור אינדקס ספציפי עם המשתנה `IGROT_EMB=<folder>`.
+
+**שרת עם GPU (Windows + Git Bash, ‏RTX 4070):**
+```bash
+python -m pip install --user uv
+python -m uv venv .venv --python 3.12 --managed-python
+python -m uv pip install --python .venv/Scripts/python.exe torch --index-url https://download.pytorch.org/whl/cu128
+python -m uv pip install --python .venv/Scripts/python.exe fastapi "uvicorn[standard]" numpy sentence-transformers httpx
+export PYTHONUTF8=1
+.venv/Scripts/python.exe search-site/build_index.py
+.venv/Scripts/python.exe search-site/build_embeddings.py --model Qwen/Qwen3-Embedding-4B --batch 8 --save-every 5000        # כ-26 דקות, הורדה של 8GB
+.venv/Scripts/python.exe search-site/build_embeddings.py --model intfloat/multilingual-e5-large --batch 32 --save-every 5000 # כ-2 דקות
+```
+
+**איזה אינדקס סמנטי נטען:** השרת בוחר אוטומטית את האפשרות החזקה ביותר שהבנייה שלה הסתיימה:
+1. **השילוב Qwen3-Embedding-4B + e5-large** (סכום הדמיון של שני המודלים). זו האפשרות הטובה ביותר בבדיקות.
+2. bge-m3 + e5-large
+3. Qwen3-4B
+4. bge-m3
+5. e5-large
+6. e5-base
+7. e5-small
+
+* אפשר לבחור ידנית עם `IGROT_EMB=<folder>`, או עם כמה תיקיות מופרדות בפסיק כדי לשלב מודלים. כל המודלים בשילוב חייבים להיות בנויים על אותם קטעים.
+* השילוב מריץ שני מודלים לכל שאילתה.
+  * **על GPU:** כ-55 מ"ש לשאילתה.
+  * **על CPU:** ‏Qwen3-4B לוקח כ-0.6 שניות לשאילתה, ו-bge-m3 + e5-large לוקחים כ-65 מ"ש.
+  * בשרת בלי GPU כדאי לבנות רק את bge-m3 ואת e5-large.
+* **ב-Windows:** בבדיקות כתבו `127.0.0.1` ולא `localhost`, כי `localhost` מוסיף 2 שניות לכל בקשה.
+* **השוואת מודלים:** `search-site/scripts/eval_model.sh <slug>[,<slug2>] "<label>"` מעלה שרת זמני ומריץ את שני הסטים.
 
 ## API
 * `GET /api/search?q=&mode=text|semantic|hybrid&page=&size=&sort=relevance|date|date_desc|number&prefixes=1&match=all|any&vol_from&vol_to&year_from&year_to&greg_from&greg_to&num_from&num_to&lang&month&recipient`
@@ -45,5 +73,5 @@ cd search-site/app && /root/venv-igrot/bin/uvicorn server:app --host 0.0.0.0 --p
 ```bash
 python3 search-site/eval/run_eval.py --label "תיאור השינוי"
 ```
-* **היעד:** 80% הצלחה בסך הכול.
+* **היעד:** 80% הצלחה בסך הכול, גם בסט הראשי וגם בסט האימות (`--cases search-site/eval/holdout/holdout1.jsonl`).
 * **היסטוריה:** כל שינוי והשפעתו מתועדים ב-`WORKLOG.md` בשורש הריפו.

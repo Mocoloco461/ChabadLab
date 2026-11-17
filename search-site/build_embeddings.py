@@ -72,10 +72,14 @@ def letter_header(row):
 
 
 # models that expect an instruction prefix on queries / passages
+INSTRUCT = "Instruct: Given a Hebrew search query, retrieve passages from rabbinic letters that answer it"
 PREFIXES = {
     "intfloat/multilingual-e5-small": ("query: ", "passage: "),
     "intfloat/multilingual-e5-base": ("query: ", "passage: "),
     "intfloat/multilingual-e5-large": ("query: ", "passage: "),
+    "intfloat/multilingual-e5-large-instruct": (INSTRUCT + "\nQuery: ", ""),
+    "Qwen/Qwen3-Embedding-0.6B": (INSTRUCT + "\nQuery:", ""),
+    "Qwen/Qwen3-Embedding-4B": (INSTRUCT + "\nQuery:", ""),
 }
 
 
