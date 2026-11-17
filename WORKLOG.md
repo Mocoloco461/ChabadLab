@@ -13,7 +13,7 @@
 
 ## 2026-11-18 · מנוע מאוחד: Gemini + doc2query v2 + Cohere-pro – ‏99.6% / 95.0% / holdout3 91.4%, בלי GPU
 
-**קומיטים:** `2842fc6` (מיזוג), `f2e9597`, `ab20ec2`, והקומיט של הרשומה הזאת. ענף `claude/merged-engine` (worktree `.claude/worktrees/merged-engine`), **מקומי בלבד**.
+**קומיטים:** `2842fc6` (מיזוג), `f2e9597`, `ab20ec2`, `f799ef3` (פרוטוקול השיפוט מ-igrot-kodesh), `bf51c09`. ענף `claude/merged-engine` (worktree `.claude/worktrees/merged-engine`), **מקומי בלבד**.
 
 **עלות:** ‏**‎$11.41** (שימוש במפתח: ‎$6.70 → ‎$18.11). פירוט ב-`eval/synth/spend.csv`.
 
