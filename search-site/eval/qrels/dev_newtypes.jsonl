@@ -1,0 +1,765 @@
+{"case": "devF-10535-english", "letter_id": 1200690138, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני כניסה לירושלים, לא קרבן תמורה"}
+{"case": "devF-10535-english", "letter_id": 1200720254, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני מוסדות במיאמי"}
+{"case": "devF-10535-english", "letter_id": 1200750165, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שתי הלחם וזוהר, לא תמורת קרבן"}
+{"case": "devF-10535-english", "letter_id": 1200760009, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שבת וחולה שיב\"ס"}
+{"case": "devF-10535-english", "letter_id": 1200760143, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הלל בשחיטת הפסח"}
+{"case": "devF-10535-english", "letter_id": 1200760206, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אפיית לחם הפנים בשבת"}
+{"case": "devF-10535-english", "letter_id": 1200770036, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "כובש עון ונושא עון"}
+{"case": "devF-10535-english", "letter_id": 1200770048, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "פסקי דינים להצ\"צ"}
+{"case": "devF-10535-english", "letter_id": 1200780306, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "פסח שני כהוראה, לא דיון הלכתי"}
+{"case": "devF-10535-english", "letter_id": 1200790110, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הערות על נזר הקדש תמיד"}
+{"case": "devF-10535-english", "letter_id": 1200830209, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "תקיעת שופר בשבת"}
+{"case": "devF-10535-english", "letter_id": 1200850189, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הגדה ושם שבת הגדול"}
+{"case": "devF-10535-english", "letter_id": 1200870190, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "עגלה ערופה ומומים"}
+{"case": "devF-10535-english", "letter_id": 1200870312, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אניה אוטומטית בשבת"}
+{"case": "devF-10535-english", "letter_id": 1200870348, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "תגלחת מצורע וטבילה"}
+{"case": "devF-10535-english", "letter_id": 1200890429, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "סדר הבוקר באגודה"}
+{"case": "devF-10535-english", "letter_id": 1200910335, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מכתב כללי לראש השנה"}
+{"case": "devF-10535-english", "letter_id": 1200910359, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הערות לנזר הקדש בפסולי המוקדשין"}
+{"case": "devF-10535-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הערכת ספרים, אינו הלכתי"}
+{"case": "devF-10535-english", "letter_id": 1200960347, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "בהמת עיר הנדחת, לא קרבן תמורה"}
+{"case": "devF-10535-english", "letter_id": 1200970141, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "פסח שני כהוראה, לא דיון הלכתי"}
+{"case": "devF-10535-english", "letter_id": 1200980115, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לימוד דתי בממשלה"}
+{"case": "devF-10535-topic", "letter_id": 1200750165, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "דיון בשתי הלחם דשבועות"}
+{"case": "devF-10535-topic", "letter_id": 1200760005, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "דיון בשתי הלחם והמזבח"}
+{"case": "devF-10535-topic", "letter_id": 1200760130, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הלל בשחיטת הפסח"}
+{"case": "devF-10535-topic", "letter_id": 1200760143, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הלל בשחיטת הפסח"}
+{"case": "devF-10535-topic", "letter_id": 1200760160, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "משקוף ומזוזות"}
+{"case": "devF-10535-topic", "letter_id": 1200760206, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לחם הפנים, לא שתי הלחם"}
+{"case": "devF-10535-topic", "letter_id": 1200770091, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני הסתדרות וספירת העומר"}
+{"case": "devF-10535-topic", "letter_id": 1200770152, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "גן ילדים ונטירת כרם"}
+{"case": "devF-10535-topic", "letter_id": 1200820254, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אפיית מצות"}
+{"case": "devF-10535-topic", "letter_id": 1200850007, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שמורה ומצה"}
+{"case": "devF-10535-topic", "letter_id": 1200860135, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לחם כמשל בלבד"}
+{"case": "devF-10535-topic", "letter_id": 1200870007, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מזכיר שתי הלחם בדרך אגב"}
+{"case": "devF-10535-topic", "letter_id": 1200880035, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לחם משנה וברכת המוציא"}
+{"case": "devF-10535-topic", "letter_id": 1200890022, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מצה שמורה"}
+{"case": "devF-10535-topic", "letter_id": 1200910158, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חג השבועות וזמן מתן תורה"}
+{"case": "devF-10535-topic", "letter_id": 1200920399, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שתי הלחם חמץ מוזכר ביחס לפסח שני"}
+{"case": "devF-1570-topic", "letter_id": 1200700206, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חנוכת בית כנסת חדש"}
+{"case": "devF-1570-topic", "letter_id": 1200780349, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מזכיר בית כנסת והנהגתו"}
+{"case": "devF-1570-topic", "letter_id": 1200820118, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בית הכנסת כמקדש מעט ובית מדרש"}
+{"case": "devF-1570-topic", "letter_id": 1200820134, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בית כנסת פתוח ומנין יומי"}
+{"case": "devF-1570-topic", "letter_id": 1200840291, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "יסוד בתי כנסת חב\"ד בירושלים"}
+{"case": "devF-1570-topic", "letter_id": 1200850080, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "התפתחות בית הכנסת"}
+{"case": "devF-1570-topic", "letter_id": 1200850203, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בניית בית כנסת בשיקגו"}
+{"case": "devF-1570-topic", "letter_id": 1200850318, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בית הכנסת מקדש מעט ומחיצה"}
+{"case": "devF-1570-topic", "letter_id": 1200860040, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "גבאות בית הכנסת ושיעורים"}
+{"case": "devF-1570-topic", "letter_id": 1200860330, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ביהכ\"נ חב\"ד ופעילותו"}
+{"case": "devF-1570-topic", "letter_id": 1200890081, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "רב בית כנסת ותפקידו"}
+{"case": "devF-1570-topic", "letter_id": 1200900353, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "שול חדש וביהכ\"נ כבית מדרש"}
+{"case": "devF-1570-topic", "letter_id": 1200920301, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בניית בית כנסת"}
+{"case": "devF-1570-topic", "letter_id": 1200920339, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בנין בית כנסת מרכזי"}
+{"case": "devF-1570-topic", "letter_id": 1200940033, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ברכה לרב בית כנסת, תוכן כללי"}
+{"case": "devF-1570-topic", "letter_id": 1200940158, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מנין ובימה בבית הכנסת"}
+{"case": "devF-1570-topic", "letter_id": 1200970028, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חנוכת בית כנסת ביוהנסבורג"}
+{"case": "devF-1570-topic", "letter_id": 1200970093, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "יסוד בית כנסת עצמאי"}
+{"case": "devF-1570-topic", "letter_id": 1200970224, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בתי הכנסיות בכפר חב\"ד"}
+{"case": "devF-1570-topic", "letter_id": 1200970343, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חנוכת בית הכנסת בכפר חב\"ד"}
+{"case": "devF-1953-english", "letter_id": 1200750158, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "זכור ושמור, לא חלוקת הזמן"}
+{"case": "devF-1953-english", "letter_id": 1200760042, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "עולם הבא"}
+{"case": "devF-1953-english", "letter_id": 1200760067, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חשבון תקופות ומזלות"}
+{"case": "devF-1953-english", "letter_id": 1200760118, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "דיון בבריאת הזמן"}
+{"case": "devF-1953-english", "letter_id": 1200770091, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני הסתדרות וספירה"}
+{"case": "devF-1953-english", "letter_id": 1200770141, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מנהגי ראש השנה"}
+{"case": "devF-1953-english", "letter_id": 1200770367, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "זמן המשך אחד או מפסקי"}
+{"case": "devF-1953-english", "letter_id": 1200780009, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "זמן המשך אחד או מפסקי"}
+{"case": "devF-1953-english", "letter_id": 1200810131, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "דרווין וימי הבריאה"}
+{"case": "devF-1953-english", "letter_id": 1200820170, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הערות לספר לב ארי'"}
+{"case": "devF-1953-english", "letter_id": 1200860169, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "עבודה בקונגרס"}
+{"case": "devF-1953-english", "letter_id": 1200870312, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אניה אוטומטית בשבת"}
+{"case": "devF-1953-english", "letter_id": 1200920462, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מעל\"ע דשבת גדר נקודה אחת"}
+{"case": "devF-1953-english", "letter_id": 1200920529, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "זמני עלות השחר"}
+{"case": "devF-1953-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הערכת ספרים"}
+{"case": "devF-1953-english", "letter_id": 1200950314, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "קו התאריך, קשר רחוק לזמן"}
+{"case": "devF-1953-english", "letter_id": 1200980115, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לימוד דתי בממשלה"}
+{"case": "devF-2467-topic", "letter_id": 1200750002, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חכמת התכונה"}
+{"case": "devF-2467-topic", "letter_id": 1200780265, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מזכיר פנימיות התורה בדרך אגב"}
+{"case": "devF-2467-topic", "letter_id": 1200780276, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "קבלת התורה בפנימיות, תורת החב\"ד"}
+{"case": "devF-2467-topic", "letter_id": 1200780442, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "בנין לישיבה במלבורן"}
+{"case": "devF-2467-topic", "letter_id": 1200810280, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "לימוד פנימיות התורה ונסיון"}
+{"case": "devF-2467-topic", "letter_id": 1200820016, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "לימוד פנימיות התורה נשמתא דאורייתא"}
+{"case": "devF-2467-topic", "letter_id": 1200820078, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "נסיעה ללמוד בישיבה"}
+{"case": "devF-2467-topic", "letter_id": 1200830092, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "פנימיות התורה נשמתא דאורייתא"}
+{"case": "devF-2467-topic", "letter_id": 1200830271, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הנהגות בעבודה ולימוד, לא פנימיות"}
+{"case": "devF-2467-topic", "letter_id": 1200840161, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "נוגע בלימוד פנימיות התורה חלקית"}
+{"case": "devF-2467-topic", "letter_id": 1200860048, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "פירוש בפנימיות, בעיקר פנימיות הלומד"}
+{"case": "devF-2467-topic", "letter_id": 1200880118, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "רפואה וחיסונים"}
+{"case": "devF-2467-topic", "letter_id": 1200880410, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "שיעורי דא\"ח ופנימיות התורה"}
+{"case": "devF-2467-topic", "letter_id": 1200890280, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הכרח לימוד פנימיות התורה"}
+{"case": "devF-2467-topic", "letter_id": 1200910153, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "קבלת התורה בפנימיות, ברכה"}
+{"case": "devF-2467-topic", "letter_id": 1200920132, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הכרח לימוד פנימיות התורה"}
+{"case": "devF-2467-topic", "letter_id": 1200930218, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "קביעות עתים בלימוד פנימיות התורה"}
+{"case": "devF-2467-topic", "letter_id": 1200930229, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חירות בפסח"}
+{"case": "devF-2467-topic", "letter_id": 1200940198, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "פנימיות התורה ורשב\"י"}
+{"case": "devF-2467-topic", "letter_id": 1200940242, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הנחת תפילין"}
+{"case": "devF-2467-topic", "letter_id": 1200950181, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שליחות לעסקני ציבור"}
+{"case": "devF-2467-topic", "letter_id": 1200960136, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חיוב לימוד פנימיות התורה"}
+{"case": "devF-2467-topic", "letter_id": 1200960345, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "פנימיות התורה וחנוכה"}
+{"case": "devF-2467-topic", "letter_id": 1200970101, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "לימוד פנימיות התורה בדורנו"}
+{"case": "devF-2467-topic", "letter_id": 1200970145, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "המשכת פנימיות התורה, רשב\"י"}
+{"case": "devF-2467-topic", "letter_id": 1200970156, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "חדירה לפנימיות החומר, קשר חלקי"}
+{"case": "devF-2653-english", "letter_id": 1200720254, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני מיאמי, לא קשור"}
+{"case": "devF-2653-english", "letter_id": 1200780135, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "שמירת בריאות, אכילה לפני תפילה, מנהגו"}
+{"case": "devF-2653-english", "letter_id": 1200780388, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מתפלא על תעניות, לשמור בריאות"}
+{"case": "devF-2653-english", "letter_id": 1200800156, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "סיגופים ובריאות הגוף, כללי"}
+{"case": "devF-2653-english", "letter_id": 1200810320, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "אינו מובן אי אכילה, חובת בריאות"}
+{"case": "devF-2653-english", "letter_id": 1200810351, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שמירת בריאות הגוף כללי"}
+{"case": "devF-2653-english", "letter_id": 1200820317, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שמירת בריאות, כללי"}
+{"case": "devF-2653-english", "letter_id": 1200830051, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מצוות שמירת בריאות, כללי"}
+{"case": "devF-2653-english", "letter_id": 1200830105, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "תמיהה על אי שמירת בריאות"}
+{"case": "devF-2653-english", "letter_id": 1200840322, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "תמיהה, הרעבה עצמית ושמירת הגוף"}
+{"case": "devF-2653-english", "letter_id": 1200850020, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "אינו מבין הנהגה, אכילה בבוקר"}
+{"case": "devF-2653-english", "letter_id": 1200850088, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "הוראות רופא ושמירת הגוף"}
+{"case": "devF-2653-english", "letter_id": 1200860373, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "בריאות הלב, לא תענית"}
+{"case": "devF-2653-english", "letter_id": 1200870312, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אניה ושבת, לא קשור"}
+{"case": "devF-2653-english", "letter_id": 1200880355, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "בריאות מול תעניות, ביידיש"}
+{"case": "devF-2653-english", "letter_id": 1200910100, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "תעניות ושמירת בריאות"}
+{"case": "devF-2653-english", "letter_id": 1200920072, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "הוראות רופא ובריאות"}
+{"case": "devF-2653-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ספרים לבר מצוה, לא קשור"}
+{"case": "devF-2653-english", "letter_id": 1200950408, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "תמיהה על אי שמירת בריאות"}
+{"case": "devF-2653-english", "letter_id": 1200980115, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חינוך ממשלתי, לא קשור"}
+{"case": "devF-267-topic", "letter_id": 1200710200, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ברכה לבקשה, לא קשור"}
+{"case": "devF-267-topic", "letter_id": 1200720303, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "אדם המתנער מיהדותו"}
+{"case": "devF-267-topic", "letter_id": 1200720328, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שוחט בעיר, לא קשור"}
+{"case": "devF-267-topic", "letter_id": 1200750073, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הזהרת גדולים על קטנים"}
+{"case": "devF-267-topic", "letter_id": 1200760079, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מינים ואפיקורסים ושנאה"}
+{"case": "devF-267-topic", "letter_id": 1200760224, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "פטפטיא דאורייתא, לא קשור"}
+{"case": "devF-267-topic", "letter_id": 1200770107, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הערות בספר, לא קשור"}
+{"case": "devF-267-topic", "letter_id": 1200770138, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הערות בספר, לא קשור"}
+{"case": "devF-267-topic", "letter_id": 1200780022, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מכתב לרב, לא קשור"}
+{"case": "devF-267-topic", "letter_id": 1200780156, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מיסיונרים והסכנה לשמד"}
+{"case": "devF-267-topic", "letter_id": 1200780396, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שו\"ב, לא קשור"}
+{"case": "devF-267-topic", "letter_id": 1200800186, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שו\"ב, לא קשור"}
+{"case": "devF-267-topic", "letter_id": 1200800307, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שו\"ב, לא קשור"}
+{"case": "devF-267-topic", "letter_id": 1200820187, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "עבודה נגד המיסיון"}
+{"case": "devF-267-topic", "letter_id": 1200830175, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שו\"ב, לא קשור"}
+{"case": "devF-267-topic", "letter_id": 1200840170, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "גט לחולה, לא קשור"}
+{"case": "devF-267-topic", "letter_id": 1200850007, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שמורה ושאלות אמונה"}
+{"case": "devF-267-topic", "letter_id": 1200850284, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שאלות על חסידות"}
+{"case": "devF-267-topic", "letter_id": 1200860418, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "סכסוך שוחטים"}
+{"case": "devF-267-topic", "letter_id": 1200880004, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הזמנה לרבנות"}
+{"case": "devF-267-topic", "letter_id": 1200890244, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ברכה לאיגוד הרבנים"}
+{"case": "devF-267-topic", "letter_id": 1200890388, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "העלמה שהמירה דתה"}
+{"case": "devF-267-topic", "letter_id": 1200920212, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "רישום ילדי נישואי תערובת"}
+{"case": "devF-267-topic", "letter_id": 1200920315, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ברכת פסח ופולמוס"}
+{"case": "devF-267-topic", "letter_id": 1200920337, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שו\"ב בגילוי ראש"}
+{"case": "devF-267-topic", "letter_id": 1200920470, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שאלות וקושיות"}
+{"case": "devF-267-topic", "letter_id": 1200950168, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שו\"ב, לא קשור"}
+{"case": "devF-267-topic", "letter_id": 1200960093, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שוחט עופות"}
+{"case": "devF-267-topic", "letter_id": 1200960340, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הערות בשו\"ע"}
+{"case": "devF-2994-topic", "letter_id": 1200690003, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חשיבות חינוך הבנות, הפרדה"}
+{"case": "devF-2994-topic", "letter_id": 1200700119, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חינוך בנות ישראל, סמינר"}
+{"case": "devF-2994-topic", "letter_id": 1200700198, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "סמינר בית רבקה, חינוך"}
+{"case": "devF-2994-topic", "letter_id": 1200710214, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "בנות תמימים, חינוך, קצר"}
+{"case": "devF-2994-topic", "letter_id": 1200750049, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "יסוד בתי ספר לבנות"}
+{"case": "devF-2994-topic", "letter_id": 1200750101, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הורים, חינוך בתכם"}
+{"case": "devF-2994-topic", "letter_id": 1200760036, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בית ספר לנערות בית רבקה"}
+{"case": "devF-2994-topic", "letter_id": 1200760168, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "גודל ערך חינוך הבנות"}
+{"case": "devF-2994-topic", "letter_id": 1200800241, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "משמעת בכפר חב\"ד"}
+{"case": "devF-2994-topic", "letter_id": 1200830165, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חינוך הבנות ואגודת נשי"}
+{"case": "devF-2994-topic", "letter_id": 1200830280, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "לימוד בנות מתמטיקה ופיזיקה"}
+{"case": "devF-2994-topic", "letter_id": 1200850103, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שיעורים, בנות רק אגב"}
+{"case": "devF-2994-topic", "letter_id": 1200860328, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חגיגת בית שרה, חינוך בנות"}
+{"case": "devF-2994-topic", "letter_id": 1200860463, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חינוך הבנות על טהרת הקודש"}
+{"case": "devF-2994-topic", "letter_id": 1200870363, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הכרח בית ספר לנערות"}
+{"case": "devF-2994-topic", "letter_id": 1200880067, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "עבודה בחינוך הבנות"}
+{"case": "devF-2994-topic", "letter_id": 1200880128, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חינוך בנות ישראל מוכרח"}
+{"case": "devF-2994-topic", "letter_id": 1200910290, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מסיבות שבת לבנים ובנות"}
+{"case": "devF-2994-topic", "letter_id": 1200950308, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חינוך בנות אנ\"ש בכפר"}
+{"case": "devF-2994-topic", "letter_id": 1200970146, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חנוכת בית רבקה, חשיבות בנות"}
+{"case": "devF-3186-topic", "letter_id": 1200710099, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הפרשת מעשר לצדקה"}
+{"case": "devF-3186-topic", "letter_id": 1200710262, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "החלטה לתת מעשר"}
+{"case": "devF-3186-topic", "letter_id": 1200830253, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חלוקת המעשר לצדקה"}
+{"case": "devF-3186-topic", "letter_id": 1200840242, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "עשר בשביל שתתעשר, אגב"}
+{"case": "devF-3186-topic", "letter_id": 1200840301, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "צער חסידים, שיעורים"}
+{"case": "devF-3186-topic", "letter_id": 1200880454, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הפרשת מעשר לקופת רבנו"}
+{"case": "devF-3186-topic", "letter_id": 1200880488, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מעשר נוסף ולא גורע"}
+{"case": "devF-3186-topic", "letter_id": 1200900107, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מעשר לצדקה, חלק ממכתב"}
+{"case": "devF-3186-topic", "letter_id": 1200900293, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "צעירי אגו\"ח, לא קשור"}
+{"case": "devF-3186-topic", "letter_id": 1200910270, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מעשר בפרנסה דחוקה"}
+{"case": "devF-3186-topic", "letter_id": 1200920373, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "המשך מנהג מעשר לצדקה"}
+{"case": "devF-3186-topic", "letter_id": 1200930148, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "הפרשת חומש ומעשר מכספים"}
+{"case": "devF-3186-topic", "letter_id": 1200950381, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מעשר כספים וקרן השנה"}
+{"case": "devF-3229-topic", "letter_id": 1200720104, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "איסורי חיתון, לא קשור"}
+{"case": "devF-3229-topic", "letter_id": 1200760055, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מקור בנגלה, לא קשור"}
+{"case": "devF-3229-topic", "letter_id": 1200770102, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הוראה מכל מאורע"}
+{"case": "devF-3229-topic", "letter_id": 1200770132, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "נוסח תפילה וישוע"}
+{"case": "devF-3229-topic", "letter_id": 1200780381, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מלשינים, לא קשור"}
+{"case": "devF-3229-topic", "letter_id": 1200790290, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "טהרת האויר, חולי"}
+{"case": "devF-3229-topic", "letter_id": 1200800131, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לשון הרע על עצמו"}
+{"case": "devF-3229-topic", "letter_id": 1200800267, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "טהרת המשפחה, נבול פה"}
+{"case": "devF-3229-topic", "letter_id": 1200820166, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מילים הפוגעות בנשיא"}
+{"case": "devF-3229-topic", "letter_id": 1200830289, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שמירת הלשון כסיבה"}
+{"case": "devF-3229-topic", "letter_id": 1200840299, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "כפר חב\"ד, לא קשור"}
+{"case": "devF-3229-topic", "letter_id": 1200860305, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לשון הרע על עצמו"}
+{"case": "devF-3229-topic", "letter_id": 1200870005, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "נזיפות והכאה בתלמידים"}
+{"case": "devF-3229-topic", "letter_id": 1200890234, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "דיבור היפך ברכה, כעס"}
+{"case": "devF-3229-topic", "letter_id": 1200890451, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "איך להתנהג עם המחרפים יהדות"}
+{"case": "devF-3229-topic", "letter_id": 1200900008, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מאורע בכפר, שלום"}
+{"case": "devF-3229-topic", "letter_id": 1200920432, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "דיבור מצער, לה\"ר וקללה"}
+{"case": "devF-3229-topic", "letter_id": 1200920469, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ביטויים בלתי מתאימים בהתוועדות"}
+{"case": "devF-3229-topic", "letter_id": 1200940125, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ביטויים בלתי רצויים בכיתה"}
+{"case": "devF-3229-topic", "letter_id": 1200950071, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שאלות שונות, לא קשור"}
+{"case": "devF-3229-topic", "letter_id": 1200960014, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לשון הרע ומחלוקת"}
+{"case": "devF-3229-topic", "letter_id": 1200960041, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מחאה עד הכאה קללה ונזיפה"}
+{"case": "devF-4456-topic", "letter_id": 1200750072, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "יסוד בתי ספר לנערות, בית רבקה"}
+{"case": "devF-4456-topic", "letter_id": 1200760036, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בי\"ס לנערות בדארטשעסטער, מימון"}
+{"case": "devF-4456-topic", "letter_id": 1200760168, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בתי ספר לנערות, חינוך הבנות"}
+{"case": "devF-4456-topic", "letter_id": 1200790049, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "שם ותכנית לבית ספר לנערות"}
+{"case": "devF-4456-topic", "letter_id": 1200800241, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "משמעת בכפר חב\"ד, לא קשור"}
+{"case": "devF-4456-topic", "letter_id": 1200830214, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בי\"ס תיכון לבנות"}
+{"case": "devF-4456-topic", "letter_id": 1200860328, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חגיגת בתי הספר בית שרה"}
+{"case": "devF-4456-topic", "letter_id": 1200870095, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מזכיר בי\"ס לנערות בין מוסדות"}
+{"case": "devF-4456-topic", "letter_id": 1200870363, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הכרח בית הספר לנערות"}
+{"case": "devF-4456-topic", "letter_id": 1200870397, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הקמת בית ספר לנערות במלבורן"}
+{"case": "devF-4456-topic", "letter_id": 1200940234, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "קיום בי\"ס לבנות מקצועי"}
+{"case": "devF-4456-topic", "letter_id": 1200950053, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "נתייסד ביה\"ס לנערות בית שרה"}
+{"case": "devF-4456-topic", "letter_id": 1200950260, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הכנסת בת לבית ספר לנערות יר\"ש"}
+{"case": "devF-4551-topic", "letter_id": 1200700053, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מוסד חינוך, חשיבות החינוך"}
+{"case": "devF-4551-topic", "letter_id": 1200700210, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "קצרה, חשיבות הוראה וחינוך"}
+{"case": "devF-4551-topic", "letter_id": 1200700276, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מרכז לעניני חינוך, משל הגרעין"}
+{"case": "devF-4551-topic", "letter_id": 1200710025, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "גודל החינוך ומוסדותיו"}
+{"case": "devF-4551-topic", "letter_id": 1200710337, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חינוך על טהרת הקודש"}
+{"case": "devF-4551-topic", "letter_id": 1200760036, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "בי\"ס לנערות, חינוך הכשר בעיקר מימון"}
+{"case": "devF-4551-topic", "letter_id": 1200760037, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חינוך הילד, משל הגרעין"}
+{"case": "devF-4551-topic", "letter_id": 1200780406, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חינוך ילדים, גן ילדים"}
+{"case": "devF-4551-topic", "letter_id": 1200790234, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ועד מגיני ומרחיבי החינוך הכשר"}
+{"case": "devF-4551-topic", "letter_id": 1200790299, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מה ללמד ילדים, יראת שמים"}
+{"case": "devF-4551-topic", "letter_id": 1200790308, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חינוך תלמידים ביראת שמים"}
+{"case": "devF-4551-topic", "letter_id": 1200810243, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "עניני החינוך ובתי ספר"}
+{"case": "devF-4551-topic", "letter_id": 1200810361, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "חינוך הכשר נזכר בצד לימוד"}
+{"case": "devF-4551-topic", "letter_id": 1200850024, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "כינוס מורים, שיפור אופני החינוך"}
+{"case": "devF-4551-topic", "letter_id": 1200860047, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "עצה כללית, השתדלות בחינוך"}
+{"case": "devF-4551-topic", "letter_id": 1200860308, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "החינוך כל ימי האדם, מחנך"}
+{"case": "devF-4551-topic", "letter_id": 1200870193, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "אחריות המחנך והמורה"}
+{"case": "devF-4551-topic", "letter_id": 1200870336, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חינוך שלם בלי פשרות"}
+{"case": "devF-4551-topic", "letter_id": 1200880301, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חינוך ביר\"ש, השפעה על כל החיים"}
+{"case": "devF-4551-topic", "letter_id": 1200880491, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "יסוד קיום עדה בשטח החינוך"}
+{"case": "devF-4551-topic", "letter_id": 1200890218, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "סיסמת המחנך היהודי"}
+{"case": "devF-4551-topic", "letter_id": 1200890306, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "החינוך הכשר מצוה דוחה ת\"ת"}
+{"case": "devF-4551-topic", "letter_id": 1200900180, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "תלמידי תמימים כנרות, נושא נילווה"}
+{"case": "devF-4551-topic", "letter_id": 1200900306, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חינוך על טהרת הקדש"}
+{"case": "devF-4551-topic", "letter_id": 1200900329, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חינוך על טהרת הקדש אהלי תורה"}
+{"case": "devF-4551-topic", "letter_id": 1200920099, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "המרכז לעניני חינוך, סניף"}
+{"case": "devF-4551-topic", "letter_id": 1200930080, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מורים מתנדבים, חינוך שלם"}
+{"case": "devF-4551-topic", "letter_id": 1200930207, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מוסד חינוך אהלי תורה"}
+{"case": "devF-4551-topic", "letter_id": 1200930282, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מלאכת החינוך במסירות"}
+{"case": "devF-4551-topic", "letter_id": 1200930377, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ספר הבעש\"ט ותמיהה, לא חינוך"}
+{"case": "devF-4551-topic", "letter_id": 1200950040, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מרכז לעניני חינוך ותפקידו"}
+{"case": "devF-4551-topic", "letter_id": 1200980203, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ענין החינוך בדינר"}
+{"case": "devF-4551-topic", "letter_id": 1200980328, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מצב הלימודים, אחריות המורה"}
+{"case": "devF-4560-english", "letter_id": 1200710332, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "זכות הרבים, לא רכבת"}
+{"case": "devF-4560-english", "letter_id": 1200720254, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני בית ספר במיאמי"}
+{"case": "devF-4560-english", "letter_id": 1200780193, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אידיש, צייר ויאוש, לא תאונה"}
+{"case": "devF-4560-english", "letter_id": 1200780244, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "אידיש, בעש\"ט השגחה פרטית, בלי תאונה"}
+{"case": "devF-4560-english", "letter_id": 1200780264, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "אידיש, בעש\"ט הוראה מכל דבר"}
+{"case": "devF-4560-english", "letter_id": 1200800135, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "עברית, זיווג ולימוד"}
+{"case": "devF-4560-english", "letter_id": 1200800155, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "אידיש, בעש\"ט הוראה מכל דבר"}
+{"case": "devF-4560-english", "letter_id": 1200800168, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "אידיש, כל מאורע הוראה"}
+{"case": "devF-4560-english", "letter_id": 1200800261, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "אידיש, בעש\"ט אין צופאל, בר מצוה"}
+{"case": "devF-4560-english", "letter_id": 1200800286, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "אידיש, בעש\"ט השגחה פרטית, לא רכבת"}
+{"case": "devF-4560-english", "letter_id": 1200810051, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "אידיש, הצלה ומקרה בבת"}
+{"case": "devF-4560-english", "letter_id": 1200860220, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אידיש, תפילין וברכה"}
+{"case": "devF-4560-english", "letter_id": 1200870312, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אניה בשבת, לא קטר"}
+{"case": "devF-4560-english", "letter_id": 1200870381, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "תאונת דרך, עברית ללא בעש\"ט"}
+{"case": "devF-4560-english", "letter_id": 1200890116, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "נסיעה באוירון, לא תאונה"}
+{"case": "devF-4560-english", "letter_id": 1200900196, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אידיש, י\"ט כסלו ושמחה"}
+{"case": "devF-4560-english", "letter_id": 1200920145, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מאורע בדרך והוראה בעבודה, עברית"}
+{"case": "devF-4560-english", "letter_id": 1200920401, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "פתגם הבעש\"ט הוראה ממאורע"}
+{"case": "devF-4560-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אנגלית, ספרים בר מצוה"}
+{"case": "devF-4560-english", "letter_id": 1200930303, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הבעש\"ט וגשמיות לרוחניות"}
+{"case": "devF-4560-english", "letter_id": 1200980115, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חינוך דתי ממשלתי, לא קשור"}
+{"case": "devF-4803-topic", "letter_id": 1200700250, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "סוגיית חגיגה, לא קשור"}
+{"case": "devF-4803-topic", "letter_id": 1200700340, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ברכת שבועות"}
+{"case": "devF-4803-topic", "letter_id": 1200760018, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "כנפות טלית, לא שבר"}
+{"case": "devF-4803-topic", "letter_id": 1200780340, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חג הגאולה, לא קשור"}
+{"case": "devF-4803-topic", "letter_id": 1200780355, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "נעילת סנדל, לא קשור"}
+{"case": "devF-4803-topic", "letter_id": 1200790198, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "נתוח של אחר, לא שבר"}
+{"case": "devF-4803-topic", "letter_id": 1200800255, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "נתוח השבר משני הצדדים"}
+{"case": "devF-4803-topic", "letter_id": 1200810074, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "העתקת כפר חב\"ד"}
+{"case": "devF-4803-topic", "letter_id": 1200820031, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "קביעת זמן נתוח השבר"}
+{"case": "devF-4803-topic", "letter_id": 1200820207, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לב נשבר, לא שבר גופני"}
+{"case": "devF-4803-topic", "letter_id": 1200830160, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ימי הגאולה"}
+{"case": "devF-4803-topic", "letter_id": 1200840394, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "חגירת אבנט לתפילה, לא שבר"}
+{"case": "devF-4803-topic", "letter_id": 1200880433, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "השבר ולבישת חגורה מתאימה"}
+{"case": "devF-4803-topic", "letter_id": 1200890264, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "גידי רגליים, לא שבר"}
+{"case": "devF-4803-topic", "letter_id": 1200900013, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "חגורה לתפילה, לא שבר"}
+{"case": "devF-4803-topic", "letter_id": 1200900101, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "לשאת חגורה במקום טיפול נוסף"}
+{"case": "devF-4803-topic", "letter_id": 1200900337, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חבוש ושדוך, לא קשור"}
+{"case": "devF-4803-topic", "letter_id": 1200940131, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "עירוב במושב"}
+{"case": "devF-4803-topic", "letter_id": 1200950071, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "פורץ גדר, לא שבר"}
+{"case": "devF-4803-topic", "letter_id": 1200970251, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ניתוח פרוסטטה, לא שבר"}
+{"case": "devF-5524-english", "letter_id": 1200720254, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני בית ספר במיאמי"}
+{"case": "devF-5524-english", "letter_id": 1200750020, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שריפה בוורשה, צרפתית, לא שבת"}
+{"case": "devF-5524-english", "letter_id": 1200770198, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "התרגשות והשגחה, בלי שריפה"}
+{"case": "devF-5524-english", "letter_id": 1200780050, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מה שקרה, להיות שמח; יוהכ\"פ"}
+{"case": "devF-5524-english", "letter_id": 1200780431, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שמחה ושליח ציבור"}
+{"case": "devF-5524-english", "letter_id": 1200790004, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "תשובה בשמחה, כללי"}
+{"case": "devF-5524-english", "letter_id": 1200790114, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "טעות בזמן הדלקת נרות שבת"}
+{"case": "devF-5524-english", "letter_id": 1200790161, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שמחה בעבודה, כללי"}
+{"case": "devF-5524-english", "letter_id": 1200800011, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "משל שריפה על עשיה לפני ביאור"}
+{"case": "devF-5524-english", "letter_id": 1200800072, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "בטחון ובריאות"}
+{"case": "devF-5524-english", "letter_id": 1200820034, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שבירה ושמחה, תלמידים"}
+{"case": "devF-5524-english", "letter_id": 1200820286, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "רפואה ושמחה, כללי"}
+{"case": "devF-5524-english", "letter_id": 1200820306, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מרה שחורה ושמחה"}
+{"case": "devF-5524-english", "letter_id": 1200860314, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אידיש, מרה שחורה ומלחמה"}
+{"case": "devF-5524-english", "letter_id": 1200870064, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שריפת חדר בקיבוץ, לפשפש בהנהגה"}
+{"case": "devF-5524-english", "letter_id": 1200870117, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הערות קצרות, הבערה בשבת"}
+{"case": "devF-5524-english", "letter_id": 1200870312, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אניה ושבת, לא שריפה"}
+{"case": "devF-5524-english", "letter_id": 1200870328, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שאלת אניות"}
+{"case": "devF-5524-english", "letter_id": 1200880426, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מרה שחורה ושמחה"}
+{"case": "devF-5524-english", "letter_id": 1200880521, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אידיש, עבדו ה' בשמחה"}
+{"case": "devF-5524-english", "letter_id": 1200900153, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "תיקון מעוות בשבת, ללמוד הלכות"}
+{"case": "devF-5524-english", "letter_id": 1200900262, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הצלחה בלימודים ושמחה"}
+{"case": "devF-5524-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אנגלית, ספרים בר מצוה"}
+{"case": "devF-5524-english", "letter_id": 1200930151, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שריפה ותפילין, לא שבת"}
+{"case": "devF-5524-english", "letter_id": 1200980115, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חינוך דתי ממשלתי"}
+{"case": "devF-578-english", "letter_id": 1200710342, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "זריזות אברהם, אך לא מכתב מאפריקה"}
+{"case": "devF-578-english", "letter_id": 1200710444, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "לעשות כעצת מומחים בזריזות הכי גדולה, ועד מתי"}
+{"case": "devF-578-english", "letter_id": 1200720254, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני מיאמי, לא קשור"}
+{"case": "devF-578-english", "letter_id": 1200770224, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "עבודה באפריקה, ללא מכתב דחוף"}
+{"case": "devF-578-english", "letter_id": 1200770241, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "פעולות באפריקה הצפונית, לא דחיפות"}
+{"case": "devF-578-english", "letter_id": 1200770249, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ויזה למרוקו, ברכות"}
+{"case": "devF-578-english", "letter_id": 1200770302, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "עבודת חינוך באפריקה"}
+{"case": "devF-578-english", "letter_id": 1200780214, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני בריאות בלשון אידיש"}
+{"case": "devF-578-english", "letter_id": 1200780232, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "זריזות אברהם אבינו באגרת הקדש"}
+{"case": "devF-578-english", "letter_id": 1200780353, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "תרומה לעבודה באפריקה, לא דחיפות"}
+{"case": "devF-578-english", "letter_id": 1200790282, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ברכת פסח ובקשה ביקור"}
+{"case": "devF-578-english", "letter_id": 1200800306, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ערך כל רגע, ללא אפריקה"}
+{"case": "devF-578-english", "letter_id": 1200810355, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ביקור במדינות אפריקה, לא מכתב"}
+{"case": "devF-578-english", "letter_id": 1200820340, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מעלת הזריזות, אגרת הקדש כא"}
+{"case": "devF-578-english", "letter_id": 1200830015, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "זריזות העקדה, אך לא מכתב מאפריקה"}
+{"case": "devF-578-english", "letter_id": 1200830211, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני ישיבות וכסף באידיש"}
+{"case": "devF-578-english", "letter_id": 1200850341, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "נסיעה לאפריקה, שליחות"}
+{"case": "devF-578-english", "letter_id": 1200870312, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הלכות שבת באניה"}
+{"case": "devF-578-english", "letter_id": 1200910107, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אפענדיקס והפצת חסידות"}
+{"case": "devF-578-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מכתב באנגלית על ספרים"}
+{"case": "devF-578-english", "letter_id": 1200950102, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "דרישת זריזות, רב אפריקה הדרומית"}
+{"case": "devF-578-english", "letter_id": 1200950140, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "התקשרות ולימוד"}
+{"case": "devF-578-english", "letter_id": 1200960230, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מעלת הזריזות, בלי אפריקה"}
+{"case": "devF-578-english", "letter_id": 1200980115, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חינוך דתי ממשלתי"}
+{"case": "devF-594-english", "letter_id": 1200700004, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מחלת הבן, התייעצות עם רופאים"}
+{"case": "devF-594-english", "letter_id": 1200700300, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "הוזכר על הציון, רפואה, בלי קונטרס"}
+{"case": "devF-594-english", "letter_id": 1200700387, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ברכת רפואה והזכרה על הציון"}
+{"case": "devF-594-english", "letter_id": 1200710131, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "תרופות והוראות רופא"}
+{"case": "devF-594-english", "letter_id": 1200710199, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ברכת רפואה לחולה, בלי ציון"}
+{"case": "devF-594-english", "letter_id": 1200720254, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני מיאמי"}
+{"case": "devF-594-english", "letter_id": 1200780037, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ברכת רפואה ועצות, בלי ציון"}
+{"case": "devF-594-english", "letter_id": 1200780249, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "רפואה, ציון, שיחה מצורפת"}
+{"case": "devF-594-english", "letter_id": 1200780317, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "פ\"נ יקרא על הציון לרפואה"}
+{"case": "devF-594-english", "letter_id": 1200780338, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "הזכרה על הציון לרפואה"}
+{"case": "devF-594-english", "letter_id": 1200790058, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "פדיון נפש יקרא על הציון"}
+{"case": "devF-594-english", "letter_id": 1200790160, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ברכה לפני ניתוח, בלי ציון"}
+{"case": "devF-594-english", "letter_id": 1200800131, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "בריאות, בלי ציון וקונטרס"}
+{"case": "devF-594-english", "letter_id": 1200800285, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "פדיון נפש לאשה חולה, ציון"}
+{"case": "devF-594-english", "letter_id": 1200800319, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "החלטה בענין הזקן, שיצא מבית חולים"}
+{"case": "devF-594-english", "letter_id": 1200800320, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "רפואה, ציון, קונטרס מצורף"}
+{"case": "devF-594-english", "letter_id": 1200840070, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ברכת בריאות והזכרה על הציון"}
+{"case": "devF-594-english", "letter_id": 1200840308, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "בריאות והזכרה על הציון"}
+{"case": "devF-594-english", "letter_id": 1200850268, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "בקשת ברכה לבריאות, ציון"}
+{"case": "devF-594-english", "letter_id": 1200860023, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "רפואה קרובה והזכרה על הציון"}
+{"case": "devF-594-english", "letter_id": 1200870312, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הלכות שבת באניה"}
+{"case": "devF-594-english", "letter_id": 1200880154, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ברכה לבריאות, בלי ציון"}
+{"case": "devF-594-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מכתב באנגלית על ספרים"}
+{"case": "devF-594-english", "letter_id": 1200980115, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חינוך דתי ממשלתי"}
+{"case": "devF-594-english", "letter_id": 1200980245, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "הזכרה על הציון, ענייני בריאות"}
+{"case": "devF-6317-topic", "letter_id": 1200830172, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "הצעת קייטנא בין עניינים אחרים"}
+{"case": "devF-6317-topic", "letter_id": 1200830173, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הצעה לייסד קייטנא בכפר חב\"ד"}
+{"case": "devF-6317-topic", "letter_id": 1200830330, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הקייטנא בכפר חב\"ד והמדריכים"}
+{"case": "devF-6317-topic", "letter_id": 1200860360, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "הזכרת סידור קייטנא בכפר חב\"ד"}
+{"case": "devF-6317-topic", "letter_id": 1200870337, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "התקדמות ענין הקייטנא וסיוע"}
+{"case": "devF-6317-topic", "letter_id": 1200890186, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני התיישבות בכפר חב\"ד"}
+{"case": "devF-6317-topic", "letter_id": 1200900082, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "השתדלות בענין הקייטנא"}
+{"case": "devF-6317-topic", "letter_id": 1200910220, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "בית כנסת בקשר עם הקייטנא"}
+{"case": "devF-6317-topic", "letter_id": 1200940301, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "דו\"ח מהקייטנא והדרכת ילדים"}
+{"case": "devF-6317-topic", "letter_id": 1200950304, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "עזרה ממשרדים לתקציב הקייטנא"}
+{"case": "devF-6317-topic", "letter_id": 1200950348, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מזכיר עסקנות בענין הקייטנא"}
+{"case": "devF-6317-topic", "letter_id": 1200950459, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "שאלות ארגון ומימון הקייטנא"}
+{"case": "devF-6317-topic", "letter_id": 1200960296, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מכתב לחניכות קיטנת גן ישראל"}
+{"case": "devF-7279-topic", "letter_id": 1200720033, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ברכת יום הולדת"}
+{"case": "devF-7279-topic", "letter_id": 1200920014, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שנת השמיטה"}
+{"case": "devF-7279-topic", "letter_id": 1200920185, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שנת השמיטה, י' שבט"}
+{"case": "devF-7279-topic", "letter_id": 1200930089, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "הזכרת 200 שנה להסתלקות הבעש\"ט"}
+{"case": "devF-7279-topic", "letter_id": 1200930198, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ישיבה בקרית גת, אגאדיר"}
+{"case": "devF-7279-topic", "letter_id": 1200930207, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "סגולת שנת המאתיים והבעש\"ט"}
+{"case": "devF-7279-topic", "letter_id": 1200930262, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שנת סגולה שנת המאתיים, אגב"}
+{"case": "devF-7279-topic", "letter_id": 1200930286, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ימי סגולה שנת המאתיים, אגב"}
+{"case": "devF-7279-topic", "letter_id": 1200930295, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "שנת סגולה, המאתיים, שבועות"}
+{"case": "devF-7279-topic", "letter_id": 1200930320, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "לדבר עם הילדים על שנת המאתיים"}
+{"case": "devF-7279-topic", "letter_id": 1200930325, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "פעולות לשנת המאתיים וסיסמתה"}
+{"case": "devF-7279-topic", "letter_id": 1200930347, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מכתב מוקדש לשנת המאתיים"}
+{"case": "devF-7279-topic", "letter_id": 1200930370, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "כפר חב\"ד השני"}
+{"case": "devF-7279-topic", "letter_id": 1200930376, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "סיסמת שנת המאתיים והדים"}
+{"case": "devF-7279-topic", "letter_id": 1200930381, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "העתקה ע\"ד שנת המאתיים"}
+{"case": "devF-7279-topic", "letter_id": 1200930409, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "כותרת שנת המאתיים, התוועדות"}
+{"case": "devF-7279-topic", "letter_id": 1200930412, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "עידוד נוער לקיום מצוות"}
+{"case": "devF-7279-topic", "letter_id": 1200950451, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "הזכרת שנת המאתיים, הפצה במרוקו"}
+{"case": "devF-7279-topic", "letter_id": 1200950461, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "פעילות בקשר לשנת המאתיים"}
+{"case": "devF-7279-topic", "letter_id": 1200960358, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שנת המאה וחמשים, לא מאתיים"}
+{"case": "devF-7279-topic", "letter_id": 1200960413, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שנת המאה וחמשים"}
+{"case": "devF-7279-topic", "letter_id": 1200960428, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ימי סגולה יב-יג תמוז"}
+{"case": "devF-7279-topic", "letter_id": 1200960464, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שנת המאה וחמישים"}
+{"case": "devF-7279-topic", "letter_id": 1200980049, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חומר על אדמו\"ר הזקן"}
+{"case": "devF-7279-topic", "letter_id": 1200980081, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שנת השמיטה"}
+{"case": "devF-7279-topic", "letter_id": 1200980082, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שנת השמיטה, סיום מסכת"}
+{"case": "devF-7279-topic", "letter_id": 1200980096, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שנת המאה לצמח צדק"}
+{"case": "devF-7731-english", "letter_id": 1200700164, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לימוד תורה בגיל צעיר"}
+{"case": "devF-7731-english", "letter_id": 1200710332, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "פרופסור והשפעה על נוער"}
+{"case": "devF-7731-english", "letter_id": 1200710544, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מגורים ולימוד ילדים בארץ"}
+{"case": "devF-7731-english", "letter_id": 1200720254, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני מיאמי"}
+{"case": "devF-7731-english", "letter_id": 1200780003, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חינוך הבת"}
+{"case": "devF-7731-english", "letter_id": 1200790072, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "בת וקרובים, יהדות"}
+{"case": "devF-7731-english", "letter_id": 1200790301, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "השפעה על הבן"}
+{"case": "devF-7731-english", "letter_id": 1200800013, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "בן ללמוד בתו\"ת"}
+{"case": "devF-7731-english", "letter_id": 1200800142, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שליחת ילדים לישיבה"}
+{"case": "devF-7731-english", "letter_id": 1200800212, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חינוך במקסיקו"}
+{"case": "devF-7731-english", "letter_id": 1200800226, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "נסיעה, בעיה בלב"}
+{"case": "devF-7731-english", "letter_id": 1200820024, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "עבודת אב, לא חופשה ארוכה"}
+{"case": "devF-7731-english", "letter_id": 1200820268, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "בן בחג הפסח"}
+{"case": "devF-7731-english", "letter_id": 1200830247, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "בן בצבא"}
+{"case": "devF-7731-english", "letter_id": 1200870204, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הורים מפריעים ללימוד חסידות"}
+{"case": "devF-7731-english", "letter_id": 1200870358, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ימי חופש והפצת המעינות"}
+{"case": "devF-7731-english", "letter_id": 1200890120, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לימוד הבן באידיש"}
+{"case": "devF-7731-english", "letter_id": 1200890390, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חשיבות לימוד תניא"}
+{"case": "devF-7731-english", "letter_id": 1200890407, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "בן בישיבה"}
+{"case": "devF-7731-english", "letter_id": 1200900304, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "שיחות לנוער, תרגום מתאים"}
+{"case": "devF-7731-english", "letter_id": 1200910185, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "התעניינות בחב\"ד"}
+{"case": "devF-7731-english", "letter_id": 1200920327, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הרצאות חסידות"}
+{"case": "devF-7731-english", "letter_id": 1200920379, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מאמרים קלי הבנה לנוער"}
+{"case": "devF-7731-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ספרים לבר מצוה"}
+{"case": "devF-7731-english", "letter_id": 1200980115, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חינוך דתי ממשלתי"}
+{"case": "devF-7731-topic", "letter_id": 1200790081, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הדרכה בהתחלת לימוד החסידות"}
+{"case": "devF-7731-topic", "letter_id": 1200800333, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "אופן לימוד דא\"ח, עיון ומיגרס"}
+{"case": "devF-7731-topic", "letter_id": 1200820175, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "לימוד חסידות בישיבות מול מוסר"}
+{"case": "devF-7731-topic", "letter_id": 1200820179, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מזכיר חיוב שיעור בחסידות, בעיקר השגחה"}
+{"case": "devF-7731-topic", "letter_id": 1200820235, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "קביעות בלימוד תורת החסידות"}
+{"case": "devF-7731-topic", "letter_id": 1200820368, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "לימוד חסידות בבתי ספר ובעצמו"}
+{"case": "devF-7731-topic", "letter_id": 1200840010, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "נוגע בעכובים בלימוד חסידות בקצרה"}
+{"case": "devF-7731-topic", "letter_id": 1200840400, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "סדר לימוד חסידות לפני תפלה ובלילה"}
+{"case": "devF-7731-topic", "letter_id": 1200850084, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "נקודות עיקריות ולימוד תורת החסידות"}
+{"case": "devF-7731-topic", "letter_id": 1200850140, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מדוע ללמוד חסידות חב\"ד"}
+{"case": "devF-7731-topic", "letter_id": 1200860059, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הגבלת זמן לימוד החסידות"}
+{"case": "devF-7731-topic", "letter_id": 1200860113, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "סדר לימוד חסידות למיגרס ולעיונא"}
+{"case": "devF-7731-topic", "letter_id": 1200860254, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הוראות שיעור לימוד החסידות"}
+{"case": "devF-7731-topic", "letter_id": 1200870122, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חיוב לימוד חסידות"}
+{"case": "devF-7731-topic", "letter_id": 1200870229, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "סדר לימוד בחסידות והדרגה"}
+{"case": "devF-7731-topic", "letter_id": 1200870340, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הוראות הדרך ללימוד החסידות"}
+{"case": "devF-7731-topic", "letter_id": 1200880441, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "שיעור דא\"ח ולמה חסידות חב\"ד"}
+{"case": "devF-7731-topic", "letter_id": 1200890270, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שיעור חסידות בישיבה, חיות בלימוד"}
+{"case": "devF-7731-topic", "letter_id": 1200930199, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שיעור לימוד תניא, ברכה כללית"}
+{"case": "devF-7731-topic", "letter_id": 1200930341, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "סדר לימוד חסידות ביחס לשמו\"ת"}
+{"case": "devF-7731-topic", "letter_id": 1200950454, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "קביעות לימוד דא\"ח של בחורים"}
+{"case": "devF-7731-topic", "letter_id": 1200960054, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "קביעות לימוד נגלה וחסידות, ברכה"}
+{"case": "devF-7731-topic", "letter_id": 1200960464, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "לימוד חסידות לפני תפלה ולשמה"}
+{"case": "devF-7731-topic", "letter_id": 1200970173, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שיעור לימוד תניא, ביאור בתניא"}
+{"case": "devF-8140-english", "letter_id": 1200700065, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "נוער באה\"ק, התקדמות ועליית נוער"}
+{"case": "devF-8140-english", "letter_id": 1200700099, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ספרי תורה למתנחלים, לא נוער"}
+{"case": "devF-8140-english", "letter_id": 1200710170, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "נוער וקיום מצוות בארץ הקודש"}
+{"case": "devF-8140-english", "letter_id": 1200710332, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "השפעה על נוער בקריימינולוגיה"}
+{"case": "devF-8140-english", "letter_id": 1200720254, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני ביה\"ס במיאמי"}
+{"case": "devF-8140-english", "letter_id": 1200780358, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מעמד, תודה על תרומה"}
+{"case": "devF-8140-english", "letter_id": 1200790112, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מברק לצעירי אגודה, תפקיד הנוער באה\"ק"}
+{"case": "devF-8140-english", "letter_id": 1200790229, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ברכה לאסיפה, חינוך באה\"ק"}
+{"case": "devF-8140-english", "letter_id": 1200820352, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "כנוס צעירי חב\"ד בכפר חב\"ד"}
+{"case": "devF-8140-english", "letter_id": 1200830181, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "כנס אגודת ישראל, לא נוער"}
+{"case": "devF-8140-english", "letter_id": 1200850380, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ועידת צעירים באמריקה"}
+{"case": "devF-8140-english", "letter_id": 1200870312, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אניה ושבת"}
+{"case": "devF-8140-english", "letter_id": 1200870336, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ועידת מורים באה\"ק, חינוך הנוער"}
+{"case": "devF-8140-english", "letter_id": 1200870355, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "צעירי חב\"ד, שיתוף פעולה באה\"ק"}
+{"case": "devF-8140-english", "letter_id": 1200870443, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ועידת צעירים באמריקה, דור צעיר"}
+{"case": "devF-8140-english", "letter_id": 1200880002, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ועידת נוער באה\"ק, אחריות הנוער"}
+{"case": "devF-8140-english", "letter_id": 1200890281, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "התועדות נוער, אור תורה, כפר חב\"ד"}
+{"case": "devF-8140-english", "letter_id": 1200890368, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שליחות תלמידים, לא נוער באה\"ק"}
+{"case": "devF-8140-english", "letter_id": 1200900170, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מברק לכינוס נוער וצה\"ל, אור תורה"}
+{"case": "devF-8140-english", "letter_id": 1200900180, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "אנ\"ש באה\"ק והנוער, נרות להאיר"}
+{"case": "devF-8140-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ברכה לספרים בבר מצוה"}
+{"case": "devF-8140-english", "letter_id": 1200940076, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שליחות נוער בארה\"ב, לא באה\"ק"}
+{"case": "devF-8140-english", "letter_id": 1200950144, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מברק לנוער בארה\"ק לחינוך בתורה"}
+{"case": "devF-8140-english", "letter_id": 1200960158, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ועד סמינר בכפר חב\"ד, אידיש"}
+{"case": "devF-8140-english", "letter_id": 1200980115, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לימוד דת בממשלה, סידני"}
+{"case": "devF-8140-topic", "letter_id": 1200690038, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מברק לחג הגאולה י\"ט כסלו"}
+{"case": "devF-8140-topic", "letter_id": 1200710032, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מכתב ערב י\"ט כסלו וחנוכה"}
+{"case": "devF-8140-topic", "letter_id": 1200710052, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "התועדות יום הבשורה י\"ט כסלו"}
+{"case": "devF-8140-topic", "letter_id": 1200710307, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ביאור קביעות י\"ט כסלו"}
+{"case": "devF-8140-topic", "letter_id": 1200780067, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "שייכות מעמד לי\"ט כסלו"}
+{"case": "devF-8140-topic", "letter_id": 1200790042, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מאסר וגאולת אדמו\"ר הזקן י\"ט כסלו"}
+{"case": "devF-8140-topic", "letter_id": 1200790073, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "נכתב בי\"ט כסלו, תוכן שלום בית"}
+{"case": "devF-8140-topic", "letter_id": 1200810096, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "התועדות סעודת י\"ט כסלו"}
+{"case": "devF-8140-topic", "letter_id": 1200810124, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חגיגת חג הגאולה י\"ט כסלו"}
+{"case": "devF-8140-topic", "letter_id": 1200820048, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ברכה לחג הגאולה י\"ט כסלו"}
+{"case": "devF-8140-topic", "letter_id": 1200840140, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מזכיר י\"ט כסלו בדרך אגב"}
+{"case": "devF-8140-topic", "letter_id": 1200840207, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "התועדות יום הבהיר י\"ט כסלו"}
+{"case": "devF-8140-topic", "letter_id": 1200860136, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ימי יו\"ד וי\"ט כסלו כסגולה"}
+{"case": "devF-8140-topic", "letter_id": 1200860185, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "התועדות י\"ט כסלו ור\"ה לחסידות"}
+{"case": "devF-8140-topic", "letter_id": 1200860188, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "סדרי התועדות י\"ט כסלו"}
+{"case": "devF-8140-topic", "letter_id": 1200880164, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני בריאות, אין קשר"}
+{"case": "devF-8140-topic", "letter_id": 1200880189, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מתקרבים לחנוכה וגאולת אדה\"ז"}
+{"case": "devF-8140-topic", "letter_id": 1200880245, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "התועדות יום הבהיר י\"ט כסלו"}
+{"case": "devF-8140-topic", "letter_id": 1200900097, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "י\"ט כסלו ר\"ה לחסידות, בהקשר ר\"ח"}
+{"case": "devF-8140-topic", "letter_id": 1200900145, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מזכיר י\"ט כסלו וחוברת החג"}
+{"case": "devF-8140-topic", "letter_id": 1200900164, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "י\"ט כסלו ראש השנה לחסידות"}
+{"case": "devF-8140-topic", "letter_id": 1200920078, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ימי סגולה יו\"ד וי\"ט כסלו"}
+{"case": "devF-8140-topic", "letter_id": 1200920097, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מזכיר י\"ט כסלו וחנוכה"}
+{"case": "devF-8140-topic", "letter_id": 1200920099, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "התועדות י\"ט כסלו, פרשת החג"}
+{"case": "devF-8140-topic", "letter_id": 1200930067, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "י\"ט כסלו ר\"ה לחסידות בקצרה"}
+{"case": "devF-8140-topic", "letter_id": 1200930088, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "י\"ט כסלו ר\"ה לדא\"ח"}
+{"case": "devF-8140-topic", "letter_id": 1200930090, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ימי סגולה, יום גאולת אדה\"ז"}
+{"case": "devF-8140-topic", "letter_id": 1200940070, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "נכתב ליום י\"ט כסלו, שאלה אחרת"}
+{"case": "devF-8140-topic", "letter_id": 1200940093, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "התוועדות י\"ט כסלו וחלוקת הש\"ס"}
+{"case": "devF-8140-topic", "letter_id": 1200950110, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "יום בשורה י\"ט כסלו והפצת החסידות"}
+{"case": "devF-8140-topic", "letter_id": 1200960074, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "התועדות י\"ט כסלו וחנוכה"}
+{"case": "devF-8140-topic", "letter_id": 1200970046, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "התועדות חג הגאולה י\"ט כסלו"}
+{"case": "devF-8140-topic", "letter_id": 1200980027, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ברכה לי\"ט כסלו וחוברת"}
+{"case": "devF-8329-topic", "letter_id": 1200710261, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ברכה לתלמידות, אורך שמלות"}
+{"case": "devF-8329-topic", "letter_id": 1200720149, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "רבנות ונוער בארה\"ב"}
+{"case": "devF-8329-topic", "letter_id": 1200760106, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מרכז לעניני חינוך, צדקה"}
+{"case": "devF-8329-topic", "letter_id": 1200770024, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "גרסת תפילת ר\"נ בן הקנה"}
+{"case": "devF-8329-topic", "letter_id": 1200780166, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מצב כספי בבית כנסת"}
+{"case": "devF-8329-topic", "letter_id": 1200800265, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "גילוח זקן ופרנסה"}
+{"case": "devF-8329-topic", "letter_id": 1200830101, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "בניית בית ובריאות"}
+{"case": "devF-8329-topic", "letter_id": 1200830327, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "תכלית החיים לנערות, לא ריקנות"}
+{"case": "devF-8329-topic", "letter_id": 1200840331, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שאלות הלכה"}
+{"case": "devF-8329-topic", "letter_id": 1200860305, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "נפילת רוח, לא ריקנות"}
+{"case": "devF-8329-topic", "letter_id": 1200880263, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ימי סגולה והפצת המעיינות"}
+{"case": "devF-8329-topic", "letter_id": 1200880380, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "גלמוד, לא ריקנות"}
+{"case": "devF-8329-topic", "letter_id": 1200890072, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "אפסותו והבל רעיונות, דכאון"}
+{"case": "devF-8329-topic", "letter_id": 1200890180, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ריקנים שבך מלאים מצות"}
+{"case": "devF-8329-topic", "letter_id": 1200890217, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "קירוב בין אנשים"}
+{"case": "devF-8329-topic", "letter_id": 1200890418, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "בדידות, לא ריקנות"}
+{"case": "devF-8329-topic", "letter_id": 1200910011, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "בדידות בישיבה"}
+{"case": "devF-8329-topic", "letter_id": 1200920014, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "התועדות שנת שמיטה"}
+{"case": "devF-8329-topic", "letter_id": 1200930087, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שערות הזקן ותיקוני דיקנא"}
+{"case": "devF-8329-topic", "letter_id": 1200930237, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מקום רבנות"}
+{"case": "devF-8329-topic", "letter_id": 1200930332, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "פיתוי היצר, נפילת רוח"}
+{"case": "devF-8329-topic", "letter_id": 1200940308, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "תפילין בבתים ריקים, מילה בלבד"}
+{"case": "devF-8329-topic", "letter_id": 1200960259, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ניחומי אבל"}
+{"case": "devF-8329-topic", "letter_id": 1200960342, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "התועדות י\"ט כסלו, סיפור"}
+{"case": "devF-8448-topic", "letter_id": 1200720026, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בנין מקוה והידורים"}
+{"case": "devF-8448-topic", "letter_id": 1200760024, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אין קשר למקוה"}
+{"case": "devF-8448-topic", "letter_id": 1200760146, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "רק שם רחוב מקוה ישראל"}
+{"case": "devF-8448-topic", "letter_id": 1200770137, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הלכות ותיקון מקוה"}
+{"case": "devF-8448-topic", "letter_id": 1200770151, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הוראות בנידון עשיית מקוה"}
+{"case": "devF-8448-topic", "letter_id": 1200770187, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "קונטרס, אין עניין מקוה"}
+{"case": "devF-8448-topic", "letter_id": 1200790222, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "וויכוח על אופן עשיית מקוה"}
+{"case": "devF-8448-topic", "letter_id": 1200800020, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "סדר לימודים בישיבה"}
+{"case": "devF-8448-topic", "letter_id": 1200800061, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "נוגע במקוה בסעיף אחד"}
+{"case": "devF-8448-topic", "letter_id": 1200800192, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בנין מקוה מי גשמים"}
+{"case": "devF-8448-topic", "letter_id": 1200810165, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הערות על מאירי מקואות"}
+{"case": "devF-8448-topic", "letter_id": 1200840177, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בנין מקוה, שני בורות"}
+{"case": "devF-8448-topic", "letter_id": 1200850256, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ועד בנין מקוה בחיפה"}
+{"case": "devF-8448-topic", "letter_id": 1200850410, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בנין מקוה והוראות מוהרש\"ב"}
+{"case": "devF-8448-topic", "letter_id": 1200870323, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מזכיר תיאור מקוה בקצרה"}
+{"case": "devF-8448-topic", "letter_id": 1200870324, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "בקשה לבנין מקוה בעיר"}
+{"case": "devF-8448-topic", "letter_id": 1200920042, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "סיוע לבנין מקוה טהרה"}
+{"case": "devF-8448-topic", "letter_id": 1200920204, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "החלפת מי מקוה, אחד הנושאים"}
+{"case": "devF-8448-topic", "letter_id": 1200930042, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הוראות בענין המקוה בטרנטו"}
+{"case": "devF-8448-topic", "letter_id": 1200970205, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הקמת מקוה באטלנטיק סיטי"}
+{"case": "devF-8448-topic", "letter_id": 1200970354, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בנין מקוה בק\"ק"}
+{"case": "devF-855-english", "letter_id": 1200710332, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "זכות הרבים, אין קשר"}
+{"case": "devF-855-english", "letter_id": 1200720254, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני מיאמי"}
+{"case": "devF-855-english", "letter_id": 1200750134, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ילדים כפירות, ללא חדר"}
+{"case": "devF-855-english", "letter_id": 1200770312, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ברכה לבן חמש שנכנס לחדר"}
+{"case": "devF-855-english", "letter_id": 1200780023, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "חינוך ילדים וברכה, ללא חדר"}
+{"case": "devF-855-english", "letter_id": 1200780028, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "בת מתחילה ישיבה, משל אילן"}
+{"case": "devF-855-english", "letter_id": 1200780072, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ברכה לנער לומד"}
+{"case": "devF-855-english", "letter_id": 1200780455, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "עסקנות וחינוך כללי"}
+{"case": "devF-855-english", "letter_id": 1200790089, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ברכה לבן חמש שהוכנס לחדר"}
+{"case": "devF-855-english", "letter_id": 1200800107, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "דירה חדשה ובר מצוה"}
+{"case": "devF-855-english", "letter_id": 1200800212, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חינוך במקסיקו"}
+{"case": "devF-855-english", "letter_id": 1200830005, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בנו מתחיל חדר, מדרש תנחומא"}
+{"case": "devF-855-english", "letter_id": 1200840067, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בן ארבע, תנחומא שנה רביעית"}
+{"case": "devF-855-english", "letter_id": 1200860428, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ברכה לנכד בר מצוה"}
+{"case": "devF-855-english", "letter_id": 1200870312, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אניה ושבת"}
+{"case": "devF-855-english", "letter_id": 1200920070, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מנהגי חסידים"}
+{"case": "devF-855-english", "letter_id": 1200920409, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "אילנות ופירות בקייטנה"}
+{"case": "devF-855-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ברכה לבר מצוה"}
+{"case": "devF-855-english", "letter_id": 1200940047, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ספר פירות קיץ, לא קשור"}
+{"case": "devF-855-english", "letter_id": 1200970083, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ט\"ו בשבט, אדם עץ"}
+{"case": "devF-855-english", "letter_id": 1200970258, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "חינוך כמשל לאילן"}
+{"case": "devF-855-english", "letter_id": 1200970264, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ילדים כאילנות פרי"}
+{"case": "devF-855-english", "letter_id": 1200980115, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חינוך דתי ממשלתי"}
+{"case": "devF-8588-english", "letter_id": 1200700214, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "באנקעט ביידיש, ללא 150 שנה"}
+{"case": "devF-8588-english", "letter_id": 1200720035, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מכתב אישי בנוגע צדקה"}
+{"case": "devF-8588-english", "letter_id": 1200720064, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "דינער ישיבות, לא נשים"}
+{"case": "devF-8588-english", "letter_id": 1200720254, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ענייני מיאמי"}
+{"case": "devF-8588-english", "letter_id": 1200870312, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אניה ושבת"}
+{"case": "devF-8588-english", "letter_id": 1200880095, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "נשי חב\"ד כפר חב\"ד"}
+{"case": "devF-8588-english", "letter_id": 1200880195, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "לאנטשען אקזילערי, לא ישיבות"}
+{"case": "devF-8588-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ברכה לבר מצוה"}
+{"case": "devF-8588-english", "letter_id": 1200930114, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ליידיס אקזילערי, אך 200 שנה"}
+{"case": "devF-8588-english", "letter_id": 1200930266, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "דינער ישיבה בנוארק, 200 שנה"}
+{"case": "devF-8588-english", "letter_id": 1200950247, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ליידיס אקזילערי, ללא 150"}
+{"case": "devF-8588-english", "letter_id": 1200950422, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "באנקעט אקזילערי לישיבות, ללא 150"}
+{"case": "devF-8588-english", "letter_id": 1200960353, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "כפר חב\"ד, אין קשר"}
+{"case": "devF-8588-english", "letter_id": 1200960364, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "מזכיר 150 שנה בלבד"}
+{"case": "devF-8588-english", "letter_id": 1200960365, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "דינער ישיבות 150 שנה, לא נשים"}
+{"case": "devF-8588-english", "letter_id": 1200960373, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "דינער ישיבה פיטסבורג, 150 שנה"}
+{"case": "devF-8588-english", "letter_id": 1200960409, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "נשי חב\"ד, 150 שנה"}
+{"case": "devF-8588-english", "letter_id": 1200960422, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "דינער ישיבה, 150 שנה"}
+{"case": "devF-8588-english", "letter_id": 1200970040, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "חגיגת מרכז הישיבות, 150 שנה"}
+{"case": "devF-8588-english", "letter_id": 1200980069, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "באנקעט אקזילערי, 100 שנה צמח צדק"}
+{"case": "devF-8608-english", "letter_id": 1200690048, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שידוך ושיחה אישית"}
+{"case": "devF-8608-english", "letter_id": 1200700296, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "ארבעה לשונות לפני פורים"}
+{"case": "devF-8608-english", "letter_id": 1200710101, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "פירוש ארבעה לשונות, לפני פורים"}
+{"case": "devF-8608-english", "letter_id": 1200710102, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "נסי פורים, ללא ארבעה"}
+{"case": "devF-8608-english", "letter_id": 1200710118, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "אורה שמחה, לפני פורים"}
+{"case": "devF-8608-english", "letter_id": 1200710127, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ארבעת הדברים אחרי פורים, מבצע תפילין"}
+{"case": "devF-8608-english", "letter_id": 1200710352, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ספר תורה ויום הולדת"}
+{"case": "devF-8608-english", "letter_id": 1200720165, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שמחת אדר בלבד"}
+{"case": "devF-8608-english", "letter_id": 1200780183, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "גזירת המן, ללא ארבעה"}
+{"case": "devF-8608-english", "letter_id": 1200790236, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שמחת פורים חסידית"}
+{"case": "devF-8608-english", "letter_id": 1200870312, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אניה ושבת"}
+{"case": "devF-8608-english", "letter_id": 1200880541, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "הצגת פורים, ללא ארבעה"}
+{"case": "devF-8608-english", "letter_id": 1200900343, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שמחת פורים כללית"}
+{"case": "devF-8608-english", "letter_id": 1200900364, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "אורה שמחה וששון ויקר בקצרה"}
+{"case": "devF-8608-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "ברכה לבר מצוה"}
+{"case": "devF-8608-english", "letter_id": 1200930199, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "למחרת פורים, ארבעה לשונות ומעשה"}
+{"case": "devF-8608-english", "letter_id": 1200960172, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "למחרת פורים, ארבעה לשונות ומעשה"}
+{"case": "devF-8608-english", "letter_id": 1200980080, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "למחרת פורים, ארבעה לשונות ומעשה"}
+{"case": "devF-8608-english", "letter_id": 1200980115, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "חינוך דתי ממשלתי"}
+{"case": "devF-8781-topic", "letter_id": 1200700287, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "דרכי השפעה על חברים"}
+{"case": "devF-8781-topic", "letter_id": 1200710151, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "אחריות והשפעה בסביבה"}
+{"case": "devF-8781-topic", "letter_id": 1200710332, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "השפעה בחוגים, זכות הרבים"}
+{"case": "devF-8781-topic", "letter_id": 1200720102, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "להשפיע על חבריו בדוגמה"}
+{"case": "devF-8781-topic", "letter_id": 1200720110, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "נר להאיר בסביבתו"}
+{"case": "devF-8781-topic", "letter_id": 1200790091, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "למשוך אנשים להנהגת חסידות"}
+{"case": "devF-8781-topic", "letter_id": 1200820163, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "השפעה על אנשי סביבתו"}
+{"case": "devF-8781-topic", "letter_id": 1200820188, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "השפעה על הנוער והסביבה"}
+{"case": "devF-8781-topic", "letter_id": 1200820307, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "כשרון להשפיע על הסביבה"}
+{"case": "devF-8781-topic", "letter_id": 1200830328, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "עבודת חינוך, השגחה פרטית"}
+{"case": "devF-8781-topic", "letter_id": 1200860009, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "איך להשפיע בסביבתה"}
+{"case": "devF-8781-topic", "letter_id": 1200860444, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "השפעה על הסביבה, דברים מן הלב"}
+{"case": "devF-8781-topic", "letter_id": 1200870241, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "לנצל השפעתו בסביבתו"}
+{"case": "devF-8781-topic", "letter_id": 1200870250, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "להשפיע על חבר שנתרחק"}
+{"case": "devF-8781-topic", "letter_id": 1200880465, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "השפעה בסביבתו, בעיקר בני בית"}
+{"case": "devF-8781-topic", "letter_id": 1200890006, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "איך להשפיע על אברך"}
+{"case": "devF-8781-topic", "letter_id": 1200900269, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "איך להשפיע על חברים"}
+{"case": "devF-8781-topic", "letter_id": 1200920027, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "רבי מכבד עשירים"}
+{"case": "devF-8781-topic", "letter_id": 1200920157, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "אופן ההשפעה על צעירים"}
+{"case": "devF-8781-topic", "letter_id": 1200930063, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "להשפיע במקומה כנר להאיר"}
+{"case": "devF-8781-topic", "letter_id": 1200930092, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "שידוך, השפעה בקצרה"}
+{"case": "devF-8781-topic", "letter_id": 1200930166, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "קרני רדיו בגמרא"}
+{"case": "devF-8781-topic", "letter_id": 1200940278, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "השפעת הסביבה על האדם"}
+{"case": "devF-8781-topic", "letter_id": 1200950161, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "להשפיע על סביבתו, בקצרה"}
+{"case": "devF-8781-topic", "letter_id": 1200960033, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "דרכי השפעה על אדם"}
+{"case": "devF-9137-english", "letter_id": 1200700326, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "כנס נשים, אך לא שמיטה"}
+{"case": "devF-9137-english", "letter_id": 1200710160, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9137-english", "letter_id": 1200720004, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שמיטה ושבת, לא לכנס נשים"}
+{"case": "devF-9137-english", "letter_id": 1200720131, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שמיטה ושבת, גמ\"ח"}
+{"case": "devF-9137-english", "letter_id": 1200720204, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שמיטה, נמען אחר"}
+{"case": "devF-9137-english", "letter_id": 1200720254, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9137-english", "letter_id": 1200780206, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9137-english", "letter_id": 1200780452, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שמיטה ושבת, נמען כללי"}
+{"case": "devF-9137-english", "letter_id": 1200780453, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שמיטה דומה לשבת"}
+{"case": "devF-9137-english", "letter_id": 1200800323, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "סוף שנת שמיטה"}
+{"case": "devF-9137-english", "letter_id": 1200860169, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9137-english", "letter_id": 1200870085, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "כנס נשים, ללא שמיטה"}
+{"case": "devF-9137-english", "letter_id": 1200870312, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9137-english", "letter_id": 1200900302, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שמיטה, גמ\"ח"}
+{"case": "devF-9137-english", "letter_id": 1200920362, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שבת לה' בשנת שמיטה"}
+{"case": "devF-9137-english", "letter_id": 1200920374, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "כנס נשים, ללא שמיטה"}
+{"case": "devF-9137-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9137-english", "letter_id": 1200970161, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "כנס נשים, ללא שמיטה"}
+{"case": "devF-9137-english", "letter_id": 1200970323, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אגודת נשים, ללא שמיטה"}
+{"case": "devF-9137-english", "letter_id": 1200970358, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שמיטה, לא לכנס נשים"}
+{"case": "devF-9137-english", "letter_id": 1200980126, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שמיטה ושבת, אגודת נשים"}
+{"case": "devF-9137-english", "letter_id": 1200980129, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שמיטה כשבת, חג הסיום"}
+{"case": "devF-9137-english", "letter_id": 1200980108, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "כנס נשים, שמיטה ושבת, עדות בורא"}
+{"case": "devF-9137-english", "letter_id": 1200980290, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "כנס נשים, הקהל אחרי שמיטה"}
+{"case": "devF-9137-topic", "letter_id": 1200720004, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "עוסק בשנת שמיטה"}
+{"case": "devF-9137-topic", "letter_id": 1200720131, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "נוגע בשנת שמיטה"}
+{"case": "devF-9137-topic", "letter_id": 1200720204, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ענין השמיטה"}
+{"case": "devF-9137-topic", "letter_id": 1200780372, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "הזכרת שנת השמיטה"}
+{"case": "devF-9137-topic", "letter_id": 1200780407, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "לימוד הלכות שביעית"}
+{"case": "devF-9137-topic", "letter_id": 1200780453, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "שנת שמיטה כשבת"}
+{"case": "devF-9137-topic", "letter_id": 1200890087, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "הכנות לשמיטה"}
+{"case": "devF-9137-topic", "letter_id": 1200900302, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "שנה ששית לשמיטה"}
+{"case": "devF-9137-topic", "letter_id": 1200970358, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "לימוד על שמיטה"}
+{"case": "devF-9137-topic", "letter_id": 1200970361, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "שבת לה' בשנת שמיטה"}
+{"case": "devF-9137-topic", "letter_id": 1200980126, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "שמיטה כשבת"}
+{"case": "devF-9137-topic", "letter_id": 1200980129, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "שנת שמיטה כשבת"}
+{"case": "devF-9218-english", "letter_id": 1200700162, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "כנס נשי חב\"ד בארץ, אלול"}
+{"case": "devF-9218-english", "letter_id": 1200700176, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "כנס נשי חב\"ד, ברכות לשנה"}
+{"case": "devF-9218-english", "letter_id": 1200710332, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9218-english", "letter_id": 1200710405, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "הפצת יהדות נשים, ברכה"}
+{"case": "devF-9218-english", "letter_id": 1200720351, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "כנס נשים לקראת חי אלול, חסידות"}
+{"case": "devF-9218-english", "letter_id": 1200810211, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "פסח, לא אלול"}
+{"case": "devF-9218-english", "letter_id": 1200870312, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9218-english", "letter_id": 1200870406, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9218-english", "letter_id": 1200880149, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אגודת נשים, לא אלול"}
+{"case": "devF-9218-english", "letter_id": 1200880195, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9218-english", "letter_id": 1200890424, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "כינוס נשים, חי אלול, אור חסידות"}
+{"case": "devF-9218-english", "letter_id": 1200920513, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9218-english", "letter_id": 1200930076, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9218-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9218-english", "letter_id": 1200930273, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "אגודת נשים, הפצת תורה"}
+{"case": "devF-9218-english", "letter_id": 1200940309, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "אגודת נשים באלול"}
+{"case": "devF-9218-english", "letter_id": 1200950320, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9218-english", "letter_id": 1200960092, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9218-english", "letter_id": 1200960283, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9218-english", "letter_id": 1200970114, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "כנס נשים, לא אלול"}
+{"case": "devF-9218-english", "letter_id": 1200970243, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "בנות חב\"ד ירושלים, הפצת אור"}
+{"case": "devF-9218-english", "letter_id": 1200970276, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "אגודת נשים, לא אלול"}
+{"case": "devF-9218-english", "letter_id": 1200980108, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "כנס נשים, שמיטה"}
+{"case": "devF-9218-english", "letter_id": 1200980167, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "כנס בכפר חב\"ד באלול, הפצה בחסידות"}
+{"case": "devF-9218-english", "letter_id": 1200980191, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "נשי כפר חב\"ד, ערב ראש השנה"}
+{"case": "devF-9218-topic", "letter_id": 1200690006, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "עידוד להפצת יהדות"}
+{"case": "devF-9218-topic", "letter_id": 1200700108, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "התעסקות בהפצת היהדות"}
+{"case": "devF-9218-topic", "letter_id": 1200700245, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "המשך דרך הפצת היהדות"}
+{"case": "devF-9218-topic", "letter_id": 1200710195, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הפצת התורה והיהדות"}
+{"case": "devF-9218-topic", "letter_id": 1200710242, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הפצת היהדות והמעינות"}
+{"case": "devF-9218-topic", "letter_id": 1200710337, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "למתעסקים בהפצת היהדות"}
+{"case": "devF-9218-topic", "letter_id": 1200710547, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "פעילות בהפצת היהדות"}
+{"case": "devF-9218-topic", "letter_id": 1200720159, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הפצת היהדות האמיתית"}
+{"case": "devF-9218-topic", "letter_id": 1200790041, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הפצת מעיינות החסידות"}
+{"case": "devF-9218-topic", "letter_id": 1200840114, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "הצלת נפשות רוחנית"}
+{"case": "devF-9218-topic", "letter_id": 1200840119, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הפצת מעיינות חוצה"}
+{"case": "devF-9218-topic", "letter_id": 1200860022, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הפצת היהדות בסביבה"}
+{"case": "devF-9218-topic", "letter_id": 1200880242, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "החזקת היהדות והפצתה"}
+{"case": "devF-9218-topic", "letter_id": 1200880351, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9218-topic", "letter_id": 1200890187, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הפצת דפוס ותפילין"}
+{"case": "devF-9218-topic", "letter_id": 1200900122, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "חינוך והשפעה"}
+{"case": "devF-9218-topic", "letter_id": 1200900226, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "פעילים בהפצת היהדות"}
+{"case": "devF-9218-topic", "letter_id": 1200900233, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הפצת היהדות בממדים גדולים"}
+{"case": "devF-9218-topic", "letter_id": 1200910207, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "פעולות בהפצת היהדות"}
+{"case": "devF-9218-topic", "letter_id": 1200930145, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הפצת המעינות והיהדות"}
+{"case": "devF-9218-topic", "letter_id": 1200930156, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "פעולות בהפצת היהדות"}
+{"case": "devF-9218-topic", "letter_id": 1200930217, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "החזקת והפצת היהדות"}
+{"case": "devF-9218-topic", "letter_id": 1200930380, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הפצת היהדות והחסידות"}
+{"case": "devF-9218-topic", "letter_id": 1200960194, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9218-topic", "letter_id": 1200960393, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "הפצת היהדות המסורתית"}
+{"case": "devF-9218-topic", "letter_id": 1200970337, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "פעולות בהפצת היהדות"}
+{"case": "devF-9929-english", "letter_id": 1200690125, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מברק לברי מצוה יתומי מלחמה"}
+{"case": "devF-9929-english", "letter_id": 1200700167, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מברק לברי מצוה יתומי מלחמה"}
+{"case": "devF-9929-english", "letter_id": 1200710048, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מברק בר מצוה, לא יתומים"}
+{"case": "devF-9929-english", "letter_id": 1200710186, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מברק לברי מצוה יתומי מלחמה"}
+{"case": "devF-9929-english", "letter_id": 1200710332, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9929-english", "letter_id": 1200710465, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מברק לברי מצוה יתומי מלחמה"}
+{"case": "devF-9929-english", "letter_id": 1200720268, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מברק לברי מצוה יתומי מלחמה"}
+{"case": "devF-9929-english", "letter_id": 1200780043, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "תפילין לחייל"}
+{"case": "devF-9929-english", "letter_id": 1200780149, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "תפילין לחייל"}
+{"case": "devF-9929-english", "letter_id": 1200790077, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מברק בר מצוה, לא יתומים"}
+{"case": "devF-9929-english", "letter_id": 1200790080, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "תפילין לבחורים בצבא"}
+{"case": "devF-9929-english", "letter_id": 1200790278, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "תפילין לחייל"}
+{"case": "devF-9929-english", "letter_id": 1200810284, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "תפילין לחייל"}
+{"case": "devF-9929-english", "letter_id": 1200830247, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "תפילין לחייל"}
+{"case": "devF-9929-english", "letter_id": 1200930103, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9929-english", "letter_id": 1200980115, "rel": 0, "judge": "sonnet x8 (no context)", "reason": "לא קשור"}
+{"case": "devF-9929-topic", "letter_id": 1200700209, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מקום עריכת הבר מצוה והוצאות"}
+{"case": "devF-9929-topic", "letter_id": 1200720126, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ברכה לבר מצוה ושאלת תחנון"}
+{"case": "devF-9929-topic", "letter_id": 1200750061, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ברכה לחגיגת בר מצוה"}
+{"case": "devF-9929-topic", "letter_id": 1200770259, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ברכה לבר מצוה, מאמר ותואר אדם"}
+{"case": "devF-9929-topic", "letter_id": 1200780299, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ברכה לבר מצוה, בר מצוה של יצחק"}
+{"case": "devF-9929-topic", "letter_id": 1200780344, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ברכה לבר מצוה, נעשה אדם"}
+{"case": "devF-9929-topic", "letter_id": 1200790085, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "שאלה על מקום הבר מצוה"}
+{"case": "devF-9929-topic", "letter_id": 1200800189, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "בת מצוה לבת י\"ב, נוגע בנושא"}
+{"case": "devF-9929-topic", "letter_id": 1200810008, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ברכה לבר מצוה בשבת בראשית"}
+{"case": "devF-9929-topic", "letter_id": 1200810374, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בר מצוה בח\"י אלול, הוראה"}
+{"case": "devF-9929-topic", "letter_id": 1200840375, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "בחשאי או בפומבי, שמחת בר מצוה"}
+{"case": "devF-9929-topic", "letter_id": 1200920011, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "חגיגת בר מצוה בשבת שובה"}
+{"case": "devF-9929-topic", "letter_id": 1200920423, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "ברכה לבר מצוה, י\"ב תמוז"}
+{"case": "devF-9929-topic", "letter_id": 1200930373, "rel": 1, "judge": "sonnet x8 (no context)", "reason": "מסיבת בר מצוה, התוכן על הפצת יהדות"}
+{"case": "devF-9929-topic", "letter_id": 1200960022, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מתי ואיך חוגגים בר מצוה"}
+{"case": "devF-9929-topic", "letter_id": 1200970029, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "סעודת בר מצוה ודברי תורה"}
+{"case": "devF-9929-topic", "letter_id": 1200970037, "rel": 2, "judge": "sonnet x8 (no context)", "reason": "מסיבת בר מצוה בבית הספר"}

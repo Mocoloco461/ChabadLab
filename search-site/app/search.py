@@ -167,11 +167,11 @@ MAX_RANKED = 5000
 RELAX_BELOW = 3  # strict (all words) results below this -> also show letters with most of the words
 
 
-def _match_ids(fts, fsql, fparams, order_bm25=False, limit=None):
-    where = "letters_fts MATCH ?" + (f" AND {fsql}" if fsql else "")
-    sql = f"SELECT l.id FROM letters_fts JOIN letters l ON l.id = letters_fts.rowid WHERE {where}"
+def _match_ids(fts, fsql, fparams, order_bm25=False, limit=None, table="letters_fts"):
+    where = f"{table} MATCH ?" + (f" AND {fsql}" if fsql else "")
+    sql = f"SELECT l.id FROM {table} JOIN letters l ON l.id = {table}.rowid WHERE {where}"
     if order_bm25:
-        sql += f" ORDER BY {BM25}"
+        sql += f" ORDER BY {BM25 if table == 'letters_fts' else f'bm25({table})'}"
     if limit:
         sql += f" LIMIT {int(limit)}"
     return [r[0] for r in db().execute(sql, [fts] + fparams)]
@@ -566,9 +566,10 @@ def semantic_search(q, filters, offset=0, limit=20, n=300, rerank=None, sort="re
             "reranked": reranked}
 
 
-def coverage_ids(q, filters, prefixes=True, n=300):
+def coverage_ids(q, filters, prefixes=True, n=300, table="letters_fts"):
     """Lexical ranking for natural-language queries: letters that contain more of
-    the query's content words first, then bm25 of the OR query."""
+    the query's content words first, then bm25 of the OR query.
+    table="d2q_fts": the same over the letters' doc2query cards (summary, questions, topics)."""
     items = [it for it in parse_query(q) if not it["neg"] and not (
         it["kind"] == "word" and (it["words"][0] in STOPWORDS or it["words"][0] in QUERY_STOP))]
     if not items:
@@ -580,13 +581,14 @@ def coverage_ids(q, filters, prefixes=True, n=300):
         if not e:
             continue
         try:
-            for lid in _match_ids(e, fsql, fparams):
+            for lid in _match_ids(e, fsql, fparams, table=table):
                 cover[lid] = cover.get(lid, 0) + 1
         except sqlite3.OperationalError:
             continue
     e = build_fts_query("", prefixes, "any", items=items)
     try:
-        order = {lid: i for i, lid in enumerate(_match_ids(e, fsql, fparams, order_bm25=True, limit=3000))} if e else {}
+        order = {lid: i for i, lid in enumerate(_match_ids(e, fsql, fparams, order_bm25=True, limit=3000,
+                                                           table=table))} if e else {}
     except sqlite3.OperationalError:
         order = {}
     return sorted(cover, key=lambda lid: (-cover[lid], order.get(lid, 10 ** 6)))[:n]
@@ -632,6 +634,19 @@ def recipient_ids(q, filters, n=300):
         return []
 
 
+# doc2query cards on the word side: a separate FTS table d2q_fts (rowid = letter id; built by
+# eval/merged/build_d2q_fts.py into a copy of search.db). Text mode never uses it (it is not letter text);
+# in hybrid mode it is one more RRF list. IGROT_D2Q_LEX_W=0 disables it.
+D2Q_LEX_W = float(os.environ.get("IGROT_D2Q_LEX_W", "1.0"))
+_d2q = {}
+
+
+def has_d2q_fts():
+    if "ok" not in _d2q:
+        _d2q["ok"] = db().execute("SELECT 1 FROM sqlite_master WHERE name='d2q_fts'").fetchone() is not None
+    return _d2q["ok"]
+
+
 def hybrid_ranked(q, filters, n=300, prefixes=True, k=HYBRID_K, w_text=HYBRID_W_TEXT, w_sem=HYBRID_W_SEM):
     """-> (ranked [(lid, score)], best_chunk {lid: chunk}, text ids, qv or None)"""
     idx = semantic_index()
@@ -652,6 +667,9 @@ def hybrid_ranked(q, filters, n=300, prefixes=True, k=HYBRID_K, w_text=HYBRID_W_
     if REC_W and not exact_syntax(q):
         for rank, lid in enumerate(recipient_ids(tq, filters, n)):
             score[lid] = score.get(lid, 0) + REC_W / (k + rank + 1)
+    if D2Q_LEX_W and not exact_syntax(q) and has_d2q_fts():
+        for rank, lid in enumerate(coverage_ids(tq, filters, prefixes, n, table="d2q_fts")):
+            score[lid] = score.get(lid, 0) + D2Q_LEX_W / (k + rank + 1)
     return sorted(score.items(), key=lambda x: -x[1]), best_chunk, t_ids, qv
 
 

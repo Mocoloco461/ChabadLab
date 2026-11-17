@@ -6,6 +6,8 @@
 
 --pool test  : "real people" persona, 4 items (topic / 2 questions / vague paraphrase) -> questions_test.jsonl
 --pool train : "content card" persona, 5 concise questions                          -> questions_train.jsonl
+--pool train --prompt train2 --out questions_train_v2.jsonl : content card v2 (the recipient line is given;
+               + 2-3 English questions, the recipient in plain words, 2-4 very short topics)
 Resumable: letters already in the output file are skipped. --out overrides the file (e.g. model comparison).
 """
 import argparse
@@ -65,25 +67,58 @@ PROMPT_TRAIN = """קרא את המכתב הבא מתוך "אגרות קודש" �
 החזר JSON בלבד:
 {{"summary": "...", "keywords": ["..."], "questions": ["...", "..."]}}"""
 
+PROMPT_TRAIN2 = """קרא את המכתב הבא מתוך "אגרות קודש" של הרבי מליובאוויטש, והכן לו כרטיס תוכן.
+
+{recipient}<מכתב>
+{text}
+</מכתב>
+
+הכרטיס כולל:
+- "summary": סיכום של 1–2 משפטים.
+- "recipient": מי הנמען, בפשטות: שם פרטי ושם משפחה בלי תארים וקיצורי כבוד, ותפקיד, מוסד או מקום אם הם ידועים מהכותרת או מהמכתב. אם לא ידוע – מחרוזת ריקה.
+- "topics": ‏2–4 נושאים קצרים מאוד, 1–3 מילים כל אחד, כמו כותרות בתוכן עניינים של ספר.
+- "keywords": ‏4–10 מושגים ונושאים מרכזיים.
+- "questions": עד 5 שאלות שהמכתב משיב עליהן. ניסוח ענייני ותמציתי, בעברית (גם אם המכתב ביידיש). מותר להשתמש במונחים של המכתב. כל שאלה על עניין אחר, ושהמכתב באמת עונה עליה. במכתב קצר או במכתב ברכה בלבד – פחות שאלות.
+- "questions_en": ‏2–3 שאלות שהמכתב משיב עליהן, באנגלית פשוטה (אפשר לתרגם מהשאלות שלמעלה). במכתב ברכה קצר – אחת.
+
+כללים:
+- הכול מתוך המכתב בלבד. כל שאלה – שהמכתב עונה עליה במפורש. בלי פרטים, מקומות, תפקידים או אנשים שלא כתובים בו.
+- שם הנמען – כמו בכותרת, בלי תארים. לא להשלים שם פרטי מתוך ראשי תיבות (כמו מוהר"י). למכתב כללי או לקבוצה – שם הקבוצה, או מחרוזת ריקה.
+- ראשי תיבות וקיצורים: לפתוח רק כשהפירוש ודאי; אחרת להשאיר כמו שהם. לא לזהות אישים (אדמו"ר מוהרש"ב, הצמח צדק וכו') אם אין ודאות.
+- הנושאים ומילות המפתח – מושגים שבאמת נמצאים במכתב, בעברית, לא כלליים מדי ("ברכה", "הכרת תודה") אלא אם זה כל המכתב.
+- כל שדה – טקסט גמור ונקי, בלי טיוטות, שלוש נקודות או הערות על המכתב עצמו.
+
+החזר JSON בלבד:
+{{"summary": "...", "recipient": "...", "topics": ["..."], "keywords": ["..."], "questions": ["..."], "questions_en": ["..."]}}"""
+
+
 
 def letters(ids):
     con = sqlite3.connect(DATA / "search.db")
     for lid in ids:
-        r = con.execute("SELECT full_text, language FROM letters WHERE id=?", (lid,)).fetchone()
-        yield {"id": lid, "text": (r[0] or "")[:MAX_CHARS], "language": r[1]}
+        r = con.execute("SELECT full_text, language, recipient, recipient_info, recipient_note "
+                        "FROM letters WHERE id=?", (lid,)).fetchone()
+        rec = (r[3] or r[2] or "").strip()
+        rec_txt = ""
+        if rec:
+            rec_txt = f"הנמען, כפי שהוא מופיע בכותרת המכתב: {rec}\n"
+            if (r[4] or "").strip():
+                rec_txt += f"הערת העורכים על הנמען: {r[4].strip()}\n"
+            rec_txt += "\n"
+        yield {"id": lid, "text": (r[0] or "")[:MAX_CHARS], "language": r[1], "recipient": rec_txt}
 
 
 def make_fn(pool, model, style=None):
     style = style or pool  # which prompt: "test" (real people) or "train" (content card)
-    prompt = PROMPT_TEST if style == "test" else PROMPT_TRAIN
+    prompt = {"test": PROMPT_TEST, "train": PROMPT_TRAIN, "train2": PROMPT_TRAIN2}[style]
     temp = 0.8 if style == "test" else 0.5
 
     def fn(job):
         infos = []
         last = None
         for _ in range(2):  # one retry on unparsable JSON
-            r = orclient.chat(model, [{"role": "user", "content": prompt.format(text=job["text"])}],
-                              max_tokens=1200, temperature=temp)
+            r = orclient.chat(model, [{"role": "user", "content": prompt.format(text=job["text"], recipient=job.get("recipient", ""))}],
+                              max_tokens=1500, temperature=temp)
             infos.append(r)
             try:
                 d = orclient.parse_json(r["text"])
@@ -94,8 +129,13 @@ def make_fn(pool, model, style=None):
                              for i in d.get("items", []) if isinstance(i, dict) and str(i.get("text", "")).strip()]
                 else:
                     items = [{"kind": "question", "text": str(q).strip()} for q in d.get("questions", []) if str(q).strip()]
+                    items += [{"kind": "question_en", "text": str(q).strip()}
+                              for q in d.get("questions_en", []) or [] if str(q).strip()]
                 out = {"id": job["id"], "language": job["language"], "pool": pool, "model": r["model"],
                        "summary": d.get("summary", ""), "keywords": d.get("keywords", []), "items": items}
+                if style == "train2":
+                    out["recipient"] = str(d.get("recipient") or "").strip()
+                    out["topics"] = [str(x).strip() for x in d.get("topics", []) or [] if str(x).strip()]
                 return out, infos
             except (ValueError, KeyError, AttributeError, TypeError) as e:
                 last = e
@@ -114,9 +154,10 @@ def main():
     ap.add_argument("--batch", action="store_true", help="use the :batch variant (half price, slower)")
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--out")
-    ap.add_argument("--prompt", choices=["test", "train"],
+    ap.add_argument("--prompt", choices=["test", "train", "train2"],
                     help="prompt style (default: the pool's own); --pool test --prompt train = doc2query passages "
-                         "for TEST letters, only for the leaky upper-bound measurement")
+                         "for TEST letters, only for the leaky upper-bound measurement; train2 = content card v2 "
+                         "(+ English questions, recipient, short topics)")
     ap.add_argument("--include-used", action="store_true",
                     help="train pool + the letters already used by eval/cases, holdouts, samples")
     a = ap.parse_args()

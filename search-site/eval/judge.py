@@ -18,12 +18,13 @@ subject, partial answer); 0 = not relevant. The source letter is not shown (alwa
 import argparse
 import glob
 import json
+import os
 import sqlite3
 from collections import defaultdict
 from pathlib import Path
 
 EVAL = Path(__file__).resolve().parent
-DB = EVAL.parent / "data" / "search.db"
+DB = Path(os.environ.get("IGROT_DATA", EVAL.parent / "data")) / "search.db"
 JUDGED_TYPES = {"question", "paraphrase", "crosslang", "english", "topic"}
 
 
@@ -31,11 +32,13 @@ def prep(args):
     con = sqlite3.connect(DB)
     con.row_factory = sqlite3.Row
     have = load_qrels(args.set)
+    if args.cases:  # only the cases of one cases file (results files of run_eval.py hold every set it ran)
+        args.cases = {json.loads(l)["id"] for l in open(args.cases, encoding="utf-8") if l.strip()}
     pool = defaultdict(set)
     query, typ, expected = {}, {}, {}
     for f in args.results:
         for r in json.load(open(f, encoding="utf-8"))["results"]:
-            if r["type"] not in JUDGED_TYPES:
+            if r["type"] not in JUDGED_TYPES or (args.cases and r["id"].split("@")[0] not in args.cases):
                 continue
             base = r["id"].split("@")[0]
             query[base], typ[base], expected[base] = r["query"], r["type"], set(r["expected_ids"])
@@ -113,6 +116,7 @@ def main():
     a.add_argument("--depth", type=int, default=10)
     a.add_argument("--chars", type=int, default=900)
     a.add_argument("--parts", type=int, default=6)
+    a.add_argument("--cases", help="cases .jsonl: pool only its cases")
     m = sub.add_parser("merge")
     m.add_argument("--dir", required=True)
     m.add_argument("--set", required=True)

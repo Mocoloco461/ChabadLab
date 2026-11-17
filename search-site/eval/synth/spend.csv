@@ -32,3 +32,21 @@ time,task,model,jobs,calls,errors,tokens_in,tokens_out,cost_usd,key_usage_before
 2026-11-17T15:55:00,judge,anthropic/claude-haiku-5.5,209,209,0,333190,5972,0.0363,6.5484,6.5535,False
 2026-11-17T15:55:12,judge,anthropic/claude-haiku-5.5,102,102,0,114308,2046,0.0125,6.5487,6.5876,False
 2026-11-17T16:12:05,eval-holdout3-7configs,3 cohere-fast runs,,,,,,0.1025,6.5977,6.7002,rc=0
+2026-11-17T20:16:11,prefetch-merged,qwen8b+e5l,,,,,,0.0000,6.7002,6.7002,rc=0
+2026-11-17T20:18:33,gen-train,anthropic/claude-haiku-5.5,20,22,0,35613,11726,0.0094,6.7003,6.7003,False
+2026-11-17T20:20:23,gen-train,anthropic/claude-haiku-5.5,20,20,0,39792,9735,0.0088,6.7097,6.7097,False
+2026-11-17T20:22:24,minitest-gemini,google/gemini-embedding-2,,,,,,0.2081,6.8795,7.0876,rc=0
+2026-11-17T20:28:05,emb-gemini2-d2q-v1,google/gemini-embedding-2,,,,,,2.8357,7.1218,9.9575,rc=0
+2026-11-17T20:37:55,judge,anthropic/claude-haiku-5.5,314,314,0,1182707,19327,0.1279,11.7373,11.7373,False
+2026-11-17T20:45:01,gen-train,anthropic/claude-haiku-5.5,10462,10677,21,20224785,5353780,4.6994,6.7097,13.4803,False
+2026-11-17T20:45:24,judge,anthropic/claude-haiku-5.5,439,439,0,781337,14102,0.0852,13.4803,13.5345,False
+2026-11-17T20:45:34,judge,anthropic/claude-haiku-5.5,141,141,0,190177,3183,0.0206,13.5345,13.6248,False
+2026-11-17T20:45:36,judge,anthropic/claude-haiku-5.5,2,2,0,1573,36,0.0002,13.6248,13.5345,False
+2026-11-17T20:45:37,judge,anthropic/claude-haiku-5.5,3,3,0,3898,54,0.0004,13.6248,13.5345,False
+2026-11-17T20:46:02,gen-train,anthropic/claude-haiku-5.5,21,24,1,42746,12590,0.0106,13.6248,13.6864,False
+2026-11-17T20:48:05,emb-d2q-v2-gem2,google/gemini-embedding-2,,,,,,0.7193,13.7016,14.4208,rc=0
+2026-11-17T20:54:17,emb-d2q-v2-q8b,qwen/qwen3-embedding-8b,,,,,,0.2090,14.4208,14.6298,rc=0
+2026-11-17T20:58:10,emb-d2q-v2-e5l,intfloat/multilingual-e5-large,,,,,,0.2083,14.6298,14.8382,rc=0
+2026-11-17T20:59:45,judge,anthropic/claude-haiku-5.5,46,46,0,57161,948,0.0062,15.0722,15.125,False
+2026-11-17T20:59:57,judge,anthropic/claude-haiku-5.5,180,180,0,326952,5115,0.0353,15.125,15.1524,False
+2026-11-17T20:59:58,judge,anthropic/claude-haiku-5.5,6,6,0,10161,168,0.0011,15.1524,15.1524,False

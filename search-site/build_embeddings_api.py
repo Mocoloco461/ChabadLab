@@ -31,7 +31,9 @@ from hebrew import clean  # noqa: E402
 DATA = Path(os.environ.get("IGROT_DATA", ROOT / "data"))
 QWEN_Q = INSTRUCT + "\nQuery:"
 PREFIXES = {"qwen/qwen3-embedding-8b": (QWEN_Q, ""), "qwen/qwen3-embedding-4b": (QWEN_Q, ""),
-            "intfloat/multilingual-e5-large": ("query: ", "passage: ")}
+            "intfloat/multilingual-e5-large": ("query: ", "passage: "),
+            # Gemini embedding task prompts (asymmetric retrieval)
+            "google/gemini-embedding-2": ("task: search result | query: ", "title: none | text: ")}
 
 
 def main():

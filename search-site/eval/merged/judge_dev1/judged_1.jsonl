@@ -1,0 +1,101 @@
+{"case": "devF-10535-english", "letter_id": 1200690138, "rel": 0, "reason": "ענייני כניסה לירושלים, לא קרבן תמורה"}
+{"case": "devF-10535-english", "letter_id": 1200720254, "rel": 0, "reason": "ענייני מוסדות במיאמי"}
+{"case": "devF-10535-english", "letter_id": 1200750165, "rel": 0, "reason": "שתי הלחם וזוהר, לא תמורת קרבן"}
+{"case": "devF-10535-english", "letter_id": 1200760009, "rel": 0, "reason": "שבת וחולה שיב\"ס"}
+{"case": "devF-10535-english", "letter_id": 1200760143, "rel": 0, "reason": "הלל בשחיטת הפסח"}
+{"case": "devF-10535-english", "letter_id": 1200760206, "rel": 0, "reason": "אפיית לחם הפנים בשבת"}
+{"case": "devF-10535-english", "letter_id": 1200770036, "rel": 0, "reason": "כובש עון ונושא עון"}
+{"case": "devF-10535-english", "letter_id": 1200770048, "rel": 0, "reason": "פסקי דינים להצ\"צ"}
+{"case": "devF-10535-english", "letter_id": 1200780306, "rel": 1, "reason": "פסח שני כהוראה, לא דיון הלכתי"}
+{"case": "devF-10535-english", "letter_id": 1200790110, "rel": 0, "reason": "הערות על נזר הקדש תמיד"}
+{"case": "devF-10535-english", "letter_id": 1200830209, "rel": 0, "reason": "תקיעת שופר בשבת"}
+{"case": "devF-10535-english", "letter_id": 1200850189, "rel": 0, "reason": "הגדה ושם שבת הגדול"}
+{"case": "devF-10535-english", "letter_id": 1200870190, "rel": 0, "reason": "עגלה ערופה ומומים"}
+{"case": "devF-10535-english", "letter_id": 1200870312, "rel": 0, "reason": "אניה אוטומטית בשבת"}
+{"case": "devF-10535-english", "letter_id": 1200870348, "rel": 0, "reason": "תגלחת מצורע וטבילה"}
+{"case": "devF-10535-english", "letter_id": 1200890429, "rel": 0, "reason": "סדר הבוקר באגודה"}
+{"case": "devF-10535-english", "letter_id": 1200910335, "rel": 0, "reason": "מכתב כללי לראש השנה"}
+{"case": "devF-10535-english", "letter_id": 1200910359, "rel": 0, "reason": "הערות לנזר הקדש בפסולי המוקדשין"}
+{"case": "devF-10535-english", "letter_id": 1200930103, "rel": 0, "reason": "הערכת ספרים, אינו הלכתי"}
+{"case": "devF-10535-english", "letter_id": 1200960347, "rel": 0, "reason": "בהמת עיר הנדחת, לא קרבן תמורה"}
+{"case": "devF-10535-english", "letter_id": 1200970141, "rel": 1, "reason": "פסח שני כהוראה, לא דיון הלכתי"}
+{"case": "devF-10535-english", "letter_id": 1200980115, "rel": 0, "reason": "לימוד דתי בממשלה"}
+{"case": "devF-10535-topic", "letter_id": 1200750165, "rel": 2, "reason": "דיון בשתי הלחם דשבועות"}
+{"case": "devF-10535-topic", "letter_id": 1200760005, "rel": 2, "reason": "דיון בשתי הלחם והמזבח"}
+{"case": "devF-10535-topic", "letter_id": 1200760130, "rel": 0, "reason": "הלל בשחיטת הפסח"}
+{"case": "devF-10535-topic", "letter_id": 1200760143, "rel": 0, "reason": "הלל בשחיטת הפסח"}
+{"case": "devF-10535-topic", "letter_id": 1200760160, "rel": 0, "reason": "משקוף ומזוזות"}
+{"case": "devF-10535-topic", "letter_id": 1200760206, "rel": 0, "reason": "לחם הפנים, לא שתי הלחם"}
+{"case": "devF-10535-topic", "letter_id": 1200770091, "rel": 0, "reason": "ענייני הסתדרות וספירת העומר"}
+{"case": "devF-10535-topic", "letter_id": 1200770152, "rel": 0, "reason": "גן ילדים ונטירת כרם"}
+{"case": "devF-10535-topic", "letter_id": 1200820254, "rel": 0, "reason": "אפיית מצות"}
+{"case": "devF-10535-topic", "letter_id": 1200850007, "rel": 0, "reason": "שמורה ומצה"}
+{"case": "devF-10535-topic", "letter_id": 1200860135, "rel": 0, "reason": "לחם כמשל בלבד"}
+{"case": "devF-10535-topic", "letter_id": 1200870007, "rel": 1, "reason": "מזכיר שתי הלחם בדרך אגב"}
+{"case": "devF-10535-topic", "letter_id": 1200880035, "rel": 0, "reason": "לחם משנה וברכת המוציא"}
+{"case": "devF-10535-topic", "letter_id": 1200890022, "rel": 0, "reason": "מצה שמורה"}
+{"case": "devF-10535-topic", "letter_id": 1200910158, "rel": 0, "reason": "חג השבועות וזמן מתן תורה"}
+{"case": "devF-10535-topic", "letter_id": 1200920399, "rel": 1, "reason": "שתי הלחם חמץ מוזכר ביחס לפסח שני"}
+{"case": "devF-1570-topic", "letter_id": 1200700206, "rel": 2, "reason": "חנוכת בית כנסת חדש"}
+{"case": "devF-1570-topic", "letter_id": 1200780349, "rel": 1, "reason": "מזכיר בית כנסת והנהגתו"}
+{"case": "devF-1570-topic", "letter_id": 1200820118, "rel": 2, "reason": "בית הכנסת כמקדש מעט ובית מדרש"}
+{"case": "devF-1570-topic", "letter_id": 1200820134, "rel": 2, "reason": "בית כנסת פתוח ומנין יומי"}
+{"case": "devF-1570-topic", "letter_id": 1200840291, "rel": 2, "reason": "יסוד בתי כנסת חב\"ד בירושלים"}
+{"case": "devF-1570-topic", "letter_id": 1200850080, "rel": 2, "reason": "התפתחות בית הכנסת"}
+{"case": "devF-1570-topic", "letter_id": 1200850203, "rel": 2, "reason": "בניית בית כנסת בשיקגו"}
+{"case": "devF-1570-topic", "letter_id": 1200850318, "rel": 2, "reason": "בית הכנסת מקדש מעט ומחיצה"}
+{"case": "devF-1570-topic", "letter_id": 1200860040, "rel": 2, "reason": "גבאות בית הכנסת ושיעורים"}
+{"case": "devF-1570-topic", "letter_id": 1200860330, "rel": 2, "reason": "ביהכ\"נ חב\"ד ופעילותו"}
+{"case": "devF-1570-topic", "letter_id": 1200890081, "rel": 2, "reason": "רב בית כנסת ותפקידו"}
+{"case": "devF-1570-topic", "letter_id": 1200900353, "rel": 2, "reason": "שול חדש וביהכ\"נ כבית מדרש"}
+{"case": "devF-1570-topic", "letter_id": 1200920301, "rel": 2, "reason": "בניית בית כנסת"}
+{"case": "devF-1570-topic", "letter_id": 1200920339, "rel": 2, "reason": "בנין בית כנסת מרכזי"}
+{"case": "devF-1570-topic", "letter_id": 1200940033, "rel": 1, "reason": "ברכה לרב בית כנסת, תוכן כללי"}
+{"case": "devF-1570-topic", "letter_id": 1200940158, "rel": 2, "reason": "מנין ובימה בבית הכנסת"}
+{"case": "devF-1570-topic", "letter_id": 1200970028, "rel": 2, "reason": "חנוכת בית כנסת ביוהנסבורג"}
+{"case": "devF-1570-topic", "letter_id": 1200970093, "rel": 2, "reason": "יסוד בית כנסת עצמאי"}
+{"case": "devF-1570-topic", "letter_id": 1200970224, "rel": 2, "reason": "בתי הכנסיות בכפר חב\"ד"}
+{"case": "devF-1570-topic", "letter_id": 1200970343, "rel": 2, "reason": "חנוכת בית הכנסת בכפר חב\"ד"}
+{"case": "devF-1953-english", "letter_id": 1200750158, "rel": 0, "reason": "זכור ושמור, לא חלוקת הזמן"}
+{"case": "devF-1953-english", "letter_id": 1200760042, "rel": 0, "reason": "עולם הבא"}
+{"case": "devF-1953-english", "letter_id": 1200760067, "rel": 0, "reason": "חשבון תקופות ומזלות"}
+{"case": "devF-1953-english", "letter_id": 1200760118, "rel": 1, "reason": "דיון בבריאת הזמן"}
+{"case": "devF-1953-english", "letter_id": 1200770091, "rel": 0, "reason": "ענייני הסתדרות וספירה"}
+{"case": "devF-1953-english", "letter_id": 1200770141, "rel": 0, "reason": "מנהגי ראש השנה"}
+{"case": "devF-1953-english", "letter_id": 1200770367, "rel": 1, "reason": "זמן המשך אחד או מפסקי"}
+{"case": "devF-1953-english", "letter_id": 1200780009, "rel": 1, "reason": "זמן המשך אחד או מפסקי"}
+{"case": "devF-1953-english", "letter_id": 1200810131, "rel": 0, "reason": "דרווין וימי הבריאה"}
+{"case": "devF-1953-english", "letter_id": 1200820170, "rel": 0, "reason": "הערות לספר לב ארי'"}
+{"case": "devF-1953-english", "letter_id": 1200860169, "rel": 0, "reason": "עבודה בקונגרס"}
+{"case": "devF-1953-english", "letter_id": 1200870312, "rel": 0, "reason": "אניה אוטומטית בשבת"}
+{"case": "devF-1953-english", "letter_id": 1200920462, "rel": 2, "reason": "מעל\"ע דשבת גדר נקודה אחת"}
+{"case": "devF-1953-english", "letter_id": 1200920529, "rel": 0, "reason": "זמני עלות השחר"}
+{"case": "devF-1953-english", "letter_id": 1200930103, "rel": 0, "reason": "הערכת ספרים"}
+{"case": "devF-1953-english", "letter_id": 1200950314, "rel": 1, "reason": "קו התאריך, קשר רחוק לזמן"}
+{"case": "devF-1953-english", "letter_id": 1200980115, "rel": 0, "reason": "לימוד דתי בממשלה"}
+{"case": "devF-2467-topic", "letter_id": 1200750002, "rel": 0, "reason": "חכמת התכונה"}
+{"case": "devF-2467-topic", "letter_id": 1200780265, "rel": 1, "reason": "מזכיר פנימיות התורה בדרך אגב"}
+{"case": "devF-2467-topic", "letter_id": 1200780276, "rel": 2, "reason": "קבלת התורה בפנימיות, תורת החב\"ד"}
+{"case": "devF-2467-topic", "letter_id": 1200780442, "rel": 0, "reason": "בנין לישיבה במלבורן"}
+{"case": "devF-2467-topic", "letter_id": 1200810280, "rel": 2, "reason": "לימוד פנימיות התורה ונסיון"}
+{"case": "devF-2467-topic", "letter_id": 1200820016, "rel": 2, "reason": "לימוד פנימיות התורה נשמתא דאורייתא"}
+{"case": "devF-2467-topic", "letter_id": 1200820078, "rel": 0, "reason": "נסיעה ללמוד בישיבה"}
+{"case": "devF-2467-topic", "letter_id": 1200830092, "rel": 2, "reason": "פנימיות התורה נשמתא דאורייתא"}
+{"case": "devF-2467-topic", "letter_id": 1200830271, "rel": 0, "reason": "הנהגות בעבודה ולימוד, לא פנימיות"}
+{"case": "devF-2467-topic", "letter_id": 1200840161, "rel": 1, "reason": "נוגע בלימוד פנימיות התורה חלקית"}
+{"case": "devF-2467-topic", "letter_id": 1200860048, "rel": 1, "reason": "פירוש בפנימיות, בעיקר פנימיות הלומד"}
+{"case": "devF-2467-topic", "letter_id": 1200880118, "rel": 0, "reason": "רפואה וחיסונים"}
+{"case": "devF-2467-topic", "letter_id": 1200880410, "rel": 2, "reason": "שיעורי דא\"ח ופנימיות התורה"}
+{"case": "devF-2467-topic", "letter_id": 1200890280, "rel": 2, "reason": "הכרח לימוד פנימיות התורה"}
+{"case": "devF-2467-topic", "letter_id": 1200910153, "rel": 1, "reason": "קבלת התורה בפנימיות, ברכה"}
+{"case": "devF-2467-topic", "letter_id": 1200920132, "rel": 2, "reason": "הכרח לימוד פנימיות התורה"}
+{"case": "devF-2467-topic", "letter_id": 1200930218, "rel": 2, "reason": "קביעות עתים בלימוד פנימיות התורה"}
+{"case": "devF-2467-topic", "letter_id": 1200930229, "rel": 0, "reason": "חירות בפסח"}
+{"case": "devF-2467-topic", "letter_id": 1200940198, "rel": 2, "reason": "פנימיות התורה ורשב\"י"}
+{"case": "devF-2467-topic", "letter_id": 1200940242, "rel": 0, "reason": "הנחת תפילין"}
+{"case": "devF-2467-topic", "letter_id": 1200950181, "rel": 0, "reason": "שליחות לעסקני ציבור"}
+{"case": "devF-2467-topic", "letter_id": 1200960136, "rel": 2, "reason": "חיוב לימוד פנימיות התורה"}
+{"case": "devF-2467-topic", "letter_id": 1200960345, "rel": 2, "reason": "פנימיות התורה וחנוכה"}
+{"case": "devF-2467-topic", "letter_id": 1200970101, "rel": 2, "reason": "לימוד פנימיות התורה בדורנו"}
+{"case": "devF-2467-topic", "letter_id": 1200970145, "rel": 2, "reason": "המשכת פנימיות התורה, רשב\"י"}
+{"case": "devF-2467-topic", "letter_id": 1200970156, "rel": 1, "reason": "חדירה לפנימיות החומר, קשר חלקי"}
