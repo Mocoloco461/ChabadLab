@@ -3,7 +3,7 @@
 Run the search test cases against the running server and score them.
 
     python3 search-site/eval/run_eval.py [--cases search-site/eval/cases/*.jsonl]
-                                         [--server http://localhost:8765] [--label "what changed"]
+                                         [--server http://127.0.0.1:8765] [--label "what changed"]
 
 Case format (one JSON object per line):
     {"id": "b1-007-phrase", "type": "phrase|keywords|paraphrase|question|filter|number|crosslang",
@@ -53,7 +53,7 @@ def expand(cases):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cases", nargs="*", default=sorted(glob.glob(str(EVAL / "cases" / "*.jsonl"))))
-    ap.add_argument("--server", default="http://localhost:8765")
+    ap.add_argument("--server", default="http://127.0.0.1:8765")
     ap.add_argument("--label", default="")
     ap.add_argument("--only-type")
     args = ap.parse_args()
