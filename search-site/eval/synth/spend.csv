@@ -1,0 +1,13 @@
+time,task,model,jobs,calls,errors,tokens_in,tokens_out,cost_usd,key_usage_before,key_usage_after,stopped
+2026-11-17T14:03:24,gen-test,anthropic/claude-haiku-5.5,20,39,19,60238,35100,0.0236,0.0,0.0395,False
+2026-11-17T14:04:29,gen-test,deepseek/deepseek-v4.1-flash,20,40,20,43638,36000,0.0312,0.0,0.0536,False
+2026-11-17T14:05:10,gen-test,anthropic/claude-haiku-5.5,20,20,0,31602,9153,0.0077,0.0536,0.0553,False
+2026-11-17T14:05:31,gen-test,deepseek/deepseek-v4.1-flash,20,21,0,22440,8416,0.01,0.0536,0.0699,False
+2026-11-17T14:09:19,gen-test,anthropic/claude-haiku-5.5,600,603,0,1034813,274038,0.2405,0.0699,0.2872,False
+2026-11-17T14:14:46,gen-train,anthropic/claude-haiku-5.5:batch,20,0,20,0,0,0.0,0.34,0.5854,False
+2026-11-17T14:14:47,gen-test,anthropic/claude-haiku-5.5,600,603,0,1234187,260200,0.2535,0.3339,0.5854,False
+2026-11-17T14:15:51,emb-build-qwen8b,qwen/qwen3-embedding-8b,,,,,,0.3752,0.2564,0.6316,rc=0
+2026-11-17T14:16:43,gen-train,anthropic/claude-haiku-5.5,20,20,0,23244,9040,0.0068,0.6332,0.6398,False
+2026-11-17T14:16:57,gen-train,deepseek/deepseek-v4-flash-0731,20,31,8,25411,8587,0.0048,0.6332,0.6477,False
+2026-11-17T14:25:36,prefetch-query-emb,"q4b,e5l,q8b",,,,,,0.7032,0.7809,1.4841,rc=0
+2026-11-17T14:41:17,judge,anthropic/claude-haiku-5.5,10,11,1,93341,1528,0.0101,3.0252,3.0434,False

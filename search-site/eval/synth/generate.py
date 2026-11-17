@@ -32,15 +32,18 @@ PROMPT_TEST = """להלן מכתב של הרבי מליובאוויטש (מתו�
 חשוב על אנשים אמיתיים שהמכתב הזה לא נמצא מולם, אבל הם מתלבטים בדיוק בעניין שהוא עוסק בו: חסיד, בחור ישיבה, הורה, אשה, מחנך, איש עסקים, מי שמתעניין בתורת חב"ד. מה הם היו כותבים, במילים שלהם, כשהם מחפשים מה הרבי אמר על זה?
 
 כתוב עד 4 פריטים, בעברית (גם אם המכתב ביידיש):
-1. "topic" – נושא קצר של 2–5 מילים, כמו שמקלידים בשורת חיפוש.
-2. "question" – שאלה טבעית ומלאה, בלשון יומיומית.
+1. "topic" – נושא קצר של 2–5 מילים, כמו שמקלידים בשורת חיפוש. נושא מסוים של המכתב, לא צירוף כללי שמופיע במכתבים רבים (כמו "הפצת המעיינות" או "י"ט כסלו"). אם אין למכתב נושא מסוים כזה – דלג על הפריט.
+2. "question" – שאלה טבעית ומלאה, בלשון יומיומית, על העניין העיקרי של המכתב, כמו שאדם עם צורך אמיתי היה שואל.
 3. "question" – עוד שאלה טבעית, על עניין אחר במכתב או מזווית אחרת.
 4. "paraphrase" – נקודה מסוימת שהרבי אומר במכתב, כמו שאדם זוכר אותה במעורפל ומתאר אותה במילים שלו (למשל "הרבי כתב פעם שאם...").
 
 כללים:
-- המכתב הזה צריך באמת לענות על כל פריט.
-- השואל לא ראה את המכתב: אל תעתיק ביטויים ייחודיים ממנו, ואל תזכיר את שם הנמען, תאריכים או פרטים שרק מי שקרא אותו יודע.
+- המכתב הזה צריך באמת לענות על כל פריט, ובדיוק על מה שנשאל (לא על עניין קרוב או הפוך).
+- השואל לא ראה את המכתב: אל תעתיק ביטויים ייחודיים ממנו, ואל תזכיר את שם הנמען, תאריכים, מוסדות, מקורות, סיפורים או פרטים צדדיים שרק מי שקרא אותו יודע. שאל על העיקר – העצה, ההוראה או הרעיון – לא על פרט שולי.
+- כתוב בעברית פשוטה של היום, לא בלשון המכתב. גם ב-"paraphrase": לתאר את הרעיון במילים אחרות, לא לצטט.
+- נסח את הצורך ישירות ("מה עושים כש...", "האם מותר...", "איך להתמודד עם..."), ולא "מה הרבי כתב על כך ש..." או "האם הרבי בירך...".
 - לא כללי מדי: "מה הרבי אומר על אמונה?" לא טוב. צריך לכוון לעניין המסוים של המכתב.
+- אל תשתמש במושגים שלא היו בזמן המכתב (כמו "מייל").
 - אם המכתב קצר מאוד, או שהוא רק ברכה או אישור קבלה, כתוב פחות פריטים (אפילו אחד).
 
 בנוסף: "summary" – משפט אחד במה המכתב עוסק, ו-"keywords" – ‏3–8 מילות מפתח.
@@ -79,10 +82,12 @@ def make_fn(pool, model):
         last = None
         for _ in range(2):  # one retry on unparsable JSON
             r = orclient.chat(model, [{"role": "user", "content": prompt.format(text=job["text"])}],
-                              max_tokens=900, temperature=temp)
+                              max_tokens=1200, temperature=temp)
             infos.append(r)
             try:
                 d = orclient.parse_json(r["text"])
+                if not isinstance(d, dict):
+                    raise ValueError("reply is not a JSON object")
                 if pool == "test":
                     items = [{"kind": str(i.get("kind", "question")), "text": str(i["text"]).strip()}
                              for i in d.get("items", []) if isinstance(i, dict) and str(i.get("text", "")).strip()]
@@ -108,9 +113,14 @@ def main():
     ap.add_argument("--batch", action="store_true", help="use the :batch variant (half price, slower)")
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--out")
+    ap.add_argument("--include-used", action="store_true",
+                    help="train pool + the letters already used by eval/cases, holdouts, samples")
     a = ap.parse_args()
     split = json.loads((SYN / "split.json").read_text(encoding="utf-8"))
     pool = list(split[a.pool])
+    if a.include_used:  # letters of the hand-written eval sets: doc2query must cover them too (letter text only)
+        assert a.pool == "train"
+        pool += split["excluded_used"]
     random.Random(11).shuffle(pool)  # fixed order, so --n 20 then --n 600 extends the same prefix
     if a.ids:
         want = {int(x) for x in a.ids.split(",")}

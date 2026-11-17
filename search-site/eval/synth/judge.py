@@ -20,7 +20,7 @@ import orclient  # noqa: E402
 
 SYN = Path(__file__).resolve().parent
 DATA = Path(os.environ.get("IGROT_DATA", SYN.parent.parent / "data"))
-LETTER_CHARS = 1800
+LETTER_CHARS = 1400
 
 PROMPT = """השאלה של המשתמש:
 "{q}"
@@ -43,6 +43,9 @@ def main():
     ap.add_argument("--model", default="anthropic/claude-haiku-5.5")
     ap.add_argument("--batch", action="store_true")
     ap.add_argument("--limit-cases", type=int)
+    ap.add_argument("--sample", type=int, help="first run only: fix a random sample of N questions to judge "
+                                              "(judge_cases.json); later runs judge only those")
+    ap.add_argument("--seed", type=int, default=31)
     ap.add_argument("--workers", type=int, default=8)
     a = ap.parse_args()
     out = SYN / "judgments.jsonl"
@@ -57,6 +60,14 @@ def main():
         for lid in above:
             if (r["case"], lid) not in done and lid not in need[r["case"]]:
                 need[r["case"]].append(lid)
+    jc = SYN / "judge_cases.json"
+    if a.sample and not jc.exists():  # fixed once: the questions whose results get judged
+        import random
+        allc = sorted({json.loads(l)["case"] for l in open(a.runs, encoding="utf-8")})
+        jc.write_text(json.dumps(sorted(random.Random(a.seed).sample(allc, a.sample))), encoding="utf-8")
+    if jc.exists():
+        keep = set(json.loads(jc.read_text(encoding="utf-8")))
+        need = {c: v for c, v in need.items() if c in keep}
     cases = [c for c in need if need[c]]
     if a.limit_cases:
         cases = cases[: a.limit_cases]

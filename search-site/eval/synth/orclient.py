@@ -51,15 +51,19 @@ def key_usage():
     return float(d.get("usage") or 0), d.get("limit")
 
 
-def chat(model, messages, max_tokens=800, temperature=0.7, retries=4):
+def chat(model, messages, max_tokens=800, temperature=0.7, retries=4, reasoning=False):
     body = {"model": model, "messages": messages, "max_tokens": max_tokens,
             "temperature": temperature, "usage": {"include": True}}
+    if not reasoning:  # Haiku 5.5 / DeepSeek think by default: ~700 extra output tokens per call
+        body["reasoning"] = {"enabled": False}
     for i in range(retries):
         try:
             d = _req("POST", "/chat/completions", body)
             if "choices" not in d:
                 raise RuntimeError(str(d.get("error"))[:300])
             u = d.get("usage") or {}
+            if d["choices"][0].get("finish_reason") == "length":
+                print(f"  warning: reply cut at max_tokens ({u.get('completion_tokens')} tokens)", flush=True)
             return {"text": d["choices"][0]["message"].get("content") or "",
                     "in": u.get("prompt_tokens", 0), "out": u.get("completion_tokens", 0),
                     "cost": float(u.get("cost") or 0), "model": d.get("model", model)}
@@ -152,3 +156,22 @@ def run_jobs(task, model, jobs, fn, workers=8, est_cost_per_job=None):
               + (" — STOPPED at budget" if stopped else ""))
     if stopped:
         raise BudgetStop(f"stopped at ${STOP_USD}")
+
+
+def log_spend(task, model, cost, before, jobs="", calls="", note=""):
+    """one spend.csv line for work done outside run_jobs (embedding builds, engine eval runs)"""
+    after = key_usage()[0]
+    new = not SPEND.exists()
+    with open(SPEND, "a", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
+        if new:
+            w.writerow(["time", "task", "model", "jobs", "calls", "errors", "tokens_in", "tokens_out",
+                        "cost_usd", "key_usage_before", "key_usage_after", "stopped"])
+        w.writerow([datetime.now().isoformat(timespec="seconds"), task, model, jobs, calls, "", "", "",
+                    round(cost, 4), round(before, 4), round(after, 4), note])
+    return after
+
+
+if __name__ == "__main__":  # python orclient.py  -> current key usage
+    u, lim = key_usage()
+    print(f"key usage ${u:.4f} of limit {lim}; stop at ${STOP_USD}")

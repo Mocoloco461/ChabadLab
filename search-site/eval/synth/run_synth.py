@@ -46,6 +46,8 @@ def dcg(gains):
 
 
 def report(rows, judg):
+    jc = SYN / "judge_cases.json"
+    judged_cases = set(json.loads(jc.read_text(encoding="utf-8"))) if jc.exists() else set()
     # pool of known grades per case (both modes share the question)
     pool = defaultdict(dict)
     for r in rows:
@@ -63,16 +65,18 @@ def report(rows, judg):
              "ndcg": dcg(grades) / dcg(ideal) if ideal else 0}
         for g in ("all", f"mode={r['mode']}", f"type={r['type']}", f"lang={r['lang']}"):
             groups[g].append(m)
+            if r["case"] in judged_cases:  # graded metrics are only meaningful where results were judged
+                groups["J:" + g].append(m)
     print(f"{'group':<24}{'n':>6}{'hit@1':>8}{'hit@10':>8}{'MRR@10':>8}{'ghit@1':>8}{'ghit@10':>9}{'nDCG@10':>9}")
     out = {}
-    for g in sorted(groups, key=lambda x: (x != "all", x)):
+    for g in sorted(groups, key=lambda x: (x.startswith("J:"), x not in ("all", "J:all"), x)):
         ms = groups[g]
         n = len(ms)
         avg = {k: sum(m[k] for m in ms) / n for k in ms[0]}
         out[g] = {"n": n, **{k: round(v, 4) for k, v in avg.items()}}
         print(f"{g:<24}{n:>6}{100*avg['hit1']:>7.1f}%{100*avg['hit10']:>7.1f}%{avg['mrr']:>8.3f}"
               f"{100*avg['ghit1']:>7.1f}%{100*avg['ghit10']:>8.1f}%{avg['ndcg']:>9.3f}")
-    n_need = sum(1 for r in rows for lid in (r["top"][:min(r["rank"] - 1, 10)] if r["rank"] else r["top"][:10])
+    n_need = sum(1 for r in rows if not judged_cases or r["case"] in judged_cases for lid in (r["top"][:min(r["rank"] - 1, 10)] if r["rank"] else r["top"][:10])
                  if (r["case"], lid) not in judg)
     print(f"(judgments: {len(judg)} pairs; {n_need} above-source pairs still unjudged)")
     return out
