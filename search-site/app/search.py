@@ -25,6 +25,12 @@ STOPWORDS = set("""של את על עם הוא היא הם הן זה זו זאת 
 ב ל מ ש ה ו כ עד אף רק כן לו לי לה להם בו בה בזה כמו אבל וכו וכו' ע"ד שלו שלה איך למה מדוע
 האם ביותר הרבי הרב מה ומה אודות בנוגע בהנוגע שאלה תשובה כתב כותב אמר""".split())
 
+# question / meta words that say nothing about a letter's content (dropped from the
+# lexical part of hybrid search; tuned on eval cases, see WORKLOG)
+QUERY_STOP = set("""מה מי איך למה מדוע האם כיצד היכן איפה מתי כתב כותב הרבי הרב רבי ממליץ יעץ מציע
+לגבי בעניין כדי צריך שצריך צריכים נכון כאשר כש רוצה שרוצה שרוצים עומד לעשות להיות יכול אפשר
+מכתב אגרת תשובה מענה ברכה מברך מבקש שלו שלה שלהם עם על אל את""".split())
+
 _local = threading.local()
 
 
@@ -388,27 +394,72 @@ def allowed_letter_ids(filters):
     return {r[0] for r in db().execute(f"SELECT l.id FROM letters l WHERE {fsql}", fparams)}
 
 
+# semantic mode = meaning first; lexical coverage only as a light tie-break
+# (RRF weight 0.5 vs 1.0, k=10; +10 points on the eval set, see WORKLOG)
+SEM_LEX_W, SEM_K = 0.5, 10
+
+
 def semantic_search(q, filters, offset=0, limit=20, n=300):
     idx = semantic_index()
     if idx is None:
         return {"total": 0, "results": [], "error": semantic_status()}
     hits = idx.search(q, allowed_letter_ids(filters), n=n)
-    page = hits[offset: offset + limit]
-    rows = fetch_rows([h[0] for h in page])
-    terms = highlight_terms(q)
-    res = [row_to_result(rows[lid], make_snippet(idx.chunk_text[ci], terms=terms), s)
-           for lid, s, ci in page if lid in rows]
+    best_chunk = {lid: ci for lid, _, ci in hits}
+    score = {}
+    for r, (lid, _, _) in enumerate(hits):
+        score[lid] = 1.0 / (SEM_K + r + 1)
+    if SEM_LEX_W:
+        for r, lid in enumerate(coverage_ids(q, filters, True, n)):
+            if lid in score:  # tie-break only: never adds letters the model did not retrieve
+                score[lid] += SEM_LEX_W / (SEM_K + r + 1)
+    ranked = sorted(score.items(), key=lambda x: -x[1])
+    page = ranked[offset: offset + limit]
+    rows = fetch_rows([lid for lid, _ in page])
+    terms = [t for t in highlight_terms(q) if t not in QUERY_STOP]
+    res = [row_to_result(rows[lid], make_snippet(idx.chunk_text[best_chunk[lid]], terms=terms), s * 100)
+           for lid, s in page if lid in rows]
     return {"total": len(hits), "results": res, "model": idx.info["model"], "capped": len(hits) >= n}
 
 
-def hybrid_search(q, filters, offset=0, limit=20, n=300, prefixes=True, k=60, w_text=1.0, w_sem=1.0):
+def coverage_ids(q, filters, prefixes=True, n=300):
+    """Lexical ranking for natural-language queries: letters that contain more of
+    the query's content words first, then bm25 of the OR query."""
+    items = [it for it in parse_query(q) if not it["neg"] and not (
+        it["kind"] == "word" and (it["words"][0] in STOPWORDS or it["words"][0] in QUERY_STOP))]
+    if not items:
+        return []
+    fsql, fparams = filter_sql(filters)
+    cover = {}
+    for it in items:
+        e = build_fts_query("", prefixes, items=[it])
+        if not e:
+            continue
+        try:
+            for lid in _match_ids(e, fsql, fparams):
+                cover[lid] = cover.get(lid, 0) + 1
+        except sqlite3.OperationalError:
+            continue
+    e = build_fts_query("", prefixes, "any", items=items)
+    try:
+        order = {lid: i for i, lid in enumerate(_match_ids(e, fsql, fparams, order_bm25=True, limit=3000))} if e else {}
+    except sqlite3.OperationalError:
+        order = {}
+    return sorted(cover, key=lambda lid: (-cover[lid], order.get(lid, 10 ** 6)))[:n]
+
+
+# RRF parameters tuned on the eval set (eval/tune_hybrid.py): k=10, text weight 1.5
+HYBRID_K, HYBRID_W_TEXT, HYBRID_W_SEM = 10, 1.5, 1.0
+
+
+def hybrid_search(q, filters, offset=0, limit=20, n=300, prefixes=True,
+                  k=HYBRID_K, w_text=HYBRID_W_TEXT, w_sem=HYBRID_W_SEM):
     idx = semantic_index()
-    # text part: all words if that finds enough, otherwise any (non-stopword) word
-    t_ids = text_ranked_ids(q, filters, n, prefixes, "all")
-    if len(t_ids) < 20:
-        q_any = " ".join(w for w in q.split() if w.strip('"') not in STOPWORDS) or q
-        seen = set(t_ids)
-        t_ids = t_ids + [i for i in text_ranked_ids(q_any, filters, n, prefixes, "any") if i not in seen]
+    items = [it for it in parse_query(q) if not it["neg"]]
+    # exact-syntax queries (phrases, *, -) keep strict text ranking; natural language uses coverage
+    if any(it["kind"] == "phrase" or it.get("star") for it in items) or "-" in q:
+        t_ids = text_ranked_ids(q, filters, n, prefixes, "all")
+    else:
+        t_ids = coverage_ids(q, filters, prefixes, n)
     s_hits = idx.search(q, allowed_letter_ids(filters), n=n) if idx else []
     score, best_chunk = {}, {}
     for rank, lid in enumerate(t_ids):
@@ -419,7 +470,7 @@ def hybrid_search(q, filters, offset=0, limit=20, n=300, prefixes=True, k=60, w_
     ranked = sorted(score.items(), key=lambda x: -x[1])
     page = ranked[offset: offset + limit]
     rows = fetch_rows([lid for lid, _ in page], with_text=True)
-    terms = highlight_terms(q)
+    terms = [t for t in highlight_terms(q) if t not in QUERY_STOP]
     in_text = set(t_ids)
     res = []
     for lid, s in page:

@@ -1,0 +1,4 @@
+stamp,label,cases,overall_pct,by_type,by_mode,results_file
+20261117-030652,baseline: e5-small + text round1,465,71.2,"{""crosslang"": 10.5, ""filter"": 100.0, ""keywords"": 100.0, ""paraphrase"": 63.7, ""phrase"": 98.9, ""question"": 55.7}","{""hybrid"": 60.6, ""semantic"": 45.8, ""text"": 99.4}",20261117-030652.json
+20261117-031935,"hybrid: coverage text + question stopwords, RRF k=10 wt=1.5",465,73.8,"{""crosslang"": 10.5, ""filter"": 100.0, ""keywords"": 100.0, ""paraphrase"": 68.5, ""phrase"": 98.9, ""question"": 60.7}","{""hybrid"": 69.0, ""semantic"": 45.8, ""text"": 99.4}",20261117-031935.json
+20261117-032445,"semantic: lexical tie-break (0.5, k=10, model hits only)",465,76.8,"{""crosslang"": 15.8, ""filter"": 100.0, ""keywords"": 100.0, ""paraphrase"": 74.2, ""phrase"": 98.9, ""question"": 64.8}","{""hybrid"": 69.0, ""semantic"": 55.6, ""text"": 99.4}",20261117-032445.json
