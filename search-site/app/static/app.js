@@ -107,6 +107,9 @@ function updateChrome() {
 }
 
 // ------------------------------------------------------------ search
+let noCorrect = false;      // one-shot: "search exactly for what I typed"
+let correctedQ = null;      // spelling-corrected query of the last response (for highlighting)
+
 async function runSearch(push = true) {
   if (push) history.pushState(null, "", "?" + stateToParams().toString() + location.hash);
   updateChrome();
@@ -120,6 +123,7 @@ async function runSearch(push = true) {
   const p = stateToParams();
   p.set("page", state.page);
   p.set("mode", state.mode);
+  if (noCorrect) { p.set("nocorrect", "1"); noCorrect = false; }
   $("#status").textContent = state.mode === "text" ? "מחפש…" : "מחפש לפי משמעות…";
   $("#results").classList.add("loading");
   let data;
@@ -156,7 +160,15 @@ function renderResults(data) {
     if (data.relaxed && data.total)
       msg = (data.strict_total ? `${data.strict_total} אגרות עם כל המילים, ועוד אגרות עם רוב המילים` : `אין אגרת שמופיעות בה כל המילים יחד. מוצגות <b>${data.total.toLocaleString("he-IL")}</b> אגרות עם רוב המילים`) + ` · ${data.ms} מ"ש`;
     if (data.warning) msg += ` <span class="err">${esc(data.warning)}</span>`;
+    correctedQ = data.corrected ? data.corrected.to : null;
+    if (data.corrected) {
+      const fixes = data.corrected.fixes.map((f) => `<b>${esc(f.to)}</b> (במקום ${esc(f.from)})`).join(", ");
+      msg = data.mode === "text"
+        ? `<div class="corrected">מציג תוצאות עבור: <b>${esc(data.corrected.to)}</b> · <button class="link" id="exact">לחפש בדיוק: ${esc(data.corrected.from)}</button></div>` + msg
+        : `<div class="corrected">תיקון כתיב בחיפוש המילים: ${fixes}</div>` + msg;
+    }
     st.innerHTML = msg;
+    $("#exact")?.addEventListener("click", () => { noCorrect = true; runSearch(false); });
     $("#try-any")?.addEventListener("click", () => { $("#match_any").checked = true; submit(); });
     $("#clear-all")?.addEventListener("click", () => { for (const f of FILTERS) $("#" + f).value = ""; submit(); });
     $("#try-sem")?.addEventListener("click", () => { form.mode.value = "semantic"; submit(); });
@@ -242,7 +254,7 @@ function highlight(text, terms) {
 
 function queryTerms() {
   if (!state.q) return [];
-  return state.q.replace(/"/g, " ").split(/\s+/).filter((w) => w && !w.startsWith("-")).map((w) => w.replace(/\*$/, ""));
+  return (correctedQ || state.q).replace(/"/g, " ").split(/\s+/).filter((w) => w && !w.startsWith("-")).map((w) => w.replace(/\*$/, ""));
 }
 
 async function openLetter(id, push = true) {

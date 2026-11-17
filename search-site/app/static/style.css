@@ -113,3 +113,5 @@ mark { background: var(--mark); padding: 0 1px; border-radius: 2px; }
 }
 .reader-bar button, .reader-bar a { white-space: nowrap; font-size: .88rem; }
 @media (max-width: 900px) { .facets .fgroup:nth-child(2) { display: none; } }
+
+.corrected { margin-bottom: 4px; }

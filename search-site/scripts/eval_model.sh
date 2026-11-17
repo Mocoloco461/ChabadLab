@@ -35,11 +35,11 @@ cd "$ROOT"
 H=search-site/eval/history.csv
 "$PY" search-site/eval/run_eval.py --server "http://127.0.0.1:$PORT" --label "$LABEL" > /dev/null
 tail -1 "$H"
-"$PY" search-site/eval/run_eval.py --server "http://127.0.0.1:$PORT" \
-  --cases search-site/eval/holdout/holdout1.jsonl --label "HOLDOUT $LABEL" > /dev/null
-tail -1 "$H"
-if [ -f search-site/eval/holdout/holdout2.jsonl ]; then
-  "$PY" search-site/eval/run_eval.py --server "http://127.0.0.1:$PORT" \
-    --cases search-site/eval/holdout/holdout2.jsonl --label "HOLDOUT2 $LABEL" > /dev/null
-  tail -1 "$H"
+# validation sets: skipped with HOLDOUTS=0 (when comparing variants, decide on the main set only)
+if [ "${HOLDOUTS:-1}" != "0" ]; then
+  for f in search-site/eval/holdout/holdout*.jsonl; do
+    n=$(basename "$f" .jsonl); n=${n#holdout}; [ "$n" = "1" ] && n=""
+    "$PY" search-site/eval/run_eval.py --server "http://127.0.0.1:$PORT" --cases "$f" --label "HOLDOUT$n $LABEL" > /dev/null
+    tail -1 "$H"
+  done
 fi

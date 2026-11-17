@@ -43,7 +43,7 @@ def warm_up():
 
 @app.get("/api/search")
 def api_search(request: Request, q: str = "", mode: str = "text", page: int = 1, size: int = 20,
-               sort: str = "relevance", prefixes: int = 1, match: str = "all"):
+               sort: str = "relevance", prefixes: int = 1, match: str = "all", nocorrect: int = 0):
     t0 = time.time()
     p = request.query_params
     filters = {k: p.get(k) for k in FILTER_KEYS if p.get(k) not in (None, "")}
@@ -52,11 +52,11 @@ def api_search(request: Request, q: str = "", mode: str = "text", page: int = 1,
     offset = (page - 1) * size
     q = q.strip()
     if mode == "semantic" and q:
-        out = search.semantic_search(q, filters, offset, size)
+        out = search.semantic_search(q, filters, offset, size, sort=sort)
     elif mode == "hybrid" and q:
-        out = search.hybrid_search(q, filters, offset, size, prefixes=bool(prefixes))
+        out = search.hybrid_search(q, filters, offset, size, prefixes=bool(prefixes), sort=sort)
     else:
-        out = search.text_search(q, filters, sort, offset, size, bool(prefixes), match)
+        out = search.text_search(q, filters, sort, offset, size, bool(prefixes), match, correct=not nocorrect)
         mode = "text"
     out.update({"q": q, "mode": mode, "page": page, "size": size, "filters": filters,
                 "ms": int((time.time() - t0) * 1000)})

@@ -39,6 +39,8 @@ CREATE TABLE letters (
     hebrew_year_heb   TEXT,
     gregorian_date    TEXT,
     gregorian_year    INTEGER,
+    greg_year_min     INTEGER,   -- Gregorian year range: = gregorian_year when known, else derived
+    greg_year_max     INTEGER,   -- from the Hebrew year (and month/holiday words in the date line)
     city              TEXT,
     recipient         TEXT,
     recipient_info    TEXT,   -- address + the footnote that names the addressee
@@ -105,6 +107,40 @@ def recipient_info(rec):
     return clean("\n".join(p for p in parts if p))
 
 
+# month / holiday words in the date line -> which Gregorian year of the Hebrew year
+# (Tishrei-Kislev fall in the first one, Shvat-Elul in the second; Tevet and Chanukah straddle both)
+_SECOND = ["ראש השנה לאילנות", "ט\"ו בשבט", "שבט", "אדר", "פורים", "ניסן", "פסח", "חהמ\"פ", "ספירת העומר",
+           "ל\"ג בעומר", "אייר", "סיון", "סיוון", "שבועות", "חה\"ש", "תמוז", "מנ\"א", "מנחם אב", "אלול",
+           "ימי הסליחות", "חג הגאולה י\"ב"]
+_FIRST = ["תשרי", "מרחשון", "חשון", "מ\"ח", "כסלו", "סוכות", "שמחת תורה", "יוהכ\"פ", "יום הכפורים",
+          "ראש השנה", "חג הגאולה י\"ט"]
+
+
+def greg_range(r):
+    if r.get("gregorian_year"):
+        return r["gregorian_year"], r["gregorian_year"]
+    hy = r.get("hebrew_year")
+    if not hy:
+        return None, None
+    first = hy - 3761
+    month = r.get("hebrew_month") or ""
+    if month and month not in ("טבת",):  # structured month decides; Tevet straddles Dec/Jan
+        if any(month.startswith(w) for w in _SECOND):
+            return first + 1, first + 1
+        if any(month.startswith(w) for w in _FIRST):
+            return first, first
+    # "אדר"ח" = erev Rosh Chodesh, not Adar
+    text = " ".join(x for x in (r.get("date_raw"), r.get("date_editorial")) if x)
+    text = text.replace('אדר"ח', " ").replace("אדר״ח", " ")
+    for w in _SECOND:            # checked first: "ראש השנה לאילנות" before "ראש השנה"
+        if w in text:
+            return first + 1, first + 1
+    for w in _FIRST:
+        if w in text:
+            return first, first
+    return first, first + 1
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", default=str(ROOT.parent / "data/igtotkodsh/igrot_kodesh.jsonl.gz"))
@@ -121,7 +157,7 @@ def main():
 
     cols = ["id", "volume", "volume_heb", "letter_number", "letter_number_heb", "date_raw",
             "date_editorial", "hebrew_day", "hebrew_month", "hebrew_year", "hebrew_year_heb",
-            "gregorian_date", "gregorian_year", "city", "recipient", "recipient_info", "recipient_note", "address",
+            "gregorian_date", "gregorian_year", "greg_year_min", "greg_year_max", "city", "recipient", "recipient_info", "recipient_note", "address",
             "language", "body", "postscript", "signature", "source_note", "full_text",
             "n_notes", "n_chars", "prev_id", "next_id", "url"]
     ins = f"INSERT INTO letters ({','.join(cols)}) VALUES ({','.join('?' * len(cols))})"
@@ -135,6 +171,7 @@ def main():
             r["hebrew_year_heb"] = heb_year(r.get("hebrew_year"))
             g = r.get("gregorian_date")
             r["gregorian_year"] = int(g[:4]) if g else None
+            r["greg_year_min"], r["greg_year_max"] = greg_range(r)
             r["recipient_info"] = recipient_info(r)
             r["recipient_note"] = recipient_note(r)
             r["n_notes"] = len(r["notes"])

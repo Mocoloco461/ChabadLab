@@ -9,6 +9,7 @@ from pathlib import Path
 
 import numpy as np
 
+import spell
 from hebrew import (build_fts_query, clean, heb_year, highlight_terms, parse_query, phrase_query,
                     term_regex)
 
@@ -44,6 +45,17 @@ def db():
 
 
 # ------------------------------------------------------------------ filters
+_greg_range = {}
+
+
+def has_greg_range():
+    """index built with greg_year_min/max (Gregorian range for letters dated only by Hebrew year)?"""
+    if "v" not in _greg_range:
+        cols = {r[1] for r in db().execute("PRAGMA table_info(letters)")}
+        _greg_range["v"] = "greg_year_min" in cols
+    return _greg_range["v"]
+
+
 def filter_sql(f):
     """Filters dict -> (sql fragment on alias l, params).
     Indexed columns are written as +col so SQLite never drives an FTS query from
@@ -58,9 +70,10 @@ def filter_sql(f):
             return None
         return None if v is None else max(-10 ** 9, min(10 ** 9, v))
 
+    gmin, gmax = ("+l.greg_year_min", "+l.greg_year_max") if has_greg_range() else ("+l.gregorian_year",) * 2
     for key, col, op in (("vol_from", "+l.volume", ">="), ("vol_to", "+l.volume", "<="),
                          ("year_from", "+l.hebrew_year", ">="), ("year_to", "+l.hebrew_year", "<="),
-                         ("greg_from", "+l.gregorian_year", ">="), ("greg_to", "+l.gregorian_year", "<="),
+                         ("greg_from", gmax, ">="), ("greg_to", gmin, "<="),
                          ("num_from", "+l.letter_number", ">="), ("num_to", "+l.letter_number", "<=")):
         v = num(key)
         if v is not None:
@@ -197,8 +210,29 @@ def ranked_ids(q, filters, prefixes=True, match="all", items=None):
     return ids, total
 
 
+def spell_fix(q):
+    """-> (corrected query, [(wrong, right), ...]). Only words that occur nowhere in the corpus are
+    corrected (see spell.py). IGROT_SPELL=0 disables it."""
+    if os.environ.get("IGROT_SPELL", "1") == "0" or not q.strip():
+        return q, []
+    try:
+        return spell.correct_query(db(), q)
+    except sqlite3.Error:
+        return q, []
+
+
+def corrected_info(q, q2, fixes):
+    return {"from": q, "to": q2, "fixes": [{"from": a, "to": b} for a, b in fixes]} if fixes else None
+
+
 def text_search(q, filters, sort="relevance", offset=0, limit=20, prefixes=True, match="all",
-                with_facets=True):
+                with_facets=True, correct=True):
+    if correct:
+        q2, fixes = spell_fix(q)
+        if fixes:
+            out = text_search(q2, filters, sort, offset, limit, prefixes, match, with_facets, correct=False)
+            out["corrected"] = corrected_info(q, q2, fixes)
+            return out
     items = parse_query(q)
     fts = build_fts_query(q, prefixes=prefixes, mode=match, items=items)
     fsql, fparams = filter_sql(filters)
@@ -451,6 +485,17 @@ def allowed_letter_ids(filters):
 SEM_LEX_W, SEM_K = 0.75, 10
 
 
+def sort_ranked(ranked, sort):
+    """date / number order for the letters a meaning search found (relevance order otherwise)"""
+    if not SORTS.get(sort) or not ranked:
+        return ranked
+    score = dict(ranked)
+    order = [r[0] for r in db().execute(
+        f"SELECT l.id FROM letters l WHERE l.id IN (SELECT value FROM json_each(?)) ORDER BY {SORTS[sort]}",
+        [json.dumps(list(score))])]
+    return [(lid, score[lid]) for lid in order]
+
+
 def semantic_ranked(q, filters, n=300):
     """-> (ranked [(lid, score)], best_chunk {lid: chunk}, qv) or None if no index."""
     idx = semantic_index()
@@ -463,21 +508,22 @@ def semantic_ranked(q, filters, n=300):
     for r, (lid, _, _) in enumerate(hits):
         score[lid] = 1.0 / (SEM_K + r + 1)
     if SEM_LEX_W:
-        for r, lid in enumerate(coverage_ids(q, filters, True, n)):
+        for r, lid in enumerate(coverage_ids(spell_fix(q)[0], filters, True, n)):
             if lid in score:  # tie-break only: never adds letters the model did not retrieve
                 score[lid] += SEM_LEX_W / (SEM_K + r + 1)
     return sorted(score.items(), key=lambda x: -x[1]), best_chunk, qv
 
 
-def semantic_search(q, filters, offset=0, limit=20, n=300, rerank=None):
+def semantic_search(q, filters, offset=0, limit=20, n=300, rerank=None, sort="relevance"):
     out = semantic_ranked(q, filters, n)
     if out is None:
         return {"total": 0, "results": [], "error": semantic_status()}
     ranked, best_chunk, qv = out
     idx = semantic_index()
     reranked = False
-    if rerank is not False and reranker() is not None:
+    if rerank is not False and reranker() is not None and not SORTS.get(sort):
         ranked, reranked = rerank_ranked(q, ranked, idx, qv), True
+    ranked = sort_ranked(ranked, sort)
     page = ranked[offset: offset + limit]
     rows = fetch_rows([lid for lid, _ in page])
     terms = [t for t in highlight_terms(q) if t not in QUERY_STOP]
@@ -523,14 +569,45 @@ def exact_syntax(q):
     return any(it["kind"] == "phrase" or it.get("star") for it in items) or "-" in q
 
 
+# Name queries ("שמטוב לונדון", "הרב זוין"): meaning models know nothing about names, so the letters
+# addressed to that person sink in hybrid mode. When most of a short query's words occur in recipient
+# lines, letters whose recipient line has all of those words get a third RRF list.
+REC_W = float(os.environ.get("IGROT_REC_W", "1.5"))  # 0 disables
+REC_MAX_ITEMS = 5
+
+
+def recipient_ids(q, filters, n=300):
+    items = [it for it in parse_query(q) if not it["neg"] and it["kind"] in ("word", "alts") and not (
+        it["words"][0] in STOPWORDS or it["words"][0] in QUERY_STOP)]
+    if not items or len(items) > REC_MAX_ITEMS:
+        return []
+    fsql, fparams = filter_sql(filters)
+    rec = []
+    for it in items:
+        e = build_fts_query("", False, items=[it])
+        try:
+            if e and _count("{recipient} : " + e, "", []) > 0:
+                rec.append(e)
+        except sqlite3.OperationalError:
+            continue
+    if not rec or 2 * len(rec) < len(items):
+        return []
+    expr = " AND ".join("{recipient} : " + e for e in rec)
+    try:
+        return _match_ids(expr, fsql, fparams, order_bm25=True, limit=n)
+    except sqlite3.OperationalError:
+        return []
+
+
 def hybrid_ranked(q, filters, n=300, prefixes=True, k=HYBRID_K, w_text=HYBRID_W_TEXT, w_sem=HYBRID_W_SEM):
     """-> (ranked [(lid, score)], best_chunk {lid: chunk}, text ids, qv or None)"""
     idx = semantic_index()
+    tq = spell_fix(q)[0]  # misspelled words fixed for the word side only; the meaning side sees the original
     # exact-syntax queries (phrases, *, -) keep strict text ranking; natural language uses coverage
     if exact_syntax(q):
-        t_ids = text_ranked_ids(q, filters, n, prefixes, "all")
+        t_ids = text_ranked_ids(tq, filters, n, prefixes, "all")
     else:
-        t_ids = coverage_ids(q, filters, prefixes, n)
+        t_ids = coverage_ids(tq, filters, prefixes, n)
     qv = idx.encode(q) if idx else None
     s_hits = idx.search(q, allowed_letter_ids(filters), n=n, qv=qv) if idx else []
     score, best_chunk = {}, {}
@@ -539,17 +616,21 @@ def hybrid_ranked(q, filters, n=300, prefixes=True, k=HYBRID_K, w_text=HYBRID_W_
     for rank, (lid, s, ci) in enumerate(s_hits):
         score[lid] = score.get(lid, 0) + w_sem / (k + rank + 1)
         best_chunk[lid] = ci
+    if REC_W and not exact_syntax(q):
+        for rank, lid in enumerate(recipient_ids(tq, filters, n)):
+            score[lid] = score.get(lid, 0) + REC_W / (k + rank + 1)
     return sorted(score.items(), key=lambda x: -x[1]), best_chunk, t_ids, qv
 
 
 def hybrid_search(q, filters, offset=0, limit=20, n=300, prefixes=True,
-                  k=HYBRID_K, w_text=HYBRID_W_TEXT, w_sem=HYBRID_W_SEM, rerank=None):
+                  k=HYBRID_K, w_text=HYBRID_W_TEXT, w_sem=HYBRID_W_SEM, rerank=None, sort="relevance"):
     idx = semantic_index()
     ranked, best_chunk, t_ids, qv = hybrid_ranked(q, filters, n, prefixes, k, w_text, w_sem)
     reranked = False
     # exact-syntax queries are about the words, not the meaning: no reranking
-    if rerank is not False and idx is not None and not exact_syntax(q) and reranker() is not None:
+    if rerank is not False and idx is not None and not exact_syntax(q) and reranker() is not None             and not SORTS.get(sort):
         ranked, reranked = rerank_ranked(q, ranked, idx, qv), True
+    ranked = sort_ranked(ranked, sort)
     page = ranked[offset: offset + limit]
     rows = fetch_rows([lid for lid, _ in page], with_text=True)
     terms = [t for t in highlight_terms(q) if t not in QUERY_STOP]
@@ -564,8 +645,10 @@ def hybrid_search(q, filters, offset=0, limit=20, n=300, prefixes=True,
             snip = make_snippet(idx.chunk_text[best_chunk[lid]], terms=terms)
         res.append(row_to_result(rows[lid], snip, s * 100,
                                  {"in_text": lid in in_text, "in_semantic": lid in best_chunk}))
+    q2, fixes = spell_fix(q)
     return {"total": len(ranked), "results": res, "model": idx.info["model"] if idx else None,
-            "warning": None if idx else semantic_status(), "reranked": reranked}
+            "warning": None if idx else semantic_status(), "reranked": reranked,
+            "corrected": corrected_info(q, q2, fixes)}
 
 
 # ------------------------------------------------------------------ reranker (cross-encoder)
