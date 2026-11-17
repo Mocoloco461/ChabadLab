@@ -1,0 +1,209 @@
+{"case": "h3D-5481-english", "letter_id": 1200690012, "rel": 1, "reason": "רופא, רפואת הנפש, לא חולה"}
+{"case": "h3D-5481-english", "letter_id": 1200770209, "rel": 0, "reason": "חולה, לא רופא"}
+{"case": "h3D-5481-english", "letter_id": 1200780242, "rel": 1, "reason": "חולה, תלמיד ישיבה, לימוד דא\"ח"}
+{"case": "h3D-5481-english", "letter_id": 1200780252, "rel": 0, "reason": "בן חולה, בטחון"}
+{"case": "h3D-5481-english", "letter_id": 1200780303, "rel": 1, "reason": "שמחה בעבודה, חולה"}
+{"case": "h3D-5481-english", "letter_id": 1200780338, "rel": 0, "reason": "חולה, תהלים, לא רופא"}
+{"case": "h3D-5481-english", "letter_id": 1200780387, "rel": 0, "reason": "שמש חולה, בקשת מחילה"}
+{"case": "h3D-5481-english", "letter_id": 1200800145, "rel": 0, "reason": "בדיקות רופא, בטחון"}
+{"case": "h3D-5481-english", "letter_id": 1200810097, "rel": 0, "reason": "בת חולה, שמחה פורץ גדר"}
+{"case": "h3D-5481-english", "letter_id": 1200810320, "rel": 0, "reason": "הוראות רופא ותפילה"}
+{"case": "h3D-5481-english", "letter_id": 1200830023, "rel": 1, "reason": "בריאות ושמחה בעבודה"}
+{"case": "h3D-5481-english", "letter_id": 1200830320, "rel": 1, "reason": "חולה, ציון, עבודה בשמחה"}
+{"case": "h3D-5481-english", "letter_id": 1200840374, "rel": 0, "reason": "היסח הדעת, שמחה"}
+{"case": "h3D-5481-english", "letter_id": 1200850048, "rel": 0, "reason": "חולה, יום תהלים"}
+{"case": "h3D-5481-english", "letter_id": 1200850268, "rel": 0, "reason": "חולה, בטחון ורפואה"}
+{"case": "h3D-5481-english", "letter_id": 1200870180, "rel": 1, "reason": "מצב רוח, שמחה, בריאות"}
+{"case": "h3D-5481-english", "letter_id": 1200870312, "rel": 0, "reason": "נושא אחר, אניה שבת"}
+{"case": "h3D-5481-english", "letter_id": 1200880426, "rel": 0, "reason": "מרה שחורה, שמחה"}
+{"case": "h3D-5481-english", "letter_id": 1200890141, "rel": 1, "reason": "רופא, בריאותו, לא רוחני"}
+{"case": "h3D-5481-english", "letter_id": 1200900305, "rel": 0, "reason": "טיפול רפואי, לימוד תורה"}
+{"case": "h3D-5481-english", "letter_id": 1200910118, "rel": 1, "reason": "רופא, שמחה, ציון"}
+{"case": "h3D-5481-english", "letter_id": 1200930103, "rel": 0, "reason": "ספרים לבר מצוה"}
+{"case": "h3D-5481-english", "letter_id": 1200960256, "rel": 1, "reason": "רופא, רפואת הנפש, ציון"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200710106, "rel": 1, "reason": "בדיקת תפילין ומזוזות בלבד"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200770295, "rel": 0, "reason": "הריון ורופא"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200800077, "rel": 0, "reason": "פרנסה אחרי לידה"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200800145, "rel": 0, "reason": "בדיקה רפואית, בטחון"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200820310, "rel": 1, "reason": "בדיקת מזוזות תפילין, בטחון"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200830017, "rel": 1, "reason": "מזוזות, תפילין, צדקה"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200850288, "rel": 1, "reason": "הריון, טהרה, בטחון"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200880298, "rel": 0, "reason": "עצבות, בקשת ברכה"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200880416, "rel": 2, "reason": "עוד ילדים, רופא, טהרה"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200890039, "rel": 0, "reason": "הוצאות תפילין, מגבית"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200920447, "rel": 1, "reason": "טהרה, תפילין, מזוזות, ללא ילד"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200930239, "rel": 0, "reason": "פרנסה, נסיון"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200950298, "rel": 1, "reason": "טהרה ומזוזות, בן חולה"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200970021, "rel": 1, "reason": "רופא, טהרה, אין ילדים"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200970061, "rel": 1, "reason": "בטחון, הנהגה, משאלות"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200970231, "rel": 0, "reason": "ברכה כללית, הוראה"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200970300, "rel": 0, "reason": "חינוך בת"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200980101, "rel": 1, "reason": "טהרה, מזוזות, זרעא חייא"}
+{"case": "h3D-6228-crosslang", "letter_id": 1200980177, "rel": 1, "reason": "עיכוב בילדים, טהרה"}
+{"case": "h3D-6228-english", "letter_id": 1200720283, "rel": 1, "reason": "בדיקת תפילין ומזוזות"}
+{"case": "h3D-6228-english", "letter_id": 1200770295, "rel": 0, "reason": "הריון ורופא"}
+{"case": "h3D-6228-english", "letter_id": 1200800145, "rel": 0, "reason": "בדיקה רפואית, בטחון"}
+{"case": "h3D-6228-english", "letter_id": 1200820192, "rel": 1, "reason": "בנים, צדקה, מזוזות, תפילין"}
+{"case": "h3D-6228-english", "letter_id": 1200820277, "rel": 0, "reason": "נשי חב\"ד, מצב אישי"}
+{"case": "h3D-6228-english", "letter_id": 1200820287, "rel": 1, "reason": "זרעא חייא, ברכה, לא פרטים"}
+{"case": "h3D-6228-english", "letter_id": 1200820310, "rel": 1, "reason": "בטחון, מזוזות, תפילין, אם"}
+{"case": "h3D-6228-english", "letter_id": 1200830231, "rel": 1, "reason": "טהרה, תפילין, מזוזות, ילדים"}
+{"case": "h3D-6228-english", "letter_id": 1200830247, "rel": 0, "reason": "בן בצבא"}
+{"case": "h3D-6228-english", "letter_id": 1200850176, "rel": 0, "reason": "קושי בלימוד"}
+{"case": "h3D-6228-english", "letter_id": 1200860117, "rel": 1, "reason": "רצון בילדים, בטחון"}
+{"case": "h3D-6228-english", "letter_id": 1200860140, "rel": 1, "reason": "רצון בילדים, בטחון, רופא"}
+{"case": "h3D-6228-english", "letter_id": 1200870312, "rel": 0, "reason": "נושא אחר, אניה"}
+{"case": "h3D-6228-english", "letter_id": 1200880416, "rel": 2, "reason": "עוד ילדים, רופא, טהרה"}
+{"case": "h3D-6228-english", "letter_id": 1200920033, "rel": 1, "reason": "אין ילדים, רופא, בטחון"}
+{"case": "h3D-6228-english", "letter_id": 1200930103, "rel": 0, "reason": "ספרים לבר מצוה"}
+{"case": "h3D-6228-english", "letter_id": 1200940088, "rel": 0, "reason": "בטחון בבריאות"}
+{"case": "h3D-6228-english", "letter_id": 1200970021, "rel": 1, "reason": "רופא, טהרה, אין ילדים"}
+{"case": "h3D-6228-english", "letter_id": 1200970061, "rel": 1, "reason": "בטחון, הנהגה, משאלות"}
+{"case": "h3D-6228-english", "letter_id": 1200970300, "rel": 0, "reason": "חינוך בת"}
+{"case": "h3D-6228-english", "letter_id": 1200980168, "rel": 1, "reason": "בטחון, תפילין, מזוזות"}
+{"case": "h3D-6228-english", "letter_id": 1200980177, "rel": 1, "reason": "עיכוב בילדים, טהרה"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200720088, "rel": 0, "reason": "שינוי שם, שותפות לא עסקית"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200720399, "rel": 1, "reason": "פטנט, תחרות"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200720401, "rel": 1, "reason": "שותפות, אימון הדדי"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200850301, "rel": 2, "reason": "הרחבת עסק, שותפות"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200860214, "rel": 0, "reason": "חשבון נפש, צרכי ציבור"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200900059, "rel": 0, "reason": "שותף ה', צדקה"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200910193, "rel": 0, "reason": "תלמוד תורה, התנגדות"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200920040, "rel": 0, "reason": "עזיבת רבנות"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200920074, "rel": 0, "reason": "מצב רוח, שליחות"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200920422, "rel": 0, "reason": "קניית בתים להכנסה"}
+{"case": "h3D-7670-crosslang", "letter_id": 1200950318, "rel": 0, "reason": "מצב עסק, העתקה"}
+{"case": "h3D-7670-english", "letter_id": 1200690197, "rel": 1, "reason": "הצעת שותפות, שאלות"}
+{"case": "h3D-7670-english", "letter_id": 1200720401, "rel": 1, "reason": "שותפות, אימון הדדי"}
+{"case": "h3D-7670-english", "letter_id": 1200750020, "rel": 0, "reason": "מכתב צרפתית, שריפה"}
+{"case": "h3D-7670-english", "letter_id": 1200800104, "rel": 1, "reason": "שותף לבניין, מכירת חצי"}
+{"case": "h3D-7670-english", "letter_id": 1200840059, "rel": 1, "reason": "הרחבת כלי פרנסה, מסחר"}
+{"case": "h3D-7670-english", "letter_id": 1200890200, "rel": 0, "reason": "בית כנסת שיקגו"}
+{"case": "h3D-7670-english", "letter_id": 1200920422, "rel": 0, "reason": "קניית בתים להכנסה"}
+{"case": "h3D-7670-english", "letter_id": 1200930020, "rel": 1, "reason": "הצעות מסחריות, ערבוב ענינים"}
+{"case": "h3D-7670-english", "letter_id": 1200930103, "rel": 0, "reason": "ספרים לבר מצוה"}
+{"case": "h3D-7670-english", "letter_id": 1200980347, "rel": 1, "reason": "כניסה לשותפות, חשש"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200690054, "rel": 1, "reason": "פערין, טיפול, ללא מלכה"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200700281, "rel": 0, "reason": "הצלחה בלונדון, כללי"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200700302, "rel": 0, "reason": "בריאות אשה, פסח"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200710060, "rel": 0, "reason": "מלוה מלכה, שבט"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200710223, "rel": 0, "reason": "ברכת תלמידים"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200710492, "rel": 0, "reason": "ברכת תלמידות"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200770036, "rel": 0, "reason": "קונטרס, ביאור מאמר"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200770039, "rel": 0, "reason": "חלוקת הש\"ס"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200770041, "rel": 0, "reason": "שידוך, ט\"ו בשבט"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200790179, "rel": 0, "reason": "בן, הכולל"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200810071, "rel": 1, "reason": "בריאות בת, קונטרס"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200820144, "rel": 0, "reason": "שאלות חינוך"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200820156, "rel": 0, "reason": "יצר הרע, הילולא"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200840379, "rel": 0, "reason": "בריאות, אחות, שיעורים"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200860143, "rel": 0, "reason": "גבאי ליובאוויטש"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200870161, "rel": 0, "reason": "בריאות זוגה"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200880154, "rel": 0, "reason": "בריאות, כסלו"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200880425, "rel": 0, "reason": "ועד מלוה מלכה"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200900284, "rel": 0, "reason": "אסיפות נשי חב\"ד"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200950171, "rel": 0, "reason": "שד\"ר ללונדון"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200950188, "rel": 0, "reason": "שליחות, מוסר השכל"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200950210, "rel": 1, "reason": "פערין לונדון, בריאות זוגה"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200950416, "rel": 1, "reason": "בריאות בת, שליחות"}
+{"case": "h3D-8043-crosslang", "letter_id": 1200950423, "rel": 0, "reason": "בריאות אשה, שליחות"}
+{"case": "h3D-8043-english", "letter_id": 1200700095, "rel": 0, "reason": "בריאות אשה, פסח"}
+{"case": "h3D-8043-english", "letter_id": 1200700281, "rel": 0, "reason": "הצלחה בלונדון, כללי"}
+{"case": "h3D-8043-english", "letter_id": 1200700302, "rel": 0, "reason": "בריאות אשה, פסח"}
+{"case": "h3D-8043-english", "letter_id": 1200700367, "rel": 0, "reason": "רב ראשי בלונדון"}
+{"case": "h3D-8043-english", "letter_id": 1200780338, "rel": 0, "reason": "חולה, תהלים"}
+{"case": "h3D-8043-english", "letter_id": 1200800229, "rel": 0, "reason": "שמירת הבריאות כללי"}
+{"case": "h3D-8043-english", "letter_id": 1200800319, "rel": 0, "reason": "חולה, שוחרר מבית חולים"}
+{"case": "h3D-8043-english", "letter_id": 1200820096, "rel": 0, "reason": "ילדים, סיסטרהוד"}
+{"case": "h3D-8043-english", "letter_id": 1200820177, "rel": 0, "reason": "תלמוד תורה בלונדון"}
+{"case": "h3D-8043-english", "letter_id": 1200820349, "rel": 0, "reason": "בית ספר לבת, פרנסה"}
+{"case": "h3D-8043-english", "letter_id": 1200840379, "rel": 0, "reason": "בריאות, שיעורים"}
+{"case": "h3D-8043-english", "letter_id": 1200870161, "rel": 0, "reason": "בריאות זוגה"}
+{"case": "h3D-8043-english", "letter_id": 1200870312, "rel": 0, "reason": "נושא אחר, אניה"}
+{"case": "h3D-8043-english", "letter_id": 1200880154, "rel": 0, "reason": "בריאות אשה, כסלו"}
+{"case": "h3D-8043-english", "letter_id": 1200920273, "rel": 1, "reason": "פערין לונדון, בית ליובאוויטש"}
+{"case": "h3D-8043-english", "letter_id": 1200930103, "rel": 0, "reason": "ספרים לבר מצוה"}
+{"case": "h3D-8043-english", "letter_id": 1200950171, "rel": 0, "reason": "שד\"ר ללונדון"}
+{"case": "h3D-8043-english", "letter_id": 1200950416, "rel": 1, "reason": "בריאות בת, שליחות"}
+{"case": "h3D-8043-english", "letter_id": 1200950423, "rel": 0, "reason": "בריאות אשה, שליחות"}
+{"case": "h3D-8043-english", "letter_id": 1200950445, "rel": 0, "reason": "יום הולדת שישים"}
+{"case": "h3E-10375-english", "letter_id": 1200690063, "rel": 0, "reason": "הילולת אדמו\"ר הזקן"}
+{"case": "h3E-10375-english", "letter_id": 1200700010, "rel": 0, "reason": "ענייני בית כנסת"}
+{"case": "h3E-10375-english", "letter_id": 1200710318, "rel": 1, "reason": "עידוד להדפיס ספרי קודש"}
+{"case": "h3E-10375-english", "letter_id": 1200710390, "rel": 1, "reason": "הוצאה לאור, הערות"}
+{"case": "h3E-10375-english", "letter_id": 1200720348, "rel": 1, "reason": "הוצאת חידושי תורה"}
+{"case": "h3E-10375-english", "letter_id": 1200760206, "rel": 0, "reason": "שאלה בהלכה, לחם הפנים"}
+{"case": "h3E-10375-english", "letter_id": 1200770007, "rel": 0, "reason": "הדפסה לזכר נפטרים"}
+{"case": "h3E-10375-english", "letter_id": 1200820047, "rel": 0, "reason": "הוצאת כתבי נשיאים, קה\"ת"}
+{"case": "h3E-10375-english", "letter_id": 1200830247, "rel": 0, "reason": "בן בצבא"}
+{"case": "h3E-10375-english", "letter_id": 1200840063, "rel": 0, "reason": "הערות על קונקורדנציה"}
+{"case": "h3E-10375-english", "letter_id": 1200860393, "rel": 0, "reason": "הוצאת שיחות, עניני קה\"ת"}
+{"case": "h3E-10375-english", "letter_id": 1200860434, "rel": 1, "reason": "הוצאת כתבי יד של זקנו"}
+{"case": "h3E-10375-english", "letter_id": 1200870015, "rel": 0, "reason": "פינוי קברים"}
+{"case": "h3E-10375-english", "letter_id": 1200870074, "rel": 1, "reason": "הדפסה חוזרת, הגהות בעלה"}
+{"case": "h3E-10375-english", "letter_id": 1200880304, "rel": 0, "reason": "תיקון ס\"ת, פעולת אנ\"ש"}
+{"case": "h3E-10375-english", "letter_id": 1200880442, "rel": 1, "reason": "הדפסת חידושיו בש\"ס"}
+{"case": "h3E-10375-english", "letter_id": 1200940017, "rel": 0, "reason": "ספר שמות, עידוד חסידות"}
+{"case": "h3E-10375-english", "letter_id": 1200950078, "rel": 0, "reason": "הדפסת קונטרס לזכר נפטר"}
+{"case": "h3E-10375-english", "letter_id": 1200950297, "rel": 0, "reason": "ספר ותשובה, ענין אחר"}
+{"case": "h3E-10375-english", "letter_id": 1200960257, "rel": 1, "reason": "הוצאת ספרי אבותיו מחדש"}
+{"case": "h3E-10375-english", "letter_id": 1200970204, "rel": 1, "reason": "עידוד להדפיס ספרי אביו"}
+{"case": "h3E-10375-english", "letter_id": 1200980011, "rel": 0, "reason": "תודה על ספר"}
+{"case": "h3E-10375-english", "letter_id": 1200980111, "rel": 1, "reason": "סידור חידושי אביו לדפוס"}
+{"case": "h3E-10375-topic", "letter_id": 1200720415, "rel": 2, "reason": "כדאי להוציא החידושי תורה"}
+{"case": "h3E-10375-topic", "letter_id": 1200760043, "rel": 0, "reason": "השתתפות בהוצאות ספרי חסידות"}
+{"case": "h3E-10375-topic", "letter_id": 1200760052, "rel": 0, "reason": "שליחת ספרים, תשלום"}
+{"case": "h3E-10375-topic", "letter_id": 1200760065, "rel": 0, "reason": "הוצאה לאור מרוכזת בקה\"ת"}
+{"case": "h3E-10375-topic", "letter_id": 1200760203, "rel": 0, "reason": "עיצוב שער הספר"}
+{"case": "h3E-10375-topic", "letter_id": 1200820091, "rel": 0, "reason": "שאלות בתורת חיים"}
+{"case": "h3E-10375-topic", "letter_id": 1200850075, "rel": 2, "reason": "הדפסת חדו\"ת, מימון"}
+{"case": "h3E-10375-topic", "letter_id": 1200850304, "rel": 0, "reason": "תודה על ספר"}
+{"case": "h3E-10375-topic", "letter_id": 1200880267, "rel": 0, "reason": "עניני אניות ומכ\"ע"}
+{"case": "h3E-10375-topic", "letter_id": 1200880442, "rel": 2, "reason": "הדפסת חידושיו בש\"ס"}
+{"case": "h3E-10375-topic", "letter_id": 1200920467, "rel": 1, "reason": "חדו\"ת תלמידים, עידוד פרסום"}
+{"case": "h3E-10375-topic", "letter_id": 1200950060, "rel": 0, "reason": "תקציב בתי ספר"}
+{"case": "h3E-10375-topic", "letter_id": 1200950078, "rel": 0, "reason": "קונטרס לזכר נפטר"}
+{"case": "h3E-10375-topic", "letter_id": 1200980117, "rel": 0, "reason": "הדפסת ספר על הצ\"צ"}
+{"case": "h3E-1423-english", "letter_id": 1200750020, "rel": 0, "reason": "מכתב צרפתית, שריפה"}
+{"case": "h3E-1423-english", "letter_id": 1200770089, "rel": 0, "reason": "עיכוב צ'ק, עשר תעשר"}
+{"case": "h3E-1423-english", "letter_id": 1200780006, "rel": 0, "reason": "תרומה, חלוקה למוסדות"}
+{"case": "h3E-1423-english", "letter_id": 1200780118, "rel": 0, "reason": "קבלה, עשר בשביל שתתעשר"}
+{"case": "h3E-1423-english", "letter_id": 1200780337, "rel": 1, "reason": "נדבה קטנה, צדקה בסתר"}
+{"case": "h3E-1423-english", "letter_id": 1200800183, "rel": 0, "reason": "צ'ק צדקה, ברכה"}
+{"case": "h3E-1423-english", "letter_id": 1200800321, "rel": 0, "reason": "צ'ק מעזבון, מוסדות"}
+{"case": "h3E-1423-english", "letter_id": 1200810129, "rel": 0, "reason": "הכנסה לצדקות"}
+{"case": "h3E-1423-english", "letter_id": 1200810270, "rel": 0, "reason": "אהבת ישראל, החלטה טובה"}
+{"case": "h3E-1423-english", "letter_id": 1200820333, "rel": 2, "reason": "המחאה מקופת איש תם, פרוטה"}
+{"case": "h3E-1423-english", "letter_id": 1200840242, "rel": 0, "reason": "הכנות לדינר ישיבה"}
+{"case": "h3E-1423-english", "letter_id": 1200840324, "rel": 0, "reason": "חברת גמ\"ח"}
+{"case": "h3E-1423-english", "letter_id": 1200870008, "rel": 0, "reason": "מצב כספי בישיבה"}
+{"case": "h3E-1423-english", "letter_id": 1200870312, "rel": 0, "reason": "נושא אחר, אניה"}
+{"case": "h3E-1423-english", "letter_id": 1200880102, "rel": 0, "reason": "שקל מוסגר, ברכות"}
+{"case": "h3E-1423-english", "letter_id": 1200910295, "rel": 2, "reason": "הנוטל פרוטה מאיוב, עזרה"}
+{"case": "h3E-1423-english", "letter_id": 1200920042, "rel": 2, "reason": "המחאה סמלית, פרוטה מאיוב"}
+{"case": "h3E-1423-english", "letter_id": 1200930049, "rel": 0, "reason": "עליה לארץ, שינוי"}
+{"case": "h3E-1423-english", "letter_id": 1200950011, "rel": 0, "reason": "אישור תרומה"}
+{"case": "h3E-1423-english", "letter_id": 1200980063, "rel": 0, "reason": "גמילות חסדים, סיפור הצ\"צ"}
+{"case": "h3E-1844-english", "letter_id": 1200690158, "rel": 1, "reason": "חתימת צ'קים בהנהלה"}
+{"case": "h3E-1844-english", "letter_id": 1200700063, "rel": 0, "reason": "ברכה לדינר, שכל ולב"}
+{"case": "h3E-1844-english", "letter_id": 1200720406, "rel": 0, "reason": "דאגה, השגחה פרטית"}
+{"case": "h3E-1844-english", "letter_id": 1200750017, "rel": 0, "reason": "מכתב צרפתית, משפחה"}
+{"case": "h3E-1844-english", "letter_id": 1200750018, "rel": 0, "reason": "מכתב צרפתית, ויזות"}
+{"case": "h3E-1844-english", "letter_id": 1200750037, "rel": 0, "reason": "הלוואה לבית רבקה"}
+{"case": "h3E-1844-english", "letter_id": 1200760181, "rel": 0, "reason": "בקשת תפילה, שאלות דא\"ח"}
+{"case": "h3E-1844-english", "letter_id": 1200770319, "rel": 0, "reason": "רפואה, צדקה"}
+{"case": "h3E-1844-english", "letter_id": 1200780285, "rel": 0, "reason": "שלום גוף ונשמה"}
+{"case": "h3E-1844-english", "letter_id": 1200780369, "rel": 1, "reason": "צ'ק של תורם, לבי נוקפי"}
+{"case": "h3E-1844-english", "letter_id": 1200800034, "rel": 1, "reason": "שאלת לשון זכר ונקבה"}
+{"case": "h3E-1844-english", "letter_id": 1200820170, "rel": 0, "reason": "תודה על ספרים, הערות"}
+{"case": "h3E-1844-english", "letter_id": 1200860359, "rel": 0, "reason": "לימוד תורה לבנות"}
+{"case": "h3E-1844-english", "letter_id": 1200870312, "rel": 0, "reason": "נושא אחר, אניה"}
+{"case": "h3E-1844-english", "letter_id": 1200880296, "rel": 0, "reason": "זמן צדקה, תפילין"}
+{"case": "h3E-1844-english", "letter_id": 1200890344, "rel": 0, "reason": "משמעת, מציצה"}
+{"case": "h3E-1844-english", "letter_id": 1200900055, "rel": 0, "reason": "התוועדות, מתן תורה"}
+{"case": "h3E-1844-english", "letter_id": 1200940129, "rel": 0, "reason": "צוואת מנדב, שם מוסד"}
+{"case": "h3E-1844-english", "letter_id": 1200950367, "rel": 0, "reason": "זירוז לצדקה, מלבורן"}
+{"case": "h3E-1844-english", "letter_id": 1200960194, "rel": 0, "reason": "הערה על מאמר"}
+{"case": "h3E-1844-english", "letter_id": 1200960388, "rel": 0, "reason": "ברכה לדינר, נדבת לב"}
+{"case": "h3E-1844-english", "letter_id": 1200970064, "rel": 0, "reason": "השפעה על בן"}
+{"case": "h3E-1844-english", "letter_id": 1200980101, "rel": 0, "reason": "טהרה, מזוזות, ברכה"}
