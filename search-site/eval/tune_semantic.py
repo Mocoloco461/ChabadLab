@@ -23,7 +23,7 @@ if args.emb:
     os.environ["IGROT_EMB"] = args.emb
 import search  # noqa: E402
 
-cases = [json.loads(line) for f in sorted(glob.glob(str(ROOT / "eval/cases/*.jsonl")))
+cases = [json.loads(line) for f in sorted(glob.glob(os.environ.get("CASES", str(ROOT / "eval/cases/*.jsonl"))))
          for line in open(f, encoding="utf-8")]
 cases = [c for c in cases if c["type"] in ("paraphrase", "question", "crosslang")]
 idx = search.semantic_index()

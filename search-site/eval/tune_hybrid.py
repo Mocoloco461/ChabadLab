@@ -28,7 +28,8 @@ import search  # noqa: E402
 from hebrew import parse_query  # noqa: E402
 
 cases = []
-for f in sorted(glob.glob(str(ROOT / "eval/cases/*.jsonl"))):
+CASE_GLOB = os.environ.get("CASES", str(ROOT / "eval/cases/*.jsonl"))
+for f in sorted(glob.glob(os.environ.get("CASES", str(ROOT / "eval/cases/*.jsonl")))):
     for line in open(f, encoding="utf-8"):
         c = json.loads(line)
         if c["type"] in ("paraphrase", "question", "crosslang"):
