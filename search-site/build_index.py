@@ -42,6 +42,7 @@ CREATE TABLE letters (
     city              TEXT,
     recipient         TEXT,
     recipient_info    TEXT,   -- address + the footnote that names the addressee
+    recipient_note    TEXT,   -- just the identifying footnote part ("סרברנסקי, מלבורן")
     address           TEXT,
     language          TEXT,
     body              TEXT,
@@ -78,6 +79,18 @@ CREATE TABLE meta (key TEXT PRIMARY KEY, value TEXT);
 """
 
 
+def recipient_note(rec):
+    addr = rec.get("address") or ""
+    out = []
+    for n in rec.get("notes") or []:
+        term = (n.get("term") or "").strip()
+        if term and term in addr:
+            txt = re.split(r"אגרות? נוספות|אגרת נוספת|לעיל|לקמן", n["text"])[0].strip(" .,")
+            if txt and txt not in out:
+                out.append(txt)
+    return clean("; ".join(out)) or None
+
+
 def recipient_info(rec):
     """The address lines plus footnotes attached to them: the editors usually
     identify the addressee in a note whose term is part of the address
@@ -109,7 +122,7 @@ def main():
 
     cols = ["id", "volume", "volume_heb", "letter_number", "letter_number_heb", "date_raw",
             "date_editorial", "hebrew_day", "hebrew_month", "hebrew_year", "hebrew_year_heb",
-            "gregorian_date", "gregorian_year", "city", "recipient", "recipient_info", "address",
+            "gregorian_date", "gregorian_year", "city", "recipient", "recipient_info", "recipient_note", "address",
             "language", "body", "postscript", "signature", "source_note", "full_text",
             "n_notes", "n_chars", "prev_id", "next_id", "url"]
     ins = f"INSERT INTO letters ({','.join(cols)}) VALUES ({','.join('?' * len(cols))})"
@@ -121,6 +134,7 @@ def main():
             g = r.get("gregorian_date")
             r["gregorian_year"] = int(g[:4]) if g else None
             r["recipient_info"] = recipient_info(r)
+            r["recipient_note"] = recipient_note(r)
             r["n_notes"] = len(r["notes"])
             r["n_chars"] = len(r["full_text"] or "")
             con.execute(ins, [r.get(c) for c in cols])

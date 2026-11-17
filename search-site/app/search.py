@@ -16,7 +16,7 @@ DATA = Path(os.environ.get("IGROT_DATA", ROOT / "data"))
 DB_PATH = DATA / "search.db"
 
 LIST_COLS = ("l.id, l.volume, l.volume_heb, l.letter_number, l.letter_number_heb, l.date_raw, "
-             "l.date_editorial, l.hebrew_year, l.hebrew_year_heb, l.gregorian_date, l.recipient, "
+             "l.date_editorial, l.hebrew_year, l.hebrew_year_heb, l.gregorian_date, l.recipient, l.recipient_note, "
              "l.language, l.n_chars, l.url")
 
 # very common function words: dropped from "any word" (OR) queries so they don't dominate
@@ -103,6 +103,9 @@ def text_search(q, filters, sort="relevance", offset=0, limit=20, prefixes=True,
     fts = build_fts_query(q, prefixes=prefixes, mode=match)
     fsql, fparams = filter_sql(filters)
     con = db()
+    if not fts and q.strip():
+        return {"total": 0, "results": [], "facets": None,
+                "error": "אין בשאילתה מילה לחיפוש. יש להוסיף לפחות מילה אחת (מילה עם מינוס רק מחריגה)."}
     if not fts:  # browse mode: filters only
         where = f"WHERE {fsql}" if fsql else ""
         order = SORTS.get(sort, SORTS["number"]).replace("score", "l.volume, l.letter_number")
@@ -121,7 +124,7 @@ def text_search(q, filters, sort="relevance", offset=0, limit=20, prefixes=True,
         order = SORTS.get(sort, "score")
         rows = con.execute(
             f"SELECT {LIST_COLS}, bm25(letters_fts, 1.0, 1.5, 0.4) AS score, "
-            f"snippet(letters_fts, -1, char(1), char(2), '…', 28) AS snip "
+            f"snippet(letters_fts, -1, char(1), char(2), '…', 40) AS snip "
             f"{base} ORDER BY {order} LIMIT ? OFFSET ?", params + [limit, offset]).fetchall()
     except sqlite3.OperationalError as e:
         return {"total": 0, "results": [], "error": f"שאילתה לא תקינה: {e}", "fts": fts}

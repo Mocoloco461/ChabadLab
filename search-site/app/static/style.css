@@ -80,3 +80,36 @@ mark { background: var(--mark); padding: 0 1px; border-radius: 2px; }
   .reader { position: fixed; inset: 0; max-height: none; border-radius: 0; z-index: 10; flex: none; }
   .frow input[type=text] { width: 100%; }
 }
+
+/* ---- round 1 UI fixes ---- */
+.skip { position: absolute; right: -999px; top: 0; background: #fff; padding: 6px 10px; z-index: 20; }
+.skip:focus { right: 8px; }
+.filters > summary { cursor: pointer; font-weight: 600; color: var(--accent); padding: 2px 0 6px; }
+#filter-count { background: var(--accent); color: #fff; border-radius: 10px; padding: 0 7px; font-size: .78rem; }
+#filter-count:empty { display: none; }
+.frow small { color: var(--muted); font-weight: normal; }
+.examples { font-size: .88rem; color: var(--muted); margin: 6px 0; }
+.examples a { margin-left: 10px; }
+.examples.hidden { display: none; }
+.active-filters { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+.active-filters button { border: 1px solid var(--accent); background: var(--accent-soft); color: var(--accent); border-radius: 14px; padding: 3px 10px; cursor: pointer; font-size: .85rem; }
+.results.loading { opacity: .45; transition: opacity .15s; }
+.results .rnote { color: var(--muted); font-size: .85rem; }
+.reader-bar .navgroup { display: inline-flex; gap: 2px; align-items: center; border-left: 1px solid var(--line); padding-left: 6px; }
+#result-pos { font-size: .8rem; color: var(--muted); }
+#letter .recip { font-family: var(--ui); font-size: .9rem; margin: -8px 0 12px; color: var(--ink); }
+#letter .notfound { color: #a4262c; font-family: var(--ui); }
+.reader-bar button:disabled { opacity: .35; cursor: default; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 900px) {
+  .modes { flex-wrap: nowrap; gap: 4px; }
+  .modes label { flex: 1; text-align: center; padding: 8px 4px; }
+  .modes span { display: none; }
+  .reader-bar { flex-wrap: wrap; }
+  .reader-bar button, .reader-bar a { min-height: 40px; min-width: 40px; display: inline-flex; align-items: center; }
+  #close-reader { font-size: 1.3rem; }
+  .facets button { padding: 6px 10px; }
+  .examples { display: none; }
+}
+.reader-bar button, .reader-bar a { white-space: nowrap; font-size: .88rem; }
+@media (max-width: 900px) { .facets .fgroup:nth-child(2) { display: none; } }
