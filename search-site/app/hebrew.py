@@ -57,6 +57,21 @@ def expand_word(word, prefixes=True):
     return "(" + " OR ".join(exprs) + ")" if len(exprs) > 1 else exprs[0]
 
 
+def phrase_expr(words, prefixes=True):
+    """Words that must appear consecutively (a single word is a 1-word phrase);
+    the first word may take a Hebrew prefix."""
+    toks = [t for w in words for t in _fts_tokens(w)]
+    if not toks:
+        return None
+    first = [toks[0]]
+    if prefixes and re.match(rf"^[{HEB_LETTERS}]", toks[0]) and len(toks[0]) >= 2:
+        first += [p + toks[0] for p in PREFIX_LETTERS]
+        if len(toks) == 1 or len(toks[0]) >= 3:
+            first += [p + toks[0] for p in PREFIX_COMBOS]
+    exprs = [_phrase([v] + toks[1:]) for v in first]
+    return "(" + " OR ".join(exprs) + ")" if len(exprs) > 1 else exprs[0]
+
+
 def build_fts_query(q, prefixes=True, mode="all"):
     """User query -> FTS5 MATCH expression.
     * "quoted text" = exact phrase (first word may still take a prefix)
@@ -64,8 +79,28 @@ def build_fts_query(q, prefixes=True, mode="all"):
     * word*         = prefix match
     mode: "all" (AND, default) | "any" (OR)
     Returns None if nothing searchable."""
+    from abbrev import MAX_WORDS, alternatives
     parts, negs = [], []
-    for raw in TOKEN_RE.findall(q or ""):
+    raws = TOKEN_RE.findall(q or "")
+    i = 0
+    while i < len(raws):
+        # known abbreviation / spelling variant (longest match over plain words)
+        matched = False
+        for n in range(min(MAX_WORDS, len(raws) - i), 0, -1):
+            seq = raws[i:i + n]
+            if any(w.startswith(("-", '"')) or w.endswith("*") for w in seq):
+                continue
+            alts = alternatives(seq)
+            if alts:
+                exprs = [e for e in (phrase_expr(a.split(), prefixes) for a in alts) if e]
+                parts.append("(" + " OR ".join(exprs) + ")")
+                i += n
+                matched = True
+                break
+        if matched:
+            continue
+        raw = raws[i]
+        i += 1
         neg = raw.startswith("-") and len(raw) > 1
         if neg:
             raw = raw[1:]

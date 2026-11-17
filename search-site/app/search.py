@@ -126,10 +126,66 @@ def text_search(q, filters, sort="relevance", offset=0, limit=20, prefixes=True,
     except sqlite3.OperationalError as e:
         return {"total": 0, "results": [], "error": f"שאילתה לא תקינה: {e}", "fts": fts}
     res = [row_to_result(r, _escape_snippet(r["snip"]), -r["score"]) for r in rows]
+    if total < RELAX_BELOW and match == "all" and len(query_terms(q)) > 1:
+        relaxed = relaxed_search(q, filters, offset, limit, prefixes, exclude=[r["id"] for r in res])
+        if relaxed["results"] or total == 0:
+            # strict matches first, then letters with most of the words
+            relaxed["results"] = (res + relaxed["results"])[:limit] if offset == 0 else relaxed["results"]
+            relaxed["total"] += total
+            relaxed["strict_total"] = total
+            if with_facets:
+                relaxed["facets"] = None
+            return relaxed
     out = {"total": total, "results": res, "fts": fts}
     if with_facets:
         out["facets"] = facets(fts, fsql, fparams)
     return out
+
+
+RELAX_BELOW = 3  # strict (all words) results below this -> also show letters with most of the words
+
+
+def query_terms(q):
+    """Top-level query items (quoted phrases count as one), without exclusions."""
+    import re as _re
+    return [t for t in _re.findall(r'"[^"]+"|\S+', q or "") if not t.startswith("-")]
+
+
+def relaxed_search(q, filters, offset, limit, prefixes=True, exclude=(), n=400):
+    """Rank letters by how many of the query terms they contain (then bm25 of the OR query)."""
+    terms = [t for t in query_terms(q) if t.strip('"') not in STOPWORDS] or query_terms(q)
+    negs = " ".join(t for t in re.findall(r'"[^"]+"|\S+', q) if t.startswith("-"))
+    fsql, fparams = filter_sql(filters)
+    con = db()
+    cover = {}
+    for t in terms:
+        e = build_fts_query(f"{t} {negs}".strip(), prefixes=prefixes)
+        if not e:
+            continue
+        where = "letters_fts MATCH ?" + (f" AND {fsql}" if fsql else "")
+        try:
+            for (lid,) in con.execute(f"SELECT l.id FROM letters_fts JOIN letters l ON l.id = letters_fts.rowid "
+                                      f"WHERE {where}", [e] + fparams):
+                cover[lid] = cover.get(lid, 0) + 1
+        except sqlite3.OperationalError:
+            continue
+    excl = set(exclude)
+    # need at least half of the terms (and at least 2 when there are 2+ terms)
+    need = max(2, (len(terms) + 1) // 2) if len(terms) >= 2 else 1
+    cands = [lid for lid, c in cover.items() if c >= need and lid not in excl]
+    if not cands:
+        return {"total": 0, "results": [], "relaxed": True, "terms": len(terms)}
+    any_q = " ".join(terms) + (" " + negs if negs else "")
+    order = {lid: i for i, lid in enumerate(text_ranked_ids(any_q, filters, n=5000, prefixes=prefixes, match="any"))}
+    cands.sort(key=lambda lid: (-cover[lid], order.get(lid, 10 ** 6)))
+    page = cands[offset: offset + limit]
+    rows = fetch_rows(page)
+    res = []
+    for lid in page:
+        if lid in rows:
+            res.append(row_to_result(rows[lid], _text_snippet(lid, any_q, prefixes), cover[lid],
+                                     {"matched_terms": cover[lid], "n_terms": len(terms)}))
+    return {"total": len(cands), "results": res, "relaxed": True, "terms": len(terms)}
 
 
 def text_ranked_ids(q, filters, n=300, prefixes=True, match="all"):

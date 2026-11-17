@@ -118,6 +118,8 @@ function renderResults(data) {
       msg += ` <button class="link" id="try-any">לחפש אגרות עם אחת המילים</button>`;
     if (!data.total && data.mode === "text" && state.q)
       msg += ` <button class="link" id="try-sem">לחפש לפי משמעות</button>`;
+    if (data.relaxed && data.total)
+      msg = (data.strict_total ? `${data.strict_total} אגרות עם כל המילים, ועוד אגרות עם רוב המילים` : `אין אגרת שמופיעות בה כל המילים יחד. מוצגות <b>${data.total.toLocaleString("he-IL")}</b> אגרות עם רוב המילים`) + ` · ${data.ms} מ"ש`;
     if (data.warning) msg += ` <span class="err">${esc(data.warning)}</span>`;
     st.innerHTML = msg;
     $("#try-any")?.addEventListener("click", () => { $("#match_any").checked = true; submit(); });
@@ -132,6 +134,7 @@ function renderResults(data) {
       </div>
       ${r.recipient ? `<div class="rcpt">אל: ${esc(r.recipient)}</div>` : ""}
       <div class="snip">${r.snippet || ""}</div>
+      ${r.matched_terms ? `<div class="tags">${r.matched_terms} מתוך ${r.n_terms} מילים</div>` : ""}
       ${data.mode === "hybrid" ? `<div class="tags">${r.in_text ? "✓ מילים" : ""} ${r.in_semantic ? "✓ משמעות" : ""}</div>` : ""}
     </li>`).join("");
   renderPager(data);
