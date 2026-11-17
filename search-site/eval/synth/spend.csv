@@ -11,3 +11,15 @@ time,task,model,jobs,calls,errors,tokens_in,tokens_out,cost_usd,key_usage_before
 2026-11-17T14:16:57,gen-train,deepseek/deepseek-v4-flash-0731,20,31,8,25411,8587,0.0048,0.6332,0.6477,False
 2026-11-17T14:25:36,prefetch-query-emb,"q4b,e5l,q8b",,,,,,0.7032,0.7809,1.4841,rc=0
 2026-11-17T14:41:17,judge,anthropic/claude-haiku-5.5,10,11,1,93341,1528,0.0101,3.0252,3.0434,False
+2026-11-17T14:42:45,judge,anthropic/claude-haiku-5.5,452,491,39,3590666,61438,0.3898,3.0434,3.5505,False
+2026-11-17T14:43:32,judge,anthropic/claude-haiku-5.5,39,78,39,98378,1404,0.0105,3.6583,3.6982,False
+2026-11-17T14:44:02,judge,anthropic/claude-haiku-5.5,39,39,0,49189,702,0.0053,3.7161,3.7161,False
+2026-11-17T14:44:52,judge,anthropic/claude-haiku-5.5,370,370,0,1497276,25821,0.1626,3.6982,3.9117,False
+2026-11-17T14:53:39,gen-train,anthropic/claude-haiku-5.5,10462,10882,57,12751862,4819102,3.6847,0.6503,5.3647,False
+2026-11-17T14:58:28,gen-train,anthropic/claude-haiku-5.5,57,74,6,85432,33444,0.0253,5.4609,5.4962,False
+2026-11-17T15:01:40,emb-d2q-q-q8b,qwen/qwen3-embedding-8b,,,,,,0.0601,5.4962,5.5563,rc=0
+2026-11-17T15:02:07,eval-rerank-cohere5fast,cohere/rerank-5-fast,,,,,,1.2433,4.32,5.5632,rc=0
+2026-11-17T15:04:48,emb-d2q-q-e5l,intfloat/multilingual-e5-large,,,,,,0.0174,5.5563,5.5737,rc=0
+2026-11-17T15:09:19,emb-d2q-sqk-q8b,qwen/qwen3-embedding-8b,,,,,,0.0510,5.5737,5.6246,rc=0
+2026-11-17T15:09:36,judge,anthropic/claude-haiku-5.5,303,303,0,843446,14474,0.0916,5.6008,5.6624,False
+2026-11-17T15:13:12,emb-d2q-sqk-e5l,intfloat/multilingual-e5-large,,,,,,0.0921,5.6246,5.7167,rc=0

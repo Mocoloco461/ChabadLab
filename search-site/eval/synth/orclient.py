@@ -82,7 +82,9 @@ def parse_json(text):
     """First JSON object or array in the reply (models sometimes wrap it in ``` fences)."""
     t = text.strip()
     t = re.sub(r"^```(?:json)?\s*|\s*```$", "", t)
-    for opener, closer in (("{", "}"), ("[", "]")):
+    pairs = [("{", "}"), ("[", "]")]
+    pairs.sort(key=lambda p: t.find(p[0]) if t.find(p[0]) != -1 else len(t))  # outermost bracket first
+    for opener, closer in pairs:
         s, e = t.find(opener), t.rfind(closer)
         if s != -1 and e > s:
             try:

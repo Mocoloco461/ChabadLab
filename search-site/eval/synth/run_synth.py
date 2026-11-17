@@ -89,11 +89,15 @@ def main():
     ap.add_argument("--cases", default=str(SYN / "synth_test.jsonl"))
     ap.add_argument("--report", help="existing runs file: print metrics only")
     ap.add_argument("--workers", type=int, default=2)
+    ap.add_argument("--only-judged", action="store_true")
     a = ap.parse_args()
     if a.report:
         rows = [json.loads(l) for l in open(a.report, encoding="utf-8")]
     else:
         cases = [json.loads(l) for l in open(a.cases, encoding="utf-8") if l.strip()]
+        if a.only_judged:  # the fixed judged sample only (cheaper runs, e.g. with a paid API reranker)
+            keep = set(json.loads((SYN / "judge_cases.json").read_text(encoding="utf-8")))
+            cases = [c for c in cases if c["id"] in keep]
         jobs = [(c, m) for c in cases for m in c["modes"]]
         t0 = time.time()
 

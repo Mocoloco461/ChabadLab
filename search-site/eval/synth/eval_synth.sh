@@ -24,7 +24,7 @@ for i in $(seq 1 180); do
 done
 curl -s -o /dev/null "http://127.0.0.1:$PORT/api/meta" || { echo "server did not start:"; tail -20 "$LOG"; exit 1; }
 cd "$ROOT"
-"$PY" "$HERE/run_synth.py" --server "http://127.0.0.1:$PORT" --label "$LABEL" --workers "${WORKERS:-6}"
+"$PY" "$HERE/run_synth.py" --server "http://127.0.0.1:$PORT" --label "$LABEL" --workers "${WORKERS:-6}" ${SYNTH_ARGS:-}
 if [ "${2:-}" = "--holdouts" ]; then
   "$PY" search-site/eval/run_eval.py --server "http://127.0.0.1:$PORT" --label "SYNTH-BRANCH main $LABEL" | head -4
   for f in search-site/eval/holdout/holdout1.jsonl search-site/eval/holdout/holdout2.jsonl; do
