@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+numpy
+sentence-transformers
+# torch: install the CPU build: uv pip install torch --index-url https://download.pytorch.org/whl/cpu
+playwright  # UI screenshots / browser tests only
