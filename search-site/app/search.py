@@ -470,6 +470,10 @@ _sem = {"index": None, "error": None}
 
 
 _sem_lock = threading.Lock()
+# Preferred index when its folder exists AND an OpenRouter key is present (no GPU needed): gemini-embedding-2
+# over the letter passages + doc2query v2 cards (merged-engine WORKLOG). IGROT_API_INDEX="" disables it;
+# without a key the server falls back to the local models below.
+API_INDEX = os.environ.get("IGROT_API_INDEX", "d2q_v2/gem2")
 
 
 def semantic_index():
@@ -482,8 +486,12 @@ def semantic_index():
 def _load_semantic_index():
     if _sem["index"] is None and _sem["error"] is None:
         folder = os.environ.get("IGROT_EMB")
+        if not folder and API_INDEX and (DATA / "emb" / API_INDEX / "embeddings.npy").exists():
+            import remote
+            if remote.has_key():  # API index: query vectors (and the reranker) through OpenRouter
+                folder = [DATA / "emb" / API_INDEX]
         if not folder:
-            # prefer the strongest finished option (see WORKLOG for the eval numbers)
+            # local models: the strongest finished option (see WORKLOG for the eval numbers)
             for slugs in (("Qwen__Qwen3-Embedding-4B", "intfloat__multilingual-e5-large"),
                           ("BAAI__bge-m3", "intfloat__multilingual-e5-large"),
                           ("Qwen__Qwen3-Embedding-4B",),
@@ -656,7 +664,11 @@ def hybrid_ranked(q, filters, n=300, prefixes=True, k=HYBRID_K, w_text=HYBRID_W_
         t_ids = text_ranked_ids(tq, filters, n, prefixes, "all")
     else:
         t_ids = coverage_ids(tq, filters, prefixes, n)
-    qv = idx.encode(q) if idx else None
+    try:
+        qv = idx.encode(q) if idx else None
+    except Exception as e:  # noqa: BLE001  API down / no network: the word side still answers
+        print(f"[hybrid] ERROR meaning side unavailable: {e}", flush=True)
+        idx, qv = None, None
     s_hits = idx.search(q, allowed_letter_ids(filters), n=n, qv=qv) if idx else []
     score, best_chunk = {}, {}
     for rank, lid in enumerate(t_ids):
@@ -679,7 +691,8 @@ def hybrid_search(q, filters, offset=0, limit=20, n=300, prefixes=True,
     ranked, best_chunk, t_ids, qv = hybrid_ranked(q, filters, n, prefixes, k, w_text, w_sem)
     reranked = False
     # exact-syntax queries are about the words, not the meaning: no reranking
-    if rerank is not False and idx is not None and not exact_syntax(q) and reranker() is not None             and not SORTS.get(sort):
+    if rerank is not False and idx is not None and qv is not None and not exact_syntax(q) \
+            and reranker() is not None and not SORTS.get(sort):
         ranked, reranked = rerank_ranked(q, ranked, idx, qv), True
     ranked = sort_ranked(ranked, sort)
     page = ranked[offset: offset + limit]
@@ -712,6 +725,7 @@ RERANK_K = 10
 RERANK_W_FIRST, RERANK_W_CE = 1.0, 1.0
 RERANK_CHUNKS = 1   # passages per letter given to the cross-encoder
 DEFAULT_RERANKER = "BAAI/bge-reranker-v2-m3"
+DEFAULT_API_RERANKER = "api:cohere/rerank-5-pro"  # "auto" with an API index (merged-engine eval)
 _rr = {"model": None, "name": None, "error": None}
 _rr_lock = threading.Lock()
 
@@ -729,6 +743,10 @@ def reranker():
                 cuda = False
             _rr["auto"] = DEFAULT_RERANKER if cuda else None
         name = _rr.get("auto")
+        idx = _sem["index"]
+        if idx is not None and any(idx.api_model(i) for i in idx.infos):
+            # an API index is loaded (so a key is present): rerank through the API too, no GPU needed
+            name = os.environ.get("IGROT_RERANK_API", DEFAULT_API_RERANKER)
         if not name:
             return None
     if name.startswith("api:"):  # e.g. IGROT_RERANK=api:cohere/rerank-5-pro (OpenRouter, no GPU)
@@ -780,9 +798,13 @@ def rerank_merge(ranked, ce, n=None, k=RERANK_K, w_first=RERANK_W_FIRST, w_ce=RE
 
 def rerank_ranked(q, ranked, idx, qv):
     lids = [lid for lid, _ in ranked[:RERANK_N]]
-    if not lids:
+    if not lids or qv is None:
         return ranked
-    return rerank_merge(ranked, rerank_scores(q, lids, idx, qv))
+    try:
+        return rerank_merge(ranked, rerank_scores(q, lids, idx, qv))
+    except Exception as e:  # noqa: BLE001  API reranker down: keep the first-stage order
+        print(f"[rerank] ERROR first-stage order kept: {e}", flush=True)
+        return ranked
 
 
 # ------------------------------------------------------------------ letter + meta

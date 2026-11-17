@@ -50,6 +50,14 @@ def key():
     return _key
 
 
+def has_key():
+    """True when an OpenRouter key is configured (env or ~/.openrouter_key); never raises."""
+    try:
+        return bool(key())
+    except Exception:  # noqa: BLE001
+        return False
+
+
 def post(path, body, retries=5, timeout=120):
     data = json.dumps(body).encode()
     err = None
