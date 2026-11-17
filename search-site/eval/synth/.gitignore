@@ -1,0 +1,4 @@
+runs/*.jsonl
+runs/*.log
+*.log
+pilot/*.log

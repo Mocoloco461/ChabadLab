@@ -1,0 +1,92 @@
+{
+ "stamp": "20261117-160012",
+ "label": "H3 base q4b+e5l norerank",
+ "cases": 360,
+ "passed": 251,
+ "overall_pct": 69.7,
+ "by_type": {
+  "crosslang": {
+   "passed": 22,
+   "n": 28,
+   "pct": 78.6
+  },
+  "english": {
+   "passed": 41,
+   "n": 64,
+   "pct": 64.1
+  },
+  "name": {
+   "passed": 34,
+   "n": 44,
+   "pct": 77.3
+  },
+  "paraphrase": {
+   "passed": 69,
+   "n": 86,
+   "pct": 80.2
+  },
+  "question": {
+   "passed": 58,
+   "n": 76,
+   "pct": 76.3
+  },
+  "topic": {
+   "passed": 8,
+   "n": 34,
+   "pct": 23.5
+  },
+  "typo": {
+   "passed": 19,
+   "n": 28,
+   "pct": 67.9
+  }
+ },
+ "by_mode": {
+  "hybrid": {
+   "passed": 124,
+   "n": 180,
+   "pct": 68.9
+  },
+  "semantic": {
+   "passed": 101,
+   "n": 144,
+   "pct": 70.1
+  },
+  "text": {
+   "passed": 26,
+   "n": 36,
+   "pct": 72.2
+  }
+ },
+ "seconds": 33.3,
+ "metrics": {
+  "mrr": 0.516,
+  "any_rel10_pct": 91.1,
+  "any_rel2_10_pct": 80.6,
+  "ndcg10": 0.628,
+  "unjudged10": 0.38
+ },
+ "metrics_by_mode": {
+  "hybrid": {
+   "mrr": 0.507,
+   "any_rel10_pct": 91.7,
+   "any_rel2_10_pct": 80.6,
+   "ndcg10": 0.619,
+   "unjudged10": 0.4
+  },
+  "semantic": {
+   "mrr": 0.5,
+   "any_rel10_pct": 95.1,
+   "any_rel2_10_pct": 82.6,
+   "ndcg10": 0.636,
+   "unjudged10": 0.25
+  },
+  "text": {
+   "mrr": 0.624,
+   "any_rel10_pct": 72.2,
+   "any_rel2_10_pct": 72.2,
+   "ndcg10": 0.645,
+   "unjudged10": 0.76
+  }
+ }
+}

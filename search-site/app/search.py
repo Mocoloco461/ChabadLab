@@ -359,11 +359,14 @@ class SemanticIndex:
         self.emb = np.hstack([np.load(f / "embeddings.npy").astype(np.float32) for f in folders])
         self.chunk_letter = []
         self.chunk_text = []
+        self.chunk_extra = set()
         with open(self.folder / "chunks.jsonl", encoding="utf-8") as fh:
             for line in fh:
                 c = json.loads(line)
                 self.chunk_letter.append(c["letter_id"])
                 self.chunk_text.append(c["text"])
+                if c.get("extra"):  # doc2query passage (generated questions), not letter text
+                    self.chunk_extra.add(c["i"])
         self.chunk_letter = np.array(self.chunk_letter)
         for f in folders[1:]:  # ensembles only make sense on identical chunking
             with open(f / "chunks.jsonl", encoding="utf-8") as fh:
@@ -373,15 +376,29 @@ class SemanticIndex:
         self._letter_chunks = None
         self._lock = threading.Lock()
 
+    def api_model(self, info):
+        """OpenRouter id when this part's query vectors come from the API, else None.
+        Folders built through the API always do; local ones only with IGROT_EMBED_API=1."""
+        if info.get("api_model"):
+            return info["api_model"]
+        if os.environ.get("IGROT_EMBED_API", "").lower() in ("1", "on", "true"):
+            import remote
+            return remote.API_EMBED_IDS.get(info["model"])
+        return None
+
     @property
     def models(self):
+        """local SentenceTransformer per part (None for parts served by the API)"""
         with self._lock:
             if self._models is None:
-                import torch
-                from sentence_transformers import SentenceTransformer
-                dev = os.environ.get("IGROT_DEVICE") or ("cuda" if torch.cuda.is_available() else "cpu")
                 ms = []
                 for info in self.infos:
+                    if self.api_model(info):
+                        ms.append(None)
+                        continue
+                    import torch
+                    from sentence_transformers import SentenceTransformer
+                    dev = os.environ.get("IGROT_DEVICE") or ("cuda" if torch.cuda.is_available() else "cpu")
                     # fp16 on GPU, loaded directly in fp16 (same precision as build_embeddings.py;
                     # Qwen3-4B in fp32 is 16GB and does not fit a 12GB card even transiently)
                     kw = {"model_kwargs": {"torch_dtype": torch.float16}} if dev.startswith("cuda") else {}
@@ -392,8 +409,15 @@ class SemanticIndex:
         return self._models
 
     def encode(self, q):
-        parts = [m.encode([info.get("query_prefix", "") + q], normalize_embeddings=True)[0]
-                 for m, info in zip(self.models, self.infos)]
+        parts = []
+        for m, info in zip(self.models, self.infos):
+            text = info.get("query_prefix", "") + q
+            api = self.api_model(info)
+            if api:
+                import remote
+                parts.append(remote.embed(api, [text])[0])
+            else:
+                parts.append(m.encode([text], normalize_embeddings=True)[0])
         return np.concatenate(parts).astype(np.float32)
 
     def letter_chunks(self, lid):
@@ -404,9 +428,18 @@ class SemanticIndex:
             self._letter_chunks = d
         return self._letter_chunks.get(lid, [])
 
-    def best_chunks(self, qv, lid, top=1):
+    def display_text(self, ci):
+        """snippet source: the passage, or the letter's first real passage for a doc2query one"""
+        if ci in self.chunk_extra:
+            real = [i for i in self.letter_chunks(int(self.chunk_letter[ci])) if i not in self.chunk_extra]
+            ci = real[0] if real else ci
+        return self.chunk_text[ci]
+
+    def best_chunks(self, qv, lid, top=1, letter_only=False):
         """chunk indices of one letter, most similar to the query vector first"""
         idx = self.letter_chunks(lid)
+        if letter_only and self.chunk_extra:
+            idx = [i for i in idx if i not in self.chunk_extra] or idx
         if not idx:
             return []
         sc = self.emb[idx] @ qv
@@ -527,7 +560,7 @@ def semantic_search(q, filters, offset=0, limit=20, n=300, rerank=None, sort="re
     page = ranked[offset: offset + limit]
     rows = fetch_rows([lid for lid, _ in page])
     terms = [t for t in highlight_terms(q) if t not in QUERY_STOP]
-    res = [row_to_result(rows[lid], make_snippet(idx.chunk_text[best_chunk[lid]], terms=terms), s * 100)
+    res = [row_to_result(rows[lid], make_snippet(idx.display_text(best_chunk[lid]), terms=terms), s * 100)
            for lid, s in page if lid in rows]
     return {"total": len(ranked), "results": res, "model": idx.info["model"], "capped": len(ranked) >= n,
             "reranked": reranked}
@@ -642,7 +675,7 @@ def hybrid_search(q, filters, offset=0, limit=20, n=300, prefixes=True,
         if lid in in_text or idx is None or lid not in best_chunk:
             snip = make_snippet(rows[lid]["full_text"], terms=terms)
         else:
-            snip = make_snippet(idx.chunk_text[best_chunk[lid]], terms=terms)
+            snip = make_snippet(idx.display_text(best_chunk[lid]), terms=terms)
         res.append(row_to_result(rows[lid], snip, s * 100,
                                  {"in_text": lid in in_text, "in_semantic": lid in best_chunk}))
     q2, fixes = spell_fix(q)
@@ -680,6 +713,11 @@ def reranker():
         name = _rr.get("auto")
         if not name:
             return None
+    if name.startswith("api:"):  # e.g. IGROT_RERANK=api:cohere/rerank-5-pro (OpenRouter, no GPU)
+        if _rr["name"] != name:
+            import remote
+            _rr.update(model=remote.RemoteReranker(name[4:]), name=name, error=None)
+        return _rr["model"]
     with _rr_lock:
         if _rr["name"] != name:
             try:
@@ -695,7 +733,9 @@ def reranker():
 
 
 def rerank_passages(idx, qv, lid, n_chunks=RERANK_CHUNKS):
-    return "\n".join(idx.chunk_text[i] for i in idx.best_chunks(qv, lid, n_chunks))
+    # the cross-encoder sees letter text only (IGROT_RERANK_EXTRA=1: doc2query passages too)
+    letter_only = os.environ.get("IGROT_RERANK_EXTRA", "") not in ("1", "on", "true")
+    return "\n".join(idx.chunk_text[i] for i in idx.best_chunks(qv, lid, n_chunks, letter_only=letter_only))
 
 
 def rerank_scores(q, lids, idx, qv, n_chunks=RERANK_CHUNKS):
