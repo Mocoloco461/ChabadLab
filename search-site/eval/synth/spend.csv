@@ -23,3 +23,11 @@ time,task,model,jobs,calls,errors,tokens_in,tokens_out,cost_usd,key_usage_before
 2026-11-17T15:09:19,emb-d2q-sqk-q8b,qwen/qwen3-embedding-8b,,,,,,0.0510,5.5737,5.6246,rc=0
 2026-11-17T15:09:36,judge,anthropic/claude-haiku-5.5,303,303,0,843446,14474,0.0916,5.6008,5.6624,False
 2026-11-17T15:13:12,emb-d2q-sqk-e5l,intfloat/multilingual-e5-large,,,,,,0.0921,5.6246,5.7167,rc=0
+2026-11-17T15:25:59,judge,anthropic/claude-haiku-5.5,407,407,0,1274739,24757,0.1399,5.7183,5.838,False
+2026-11-17T15:27:42,gen-test,anthropic/claude-haiku-5.5,600,609,0,1244973,263241,0.2561,5.7183,6.0927,False
+2026-11-17T15:30:53,gen-test,anthropic/claude-haiku-5.5,600,626,1,738123,283644,0.2156,6.0927,6.3198,False
+2026-11-17T15:35:34,emb-d2q-sqk-leaky-e5l,intfloat/multilingual-e5-large,,,,,,0.0571,6.3198,6.3769,rc=0
+2026-11-17T15:36:21,emb-d2q-sqk-leaky-q8b,qwen/qwen3-embedding-8b,,,,,,0.0518,6.3299,6.3817,rc=0
+2026-11-17T15:54:18,eval-d2q-rerank-cohere5fast,cohere/rerank-5-fast,,,,,,0.1627,6.3858,6.5484,rc=0
+2026-11-17T15:55:00,judge,anthropic/claude-haiku-5.5,209,209,0,333190,5972,0.0363,6.5484,6.5535,False
+2026-11-17T15:55:12,judge,anthropic/claude-haiku-5.5,102,102,0,114308,2046,0.0125,6.5487,6.5876,False

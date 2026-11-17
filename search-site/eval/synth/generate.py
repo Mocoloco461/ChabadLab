@@ -73,9 +73,10 @@ def letters(ids):
         yield {"id": lid, "text": (r[0] or "")[:MAX_CHARS], "language": r[1]}
 
 
-def make_fn(pool, model):
-    prompt = PROMPT_TEST if pool == "test" else PROMPT_TRAIN
-    temp = 0.8 if pool == "test" else 0.5
+def make_fn(pool, model, style=None):
+    style = style or pool  # which prompt: "test" (real people) or "train" (content card)
+    prompt = PROMPT_TEST if style == "test" else PROMPT_TRAIN
+    temp = 0.8 if style == "test" else 0.5
 
     def fn(job):
         infos = []
@@ -88,7 +89,7 @@ def make_fn(pool, model):
                 d = orclient.parse_json(r["text"])
                 if not isinstance(d, dict):
                     raise ValueError("reply is not a JSON object")
-                if pool == "test":
+                if style == "test":
                     items = [{"kind": str(i.get("kind", "question")), "text": str(i["text"]).strip()}
                              for i in d.get("items", []) if isinstance(i, dict) and str(i.get("text", "")).strip()]
                 else:
@@ -113,6 +114,9 @@ def main():
     ap.add_argument("--batch", action="store_true", help="use the :batch variant (half price, slower)")
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--out")
+    ap.add_argument("--prompt", choices=["test", "train"],
+                    help="prompt style (default: the pool's own); --pool test --prompt train = doc2query passages "
+                         "for TEST letters, only for the leaky upper-bound measurement")
     ap.add_argument("--include-used", action="store_true",
                     help="train pool + the letters already used by eval/cases, holdouts, samples")
     a = ap.parse_args()
@@ -140,7 +144,7 @@ def main():
     errs = 0
     with open(out, "a", encoding="utf-8") as fh:
         try:
-            for job, res, err in orclient.run_jobs(f"gen-{a.pool}", model, jobs, make_fn(a.pool, model),
+            for job, res, err in orclient.run_jobs(f"gen-{a.pool}", model, jobs, make_fn(a.pool, model, a.prompt),
                                                    workers=a.workers):
                 if res:
                     fh.write(json.dumps(res, ensure_ascii=False) + "\n")
