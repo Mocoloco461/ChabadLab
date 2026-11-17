@@ -88,6 +88,7 @@ def main():
     ap.add_argument("--db", default=str(DATA / "search.db"))
     ap.add_argument("--model", default="intfloat/multilingual-e5-small")
     ap.add_argument("--threads", type=int, default=0, help="torch threads (0 = all)")
+    ap.add_argument("--device", default="auto", help="auto | cpu | cuda | cuda:1 ...")
     ap.add_argument("--batch", type=int, default=16)
     ap.add_argument("--max-seq", type=int, default=512)
     ap.add_argument("--limit", type=int, help="only the first N letters (speed test)")
@@ -120,13 +121,16 @@ def main():
     if args.threads:
         torch.set_num_threads(args.threads)
     from sentence_transformers import SentenceTransformer
-    model = SentenceTransformer(args.model, device="cpu")
+    device = ("cuda" if torch.cuda.is_available() else "cpu") if args.device == "auto" else args.device
+    model = SentenceTransformer(args.model, device=device)
+    if device.startswith("cuda"):
+        model.half()  # fp16 on GPU: ~2x faster, same retrieval quality
     model.max_seq_length = args.max_seq
     dim = model.get_sentence_embedding_dimension()
 
     partial = outdir / f"embeddings{suffix}.partial.npy"
     done = np.load(partial) if partial.exists() else np.zeros((0, dim), dtype=np.float16)
-    print(f"model {args.model} dim={dim}; resuming at {len(done)}", flush=True)
+    print(f"model {args.model} dim={dim} device={device}; resuming at {len(done)}", flush=True)
     out = [done]
     t0, n0 = time.time(), len(done)
     texts = [p_prefix + c["head"] + "\n" + c["text"] for c in chunks]

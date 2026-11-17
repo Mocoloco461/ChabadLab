@@ -330,8 +330,10 @@ class SemanticIndex:
     def model(self):
         with self._lock:
             if self._model is None:
+                import torch
                 from sentence_transformers import SentenceTransformer
-                m = SentenceTransformer(self.info["model"], device="cpu")
+                dev = os.environ.get("IGROT_DEVICE") or ("cuda" if torch.cuda.is_available() else "cpu")
+                m = SentenceTransformer(self.info["model"], device=dev)
                 m.max_seq_length = self.info.get("max_seq", 512)
                 self._model = m
         return self._model
