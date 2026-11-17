@@ -9,15 +9,16 @@ from pathlib import Path
 
 import numpy as np
 
-from hebrew import build_fts_query, clean, heb_year, highlight_terms
+from hebrew import (build_fts_query, clean, heb_year, highlight_terms, parse_query, phrase_query,
+                    term_regex)
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = Path(os.environ.get("IGROT_DATA", ROOT / "data"))
 DB_PATH = DATA / "search.db"
 
 LIST_COLS = ("l.id, l.volume, l.volume_heb, l.letter_number, l.letter_number_heb, l.date_raw, "
-             "l.date_editorial, l.hebrew_year, l.hebrew_year_heb, l.gregorian_date, l.recipient, l.recipient_note, "
-             "l.language, l.n_chars, l.url")
+             "l.date_editorial, l.hebrew_year, l.hebrew_year_heb, l.gregorian_date, l.recipient, "
+             "l.recipient_note, l.language, l.n_chars, l.url")
 
 # very common function words: dropped from "any word" (OR) queries so they don't dominate
 STOPWORDS = set("""של את על עם הוא היא הם הן זה זו זאת מה כי אם לא גם או אשר כל יש אין אל מן
@@ -38,48 +39,48 @@ def db():
 
 # ------------------------------------------------------------------ filters
 def filter_sql(f):
-    """Filters dict -> (sql fragment on alias l, params)."""
+    """Filters dict -> (sql fragment on alias l, params).
+    Indexed columns are written as +col so SQLite never drives an FTS query from
+    a metadata index (that made lang=he take seconds)."""
     where, params = [], []
 
     def num(key):
         v = f.get(key)
         try:
-            return int(v) if v not in (None, "") else None
+            v = int(str(v).strip()) if v not in (None, "") else None
         except ValueError:
             return None
+        return None if v is None else max(-10 ** 9, min(10 ** 9, v))
 
-    for key, col, op in (("vol_from", "l.volume", ">="), ("vol_to", "l.volume", "<="),
-                         ("year_from", "l.hebrew_year", ">="), ("year_to", "l.hebrew_year", "<="),
-                         ("greg_from", "l.gregorian_year", ">="), ("greg_to", "l.gregorian_year", "<="),
-                         ("num_from", "l.letter_number", ">="), ("num_to", "l.letter_number", "<=")):
+    for key, col, op in (("vol_from", "+l.volume", ">="), ("vol_to", "+l.volume", "<="),
+                         ("year_from", "+l.hebrew_year", ">="), ("year_to", "+l.hebrew_year", "<="),
+                         ("greg_from", "+l.gregorian_year", ">="), ("greg_to", "+l.gregorian_year", "<="),
+                         ("num_from", "+l.letter_number", ">="), ("num_to", "+l.letter_number", "<=")):
         v = num(key)
         if v is not None:
             where.append(f"{col} {op} ?")
             params.append(v)
     if f.get("lang"):
         langs = [x for x in str(f["lang"]).split(",") if x]
-        where.append(f"l.language IN ({','.join('?' * len(langs))})")
+        where.append(f"+l.language IN ({','.join('?' * len(langs))})")
         params += langs
     if f.get("month"):
-        where.append("l.hebrew_month = ?")
-        params.append(f["month"])
+        m = str(f["month"]).strip()
+        months = ["אדר", "אדר א", "אדר ב"] if m == "אדר" else [m]
+        where.append(f"l.hebrew_month IN ({','.join('?' * len(months))})")
+        params += months
     if f.get("recipient"):
-        # every word of the recipient filter must appear in the address / addressee note
-        for w in clean(f["recipient"]).replace('"', " ").replace("'", " ").split():
-            where.append("REPLACE(REPLACE(l.recipient_info, '\"', ''), '''', '') LIKE ?")
+        # every word must appear in the address / addressee note; gershayim ignored (שז"ר == שזר)
+        for w in clean(f["recipient"]).replace('"', "").replace("'", "").split():
+            where.append("REPLACE(REPLACE(l.recipient_info, '\"', ''), \"'\", '') LIKE ?")
             params.append(f"%{w}%")
     if f.get("dated") in ("1", 1, True, "true"):
         where.append("l.hebrew_year IS NOT NULL")
     return (" AND ".join(where), params)
 
 
-def _escape_snippet(s):
-    s = html.escape(s or "", quote=False)
-    return s.replace("\x01", "<mark>").replace("\x02", "</mark>")
-
-
 def row_to_result(r, snippet=None, score=None, extra=None):
-    d = {k: r[k] for k in r.keys() if k not in ("snip",)}
+    d = {k: r[k] for k in r.keys() if k not in ("snip", "full_text")}
     if snippet is not None:
         d["snippet"] = snippet
     if score is not None:
@@ -89,18 +90,111 @@ def row_to_result(r, snippet=None, score=None, extra=None):
     return d
 
 
+def fetch_rows(ids, with_text=False):
+    if not ids:
+        return {}
+    extra = ", l.full_text" if with_text else ""
+    rows = db().execute(f"SELECT {LIST_COLS}, substr(l.body,1,260) AS snip{extra} FROM letters l "
+                        f"WHERE l.id IN ({','.join('?' * len(ids))})", list(ids)).fetchall()
+    return {r["id"]: r for r in rows}
+
+
+# ------------------------------------------------------------------ snippets
+def make_snippet(text, q="", size=300, terms=None):
+    """Snippet cut from the display text around the densest cluster of query
+    terms, with <mark> highlights. Works on the original text (gershayim kept)."""
+    text = clean(text or "").replace("\n", " ")
+    terms = terms if terms is not None else highlight_terms(q)
+    terms = [t for t in terms if len(re.sub(r"[^\w]", "", t)) > 1 and t not in STOPWORDS]
+    pats = [p for p in (term_regex(t) for t in sorted(set(terms), key=len, reverse=True)) if p]
+    if not pats:
+        return html.escape(text[:size]) + ("…" if len(text) > size else "")
+    rx = re.compile("|".join(f"(?:{p})" for p in pats))
+    hits = [(m.start(), m.group(0)) for m in rx.finditer(text)]
+    if not hits:
+        return html.escape(text[:size]) + ("…" if len(text) > size else "")
+    best, best_score = hits[0][0], -1
+    for i, (st, _) in enumerate(hits):  # window with the most distinct matched words
+        words = {w for p, w in hits[i:] if p < st + size * 0.8}
+        if len(words) > best_score:
+            best, best_score = st, len(words)
+    start = max(0, best - size // 4)
+    if start:
+        sp = text.rfind(" ", 0, start)
+        start = sp + 1 if sp > start - 30 else start
+    end = min(len(text), start + size)
+    if end < len(text):
+        sp = text.find(" ", end)
+        end = sp if 0 < sp < end + 30 else end
+    frag = text[start:end]
+    out, last = [], 0
+    for m in rx.finditer(frag):
+        out.append(html.escape(frag[last:m.start()]))
+        out.append("<mark>" + html.escape(m.group(0)) + "</mark>")
+        last = m.end()
+    out.append(html.escape(frag[last:]))
+    return ("…" if start else "") + "".join(out) + ("…" if end < len(text) else "")
+
+
 # ------------------------------------------------------------------ text search
 SORTS = {
-    "relevance": "score",
-    "date": "l.gregorian_date IS NULL, l.gregorian_date, l.volume, l.letter_number",
-    "date_desc": "l.gregorian_date IS NULL, l.gregorian_date DESC, l.volume, l.letter_number",
+    "relevance": None,
+    "date": "l.hebrew_year IS NULL, l.hebrew_year, l.gregorian_date, l.volume, l.letter_number",
+    "date_desc": "l.hebrew_year IS NULL, l.hebrew_year DESC, l.gregorian_date DESC, l.volume DESC, l.letter_number DESC",
     "number": "l.volume, l.letter_number, l.id",
 }
+BM25 = "bm25(letters_fts, 1.0, 3.0, 0.3)"  # weights: text, recipient, notes
+MAX_RANKED = 5000
+RELAX_BELOW = 3  # strict (all words) results below this -> also show letters with most of the words
+
+
+def _match_ids(fts, fsql, fparams, order_bm25=False, limit=None):
+    where = "letters_fts MATCH ?" + (f" AND {fsql}" if fsql else "")
+    sql = f"SELECT l.id FROM letters_fts JOIN letters l ON l.id = letters_fts.rowid WHERE {where}"
+    if order_bm25:
+        sql += f" ORDER BY {BM25}"
+    if limit:
+        sql += f" LIMIT {int(limit)}"
+    return [r[0] for r in db().execute(sql, [fts] + fparams)]
+
+
+def _count(fts, fsql, fparams):
+    where = "letters_fts MATCH ?" + (f" AND {fsql}" if fsql else "")
+    return db().execute(f"SELECT COUNT(*) FROM letters_fts JOIN letters l ON l.id = letters_fts.rowid "
+                        f"WHERE {where}", [fts] + fparams).fetchone()[0]
+
+
+def ranked_ids(q, filters, prefixes=True, match="all", items=None):
+    """Relevance order in tiers: (1) the whole query as an exact phrase,
+    (2) every word in its exact form (no added prefix), (3) the rest - each
+    tier ordered by bm25. Returns (ids, total)."""
+    items = parse_query(q) if items is None else items
+    fts = build_fts_query(q, prefixes, match, items=items)
+    if not fts:
+        return [], 0
+    fsql, fparams = filter_sql(filters)
+    ids = _match_ids(fts, fsql, fparams, order_bm25=True, limit=MAX_RANKED)
+    total = len(ids) if len(ids) < MAX_RANKED else _count(fts, fsql, fparams)
+    if len(ids) < 2:
+        return ids, total
+    tiers = []
+    pq = phrase_query(q, prefixes) if match == "all" else None
+    if pq:
+        tiers.append(set(_match_ids(f"({pq}) AND ({fts})", fsql, fparams)))
+    if prefixes:
+        ex = build_fts_query(q, prefixes, match, exact=True, items=items)
+        if ex and ex != fts:
+            tiers.append(set(_match_ids(ex, fsql, fparams)))
+    if tiers:
+        pos = {lid: i for i, lid in enumerate(ids)}
+        ids.sort(key=lambda lid: (*[0 if lid in t else 1 for t in tiers], pos[lid]))
+    return ids, total
 
 
 def text_search(q, filters, sort="relevance", offset=0, limit=20, prefixes=True, match="all",
                 with_facets=True):
-    fts = build_fts_query(q, prefixes=prefixes, mode=match)
+    items = parse_query(q)
+    fts = build_fts_query(q, prefixes=prefixes, mode=match, items=items)
     fsql, fparams = filter_sql(filters)
     con = db()
     if not fts and q.strip():
@@ -108,36 +202,37 @@ def text_search(q, filters, sort="relevance", offset=0, limit=20, prefixes=True,
                 "error": "אין בשאילתה מילה לחיפוש. יש להוסיף לפחות מילה אחת (מילה עם מינוס רק מחריגה)."}
     if not fts:  # browse mode: filters only
         where = f"WHERE {fsql}" if fsql else ""
-        order = SORTS.get(sort, SORTS["number"]).replace("score", "l.volume, l.letter_number")
+        order = SORTS.get(sort) or SORTS["number"]
         total = con.execute(f"SELECT COUNT(*) FROM letters l {where}", fparams).fetchone()[0]
         rows = con.execute(f"SELECT {LIST_COLS}, substr(l.body, 1, 260) AS snip FROM letters l {where} "
                            f"ORDER BY {order} LIMIT ? OFFSET ?", fparams + [limit, offset]).fetchall()
         res = [row_to_result(r, html.escape(r["snip"] or "") + "…") for r in rows]
         return {"total": total, "results": res, "facets": facets(None, fsql, fparams) if with_facets else None}
 
-    where = "letters_fts MATCH ?" + (f" AND {fsql}" if fsql else "")
-    params = [fts] + fparams
-    # bm25 weights: text, recipient, notes
-    base = (f"FROM letters_fts JOIN letters l ON l.id = letters_fts.rowid WHERE {where}")
     try:
-        total = con.execute(f"SELECT COUNT(*) {base}", params).fetchone()[0]
-        order = SORTS.get(sort, "score")
-        rows = con.execute(
-            f"SELECT {LIST_COLS}, bm25(letters_fts, 1.0, 1.5, 0.4) AS score, "
-            f"snippet(letters_fts, -1, char(1), char(2), '…', 40) AS snip "
-            f"{base} ORDER BY {order} LIMIT ? OFFSET ?", params + [limit, offset]).fetchall()
+        if SORTS.get(sort):
+            where = "letters_fts MATCH ?" + (f" AND {fsql}" if fsql else "")
+            base = f"FROM letters_fts JOIN letters l ON l.id = letters_fts.rowid WHERE {where}"
+            total = con.execute(f"SELECT COUNT(*) {base}", [fts] + fparams).fetchone()[0]
+            page_ids = [r[0] for r in con.execute(f"SELECT l.id {base} ORDER BY {SORTS[sort]} LIMIT ? OFFSET ?",
+                                                  [fts] + fparams + [limit, offset])]
+        else:
+            ids, total = ranked_ids(q, filters, prefixes, match, items)
+            page_ids = ids[offset: offset + limit]
     except sqlite3.OperationalError as e:
         return {"total": 0, "results": [], "error": f"שאילתה לא תקינה: {e}", "fts": fts}
-    res = [row_to_result(r, _escape_snippet(r["snip"]), -r["score"]) for r in rows]
-    if total < RELAX_BELOW and match == "all" and len(query_terms(q)) > 1:
-        relaxed = relaxed_search(q, filters, offset, limit, prefixes, exclude=[r["id"] for r in res])
+
+    terms = highlight_terms(q)
+    rows = fetch_rows(page_ids, with_text=True)
+    res = [row_to_result(rows[i], make_snippet(rows[i]["full_text"], terms=terms)) for i in page_ids if i in rows]
+
+    if total < RELAX_BELOW and match == "all" and len([it for it in items if not it["neg"]]) > 1:
+        relaxed = relaxed_search(q, filters, offset, limit, prefixes, exclude=[r["id"] for r in res], items=items)
         if relaxed["results"] or total == 0:
-            # strict matches first, then letters with most of the words
             relaxed["results"] = (res + relaxed["results"])[:limit] if offset == 0 else relaxed["results"]
             relaxed["total"] += total
             relaxed["strict_total"] = total
-            if with_facets:
-                relaxed["facets"] = None
+            relaxed["facets"] = None
             return relaxed
     out = {"total": total, "results": res, "fts": fts}
     if with_facets:
@@ -145,64 +240,48 @@ def text_search(q, filters, sort="relevance", offset=0, limit=20, prefixes=True,
     return out
 
 
-RELAX_BELOW = 3  # strict (all words) results below this -> also show letters with most of the words
-
-
-def query_terms(q):
-    """Top-level query items (quoted phrases count as one), without exclusions."""
-    import re as _re
-    return [t for t in _re.findall(r'"[^"]+"|\S+', q or "") if not t.startswith("-")]
-
-
-def relaxed_search(q, filters, offset, limit, prefixes=True, exclude=(), n=400):
-    """Rank letters by how many of the query terms they contain (then bm25 of the OR query)."""
-    terms = [t for t in query_terms(q) if t.strip('"') not in STOPWORDS] or query_terms(q)
-    negs = " ".join(t for t in re.findall(r'"[^"]+"|\S+', q) if t.startswith("-"))
+def relaxed_search(q, filters, offset, limit, prefixes=True, exclude=(), items=None):
+    """Rank letters by how many of the query items they contain (then bm25 of the OR query)."""
+    items = parse_query(q) if items is None else items
+    pos_items = [it for it in items if not it["neg"]]
+    terms = [it for it in pos_items if not (it["kind"] == "word" and it["words"][0] in STOPWORDS)] or pos_items
+    negs = [it for it in items if it["neg"]]
     fsql, fparams = filter_sql(filters)
-    con = db()
     cover = {}
-    for t in terms:
-        e = build_fts_query(f"{t} {negs}".strip(), prefixes=prefixes)
+    for it in terms:
+        e = build_fts_query("", prefixes, items=[it] + negs)
         if not e:
             continue
-        where = "letters_fts MATCH ?" + (f" AND {fsql}" if fsql else "")
         try:
-            for (lid,) in con.execute(f"SELECT l.id FROM letters_fts JOIN letters l ON l.id = letters_fts.rowid "
-                                      f"WHERE {where}", [e] + fparams):
+            for lid in _match_ids(e, fsql, fparams):
                 cover[lid] = cover.get(lid, 0) + 1
         except sqlite3.OperationalError:
             continue
     excl = set(exclude)
-    # need at least half of the terms (and at least 2 when there are 2+ terms)
-    need = max(2, (len(terms) + 1) // 2) if len(terms) >= 2 else 1
+    need = max(1, (len(terms) + 1) // 2)
     cands = [lid for lid, c in cover.items() if c >= need and lid not in excl]
     if not cands:
         return {"total": 0, "results": [], "relaxed": True, "terms": len(terms)}
-    any_q = " ".join(terms) + (" " + negs if negs else "")
-    order = {lid: i for i, lid in enumerate(text_ranked_ids(any_q, filters, n=5000, prefixes=prefixes, match="any"))}
+    any_fts = build_fts_query("", prefixes, "any", items=terms + negs)
+    try:
+        order = {lid: i for i, lid in enumerate(_match_ids(any_fts, fsql, fparams, order_bm25=True, limit=MAX_RANKED))}
+    except sqlite3.OperationalError:
+        order = {}
     cands.sort(key=lambda lid: (-cover[lid], order.get(lid, 10 ** 6)))
     page = cands[offset: offset + limit]
-    rows = fetch_rows(page)
-    res = []
-    for lid in page:
-        if lid in rows:
-            res.append(row_to_result(rows[lid], _text_snippet(lid, any_q, prefixes), cover[lid],
-                                     {"matched_terms": cover[lid], "n_terms": len(terms)}))
+    rows = fetch_rows(page, with_text=True)
+    hl = highlight_terms(q)
+    res = [row_to_result(rows[lid], make_snippet(rows[lid]["full_text"], terms=hl), cover[lid],
+                         {"matched_terms": cover[lid], "n_terms": len(terms)}) for lid in page if lid in rows]
     return {"total": len(cands), "results": res, "relaxed": True, "terms": len(terms)}
 
 
 def text_ranked_ids(q, filters, n=300, prefixes=True, match="all"):
-    fts = build_fts_query(q, prefixes=prefixes, mode=match)
-    if not fts:
-        return []
-    fsql, fparams = filter_sql(filters)
-    where = "letters_fts MATCH ?" + (f" AND {fsql}" if fsql else "")
     try:
-        return [r[0] for r in db().execute(
-            f"SELECT l.id FROM letters_fts JOIN letters l ON l.id = letters_fts.rowid WHERE {where} "
-            f"ORDER BY bm25(letters_fts, 1.0, 1.5, 0.4) LIMIT ?", [fts] + fparams + [n])]
+        ids, _ = ranked_ids(q, filters, prefixes, match)
     except sqlite3.OperationalError:
         return []
+    return ids[:n]
 
 
 def facets(fts, fsql, fparams):
@@ -289,13 +368,17 @@ def semantic_index():
                     folder = DATA / "emb" / slug
                     break
         if not folder:
-            _sem["error"] = "האינדקס הסמנטי עדיין נבנה"
-            return None
+            return None  # still building: try again on the next request
         try:
             _sem["index"] = SemanticIndex(folder)
         except Exception as e:  # noqa: BLE001
             _sem["error"] = f"שגיאה בטעינת האינדקס הסמנטי: {e}"
     return _sem["index"]
+
+
+def semantic_status():
+    return _sem["error"] or ("האינדקס הסמנטי עדיין נבנה – נסו שוב מאוחר יותר, או השתמשו בחיפוש טקסט"
+                             if _sem["index"] is None else None)
 
 
 def allowed_letter_ids(filters):
@@ -305,39 +388,15 @@ def allowed_letter_ids(filters):
     return {r[0] for r in db().execute(f"SELECT l.id FROM letters l WHERE {fsql}", fparams)}
 
 
-def _chunk_snippet(text, terms, size=320):
-    t = text
-    pos = -1
-    for term in terms:
-        pos = t.find(term)
-        if pos >= 0:
-            break
-    start = max(0, pos - size // 3) if pos > 0 else 0
-    s = ("…" if start else "") + t[start:start + size] + ("…" if start + size < len(t) else "")
-    s = html.escape(s, quote=False)
-    for term in sorted(set(terms), key=len, reverse=True):
-        if len(term) > 1:
-            s = re.sub(rf"(?<![א-ת])({re.escape(html.escape(term))})", r"<mark>\1</mark>", s)
-    return s.replace("\n", " ")
-
-
-def fetch_rows(ids):
-    if not ids:
-        return {}
-    rows = db().execute(f"SELECT {LIST_COLS}, substr(l.body,1,260) AS snip FROM letters l "
-                        f"WHERE l.id IN ({','.join('?' * len(ids))})", list(ids)).fetchall()
-    return {r["id"]: r for r in rows}
-
-
 def semantic_search(q, filters, offset=0, limit=20, n=300):
     idx = semantic_index()
     if idx is None:
-        return {"total": 0, "results": [], "error": _sem["error"]}
+        return {"total": 0, "results": [], "error": semantic_status()}
     hits = idx.search(q, allowed_letter_ids(filters), n=n)
     page = hits[offset: offset + limit]
     rows = fetch_rows([h[0] for h in page])
-    terms = [t for t in highlight_terms(q) if t not in STOPWORDS]
-    res = [row_to_result(rows[lid], _chunk_snippet(idx.chunk_text[ci], terms), s)
+    terms = highlight_terms(q)
+    res = [row_to_result(rows[lid], make_snippet(idx.chunk_text[ci], terms=terms), s)
            for lid, s, ci in page if lid in rows]
     return {"total": len(hits), "results": res, "model": idx.info["model"], "capped": len(hits) >= n}
 
@@ -348,8 +407,8 @@ def hybrid_search(q, filters, offset=0, limit=20, n=300, prefixes=True, k=60, w_
     t_ids = text_ranked_ids(q, filters, n, prefixes, "all")
     if len(t_ids) < 20:
         q_any = " ".join(w for w in q.split() if w.strip('"') not in STOPWORDS) or q
-        more = text_ranked_ids(q_any, filters, n, prefixes, "any")
-        t_ids = t_ids + [i for i in more if i not in set(t_ids)]
+        seen = set(t_ids)
+        t_ids = t_ids + [i for i in text_ranked_ids(q_any, filters, n, prefixes, "any") if i not in seen]
     s_hits = idx.search(q, allowed_letter_ids(filters), n=n) if idx else []
     score, best_chunk = {}, {}
     for rank, lid in enumerate(t_ids):
@@ -359,33 +418,21 @@ def hybrid_search(q, filters, offset=0, limit=20, n=300, prefixes=True, k=60, w_
         best_chunk[lid] = ci
     ranked = sorted(score.items(), key=lambda x: -x[1])
     page = ranked[offset: offset + limit]
-    rows = fetch_rows([lid for lid, _ in page])
-    terms = [t for t in highlight_terms(q) if t not in STOPWORDS]
+    rows = fetch_rows([lid for lid, _ in page], with_text=True)
+    terms = highlight_terms(q)
+    in_text = set(t_ids)
     res = []
     for lid, s in page:
         if lid not in rows:
             continue
-        if idx is not None and lid in best_chunk:
-            snip = _chunk_snippet(idx.chunk_text[best_chunk[lid]], terms)
+        if lid in in_text or idx is None or lid not in best_chunk:
+            snip = make_snippet(rows[lid]["full_text"], terms=terms)
         else:
-            snip = _text_snippet(lid, q, prefixes)
+            snip = make_snippet(idx.chunk_text[best_chunk[lid]], terms=terms)
         res.append(row_to_result(rows[lid], snip, s * 100,
-                                 {"in_text": lid in set(t_ids[:n]), "in_semantic": lid in best_chunk}))
+                                 {"in_text": lid in in_text, "in_semantic": lid in best_chunk}))
     return {"total": len(ranked), "results": res, "model": idx.info["model"] if idx else None,
-            "warning": None if idx else _sem["error"]}
-
-
-def _text_snippet(lid, q, prefixes=True):
-    fts = build_fts_query(" ".join(w for w in q.split() if w not in STOPWORDS) or q, prefixes, "any")
-    try:
-        r = db().execute("SELECT snippet(letters_fts, -1, char(1), char(2), '…', 28) FROM letters_fts "
-                         "WHERE letters_fts MATCH ? AND rowid = ?", (fts, lid)).fetchone()
-        if r:
-            return _escape_snippet(r[0])
-    except sqlite3.OperationalError:
-        pass
-    r = db().execute("SELECT substr(body,1,260) FROM letters WHERE id=?", (lid,)).fetchone()
-    return html.escape(r[0] if r else "") + "…"
+            "warning": None if idx else semantic_status()}
 
 
 # ------------------------------------------------------------------ letter + meta
@@ -420,6 +467,6 @@ def meta():
     months = [r[0] for r in con.execute(
         "SELECT hebrew_month FROM letters WHERE hebrew_month IS NOT NULL GROUP BY hebrew_month ORDER BY COUNT(*) DESC")]
     total = con.execute("SELECT COUNT(*) FROM letters").fetchone()[0]
-    idx = _sem["index"]
+    idx = semantic_index()
     return {"total": total, "volumes": vols, "years": years, "languages": langs, "months": months,
-            "semantic_model": idx.info["model"] if idx else None, "semantic_status": _sem["error"]}
+            "semantic_model": idx.info["model"] if idx else None, "semantic_status": semantic_status()}

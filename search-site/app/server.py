@@ -47,7 +47,8 @@ def api_search(request: Request, q: str = "", mode: str = "text", page: int = 1,
     p = request.query_params
     filters = {k: p.get(k) for k in FILTER_KEYS if p.get(k) not in (None, "")}
     size = max(1, min(size, 100))
-    offset = (max(page, 1) - 1) * size
+    page = max(1, min(page, 100000))
+    offset = (page - 1) * size
     q = q.strip()
     if mode == "semantic" and q:
         out = search.semantic_search(q, filters, offset, size)
@@ -63,7 +64,7 @@ def api_search(request: Request, q: str = "", mode: str = "text", page: int = 1,
 
 @app.get("/api/letter/{lid}")
 def api_letter(lid: int):
-    d = search.get_letter(lid)
+    d = search.get_letter(lid) if 0 < lid < 2 ** 62 else None
     if not d:
         raise HTTPException(404, "letter not found")
     return d
@@ -71,7 +72,7 @@ def api_letter(lid: int):
 
 @app.get("/api/letter/number/{n}")
 def api_letter_number(n: int):
-    lid = search.find_letter(number=n)
+    lid = search.find_letter(number=n) if 0 < n < 10 ** 6 else None
     if not lid:
         raise HTTPException(404, "letter not found")
     return {"id": lid}

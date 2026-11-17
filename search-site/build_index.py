@@ -20,7 +20,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / "app"))
-from hebrew import clean, heb_year  # noqa: E402
+from hebrew import SOURCE_JUNK, clean, heb_year, index_text  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent
 
@@ -60,7 +60,6 @@ CREATE INDEX idx_vol_num ON letters(volume, letter_number);
 CREATE INDEX idx_num ON letters(letter_number);
 CREATE INDEX idx_year ON letters(hebrew_year);
 CREATE INDEX idx_greg ON letters(gregorian_year);
-CREATE INDEX idx_lang ON letters(language);
 
 CREATE TABLE notes (
     letter_id INTEGER NOT NULL,
@@ -130,6 +129,9 @@ def main():
     with gzip.open(args.src, "rt", encoding="utf-8") as fh:
         for line in fh:
             r = json.loads(line)
+            for k in ("full_text", "body", "postscript"):
+                if r.get(k):
+                    r[k] = SOURCE_JUNK.sub("", r[k])
             r["hebrew_year_heb"] = heb_year(r.get("hebrew_year"))
             g = r.get("gregorian_date")
             r["gregorian_year"] = int(g[:4]) if g else None
@@ -142,7 +144,7 @@ def main():
                             [(r["id"], i, nt["term"], nt["text"]) for i, nt in enumerate(r["notes"])])
             notes_txt = "\n".join(f"{nt['term'] or ''}: {nt['text']}" for nt in r["notes"])
             con.execute("INSERT INTO letters_fts (rowid, text, recipient, notes) VALUES (?,?,?,?)",
-                        (r["id"], clean(r["full_text"]), r["recipient_info"], clean(notes_txt)))
+                        (r["id"], index_text(r["full_text"]), index_text(r["recipient_info"]), index_text(notes_txt)))
             n += 1
     con.execute("INSERT INTO letters_fts(letters_fts) VALUES('optimize')")
     con.execute("INSERT INTO meta VALUES ('letters', ?)", (str(n),))
