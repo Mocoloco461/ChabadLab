@@ -80,8 +80,15 @@ def post(path, body, retries=5, timeout=120):
                 break
         except Exception as e:  # noqa: BLE001
             err = str(e)[:300]
-        time.sleep(1.5 * (i + 1) ** 2)
+        if i + 1 < retries:
+            time.sleep(1.5 * (i + 1) ** 2)
     raise RuntimeError(f"OpenRouter {path}: {err}")
+
+
+# calls made while a user waits (query vector, rerank): fail fast and let search.py fall back,
+# instead of the long retry schedule the batch jobs (index builds, prefetch) use
+LIVE = {"retries": int(os.environ.get("IGROT_API_RETRIES", "2")),
+        "timeout": float(os.environ.get("IGROT_API_TIMEOUT", "15"))}
 
 
 def _db():
@@ -100,8 +107,9 @@ def _h(*parts):
     return hashlib.sha1("\x1f".join(parts).encode("utf-8")).hexdigest()
 
 
-def embed(model, texts, batch=64):
-    """L2-normalized float32 vectors [len(texts), dim]; cached per (model, text)."""
+def embed(model, texts, batch=64, live=False):
+    """L2-normalized float32 vectors [len(texts), dim]; cached per (model, text).
+    live=True: short retries / timeout (a user is waiting)."""
     con = _db()
     keys = [_h(model, t) for t in texts]
     got = {}
@@ -112,7 +120,7 @@ def embed(model, texts, batch=64):
     todo = [i for i, k in enumerate(keys) if k not in got]
     for s in range(0, len(todo), batch):
         idx = todo[s:s + batch]
-        d = post("/embeddings", {"model": model, "input": [texts[i] for i in idx]})
+        d = post("/embeddings", {"model": model, "input": [texts[i] for i in idx]}, **(LIVE if live else {}))
         rows = sorted(d["data"], key=lambda x: x["index"])
         assert len(rows) == len(idx), "embedding count mismatch"
         with con:
@@ -146,7 +154,7 @@ def rerank(model, query, docs):
     got = dict(con.execute(f"SELECT k, s FROM rr WHERE k IN ({','.join('?' * len(keys))})", keys)) if keys else {}
     todo = [i for i, k in enumerate(keys) if k not in got]
     if todo:
-        d = post("/rerank", {"model": model, "query": query, "documents": [docs[i] for i in todo]})
+        d = post("/rerank", {"model": model, "query": query, "documents": [docs[i] for i in todo]}, **LIVE)
         with con:
             for r in d["results"]:
                 i = todo[r["index"]]

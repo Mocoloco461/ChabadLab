@@ -415,7 +415,7 @@ class SemanticIndex:
             api = self.api_model(info)
             if api:
                 import remote
-                parts.append(remote.embed(api, [text])[0])
+                parts.append(remote.embed(api, [text], live=True)[0])
             else:
                 parts.append(m.encode([text], normalize_embeddings=True)[0])
         return np.concatenate(parts).astype(np.float32)
@@ -556,7 +556,12 @@ def semantic_ranked(q, filters, n=300):
 
 
 def semantic_search(q, filters, offset=0, limit=20, n=300, rerank=None, sort="relevance"):
-    out = semantic_ranked(q, filters, n)
+    try:
+        out = semantic_ranked(q, filters, n)
+    except Exception as e:  # noqa: BLE001  API index and the API is down
+        print(f"[semantic] ERROR meaning search unavailable: {e}", flush=True)
+        return {"total": 0, "results": [],
+                "error": "החיפוש לפי משמעות לא זמין כרגע (השירות החיצוני לא עונה). נסו חיפוש טקסט או משולב."}
     if out is None:
         return {"total": 0, "results": [], "error": semantic_status()}
     ranked, best_chunk, qv = out
