@@ -82,5 +82,5 @@ export PYTHONUTF8=1
 ```bash
 python3 search-site/eval/run_eval.py --label "תיאור השינוי"
 ```
-* **היעד:** 80% הצלחה בסך הכול, גם בסט הראשי וגם בסט האימות (`--cases search-site/eval/holdout/holdout1.jsonl`).
+* **היעד:** 80% הצלחה בסך הכול, בסט הראשי ובשני סטי האימות (`--cases search-site/eval/holdout/holdout1.jsonl` / `holdout2.jsonl`). **סט האימות הראשי מעכשיו הוא holdout2**: לא כוונו עליו בכלל.
 * **היסטוריה:** כל שינוי והשפעתו מתועדים ב-`WORKLOG.md` בשורש הריפו.

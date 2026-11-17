@@ -38,3 +38,8 @@ tail -1 "$H"
 "$PY" search-site/eval/run_eval.py --server "http://127.0.0.1:$PORT" \
   --cases search-site/eval/holdout/holdout1.jsonl --label "HOLDOUT $LABEL" > /dev/null
 tail -1 "$H"
+if [ -f search-site/eval/holdout/holdout2.jsonl ]; then
+  "$PY" search-site/eval/run_eval.py --server "http://127.0.0.1:$PORT" \
+    --cases search-site/eval/holdout/holdout2.jsonl --label "HOLDOUT2 $LABEL" > /dev/null
+  tail -1 "$H"
+fi

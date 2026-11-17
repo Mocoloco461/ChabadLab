@@ -19,6 +19,8 @@ def main():
     ap.add_argument("--min-chars", type=int, default=400)
     ap.add_argument("--lang", help="only this language (he/yi)")
     ap.add_argument("--out", required=True)
+    ap.add_argument("--exclude-used", action="store_true",
+                    help="skip letters already used in eval/cases, eval/holdout or eval/samples")
     args = ap.parse_args()
     con = sqlite3.connect(ROOT / "data/search.db")
     con.row_factory = sqlite3.Row
@@ -28,6 +30,21 @@ def main():
         where += " AND language = ?"
         params.append(args.lang)
     ids = [r[0] for r in con.execute(f"SELECT id FROM letters WHERE {where} ORDER BY id", params)]
+    if args.exclude_used:
+        import glob
+        used = set()
+        ev = ROOT / "eval"
+        for f in glob.glob(str(ev / "cases/*.jsonl")) + glob.glob(str(ev / "holdout/*.jsonl")):
+            for line in open(f, encoding="utf-8"):
+                if line.strip():
+                    used.update(json.loads(line)["expected_ids"])
+        for f in glob.glob(str(ev / "samples/*.jsonl")):
+            if Path(f).resolve() == Path(args.out).resolve():
+                continue
+            for line in open(f, encoding="utf-8"):
+                if line.strip():
+                    used.add(json.loads(line)["id"])
+        ids = [i for i in ids if i not in used]
     random.Random(args.seed).shuffle(ids)
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     with open(args.out, "w", encoding="utf-8") as fh:
