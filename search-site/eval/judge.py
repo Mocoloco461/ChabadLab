@@ -9,6 +9,12 @@ and nDCG@10 next to the strict pass rate.
     # 1. pool: top --depth of every judged run in one or more results files
     python search-site/eval/judge.py prep --results eval/results/A.json [B.json] --set holdout3 --out DIR --parts 6
     # 2. judges write DIR/judged_<n>.jsonl  ({"case", "letter_id", "rel", "reason"})
+    #    protocol: eval/judge_prompt.txt, one Sonnet agent per to_judge_<n>.txt, no other context;
+    #    {IN}/{OUT} replaced by the file paths. Each agent was launched with: "Read the instructions file
+    #    <judge_prompt.txt> and follow it exactly, with {IN} = ..., {OUT} = ... Apart from those two files
+    #    and the instructions file, do not open anything else. Judge every pair yourself (do not assign
+    #    grades by a rule or script); you may use a script only to write the file."
+    #    prep settings used for holdout2/holdout3: --depth 10 --chars 650 (8 / 12 parts)
     # 3. merge into eval/qrels/<set>.jsonl (adds to existing judgments, never overwrites a case/letter pair)
     python search-site/eval/judge.py merge --dir DIR --set holdout3
 
