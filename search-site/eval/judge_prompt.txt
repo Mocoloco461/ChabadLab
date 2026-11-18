@@ -1,0 +1,17 @@
+You are an independent relevance judge for a search engine over the letters (Igrot Kodesh) of the Lubavitcher Rebbe.
+
+STRICT ISOLATION: read ONLY this file: {IN}
+Do NOT open any other file, repository, code, website or search engine.
+
+The file contains cases. Each case starts with "=== CASE <case id>", gives the query type and the query (Hebrew or English), followed by candidate letters, each starting with "--- LETTER <letter id> (...)" and an excerpt of the letter (only the beginning of the letter; may be in Hebrew or Yiddish).
+
+For EVERY candidate letter, grade how relevant it is to the query, from the point of view of the person who typed it:
+- 2 = relevant: the letter clearly deals with what the query asks/describes (it answers the question, or it is the kind of letter described, with the same specific situation/advice/subject). For type "topic" (1-2 word subject): the letter's main subject is that topic.
+- 1 = partly relevant: same specific subject but only touches it, answers only part of it, or the specific details differ.
+- 0 = not relevant: only shares general words or a generic theme (blessings, Torah study in general), or is about something else.
+Be strict: a generic blessing letter is 0 for a specific question. Judge only from the excerpt shown; if the excerpt does not show the relevant part, grade what you see.
+
+OUTPUT: write a UTF-8 file with one JSON per line, one line per (case, letter) pair in the input, to:
+{OUT}
+Each line: {"case": "<case id>", "letter_id": <int>, "rel": 0|1|2, "reason": "up to 8 Hebrew words"}
+Write it with a single Write tool call (if very long, you may use two Write/Edit calls). Then reply with only: number of lines and counts of 0/1/2.

@@ -1,0 +1,254 @@
+[
+ {
+  "volume": 1,
+  "volume_heb": "כרך א",
+  "node_id": 1200750001,
+  "letters": 169,
+  "first_letter": 1,
+  "last_letter": 168,
+  "dated": 150
+ },
+ {
+  "volume": 2,
+  "volume_heb": "כרך ב",
+  "node_id": 1200760001,
+  "letters": 240,
+  "first_letter": 169,
+  "last_letter": 405,
+  "dated": 233
+ },
+ {
+  "volume": 3,
+  "volume_heb": "כרך ג",
+  "node_id": 1200770001,
+  "letters": 371,
+  "first_letter": 406,
+  "last_letter": 765,
+  "dated": 354
+ },
+ {
+  "volume": 4,
+  "volume_heb": "כרך ד",
+  "node_id": 1200780001,
+  "letters": 459,
+  "first_letter": 766,
+  "last_letter": 1223,
+  "dated": 442
+ },
+ {
+  "volume": 5,
+  "volume_heb": "כרך ה",
+  "node_id": 1200790001,
+  "letters": 309,
+  "first_letter": 1224,
+  "last_letter": 1528,
+  "dated": 298
+ },
+ {
+  "volume": 6,
+  "volume_heb": "כרך ו",
+  "node_id": 1200800001,
+  "letters": 339,
+  "first_letter": 1529,
+  "last_letter": 1866,
+  "dated": 337
+ },
+ {
+  "volume": 7,
+  "volume_heb": "כרך ז",
+  "node_id": 1200810001,
+  "letters": 386,
+  "first_letter": 1867,
+  "last_letter": 2245,
+  "dated": 385
+ },
+ {
+  "volume": 8,
+  "volume_heb": "כרך ח",
+  "node_id": 1200820001,
+  "letters": 377,
+  "first_letter": 2246,
+  "last_letter": 2622,
+  "dated": 373
+ },
+ {
+  "volume": 9,
+  "volume_heb": "כרך ט",
+  "node_id": 1200830001,
+  "letters": 349,
+  "first_letter": 2623,
+  "last_letter": 2964,
+  "dated": 349
+ },
+ {
+  "volume": 10,
+  "volume_heb": "כרך י",
+  "node_id": 1200840001,
+  "letters": 417,
+  "first_letter": 2965,
+  "last_letter": 3380,
+  "dated": 415
+ },
+ {
+  "volume": 11,
+  "volume_heb": "כרך יא",
+  "node_id": 1200850001,
+  "letters": 429,
+  "first_letter": 3381,
+  "last_letter": 3806,
+  "dated": 428
+ },
+ {
+  "volume": 12,
+  "volume_heb": "כרך יב",
+  "node_id": 1200860001,
+  "letters": 476,
+  "first_letter": 3807,
+  "last_letter": 4272,
+  "dated": 474
+ },
+ {
+  "volume": 13,
+  "volume_heb": "כרך יג",
+  "node_id": 1200870001,
+  "letters": 476,
+  "first_letter": 4273,
+  "last_letter": 4745,
+  "dated": 472
+ },
+ {
+  "volume": 14,
+  "volume_heb": "כרך יד",
+  "node_id": 1200880001,
+  "letters": 583,
+  "first_letter": 4746,
+  "last_letter": 5325,
+  "dated": 582
+ },
+ {
+  "volume": 15,
+  "volume_heb": "כרך טו",
+  "node_id": 1200890001,
+  "letters": 453,
+  "first_letter": 5326,
+  "last_letter": 5776,
+  "dated": 451
+ },
+ {
+  "volume": 16,
+  "volume_heb": "כרך טז",
+  "node_id": 1200900001,
+  "letters": 374,
+  "first_letter": 5777,
+  "last_letter": 6145,
+  "dated": 372
+ },
+ {
+  "volume": 17,
+  "volume_heb": "כרך יז",
+  "node_id": 1200910001,
+  "letters": 360,
+  "first_letter": 6146,
+  "last_letter": 6504,
+  "dated": 355
+ },
+ {
+  "volume": 18,
+  "volume_heb": "כרך יח",
+  "node_id": 1200920001,
+  "letters": 532,
+  "first_letter": 6505,
+  "last_letter": 7031,
+  "dated": 526
+ },
+ {
+  "volume": 19,
+  "volume_heb": "כרך יט",
+  "node_id": 1200930001,
+  "letters": 418,
+  "first_letter": 7032,
+  "last_letter": 7445,
+  "dated": 407
+ },
+ {
+  "volume": 20,
+  "volume_heb": "כרך כ",
+  "node_id": 1200940001,
+  "letters": 315,
+  "first_letter": 7446,
+  "last_letter": 7758,
+  "dated": 310
+ },
+ {
+  "volume": 21,
+  "volume_heb": "כרך כא",
+  "node_id": 1200950001,
+  "letters": 465,
+  "first_letter": 7759,
+  "last_letter": 8218,
+  "dated": 430
+ },
+ {
+  "volume": 22,
+  "volume_heb": "כרך כב",
+  "node_id": 1200960001,
+  "letters": 463,
+  "first_letter": 8219,
+  "last_letter": 8680,
+  "dated": 455
+ },
+ {
+  "volume": 23,
+  "volume_heb": "כרך כג",
+  "node_id": 1200970001,
+  "letters": 360,
+  "first_letter": 8681,
+  "last_letter": 9030,
+  "dated": 342
+ },
+ {
+  "volume": 24,
+  "volume_heb": "כרך כד",
+  "node_id": 1200980001,
+  "letters": 348,
+  "first_letter": 9031,
+  "last_letter": 9378,
+  "dated": 337
+ },
+ {
+  "volume": 25,
+  "volume_heb": "כרך כה",
+  "node_id": 1200690001,
+  "letters": 196,
+  "first_letter": 9379,
+  "last_letter": 9574,
+  "dated": 191
+ },
+ {
+  "volume": 26,
+  "volume_heb": "כרך כו",
+  "node_id": 1200700001,
+  "letters": 419,
+  "first_letter": 9575,
+  "last_letter": 9993,
+  "dated": 411
+ },
+ {
+  "volume": 27,
+  "volume_heb": "כרך כז",
+  "node_id": 1200710001,
+  "letters": 564,
+  "first_letter": 9994,
+  "last_letter": 10557,
+  "dated": 536
+ },
+ {
+  "volume": 28,
+  "volume_heb": "כרך כח",
+  "node_id": 1200720001,
+  "letters": 415,
+  "first_letter": 10558,
+  "last_letter": 10972,
+  "dated": 376
+ }
+]

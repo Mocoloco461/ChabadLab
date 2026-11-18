@@ -1,0 +1,196 @@
+#!/usr/bin/env python3
+"""
+Build the search database for the Igrot Kodesh search site.
+
+    python3 search-site/build_index.py [--src data/igtotkodsh/igrot_kodesh.jsonl.gz]
+                                       [--out search-site/data/search.db]
+
+Tables
+    letters      one row per letter: metadata + display text
+    notes        editors' footnotes
+    letters_fts  FTS5 (unicode61) over: text (full letter), recipient (address +
+                 the editors' note identifying the addressee), notes
+"""
+import argparse
+import gzip
+import json
+import re
+import sqlite3
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent / "app"))
+from hebrew import SOURCE_JUNK, clean, heb_year, index_text  # noqa: E402
+
+ROOT = Path(__file__).resolve().parent
+
+SCHEMA = """
+CREATE TABLE letters (
+    id                INTEGER PRIMARY KEY,
+    volume            INTEGER NOT NULL,
+    volume_heb        TEXT,
+    letter_number     INTEGER,
+    letter_number_heb TEXT,
+    date_raw          TEXT,
+    date_editorial    TEXT,
+    hebrew_day        INTEGER,
+    hebrew_month      TEXT,
+    hebrew_year       INTEGER,
+    hebrew_year_heb   TEXT,
+    gregorian_date    TEXT,
+    gregorian_year    INTEGER,
+    greg_year_min     INTEGER,   -- Gregorian year range: = gregorian_year when known, else derived
+    greg_year_max     INTEGER,   -- from the Hebrew year (and month/holiday words in the date line)
+    city              TEXT,
+    recipient         TEXT,
+    recipient_info    TEXT,   -- address + the footnote that names the addressee
+    recipient_note    TEXT,   -- just the identifying footnote part ("סרברנסקי, מלבורן")
+    address           TEXT,
+    language          TEXT,
+    body              TEXT,
+    postscript        TEXT,
+    signature         TEXT,
+    source_note       TEXT,
+    full_text         TEXT,
+    n_notes           INTEGER,
+    n_chars           INTEGER,
+    prev_id           INTEGER,
+    next_id           INTEGER,
+    url               TEXT
+);
+CREATE INDEX idx_vol_num ON letters(volume, letter_number);
+CREATE INDEX idx_num ON letters(letter_number);
+CREATE INDEX idx_year ON letters(hebrew_year);
+CREATE INDEX idx_greg ON letters(gregorian_year);
+
+CREATE TABLE notes (
+    letter_id INTEGER NOT NULL,
+    seq       INTEGER NOT NULL,
+    term      TEXT,
+    text      TEXT
+);
+CREATE INDEX idx_notes_letter ON notes(letter_id);
+
+CREATE VIRTUAL TABLE letters_fts USING fts5(
+    text, recipient, notes,
+    tokenize = 'unicode61 remove_diacritics 2'
+);
+
+CREATE TABLE meta (key TEXT PRIMARY KEY, value TEXT);
+"""
+
+
+def recipient_note(rec):
+    addr = rec.get("address") or ""
+    out = []
+    for n in rec.get("notes") or []:
+        term = (n.get("term") or "").strip()
+        if term and term in addr:
+            txt = re.split(r"אגרות? נוספות|אגרת נוספת|לעיל|לקמן", n["text"])[0].strip(" .,")
+            if txt and txt not in out:
+                out.append(txt)
+    return clean("; ".join(out)) or None
+
+
+def recipient_info(rec):
+    """The address lines plus footnotes attached to them: the editors usually
+    identify the addressee in a note whose term is part of the address
+    (term 'מו"ה חיים שי'' -> 'סרברנסקי, מלבורן. אגרות נוספות אליו ...')."""
+    parts = [rec.get("address") or ""]
+    addr = rec.get("address") or ""
+    for n in rec.get("notes") or []:
+        term = (n.get("term") or "").strip()
+        if term and term in addr:
+            # keep the identifying part, drop "אגרות נוספות אליו ..." cross references
+            txt = re.split(r"אגרות? נוספות|אגרת נוספת|לעיל|לקמן", n["text"])[0]
+            parts.append(txt.strip(" .,"))
+    return clean("\n".join(p for p in parts if p))
+
+
+# month / holiday words in the date line -> which Gregorian year of the Hebrew year
+# (Tishrei-Kislev fall in the first one, Shvat-Elul in the second; Tevet and Chanukah straddle both)
+_SECOND = ["ראש השנה לאילנות", "ט\"ו בשבט", "שבט", "אדר", "פורים", "ניסן", "פסח", "חהמ\"פ", "ספירת העומר",
+           "ל\"ג בעומר", "אייר", "סיון", "סיוון", "שבועות", "חה\"ש", "תמוז", "מנ\"א", "מנחם אב", "אלול",
+           "ימי הסליחות", "חג הגאולה י\"ב"]
+_FIRST = ["תשרי", "מרחשון", "חשון", "מ\"ח", "כסלו", "סוכות", "שמחת תורה", "יוהכ\"פ", "יום הכפורים",
+          "ראש השנה", "חג הגאולה י\"ט"]
+
+
+def greg_range(r):
+    if r.get("gregorian_year"):
+        return r["gregorian_year"], r["gregorian_year"]
+    hy = r.get("hebrew_year")
+    if not hy:
+        return None, None
+    first = hy - 3761
+    month = r.get("hebrew_month") or ""
+    if month and month not in ("טבת",):  # structured month decides; Tevet straddles Dec/Jan
+        if any(month.startswith(w) for w in _SECOND):
+            return first + 1, first + 1
+        if any(month.startswith(w) for w in _FIRST):
+            return first, first
+    # "אדר"ח" = erev Rosh Chodesh, not Adar
+    text = " ".join(x for x in (r.get("date_raw"), r.get("date_editorial")) if x)
+    text = text.replace('אדר"ח', " ").replace("אדר״ח", " ")
+    for w in _SECOND:            # checked first: "ראש השנה לאילנות" before "ראש השנה"
+        if w in text:
+            return first + 1, first + 1
+    for w in _FIRST:
+        if w in text:
+            return first, first
+    return first, first + 1
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--src", default=str(ROOT.parent / "data/igtotkodsh/igrot_kodesh.jsonl.gz"))
+    ap.add_argument("--out", default=str(ROOT / "data/search.db"))
+    args = ap.parse_args()
+
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    tmp = out.with_suffix(".tmp")
+    if tmp.exists():
+        tmp.unlink()
+    con = sqlite3.connect(tmp)
+    con.executescript(SCHEMA)
+
+    cols = ["id", "volume", "volume_heb", "letter_number", "letter_number_heb", "date_raw",
+            "date_editorial", "hebrew_day", "hebrew_month", "hebrew_year", "hebrew_year_heb",
+            "gregorian_date", "gregorian_year", "greg_year_min", "greg_year_max", "city", "recipient", "recipient_info", "recipient_note", "address",
+            "language", "body", "postscript", "signature", "source_note", "full_text",
+            "n_notes", "n_chars", "prev_id", "next_id", "url"]
+    ins = f"INSERT INTO letters ({','.join(cols)}) VALUES ({','.join('?' * len(cols))})"
+    n = 0
+    with gzip.open(args.src, "rt", encoding="utf-8") as fh:
+        for line in fh:
+            r = json.loads(line)
+            for k in ("full_text", "body", "postscript"):
+                if r.get(k):
+                    r[k] = SOURCE_JUNK.sub("", r[k])
+            r["hebrew_year_heb"] = heb_year(r.get("hebrew_year"))
+            g = r.get("gregorian_date")
+            r["gregorian_year"] = int(g[:4]) if g else None
+            r["greg_year_min"], r["greg_year_max"] = greg_range(r)
+            r["recipient_info"] = recipient_info(r)
+            r["recipient_note"] = recipient_note(r)
+            r["n_notes"] = len(r["notes"])
+            r["n_chars"] = len(r["full_text"] or "")
+            con.execute(ins, [r.get(c) for c in cols])
+            con.executemany("INSERT INTO notes VALUES (?,?,?,?)",
+                            [(r["id"], i, nt["term"], nt["text"]) for i, nt in enumerate(r["notes"])])
+            notes_txt = "\n".join(f"{nt['term'] or ''}: {nt['text']}" for nt in r["notes"])
+            con.execute("INSERT INTO letters_fts (rowid, text, recipient, notes) VALUES (?,?,?,?)",
+                        (r["id"], index_text(r["full_text"]), index_text(r["recipient_info"]), index_text(notes_txt)))
+            n += 1
+    con.execute("INSERT INTO letters_fts(letters_fts) VALUES('optimize')")
+    con.execute("INSERT INTO meta VALUES ('letters', ?)", (str(n),))
+    con.commit()
+    con.execute("VACUUM")
+    con.close()
+    tmp.replace(out)
+    print(f"{n} letters -> {out} ({out.stat().st_size / 1e6:.1f} MB)")
+
+
+if __name__ == "__main__":
+    main()

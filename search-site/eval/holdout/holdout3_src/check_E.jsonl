@@ -1,0 +1,60 @@
+{"letter_id": 1200750084, "type": "english", "query": "request to send an emissary to a summer camp to strengthen influence on students going to yeshiva, and whether to come now or end of summer", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200750084, "type": "name", "query": "מחנה ישראל שליח", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200890410, "type": "typo", "query": "שליח ציבור דברי התערות בבית הכנסת", "verdict": "fix", "fixed_query": "דברי התערות בעשי״ת בביהכ״נ", "fixed_correct": "דברי התעוררות בעשי״ת בביהכ״נ", "reason": "שליח ציבור אינו בנוסח המכתב (ש״ץ); הותאם ללשון המכתב"}
+{"letter_id": 1200890410, "type": "topic", "query": "עשרת ימי תשובה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200910192, "type": "english", "query": "teacher with influence on young students should draw them closer to mitzvot even if his subject is secular", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200910192, "type": "topic", "query": "קירוב נוער", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200870083, "type": "name", "query": "אביגדור המאירי רמת גן", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200870083, "type": "topic", "query": "אהבת ישראל", "verdict": "fix", "fixed_query": "אחריות המשפיע", "reason": "אהבת ישראל רחב; הנושא המרכזי בריאות ואחריות המשפיע"}
+{"letter_id": 1200950370, "type": "english", "query": "why does something lower in spiritual status have a higher root, the divine spark within it, letter to a newly engaged young man", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200950370, "type": "typo", "query": "ניצוץ אלקי בשבי ובגלות נר רשעם", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200700227, "type": "name", "query": "אחים ציפפעל שמן זית חנוכה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200700227, "type": "typo", "query": "פך שמן זיית מהקרקע ליד הים", "verdict": "fix", "fixed_query": "פך שמן זיית מתוצרת שטח האדמה", "fixed_correct": "פך שמן זית מתוצרת שטח האדמה", "reason": "המילה קרקע אינה במכתב"}
+{"letter_id": 1200890047, "type": "english", "query": "advice that a man seeking to be a ritual slaughterer should learn the full trade not only poultry, and visit new immigrant settlement", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200890047, "type": "typo", "query": "קבלה לשחיתת עופות", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200910330, "type": "topic", "query": "אניות בשבת", "verdict": "fix", "fixed_query": "הפעלת אניות", "reason": "שבת אינה מוזכרת במפורש"}
+{"letter_id": 1200910330, "type": "typo", "query": "הפעלת אניות במכונות אוטמטיות", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200710149, "type": "name", "query": "קיפניס נימוקי מלבי״ם", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200710149, "type": "typo", "query": "ישיבה תורת אמת בירושלם שיעורים בהלכה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200780120, "type": "topic", "query": "י׳ שבט", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200780120, "type": "typo", "query": "מאמר באתי לגנו לימוד בליל ההילולא", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200780087, "type": "topic", "query": "אמירת קדיש", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200780087, "type": "english", "query": "how long should one say Kaddish for a parent, eleven months, and what happens to the soul afterward", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200800318, "type": "english", "query": "why the word for heart appears sometimes masculine and sometimes feminine, rule for things without life, and urging a donor to sign a check", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200800318, "type": "typo", "query": "לשון זכר ונקיבה בתיבת לב", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200840059, "type": "english", "query": "should a woman move her shop to a better central location even though it means more debt, widen vessels for livelihood", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200840059, "type": "topic", "query": "הרחבת פרנסה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200980161, "type": "name", "query": "שניאור זלמן שזר כתבי יד", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200980161, "type": "typo", "query": "פדיון שבוים כתב יד אדמו״ר מוהרש״ב", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200790204, "type": "english", "query": "explanation why he sent a small check, the Tzemach Tzedek story that a penny from a righteous man's fund brings blessing", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200790204, "type": "typo", "query": "פרוטה מאיב מביאה ברכה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200830132, "type": "topic", "query": "כלי לברכה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200830132, "type": "typo", "query": "מזונות כקריעת ים סוף וכלי בדרך הטבא", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200710383, "type": "english", "query": "rabbi urged to publish his Talmud lectures and his late father's debated novellae in print", "verdict": "fix", "fixed_query": "rabbi urged to publish his Talmud lectures and a deceased ancestor's debated novellae in print", "reason": "דא״ז הוא זקן ולא אב"}
+{"letter_id": 1200710383, "type": "topic", "query": "הדפסת חידושי תורה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200870322, "type": "name", "query": "זונדרלנד לוין", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200870322, "type": "topic", "query": "הפצת המעיינות", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200950182, "type": "name", "query": "שד״ר מרוקו ויזה", "verdict": "fix", "fixed_query": "סעדי׳ שד״ר מרוקו", "reason": "שם אדם במקום מילים כלליות"}
+{"letter_id": 1200950182, "type": "english", "query": "emissary preparing a trip to Morocco, asked whether to travel by plane or ship and to stop in Madrid and Paris first", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200970085, "type": "topic", "query": "ט״ו בשבט", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200970085, "type": "english", "query": "Yiddish letter to a woman about Tu BiShvat, comparing people to trees and growing good fruits", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200910349, "type": "typo", "query": "התוועדות י״ח אלול הבעש״ט ורבנו הזקן", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200910349, "type": "topic", "query": "י״ח אלול", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200830100, "type": "topic", "query": "טהרת המשפחה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200830100, "type": "english", "query": "woman asked to give weekly small coins to support a mikveh in Israel and influence other women to keep family purity", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200810169, "type": "name", "query": "כפר חב״ד מסור חשמלי ליטווין", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200810169, "type": "english", "query": "helping the Holy Land requires strengthening Torah and mitzvot there; question about shipping cost and import license for an electric saw", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200970288, "type": "name", "query": "נציבי הישיבה מאנטרעאל", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200970288, "type": "topic", "query": "שנה מעוברת", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200780051, "type": "typo", "query": "יפוצו מעינתיך חוצה התקשרות עם המקור", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200780051, "type": "topic", "query": "י״ט כסלו", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200890221, "type": "typo", "query": "בדיקת תפילין ומוזזות ובטחון בפרנסה", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200890221, "type": "english", "query": "Yiddish letter to couple who survived camps now worried about health and livelihood, told to strengthen trust and check tefillin", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200880457, "type": "english", "query": "advice to woman leading a women's study group where only some members attend, involve them with discussions and a bulletin", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200880457, "type": "name", "query": "מרים גורדון וואוסטער", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200850208, "type": "topic", "query": "י״ב תמוז", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200850208, "type": "name", "query": "שקלובסקי", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200950185, "type": "name", "query": "מרכז הישיבות תומכי תמימים חגיגה שנתית", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200950185, "type": "english", "query": "greeting to the annual dinner of the Lubavitch yeshivos in America during a financial crisis, urging maximum donations", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200780037, "type": "english", "query": "Yiddish letter to a sick person: follow the doctor but also say psalms daily, give charity and attend a Torah class", "verdict": "keep", "reason": "תקין"}
+{"letter_id": 1200780037, "type": "topic", "query": "רפואה ותהלים", "verdict": "keep", "reason": "תקין"}

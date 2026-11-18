@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>חיפוש באגרות קודש</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<a class="skip" href="#results">דילוג לתוצאות</a>
+<header class="top">
+  <div class="brand">
+    <h1><a href="/" id="home-link">חיפוש באגרות קודש</a></h1>
+    <p class="sub">אגרות כ"ק אדמו"ר מנחם מענדל שניאורסאהן · 28 כרכים · <span id="total-letters">11,062</span> אגרות</p>
+  </div>
+</header>
+
+<main class="layout">
+  <section class="search-area">
+    <form id="search-form" autocomplete="off">
+      <div class="searchbox">
+        <input id="q" name="q" type="search" placeholder='חפשו מילה, ביטוי במרכאות ("מחנה ישראל") או שאלה…' aria-label="חיפוש">
+        <button type="submit" class="primary">חיפוש</button>
+      </div>
+      <div class="modes" role="radiogroup" aria-label="סוג חיפוש">
+        <label title="מילים וביטויים מדויקים"><input type="radio" name="mode" value="text" checked> <b>טקסט</b> <span>מילים מדויקות</span></label>
+        <label title="מוצא אגרות לפי הרעיון, גם כשהמילים שונות, וגם ביידיש"><input type="radio" name="mode" value="semantic"> <b>לפי משמעות</b> <span>רעיון, גם בלי המילים עצמן</span></label>
+        <label title="משלב התאמת מילים והתאמת משמעות"><input type="radio" name="mode" value="hybrid"> <b>משולב</b> <span>טקסט + משמעות</span></label>
+      </div>
+      <details class="help">
+        <summary>טיפים לחיפוש</summary>
+        <ul>
+          <li><code>"מחנה ישראל"</code> – ביטוי מדויק, המילים צמודות.</li>
+          <li><code>שידוך -גירושין</code> – מכתבים עם "שידוך" ובלי "גירושין".</li>
+          <li><code>רוגאטש*</code> – כל מילה שמתחילה ב"רוגאטש".</li>
+          <li>אותיות השימוש (ו, ה, ב, ל, מ, ש, כ) נכללות אוטומטית: "בית" ימצא גם "ובבית", "הבית".</li>
+          <li>חיפוש <b>לפי משמעות</b> מוצא מכתבים על אותו רעיון גם במילים אחרות, ובעברית ויידיש. כתבו שאלה או נושא במשפט.</li>
+        </ul>
+      </details>
+
+      <details class="filters" id="filters-box" open>
+        <summary>סינון <span id="filter-count"></span></summary>
+        <div class="frow">
+          <label>כרך <small>(טווח מספרי אגרות)</small>
+            <span class="range"><select id="vol_from" name="vol_from" aria-label="מכרך"></select> עד <select id="vol_to" name="vol_to" aria-label="עד כרך"></select></span>
+          </label>
+          <label>שנה עברית
+            <span class="range"><select id="year_from" name="year_from" aria-label="משנה עברית"></select> עד <select id="year_to" name="year_to" aria-label="עד שנה עברית"></select></span>
+          </label>
+          <label>שנה לועזית
+            <span class="range"><input id="greg_from" name="greg_from" type="number" min="1928" max="1975" placeholder="1928" aria-label="משנה לועזית"> עד <input id="greg_to" name="greg_to" type="number" min="1928" max="1975" placeholder="1975" aria-label="עד שנה לועזית"></span>
+          </label>
+        </div>
+        <div class="frow">
+          <label>נמען / כתובת
+            <input id="recipient" name="recipient" type="text" placeholder="למשל: שזר, מלבורן, הנהלת">
+          </label>
+          <label>חודש
+            <select id="month" name="month"><option value="">הכל</option></select>
+          </label>
+          <label>שפה
+            <select id="lang" name="lang">
+              <option value="">הכל</option><option value="he">עברית</option><option value="yi">אידיש</option><option value="en">אנגלית</option>
+            </select>
+          </label>
+          <label>מספר אגרת
+            <span class="range"><input id="num_from" name="num_from" type="number" min="1" placeholder="מ-" aria-label="ממספר אגרת"> עד <input id="num_to" name="num_to" type="number" min="1" placeholder="עד" aria-label="עד מספר אגרת"></span>
+          </label>
+        </div>
+        <div class="frow opts">
+          <label class="inline" title='"בית" ימצא גם "ובבית", "הבית", "לבית"'><input type="checkbox" id="prefixes" name="prefixes" checked> כולל אותיות שימוש (ו, ה, ב, ל…)</label>
+          <label class="inline" title="ברירת המחדל: כל המילים צריכות להופיע"><input type="checkbox" id="match_any" name="match_any"> מספיק שאחת המילים תופיע</label>
+          <label class="inline">מיון
+            <select id="sort" name="sort">
+              <option value="relevance">רלוונטיות</option>
+              <option value="date">תאריך (מוקדם ← מאוחר)</option>
+              <option value="date_desc">תאריך (מאוחר ← מוקדם)</option>
+              <option value="number">מספר אגרת</option>
+            </select>
+          </label>
+          <button type="button" id="clear" class="link">ניקוי כל הסינונים</button>
+        </div>
+      </details>
+    </form>
+
+    <div id="examples" class="examples">דוגמאות:
+      <a href="?q=%22%D7%9E%D7%97%D7%A0%D7%94+%D7%99%D7%A9%D7%A8%D7%90%D7%9C%22">"מחנה ישראל"</a>
+      <a href="?q=%D7%A9%D7%99%D7%93%D7%95%D7%9A&amp;year_from=5716&amp;year_to=5716">שידוך בשנת תשט"ז</a>
+      <a href="?recipient=%D7%A9%D7%96%D7%A8">אגרות לשז"ר</a>
+      <a href="?q=%D7%9E%D7%94+%D7%9C%D7%A2%D7%A9%D7%95%D7%AA+%D7%9B%D7%A9%D7%A7%D7%A9%D7%94+%D7%9C%D7%94%D7%AA%D7%A8%D7%9B%D7%96+%D7%91%D7%AA%D7%A4%D7%99%D7%9C%D7%94&amp;mode=semantic">מה לעשות כשקשה להתרכז בתפילה (לפי משמעות)</a>
+    </div>
+    <div id="active-filters" class="active-filters"></div>
+    <div id="status" class="status" aria-live="polite"></div>
+    <div id="facets" class="facets"></div>
+    <ol id="results" class="results"></ol>
+    <nav id="pager" class="pager"></nav>
+  </section>
+
+  <aside id="reader" class="reader hidden" role="dialog" aria-labelledby="letter-title">
+    <div class="reader-bar">
+      <span class="navgroup" id="result-nav">
+        <button id="prev-result" class="link" title="התוצאה הקודמת ברשימה">→ תוצאה קודמת</button>
+        <span id="result-pos"></span>
+        <button id="next-result" class="link" title="התוצאה הבאה ברשימה">תוצאה הבאה ←</button>
+      </span>
+      <span class="navgroup">
+        <button id="prev-letter" class="link" title="האגרת הקודמת בסדר הכרכים">→ אגרת קודמת</button>
+        <button id="next-letter" class="link" title="האגרת הבאה בסדר הכרכים">אגרת הבאה ←</button>
+      </span>
+      <span class="grow"></span>
+      <a id="source-link" target="_blank" rel="noopener">במקור ↗</a>
+      <button id="copy-link" class="link">העתק קישור</button>
+      <button id="close-reader" class="link" aria-label="סגירה">✕</button>
+    </div>
+    <article id="letter"></article>
+  </aside>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>
